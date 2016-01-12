@@ -10,7 +10,7 @@ class PagesController < ApplicationController
     @contact = Contact.new(permitted_params)
     if @contact.valid?
       ContactMailer.contact(@contact).deliver_now
-      redirect_to contact_path, notice: 'Contato enviado com sucesso!'
+      redirect_to contato_path, notice: 'Contato enviado com sucesso!'
     else
       render :contact
     end
