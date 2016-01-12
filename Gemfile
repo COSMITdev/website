@@ -68,3 +68,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
+gem 'initjs', '~> 2.1.2'
