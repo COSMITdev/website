@@ -168,6 +168,9 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     nprogress-rails (0.1.6.7)
     orm_adapter (0.5.0)
+    passenger (5.0.22)
+      rack
+      rake (>= 0.8.1)
     pg (0.18.4)
     polyamorous (1.3.0)
       activerecord (>= 3.0)
@@ -200,6 +203,11 @@ GEM
     rails-i18n (4.0.7)
       i18n (~> 0.7)
       railties (~> 4.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (4.2.5)
       actionpack (= 4.2.5)
       activesupport (= 4.2.5)
@@ -328,11 +336,13 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   nprogress-rails (~> 0.1.6)
+  passenger (~> 5.0)
   pg (~> 0.15)
   pundit (~> 1.0.1)
   rack-mini-profiler
   rails (= 4.2.5)
   rails-i18n (~> 4.0.4)
+  rails_12factor (~> 0.0.3)
   rspec-rails (~> 3.3.3)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
