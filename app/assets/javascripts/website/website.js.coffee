@@ -16,5 +16,9 @@ window.Website =
   init: ->
     # Something here. This is called in every page.
 
-  modules: -> []
+  modules: ->
+    [
+      Website.Flash
+    ]
+
     # Some modules that will be used on every page.
