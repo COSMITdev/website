@@ -24,6 +24,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Tag content for blog and put labels on this
 gem 'acts-as-taggable-on', '~> 3.4'
+# S3 image upload and post processing
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
+# For friendly URLs
+gem 'friendly_id', '~> 5.1.0'
 # Other front-end and general stuff gems
 gem 'initjs', '~> 2.1.2'
 gem 'rails-i18n', '~> 4.0.4'
