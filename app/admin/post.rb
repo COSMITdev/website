@@ -1,6 +1,6 @@
 ActiveAdmin.register Post do
-  permit_params :hero_image, :title, :body, :slug, :publish_date, :author,
-                :meta_title, :meta_description, :tag_list
+  permit_params :hero_image, :title, :body, :slug, :publish_date, :author_id,
+                :meta_title, :meta_description, :tag_list, :published, :hero_image_cache
 
   index do
     selectable_column
@@ -32,7 +32,9 @@ ActiveAdmin.register Post do
 
   form do |f|
     f.inputs do
+      f.input :published
       f.input :hero_image
+      f.input :hero_image_cache, as: :hidden
       f.input :title
       f.input :body
       f.input :slug

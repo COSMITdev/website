@@ -1,2 +1,4 @@
-h1 Blog#show
-p Find me in app/views/blog/show.html.slim
+h1 = @post.title
+span = @post.author.email
+span = l @post.publish_date
+= markdown(@post.body).html_safe

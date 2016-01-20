@@ -7,6 +7,7 @@ pt-BR:
 
     attributes:
       post:
+        published: Publicado?
         hero_image: "Imagem de Cover"
         title: "Título"
         body: "Texto"

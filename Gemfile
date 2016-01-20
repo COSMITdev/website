@@ -30,6 +30,8 @@ gem 'fog'
 gem 'mini_magick'
 # For friendly URLs
 gem 'friendly_id', '~> 5.1.0'
+# Markdown -> Html converter
+gem 'redcarpet'
 # Other front-end and general stuff gems
 gem 'initjs', '~> 2.1.2'
 gem 'rails-i18n', '~> 4.0.4'

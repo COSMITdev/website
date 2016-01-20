@@ -9,6 +9,7 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 
 30.times do |index|
   Post.create!(
+    published: [true, false].sample,
     hero_image: File.open(Rails.root.join('spec', 'fixtures', 'image.jpg')),
     title: "Post de Exemplo #{index}",
     body: "Lorem ipsum sit dolor amet "*200,
