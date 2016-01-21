@@ -1,0 +1,17 @@
+pt-BR:
+  activerecord:
+    models:
+      portfolio:
+        one: 'Case'
+        other: 'Cases'
+
+    attributes:
+      portfolio:
+        logo: "Logo do Cliente"
+        body: "Texto"
+        slug: "URL do post"
+        title: "Nome do Cliente"
+        cover: "Imagem de Cover"
+        tag_list: "Tags"
+        working_time: "Tempo de trabalho"
+        working_time_type: "Tipo do tempo de trabalho (dias, semanas...)"
