@@ -11,4 +11,6 @@ class Post < ActiveRecord::Base
   validates :slug, uniqueness: true
 
   mount_uploader :hero_image, PostUploader
+
+  scope :published, -> { where(published: true) }
 end
