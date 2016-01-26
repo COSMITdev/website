@@ -1,0 +1,31 @@
+.serviceBox {
+  background-color: $gray-light;
+  border-radius: $boxBorderRadius;
+  margin-bottom: 30px;
+  min-height: 420px;
+  padding: 30px;
+
+  .boxTitle {
+    min-height: 70px;
+  }
+}
+
+.boxList {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.9em;
+  list-style: none;
+
+  li {
+    vertical-align: middle;
+
+    &:before {
+      color: gray;
+      content: "・ ";
+      font-size: 1.5rem;
+      line-height: 1em;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+  }
+}
