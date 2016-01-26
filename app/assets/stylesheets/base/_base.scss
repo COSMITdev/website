@@ -1,12 +1,14 @@
 html,
 body {
   min-height: 100%;
+  color: $black;
 }
 
 a {
   &:hover,
   &:focus {
     text-decoration: none;
+    transition: all .2s;
   }
 }
 
