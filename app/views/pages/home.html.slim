@@ -1,6 +1,11 @@
-section.homeHero
+section.pageHero
   .container
     .row
       .col-sm-12.col-md-10.u-centered.u-textCenter
-        h1 Transformamos ideias em produtos de sucesso
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        .heroContainer
+          .u-verticalAlign
+            h1.u-textMagenta Transformamos ideias em produtos de sucesso
+            .row
+              .col-sm-10.u-centered
+                p.subtitle.u-textWhite.u-textLight.u-marginTop5  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                = link_to 'Vamos Conversar', '', class: 'btn -lg -magenta u-marginTop30'

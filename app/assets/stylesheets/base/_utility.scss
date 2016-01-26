@@ -15,6 +15,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 100%;
 }
 
 // # Generate classes from 5 to 100 with 5 step difference
@@ -152,6 +153,13 @@
 
 // # Text colors
 // # =================================================================
+.u-textWhite {
+  color: white;
+}
+
+.u-textMagenta {
+  color: $magenta;
+}
 
 // # Misc
 // # =================================================================

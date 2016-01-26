@@ -1,0 +1,13 @@
+.pageHero {
+  background-color: $purple;
+  margin-top: -80px;
+
+  .heroContainer {
+    height: 100vh;
+  }
+
+  .subtitle {
+    font-size: 1.3125rem;
+    line-height: 1.5em;
+  }
+}
