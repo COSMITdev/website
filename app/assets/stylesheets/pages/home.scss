@@ -1,3 +1,14 @@
-.service {
-  padding: 70px 0 50px;
+.service,
+.work,
+.process,
+.contact {
+  padding: 70px 0;
+}
+
+.work {
+  background-color: $gray-light;
+}
+
+.contact {
+  background-color: $purple;
 }
