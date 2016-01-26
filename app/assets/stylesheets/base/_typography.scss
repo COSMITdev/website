@@ -1,0 +1,38 @@
+// =========== Imports
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('Montserrat-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-Light.otf')  format('opentype')
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-Regular.otf')  format('opentype')
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('Montserrat-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-SemiBold.otf')  format('opentype')
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('Montserrat-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Montserrat-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Montserrat-Bold.otf')  format('opentype')
+}
+
+// =========== Styles
+
+body {
+  font-family: 'Montserrat-Regular', Open Sans, sans-serif;
+}
+
+strong {
+  font-family: 'Montserrat-Bold', Open Sans, sans-serif;
+}

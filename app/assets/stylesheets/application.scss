@@ -1,22 +1,22 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-// ==== Base
-@import "base/base";
-@import "base/typography";
-@import "base/utility";
-
-// ==== Components
-@import "components/header";
-@import "components/footer";
-@import "components/flash";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 // ==== Variables
-@import "variables/colors";
+@import 'variables/colors';
+
+// ==== Base
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utility';
+
+// ==== Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/flash';
 
 // ==== Pages
 
 // ==== NProgress
 // $nprogress-color : ;
 // $nprogress-height: ;
-@import "nprogress";
+@import 'nprogress';
