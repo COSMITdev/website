@@ -2,6 +2,7 @@
   border: none;
   height: 80px;
   margin-bottom: 0;
+  z-index: 1040;
 }
 
 .navbar-default {
@@ -9,9 +10,9 @@
   border-radius: 0;
 
   .navbar-nav > li > a {
-    padding: 30px 20px;
     color: white;
     font-size: 0.875rem;
+    padding: 30px 20px;
 
     &:hover,
     &:focus {
@@ -37,11 +38,11 @@
   }
 
   .navbar-toggle {
-    padding: 13px 10px;
-    margin-top: 18px;
-    margin-bottom: 18px;
     border: 2px solid $magenta;
     border-radius: 8px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    padding: 13px 10px;
 
     .icon-bar {
       background-color: $magenta;
