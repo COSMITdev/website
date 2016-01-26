@@ -1,3 +1,28 @@
 footer {
-  padding: 40px 0;
+  padding: 25px 0;
+  vertical-align: middle;
 }
+
+.socialLink {
+  color: $purple;
+  font-size: 1.6rem;
+  transition: all .2s;
+
+  &:hover,
+  &:focus {
+    color: $magenta;
+  }
+
+  .fa-twitter {
+    font-size: 1.7rem;
+  }
+
+  .fa-linkedin {
+    font-size: 1.9rem;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
+
