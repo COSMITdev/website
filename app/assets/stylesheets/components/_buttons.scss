@@ -6,18 +6,22 @@
 // # =================================================================
 .btn {
   border: 3px solid $black;
-  border-radius: $globalBorderRadius;
+  border-radius: $buttonRadius;
   line-height: 1;
   text-transform: uppercase;
   white-space: normal;
   font-family: 'Montserrat-SemiBold', Open Sans, sans-serfi;
-  // transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-default:hover{
+  border-color: $magenta !important;
 }
 
 // # Sizes
 // # =================================================================
 .-md {
-  padding: 15px 35px;
+  padding: 16px 35px;
   font-size: 1rem;
 }
 

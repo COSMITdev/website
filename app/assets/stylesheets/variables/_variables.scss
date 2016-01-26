@@ -1,3 +1,5 @@
 // =========== Border Radius
-$globalBorderRadius: 8px;
-$boxBorderRadius: 10px;
+$globalRadius: 8px;
+$buttonRadius: $globalRadius;
+$inputRadius: $globalRadius;
+$boxRadius: 10px;

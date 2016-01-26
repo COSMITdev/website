@@ -17,7 +17,7 @@ section.service
         h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter Serviços
         .row
           .col-md-8.u-centered
-            p.subtitle.u-noMargin.u-marginBot40.u-textGray.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
         .row
           .col-sm-6.col-md-4
             .serviceBox
@@ -61,7 +61,7 @@ section.process
         h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter Como Trabalhamos
         .row
           .col-md-8.u-centered
-            p.subtitle.u-noMargin.u-marginBot40.u-textGray.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
 
 section.contact
   .container
@@ -71,3 +71,11 @@ section.contact
         .row
           .col-md-8.u-centered
             p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter Queremos saber mais sobre sua ideia e como podemos te ajudar
+        .row
+          .col-sm-10.col-md-6.u-centered
+            = simple_form_for :example do |f|
+              = f.input :name, label: 'Qual seu nome?', placeholder: 'Seu Nome', class: '-block'
+              = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block'
+              = f.input :budget, label: 'Seu orçamento, se aplicável?', class: '-block'
+              = f.input :message, as: :text, label: 'O que podemos ajudar a construir?', placeholder: 'Fale um pouco mais sobre sua ideia', class: '-block'
+              = f.button :submit, 'Enviar', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30'
