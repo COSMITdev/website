@@ -1,0 +1,11 @@
+.workBox {
+  background-color: $gray-light;
+  border-radius: $boxRadius;
+  margin-bottom: 30px;
+  min-height: 395px;
+  padding: 30px;
+
+  .boxTitle {
+    min-height: 54px;
+  }
+}
