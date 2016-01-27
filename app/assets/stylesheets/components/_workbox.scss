@@ -1,9 +1,10 @@
 .workBox {
-  background-color: $gray-light;
+  // background-color: $gray-light;
   border-radius: $boxRadius;
+  border: 3px solid $gray-light;
   margin-bottom: 30px;
   min-height: 395px;
-  padding: 30px;
+  padding: 28px;
 
   .boxTitle {
     min-height: 54px;
