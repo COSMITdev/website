@@ -4,24 +4,24 @@ section.pageHero
       .col-sm-12.col-md-10.u-centered.u-textCenter
         .heroContainer
           .u-verticalAlign
-            h1.u-textMagenta Transformamos ideias em produtos de sucesso
+            h1.u-textMagenta title="Transformamos ideias em produtos de sucesso" Transformamos ideias em produtos de sucesso
             .row
               .col-sm-10.u-centered
                 p.subtitle.u-textWhite.u-textLight.u-marginTop5  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                = link_to 'Vamos Conversar', '', class: 'btn -lg -magenta u-marginTop30'
+                = link_to 'Vamos Conversar', '', title: 'Vamos Conversar', class: 'btn -lg -magenta u-marginTop30'
 
 section.service
   .container
     .row
       .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter Serviços
+        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Serviços" Serviços
         .row
           .col-md-8.u-centered
             p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
         .row
           .col-sm-6.col-md-4
             .serviceBox
-              h2.u-noMargin.boxTitle.u-textMagenta Construção
+              h2.u-noMargin.boxTitle.u-textMagenta title="Construção" Construção
               p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
               ul.boxList
                 li MVP Concierge
@@ -29,7 +29,7 @@ section.service
                 li Desenvolvimento Contínuo
           .col-sm-6.col-md-4
             .serviceBox
-              h2.u-noMargin.boxTitle.u-textMagenta Suporte & Manutenção
+              h2.u-noMargin.boxTitle.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
               p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
               ul.boxList
                 li Manutenção Contínua
@@ -37,7 +37,7 @@ section.service
                 li Desempenho
           .col-sm-6.col-md-4
             .serviceBox
-              h2.u-noMargin.boxTitle.u-textMagenta Mentoria de Negócios
+              h2.u-noMargin.boxTitle.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
               p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
               ul.boxList
                 li Item 1
@@ -45,20 +45,33 @@ section.service
                 li Item 3
         .row
           .col-sm-12.col-md-10.u-textCenter.u-centered
-            h2.u-noMargin.u-marginTop30.u-textCenter Quer entender mais ou convesar sobre sua ideia?
-            = link_to 'Vamos Conversar', '', class: 'btn -md -magenta u-marginTop20'
+            h2.u-noMargin.u-marginTop30.u-textCenter title="Quer entender mais ou convesar sobre sua ideia?" Quer entender mais ou convesar sobre sua ideia?
+            = link_to 'Vamos Conversar', '', title: 'Vamos Conversar', class: 'btn -md -magenta u-marginTop20'
 
 section.work
   .container
     .row
-      .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter Já resolvemos problemas para
+      .col-sm-12.u-centered
+        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Já resolvemos problemas para" Já resolvemos problemas para
+        .row.u-marginTop40.u-marginBot10
+          col-sm-3.col-md-2
+            = link_to image_tag('lets-jam.png', class: 'img img-responsive -opacity u-centered', alt: "Let's jam"), 'http://letsjam.com/', target: '_blank', title: "Let's Jam"
+          col-sm-3.col-md-2
+            = link_to image_tag('educais.png', class: 'img img-responsive -opacity u-centered', alt: 'Educais'), 'http://educais.com.br/', target: '_blank', title: 'Educais'
+          col-sm-3.col-md-2
+            = link_to image_tag('enda.png', class: 'img img-responsive -opacity u-centered', alt: 'Enda'), 'http://enda.com.vc/', target: '_blank', title: 'Enda'
+          col-sm-3.col-md-2
+            = link_to image_tag('aura.png', class: 'img img-responsive -opacity u-centered', alt: 'Aura'), 'http://aura.art.br/', target: '_blank', title: 'Aura'
+          col-sm-3.col-md-2
+            = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), 'pagoate.com.br', target: '_blank', title: 'Pago Até'
+          col-sm-3.col-md-2
+            = link_to image_tag('tribo-viva.png', class: 'img img-responsive -opacity u-centered', alt: 'Tribo Viva'), 'http://triboviva.com.br/', target: '_blank', title: 'Tribo Viva'
 
 section.process
   .container
     .row
       .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter Como Trabalhamos
+        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Como Trabalhamos" Como Trabalhamos
         .row
           .col-md-8.u-centered
             p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -67,15 +80,15 @@ section.contact
   .container
     .row
       .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textMagenta.u-textCenter Vamos Conversar!
+        h2.u-noMargin.u-marginBot10.u-textMagenta.u-textCenter title="Vamos Conversar!" Vamos Conversar!
         .row
           .col-md-8.u-centered
-            p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter Queremos saber mais sobre sua ideia e como podemos te ajudar
+            p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Queremos saber mais sobre sua ideia e como podemos te ajudar" Queremos saber mais sobre sua ideia e como podemos te ajudar
         .row
           .col-sm-10.col-md-6.u-centered
             = simple_form_for :example do |f|
-              = f.input :name, label: 'Qual seu nome?', placeholder: 'Seu Nome', class: '-block'
-              = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block'
-              = f.input :budget, label: 'Seu orçamento, se aplicável?', class: '-block'
-              = f.input :message, as: :text, label: 'O que podemos ajudar a construir?', placeholder: 'Fale um pouco mais sobre sua ideia', class: '-block'
-              = f.button :submit, 'Enviar', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30'
+              = f.input :name, label: 'Qual seu nome?', placeholder: 'Seu Nome', class: '-block', input_html: { title: 'Seu Nome' }
+              = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Qual seu email?' }
+              = f.input :budget, label: 'Seu orçamento, se aplicável?', class: '-block', input_html: { title: 'Seu orçamento, se aplicável?' }
+              = f.input :message, as: :text, label: 'O que podemos ajudar a construir?', placeholder: 'Fale um pouco mais sobre sua ideia', class: '-block', input_html: { title: 'O que podemos ajudar a construir? Fale um pouco mais sobre sua ideia' }
+              = f.button :submit, 'Enviar', title: 'Enviar', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30'
