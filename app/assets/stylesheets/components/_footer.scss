@@ -1,6 +1,18 @@
 footer {
   padding: 25px 0;
   vertical-align: middle;
+
+  p {
+    float: right;
+
+    &:hover,
+    &:focus {
+      span {
+        color: $magenta;
+        transition: all .3s;
+      }
+    }
+  }
 }
 
 .socialLink {
@@ -26,3 +38,12 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  footer {
+    .socialLinks,
+    p {
+      text-align: center;
+      float: none;
+    }
+  }
+}
