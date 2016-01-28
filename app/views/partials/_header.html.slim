@@ -6,17 +6,15 @@ nav.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="#" Brand
+      = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
     / Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       ul.nav.navbar-nav.navbar-right
         li
-          = link_to 'Serviços', '', class: 'u-textUp'
+          = link_to 'Serviços', '', title: 'Serviços', class: 'u-textUp'
         li
-          = link_to 'Trabalhos', '', class: 'u-textUp'
+          = link_to 'Trabalhos', '', title: 'Trabalhos', class: 'u-textUp'
         li
-          = link_to 'Processo', '', class: 'u-textUp'
+          = link_to 'Processo', '', title: 'Como trabalhamos', class: 'u-textUp'
         li
-          = link_to 'Blog', '', class: 'u-textUp'
-        li
-          = link_to 'Contato', '', class: 'u-textUp'
+          = link_to 'Contato', '', title: 'Vamos conversar!', class: 'u-textUp'
