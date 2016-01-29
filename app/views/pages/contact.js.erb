@@ -1,0 +1,9 @@
+if (<%= @contact.errors.any? %>) {
+  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error">Confira os erros do formulário</div></div>')
+  Website.Flash.init();
+} else {
+  $('.flash').html('<div class="notice wrapper"><div class="notice">Sua proposta foi enviada com sucesso!</div></div>')
+  Website.Flash.init();
+}
+
+$(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));

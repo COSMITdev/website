@@ -3,16 +3,14 @@ class Contact
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
-  attr_accessor :name, :email, :message, :subject
+  attr_accessor :name, :email, :message, :budget
 
-  validates :name, :email, :message, :subject, presence: true
+  validates :name, :email, :message, :budget, presence: true
 
   validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/,
                       message: I18n.t('errors.messages.invalid')
 
   validates :name, length: { maximum: 70 }
-  validates :email, length: { maximum: 40 }
-  validates :subject, length: { maximum: 130 }
   validates :message, length: { maximum: 1000 }
 
    def initialize(attributes={})

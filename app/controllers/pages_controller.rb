@@ -1,24 +1,22 @@
 class PagesController < ApplicationController
   def home
-  end
-
-  def contact
     @contact = Contact.new
   end
 
-  def send_contact
+  def contact
     @contact = Contact.new(permitted_params)
+
     if @contact.valid?
       ContactMailer.contact(@contact).deliver_now
-      redirect_to contato_path, notice: 'Contato enviado com sucesso!'
-    else
-      render :contact
+      @contact = Contact.new # empty fields on form
     end
+
+    render :contact
   end
 
   private
 
   def permitted_params
-    params.require(:contact).permit(:name, :email, :subject, :message)
+    params.require(:contact).permit(:name, :email, :budget, :message)
   end
 end
