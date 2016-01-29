@@ -11,10 +11,10 @@ nav.navbar.navbar-default
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       ul.nav.navbar-nav.navbar-right
         li
-          = link_to 'Serviços', '', title: 'Serviços', class: 'u-textUp'
+          = link_to 'Serviços', root_path(anchor: 'service'), title: 'Serviços', class: 'u-textUp'
         li
-          = link_to 'Trabalhos', '', title: 'Trabalhos', class: 'u-textUp'
+          = link_to 'Trabalhos', root_path(anchor: 'work'), title: 'Trabalhos', class: 'u-textUp'
         li
-          = link_to 'Processo', '', title: 'Como trabalhamos', class: 'u-textUp'
+          = link_to 'Processo', root_path(anchor: 'process'), title: 'Como trabalhamos', class: 'u-textUp'
         li
-          = link_to 'Contato', '', title: 'Vamos conversar!', class: 'u-textUp'
+          = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'u-textUp'

@@ -8,9 +8,9 @@ section.pageHero
             .row
               .col-sm-10.u-centered
                 p.subtitle.u-textWhite.u-textLight.u-marginTop5  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                = link_to 'Vamos Conversar', '', title: 'Vamos Conversar', class: 'btn -lg -magenta u-marginTop30'
+                = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -magenta u-marginTop30'
 
-section.service
+section.service#service
   .container
     .row
       .col-sm-12.col-md-10.u-centered
@@ -49,9 +49,9 @@ section.service
         .row
           .col-sm-12.col-md-10.u-textCenter.u-centered
             h2.u-noMargin.u-marginTop30.u-textCenter title="Quer entender mais ou convesar sobre sua ideia?" Quer entender mais ou convesar sobre sua ideia?
-            = link_to 'Vamos Conversar', '', title: 'Vamos Conversar', class: 'btn -md -magenta u-marginTop20'
+            = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -md -magenta u-marginTop20'
 
-section.work
+section.work#work
   .container
     .row
       .col-sm-12.u-centered
@@ -70,7 +70,7 @@ section.work
           col-sm-3.col-md-2
             = link_to image_tag('tribo-viva.png', class: 'img img-responsive -opacity u-centered', alt: 'Tribo Viva'), 'http://triboviva.com.br/', target: '_blank', title: 'Tribo Viva'
 
-section.process
+section.process#process
   .container
     .row
       .col-sm-12.col-md-10.u-centered
@@ -95,7 +95,7 @@ section.process
               h4.u-noMargin.boxTitle.u-textMagenta title="Validação" Validação
               p.subtitle.u-noMargin.u-marginTop10.small Validar é essêncial para sabermos se estamos no caminho certo ou errado. É a base de todo o aprendizado. Assim conseguimos minizar os riscos de decisões de negócio mal fundamentadas e aumentamos sua chance de sucesso.
 
-section.contact
+section.contact#contact
   .container
     .row
       .col-sm-12.col-md-10.u-centered

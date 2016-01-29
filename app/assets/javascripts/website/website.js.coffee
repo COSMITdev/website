@@ -19,6 +19,7 @@ window.Website =
   modules: ->
     [
       Website.Flash
+      Website.Scroll
     ]
 
     # Some modules that will be used on every page.
