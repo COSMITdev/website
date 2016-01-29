@@ -7,3 +7,4 @@ if (<%= @contact.errors.any? %>) {
 }
 
 $(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));
+Website.Maskmoney.init()
