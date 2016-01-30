@@ -37,7 +37,7 @@
   display: block;
 }
 
-// # Modifiers
+// # Colors
 // # =================================================================
 .-magenta {
   color: $magenta;
@@ -46,7 +46,7 @@
 
   &:hover,
   &:focus {
-    color: white;
-    background-color: $magenta;
+    color: white !important;
+    background-color: $magenta !important;
   }
 }

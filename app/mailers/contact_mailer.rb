@@ -5,6 +5,6 @@ class ContactMailer < ApplicationMailer
     @budget = contact.budget
     @message = contact.message
 
-    mail from: @email, to: "contato@cosmit.com.br", subject: "Orçamento para #{@name}"
+    mail from: @email, to: "contato@cosmit.me", subject: "Uhaa, mais um peixe na rede!"
   end
 end

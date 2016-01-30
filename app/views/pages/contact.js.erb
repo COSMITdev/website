@@ -1,8 +1,8 @@
 if (<%= @contact.errors.any? %>) {
-  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error">Confira os erros do formulário</div></div>')
+  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error">Revise os campos com erro!</div></div>')
   Website.Flash.init();
 } else {
-  $('.flash').html('<div class="notice wrapper"><div class="notice">Sua proposta foi enviada com sucesso!</div></div>')
+  $('.flash').html('<div class="notice wrapper"><div class="notice">Obrigado(a) pelo contato! Em breve retornaremos.</div></div>')
   Website.Flash.init();
 }
 

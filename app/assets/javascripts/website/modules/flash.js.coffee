@@ -6,6 +6,6 @@ Website.Flash =
     if $('.flash').length > 0
       setTimeout( ->
         $('.flash').slideUp()
-      , 5000)
+      , 6000)
     $(document).one 'click', ->
       $('.flash').slideUp()
