@@ -5,6 +5,8 @@ body {
 }
 
 a {
+  outline: none !important;
+
   &:hover,
   &:focus {
     text-decoration: none;
