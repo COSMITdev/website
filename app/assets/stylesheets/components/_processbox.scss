@@ -9,3 +9,18 @@
     min-height: 54px;
   }
 }
+
+@media (max-width: 767px) {
+  .processBox {
+    min-height: auto;
+    padding-bottom: 40px;
+
+    .u-h1 {
+      margin-top: 0px !important;
+    }
+
+    .boxTitle {
+      min-height: auto;
+    }
+  }
+}

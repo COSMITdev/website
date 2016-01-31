@@ -4,10 +4,32 @@
 
   .heroContainer {
     height: 100vh;
+    position: relative;
   }
 
   .subtitle {
     font-size: 1.3125rem;
     line-height: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHero {
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-top: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .pageHero {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
   }
 }

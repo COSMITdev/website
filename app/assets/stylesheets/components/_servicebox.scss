@@ -35,3 +35,15 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .serviceBox {
+    min-height: auto;
+    padding-bottom: 40px;
+
+    .boxTitle {
+      min-height: auto;
+    }
+  }
+}
+
