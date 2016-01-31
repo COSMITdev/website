@@ -2,7 +2,7 @@
   background-color: $gray-light;
   border-radius: $boxRadius;
   margin-bottom: 30px;
-  min-height: 420px;
+  min-height: 455px;
   padding: 30px;
 
   .boxTitle {
@@ -25,6 +25,14 @@
   li {
     vertical-align: middle;
 
+    h2 {
+      font-size: 0.875rem;
+      line-height: 1.3em;
+      display: table-cell;
+      margin: 0;
+      vertical-align: middle;
+    }
+
     &:before {
       color: gray;
       content: "・ ";
@@ -32,6 +40,7 @@
       line-height: 1em;
       margin-left: -5px;
       margin-right: -5px;
+      display: table-cell;
     }
   }
 }

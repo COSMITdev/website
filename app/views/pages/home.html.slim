@@ -7,48 +7,50 @@ section.pageHero
             h1.u-textMagenta title="Transformamos ideias em produtos de sucesso" Transformamos ideias em produtos de sucesso
             .row
               .col-sm-10.u-centered
-                p.subtitle.u-textWhite.u-textLight.u-marginTop5  Somos uma equipe de experts apaixonados por resolver problemas através do design e tecnologia
+                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia
                 = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -magenta u-marginTop30'
 
 section.service#service
   .container
     .row
       .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Serviços" Serviços
+        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Como podemos ajudar?" Como podemos ajudar?
         .row
           .col-md-8.u-centered
             p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas.
         .row
           .col-sm-6.col-md-4
             .serviceBox
-              = image_tag ('icon-build.svg'), class: 'serviceIcon'
+              = image_tag ('icon-build.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
               h2.u-noMargin.boxTitle.u-textMagenta title="Construção" Construção
-              p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
+              p.subtitle.u-marginTop15.u-marginBot15.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
               ul.boxList
-                li MVP Concierge
-                li MVP V1
-                li Desenvolvimento Contínuo
+                li
+                  h2 MVP Concierge
+                li
+                  h2 MVP V1
+                li
+                  h2 Desenvolvimento Contínuo
           .col-sm-6.col-md-4
             .serviceBox
-              = image_tag ('icon-support.svg'), class: 'serviceIcon'
+              = image_tag ('icon-support.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
               h2.u-noMargin.boxTitle.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
-              p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
+              p.subtitle.u-marginTop15.u-marginBot15.small Todo sistema web precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
               ul.boxList
-                li Manutenção Contínua
-                li Emergência
-                li Desempenho
+                li
+                  h2 Manutenção Contínua
+                li
+                  h2 Emergência
+                li
+                  h2 Desempenho
           .col-sm-6.col-md-4
             .serviceBox
-              = image_tag ('icon-mentor.svg'), class: 'serviceIcon'
+              = image_tag ('icon-mentor.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
               h2.u-noMargin.boxTitle.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
-              p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adispic elit.
-              ul.boxList
-                li Item 1
-                li Item 2
-                li Item 3
+              p.subtitle.u-marginTop15.u-marginBot15.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nossos aprendizados acumulados fazendo com que você ande mais rápido e evite armadilhas.
         .row
           .col-sm-12.col-md-10.u-textCenter.u-centered
-            h2.u-noMargin.u-marginTop30.u-textCenter title="Quer entender mais ou convesar sobre sua ideia?" Quer entender mais ou convesar sobre sua ideia?
+            h3.u-h2.u-noMargin.u-marginTop30.u-textCenter title="Quer entender mais ou convesar sobre sua ideia?" Quer entender mais ou convesar sobre sua ideia?
             = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -md -magenta u-marginTop20'
 
 section.work#work
@@ -77,7 +79,7 @@ section.process#process
         h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Como Trabalhamos" Como Trabalhamos
         .row
           .col-md-8.u-centered
-            p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador no seu projeto.
+            p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto.
         .row
           .col-sm-4
             .processBox
