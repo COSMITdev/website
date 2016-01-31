@@ -44,6 +44,7 @@ gem 'nprogress-rails', '~> 0.1.6'
 # gem 'capistrano-rails', group: :development
 # Masks for monetary fields
 gem 'maskmoney-rails'
+gem 'google-analytics-rails', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -75,5 +76,4 @@ end
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
   gem 'passenger', '~> 5.0'
-  gem 'google-analytics-rails', '~> 1.0'
 end
