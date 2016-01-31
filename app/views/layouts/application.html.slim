@@ -1,19 +1,62 @@
 doctype 5
-html
+html[lang="pt-br" prefix="og: http://ogp.me/ns#"]
   head
     meta[charset="utf-8"]
     /[if lt IE 9]
       meta[content="text/html; charset=utf-8" http-equiv="Content-Type"]
       = javascript_include_tag "//html5shiv.googlecode.com/svn/trunk/html5.js"
-    meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"]
-    title = content_for?(:page_title) ? "#{yield(:page_title)} - Website" : "Website"
+    meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"]
+    = analytics_init if GoogleAnalytics.valid_tracker?
+
+    / ===== Google meta tags
+    title COSMIT - Transformamos ideias em produtos de sucesso
+    meta name="description" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
+    / TODO add keywords
+    meta name="keywords" content="MVP, Concierge, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios"
+    meta name="robots" content="index, follow"
+    meta name="google" value="notranslate"
+
+    / ===== Facebook meta tags
+    meta property="og:url" content="http://www.cosmit.me"
+    meta property="og:type" content="website"
+    meta property="og:title" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
+    meta property="og:image" content="#{image_path 'cosmit.jpg'}"
+    meta property="og:locale" content="pt_BR"
+    meta property="og:site_name" content="cosmit.me"
+    meta property="og:description" content="Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia"
+
+    / ====== Twitter meta tags
+    meta name="twitter:card" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
+    meta name="twitter:site" content="@COSMITdev"
+    meta name="twitter:description" content="Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia"
+    meta name="twitter:image" content="#{image_path 'cosmit.jpg'}"
+    meta name="twitter:url" content="http://www.cosmit.me"
+
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = favicon_link_tag 'favicon.png'
 
   body
     = initjs_tag "Website"
-    = render 'layouts/flash' if flash.any?
-    = render 'partials/header'
+    = render 'layouts/flash'
+    - cache do
+      = render 'partials/header'
     = yield
-    = render 'partials/footer'
+    - cache do
+      = render 'partials/footer'
+
+    - if Rails.env.production?
+      / Hotjar Tracking Code for http://cosmit.me
+      javascript:
+        (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:142101,hjsv:5};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+      / Navegg Tracking Code
+      script id="navegg" type="text/javascript" src="//tag.navdmp.com/tm39378.js"

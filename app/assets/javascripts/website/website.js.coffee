@@ -19,6 +19,8 @@ window.Website =
   modules: ->
     [
       Website.Flash
+      Website.Scroll
+      Website.Maskmoney
     ]
 
     # Some modules that will be used on every page.

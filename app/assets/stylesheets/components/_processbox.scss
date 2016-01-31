@@ -1,0 +1,26 @@
+.processBox {
+  background-color: $gray-light;
+  border-radius: $boxRadius;
+  margin-bottom: 30px;
+  min-height: 395px;
+  padding: 30px;
+
+  .boxTitle {
+    min-height: 54px;
+  }
+}
+
+@media (max-width: 767px) {
+  .processBox {
+    min-height: auto;
+    padding-bottom: 40px;
+
+    .u-h1 {
+      margin-top: 0px !important;
+    }
+
+    .boxTitle {
+      min-height: auto;
+    }
+  }
+}

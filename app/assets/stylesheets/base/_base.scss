@@ -1,0 +1,26 @@
+html,
+body {
+  min-height: 100%;
+  color: $black;
+  word-wrap: break-word;
+}
+
+a {
+  outline: none !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    transition: all .2s;
+  }
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-body {
+  flex: 1;
+}

@@ -1,0 +1,64 @@
+.service,
+.work,
+.process,
+.contact {
+  padding: 70px 0;
+}
+
+.work {
+  background-color: $gray-light;
+
+  img {
+    &.-opacity {
+      opacity: 0.4;
+      transition: all .2s;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contact {
+  background-color: $purple;
+}
+
+
+@media (max-width: 768px) {
+  .service,
+  .work,
+  .process,
+  .contact {
+    padding: 50px 0;
+  }
+
+  .service {
+    h2.u-marginTop30,
+    .u-h2.u-marginTop30 {
+      margin-top: 0px !important;
+    }
+  }
+
+  .work {
+    .row .u-marginTop40 {
+      margin-top: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .service,
+  .work,
+  .process,
+  .contact {
+    padding: 35px 0;
+  }
+
+  .work {
+    .row .u-marginTop40 {
+      margin-top: 0px !important;
+    }
+  }
+}

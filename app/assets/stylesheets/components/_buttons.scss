@@ -1,0 +1,52 @@
+// # =================================================================
+// # Buttons
+// # =================================================================
+
+// # Base
+// # =================================================================
+.btn {
+  border: 3px solid $black;
+  border-radius: $buttonRadius;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: normal;
+  font-family: 'Montserrat-SemiBold', Open Sans, sans-serfi;
+  transition: all .2s;
+}
+
+.btn-default:hover{
+  border-color: $magenta !important;
+}
+
+// # Sizes
+// # =================================================================
+.-md {
+  padding: 16px 35px;
+  font-size: 1rem;
+}
+
+.-lg {
+  padding: 20px 45px;
+  font-size: 1.125rem;
+}
+
+// # Modifiers
+// # =================================================================
+.-block {
+  width: 100%;
+  display: block;
+}
+
+// # Colors
+// # =================================================================
+.-magenta {
+  color: $magenta;
+  background-color: transparent;
+  border-color: $magenta;
+
+  &:hover,
+  &:focus {
+    color: white !important;
+    background-color: $magenta !important;
+  }
+}

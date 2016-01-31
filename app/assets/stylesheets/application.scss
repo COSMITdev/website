@@ -1,23 +1,32 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'sanilize';
+@import 'typ';
+
+// ==== Variables
+@import 'variables/colors';
+@import 'variables/variables';
 
 // ==== Base
-@import "base/variables";
-@import "base/variables-colors";
-@import "base/base";
-@import "base/typography";
-@import "base/utility";
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utility';
 
-// ==== Atoms
+// ==== Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/flash';
+@import 'components/buttons';
+@import 'components/pagehero';
+@import 'components/servicebox';
+@import 'components/processbox';
+@import 'components/forms';
 
-// ==== Molecules
-@import "molecules/flash";
-
-// ==== Organisms
-@import "organisms/header";
-@import "organisms/footer";
+// ==== Pages
+@import 'pages/home';
 
 // ==== NProgress
 // $nprogress-color : ;
 // $nprogress-height: ;
-@import "nprogress";
+@import 'nprogress';
