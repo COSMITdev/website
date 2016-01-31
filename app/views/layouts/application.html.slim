@@ -8,8 +8,25 @@ html
     meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"]
 
     / ===== Google meta tags
-    title = content_for?(:page_title) ? "#{yield(:page_title)} - COSMIT" : "COSMIT"
-    meta name="description" content="COSMIT"
+    title COSMIT - Transformamos ideias em produtos de sucesso
+    meta name="description" content="Transformamos ideias em produtos de sucesso"
+    / TODO other google info, meta tags
+
+    / ===== Facebook meta tags
+     meta property="og:url" content="http://www.cosmit.me"
+     meta property="og:type" content="website"
+     meta property="og:title" content="Transformamos ideias em produtos de sucesso"
+     meta property="og:image" content="#{image_path 'cosmit.jpg'}"
+     meta property="og:locale" content="pt_BR"
+     meta property="og:site_name" content="cosmit.me"
+     / meta property="og:description" content="Nós desenhamos e construímos o seu sistema web com qualidade de código e um time minado de experts"
+
+     / ====== Twitter meta tags
+     meta name="twitter:card" content="Transformamos ideias em produtos de sucesso"
+     meta name="twitter:site" content="@COSMITdev"
+     / meta name="twitter:description" content="Nós desenhamos e construímos o seu sistema web com qualidade de código e um time minado de experts"
+     meta name="twitter:image" content="#{image_path 'cosmit.jpg'}"
+     meta name="twitter:url" content="http://www.cosmit.me"
 
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
