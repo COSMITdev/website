@@ -40,11 +40,9 @@ html[lang="pt-br" prefix="og: http://ogp.me/ns#"]
   body
     = initjs_tag "Website"
     = render 'layouts/flash'
-    - cache do
-      = render 'partials/header'
+    = render 'partials/header'
     = yield
-    - cache do
-      = render 'partials/footer'
+    = render 'partials/footer'
 
     - if Rails.env.production?
       / Hotjar Tracking Code for http://cosmit.me
