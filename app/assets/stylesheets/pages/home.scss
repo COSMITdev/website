@@ -25,6 +25,18 @@
   background-color: $purple;
 }
 
+@media (max-width: 991px) {
+  .work {
+    .row .u-marginTop40 {
+      margin-top: 10px !important;
+    }
+
+    .col-sm-3 {
+      margin-top: 15px;
+    }
+  }
+}
+
 
 @media (max-width: 768px) {
   .service,
@@ -38,12 +50,6 @@
     h2.u-marginTop30,
     .u-h2.u-marginTop30 {
       margin-top: 0px !important;
-    }
-  }
-
-  .work {
-    .row .u-marginTop40 {
-      margin-top: 20px !important;
     }
   }
 }
