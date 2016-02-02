@@ -45,6 +45,8 @@ gem 'nprogress-rails', '~> 0.1.6'
 # Masks for monetary fields
 gem 'maskmoney-rails'
 gem 'google-analytics-rails', '~> 1.0'
+# For performance analytics
+gem 'appsignal'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
