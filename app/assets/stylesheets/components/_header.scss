@@ -3,11 +3,17 @@
   height: 95px;
   margin-bottom: 0;
   z-index: 1040;
+  top: 0;
+  transition: top 0.4s ease-in-out;
+}
+
+.-up {
+  top: - 95px;
 }
 
 .navbar-default {
-  background-color: $purple;
   border-radius: 0;
+  background-color: $purple;
 
   .navbar-nav > li > a {
     color: white;
