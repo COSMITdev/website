@@ -21,6 +21,7 @@ window.Website =
       Website.Flash
       Website.Scroll
       Website.Maskmoney
+      Website.HideNav
     ]
 
     # Some modules that will be used on every page.
