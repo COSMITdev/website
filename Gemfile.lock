@@ -288,6 +288,8 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     maskmoney-rails (3.0.2.0)
+    meta-tags (2.1.0)
+      actionpack (>= 3.0.0)
     method_source (0.8.2)
     mime-types (2.99)
     mini_magick (4.4.0)
@@ -477,6 +479,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   maskmoney-rails
+  meta-tags
   mini_magick
   nprogress-rails (~> 0.1.6)
   passenger (~> 5.0)

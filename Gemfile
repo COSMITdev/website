@@ -52,6 +52,8 @@ gem 'maskmoney-rails'
 gem 'google-analytics-rails', '~> 1.0'
 # For performance analytics
 gem 'appsignal'
+# For dynamic meta tags & og tags
+gem 'meta-tags'
 
 group :development do
   gem 'rack-mini-profiler'
