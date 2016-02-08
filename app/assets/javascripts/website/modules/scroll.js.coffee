@@ -1,6 +1,6 @@
 Website.Scroll =
   init: ->
-    $('a[href*=#]:not([href=#])').click ->
+    $("a[href*='#']:not([href='#'])").click ->
       if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
         target = $(@hash)
         target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
