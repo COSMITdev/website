@@ -13,17 +13,11 @@
 
 .navbar-default {
   border-radius: 0;
-  background-color: $purple;
 
   .navbar-nav > li > a {
     color: white;
     font-size: 0.875rem;
     padding: 37.5px 20px;
-
-    &:hover,
-    &:focus {
-      color: $magenta;
-    }
   }
 
   .navbar-nav > li:last-of-type > a {
@@ -31,7 +25,6 @@
   }
 
   .navbar-collapse {
-    background-color: $purple;
     border: 0;
     box-shadow: 0;
 
@@ -44,19 +37,13 @@
   }
 
   .navbar-toggle {
-    border: 2px solid $magenta;
     border-radius: $buttonRadius;
     margin-bottom: 25px;
     margin-top: 25px;
     padding: 13px 10px;
 
-    .icon-bar {
-      background-color: $magenta;
-    }
-
     &:hover,
     &:focus {
-      background-color: $magenta;
       transition: all 0.2s;
 
       .icon-bar {
@@ -78,6 +65,47 @@
 
     @media (max-width: 768px) {
       margin-left: 15px;
+    }
+  }
+}
+
+// # Colors
+// # =================================================================
+
+// # ===== Home
+.home,
+.blog {
+  .navbar-default {
+    background-color: $purple;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $purple;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $magenta;
+
+      .icon-bar {
+        background-color: $magenta;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $magenta;
+
+        .icon-bar {
+          background-color: $purple;
+        }
+      }
     }
   }
 }
