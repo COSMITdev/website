@@ -9,5 +9,18 @@ section.pageHero
               .col-sm-10.u-centered
                 h2.subtitle.u-textWhite.u-textLight.u-marginTop5 Uma coleção das melhores ideias, histórias e experiências de nosso time
 
-h1 Blog#index
-p Find me in app/views/blog/index.html.slim
+section.postList
+  .container
+    .row
+      .col-sm-10.col-md-8.u-centered
+        - @posts.each do |post|
+          .postItem.u-paddingBot15.u-marginBot50
+            = link_to post do
+              h2.postTitle.u-noMargin.u-marginBot15 title="#{post.title}" = post.title
+              p.postDescription.u-marginBot15 title="Ler mais" = truncate(post.body, length: 160, omission: ' »')
+            ul.postTags
+              span.postAuthor.u-textGray-medium.u-marginTop15 Gabriel Carpenedo em 
+              - post.tags.each do |tag|
+                li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
+
+= render 'partials/calltoaction'

@@ -22,9 +22,13 @@
 @import 'components/servicebox';
 @import 'components/processbox';
 @import 'components/forms';
+@import 'components/postitens';
+@import 'components/posttags';
+@import 'components/calltoaction';
 
 // ==== Pages
 @import 'pages/home';
+@import 'pages/blog';
 
 // ==== NProgress
 // $nprogress-color : ;

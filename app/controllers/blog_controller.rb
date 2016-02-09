@@ -2,7 +2,7 @@ class BlogController < ApplicationController
   before_action :check_permission, only: :show
 
   def index
-    @posts = Post.published
+    @posts = Post.published.order(created_at: :desc)
   end
 
   def show
