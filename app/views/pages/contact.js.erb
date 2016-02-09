@@ -4,7 +4,8 @@ if (<%= @contact.errors.any? %>) {
 } else {
   $('.flash').html('<div class="notice wrapper"><div class="notice">Obrigado(a) pelo contato! Em breve retornaremos.</div></div>')
   Website.Flash.init();
-  window.location.hash = 'sucesso';
+  ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato')
+  window.location.hash = 'obrigado';
 }
 
 $(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));
