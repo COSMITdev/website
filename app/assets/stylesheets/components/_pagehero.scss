@@ -5,6 +5,10 @@
   .heroContainer {
     height: 100vh;
     position: relative;
+
+    &.-internal {
+      height: 75vh;
+    }
   }
 
   .subtitle {
