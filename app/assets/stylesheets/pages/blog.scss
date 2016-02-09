@@ -4,3 +4,93 @@
 .postList {
   padding: 70px 0 30px;
 }
+
+// # Post itens
+// # =================================================================
+.postItem {
+  border-bottom: 1px solid $gray-light;
+
+  .postTitle {
+    color: #4a4a4a;
+  }
+
+  .postDescription {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 1.025rem;
+    line-height: 2rem;
+    color: #3a4145;
+  }
+
+  .postAuthor {
+    font-family: 'Montserrat-Light', Open Sans, sans-serif;
+    margin-left: 2px;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      transition: all .2s;
+
+      .postDescription {
+        color: $black;
+        transition: all .2s;
+      }
+
+      .postTitle {
+        color: $magenta;
+        transition: all .2s;
+      }
+    }
+  }
+}
+
+// # Post Show
+// # =================================================================
+.postHero {
+  height: 75vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.postContent {
+  color: #3a4145;
+  font-family: 'Merriweather', serif;
+  padding: 20px 0 60px;
+
+  .postTitle {
+    font-size: 2.8rem;
+    line-height: 1.1em;
+    color: $black;
+  }
+
+  .postText {
+    font-weight: 400;
+    font-size: 1.025rem;
+    line-height: 2rem;
+
+    h1, h2, h3, h4 {
+      line-height: 1.1em !important;
+      color: $black;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    strong {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+    }
+
+    a {
+      color: $magenta;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

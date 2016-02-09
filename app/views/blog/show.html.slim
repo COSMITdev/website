@@ -1,6 +1,15 @@
 - set_meta_tags(define_meta_tags_for_post(@post))
+section.postHero style="background-image: url('#{@post.hero_image.url}')"
 
-h1 = @post.title
-span = @post.author.email
-span = l @post.publish_date
-= markdown(@post.body).html_safe
+section.postContent
+  .container
+    .row
+      .col-sm-10.col-md-7.u-centered
+        h1.postTitle = @post.title
+        ul.postTags
+          - @post.tags.each do |tag|
+            li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
+        .postText
+          = markdown(@post.body).html_safe
+
+= render 'partials/calltoaction'
