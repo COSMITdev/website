@@ -12,5 +12,8 @@ section.postShow
         .postText
           = markdown(@post.body).html_safe
         .postAuthor.u-textGray-medium.u-marginTop15 Por Gabriel Carpenedo
+    .row
+      .col-sm-10.col-md-7.u-centered
+        = link_to 'Ler mais posts', posts_path, class: 'btn -md -purple -block u-marginTop30'
 
 = render 'partials/calltoaction'
