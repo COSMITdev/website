@@ -38,7 +38,7 @@
 .postShow {
   color: #3a4145;
   font-family: 'Merriweather', serif;
-  padding: 20px 0 60px;
+  padding: 20px 0 70px;
 
   .postTitle {
     font-size: 2.8rem;
@@ -78,6 +78,37 @@
     &:hover,
     &:focus {
       text-decoration: underline;
+    }
+  }
+
+  blockquote {
+    padding-left: 20px;
+    margin-bottom: 24px;
+    color: $gray-dark;
+    border-left: 3px solid $gray-light;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: keep-all;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid $gray-light;
+    }
+
+    th {
+      font-weight: 700;
+    }
+
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid $gray-light;
     }
   }
 }
