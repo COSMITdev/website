@@ -1,0 +1,17 @@
+// # =================================================================
+// # Post tags
+// # =================================================================
+.postTags {
+  list-style: none;
+
+  .tagItem {
+    background-color: $gray-light;
+    border-radius: $buttonRadius;
+    display: inline-block;
+    font-family: 'Montserrat-Regular', Open Sans, sans-serif !important;
+    line-height: 1rem;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}

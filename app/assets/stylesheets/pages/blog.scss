@@ -1,0 +1,120 @@
+// # =================================================================
+// # Post Index and Show
+// # =================================================================
+.postIndex {
+  padding: 70px 0 30px;
+}
+
+.postAuthor {
+  font-family: 'Montserrat-Light', Open Sans, sans-serif;
+  margin-left: 2px;
+}
+
+// # Post Itens
+// # =================================================================
+.postItem {
+  border-bottom: 1px solid $gray-light;
+
+  a {
+    &:hover,
+    &:focus {
+      .postTitle {
+        color: $magenta;
+        transition: all .2s;
+      }
+    }
+  }
+}
+
+// # Post Show
+// # =================================================================
+.postHero {
+  height: 75vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.postShow {
+  color: #3a4145;
+  font-family: 'Merriweather', serif;
+  padding: 20px 0 70px;
+
+  .postTitle {
+    font-size: 2.8rem;
+  }
+}
+
+// # Post text style
+// # =================================================================
+.postTitle {
+  color: $black;
+}
+
+.postText {
+  color: #3a4145;
+  font-family: 'Merriweather', serif;
+  font-size: 1.025rem;
+  font-weight: 400;
+  line-height: 2rem;
+
+  h1, h2, h3, h4 {
+    line-height: 1.1em !important;
+    color: $black;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  strong {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+  }
+
+  a {
+    color: $magenta;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  blockquote {
+    padding-left: 20px;
+    margin-bottom: 24px;
+    color: $gray-dark;
+    border-left: 3px solid $gray-light;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: keep-all;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid $gray-light;
+    }
+
+    th {
+      font-weight: 700;
+    }
+
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid $gray-light;
+    }
+  }
+}
+
+.shareButtons {
+  iframe {
+    vertical-align: middle;
+  }
+}

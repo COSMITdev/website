@@ -50,3 +50,15 @@
     background-color: $magenta !important;
   }
 }
+
+.-purple {
+  color: $purple;
+  background-color: transparent;
+  border-color: $purple;
+
+  &:hover,
+  &:focus {
+    color: white !important;
+    background-color: $purple !important;
+  }
+}

@@ -1,0 +1,19 @@
+pt-BR:
+  activerecord:
+    models:
+      post:
+        one: 'Post'
+        other: 'Posts'
+
+    attributes:
+      post:
+        published: Publicado?
+        hero_image: "Imagem de Cover"
+        title: "Título"
+        body: "Texto"
+        slug: "URL do post"
+        publish_date: "Data da publicação"
+        author: "Autor"
+        meta_title: "Título para SEO"
+        meta_description: "Descrição para SEO"
+        tag_list: "Tags"

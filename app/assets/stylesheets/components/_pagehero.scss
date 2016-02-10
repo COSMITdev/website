@@ -1,9 +1,14 @@
+// # =================================================================
+// # Page Hero
+// # =================================================================
 .pageHero {
-  background-color: $purple;
-
   .heroContainer {
     height: 100vh;
     position: relative;
+
+    &.-internal {
+      height: 75vh;
+    }
   }
 
   .subtitle {
@@ -12,6 +17,17 @@
   }
 }
 
+// # Colors
+// # =================================================================
+.home,
+.blog {
+  .pageHero {
+    background-color: $purple;
+  }
+}
+
+// # Media Queries
+// # =================================================================
 @media (max-width: 768px) {
   .pageHero {
     h1 {
