@@ -2,11 +2,11 @@ class BlogController < ApplicationController
   before_action :check_permission, only: :show
 
   def index
-    @posts = Post.published.order(created_at: :desc)
+    @posts = Post.includes(:author).published.order(created_at: :desc)
   end
 
   def show
-    @post = Post.find(params[:id])
+    @post = Post.includes(:author).find(params[:id])
   end
 
   private

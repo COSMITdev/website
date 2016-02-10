@@ -5,4 +5,6 @@ class AdminUser < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :posts, dependent: :destroy
+
+  validates :name, presence: true
 end

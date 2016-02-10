@@ -19,7 +19,7 @@ section.postIndex
               h2.postTitle.u-noMargin.u-marginBot15 title="#{post.title}" = post.title
               p.postText.u-marginBot15 title="Ler mais" = truncate(post.body, length: 140, omission: ' »')
             ul.postTags
-              span.postAuthor.u-textGray-medium.u-marginTop15 Gabriel Carpenedo em 
+              span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} em "
               - post.tags.each do |tag|
                 li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
 
