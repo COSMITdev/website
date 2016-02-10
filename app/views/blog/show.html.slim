@@ -11,14 +11,18 @@ section.postShow
             li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
         .postText
           = markdown(@post.body).html_safe
-        .postAuthor.u-textGray-medium.u-marginTop15 = "Por #{@post.author.name}"
-    .row
-      .col-sm-10.col-md-7.u-centered
-        .pull-left
-          = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
-        .pull-right
-          = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
-                                                                      description: @post.meta_description }
+        .row
+          .col-sm-6
+            h5.u-marginBot15 Autor:
+            strong = "#{@post.author.name}"
+          .col-sm-6
+            h5.u-marginBot15 Compartilhe este post:
+            .shareButtons
+              span.buttonFacebook
+                = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
+              span.buttonTwitter
+                = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
+                                                                        description: @post.meta_description }
       .col-sm-10.col-md-7.u-centered
         = link_to 'Ler mais posts', posts_path, class: 'btn -md -purple -block u-marginTop30'
 
