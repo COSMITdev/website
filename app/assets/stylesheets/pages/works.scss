@@ -1,1 +1,18 @@
-.workItem {}
+.workItem {
+  padding: 60px 0 0;
+
+  &.-gray {
+    background-color: $gray-light;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.7em;
+    font-family: 'Montserrat-Light', Open Sans, sans-serif;
+    color: $gray-dark;
+  }
+}
