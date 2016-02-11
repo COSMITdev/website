@@ -43,6 +43,24 @@ label {
   color: $cyan;
 }
 
+// # Colors
+// # =================================================================
+.works {
+  input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea,
+  button[data-toggle="dropdown"] {
+    &:active,
+    &:focus {
+      border: 2px solid $blue!important;
+    }
+  }
+
+  label {
+    color: $blue;
+  }
+}
+
 // # Textarea
 // # =================================================================
 textarea {

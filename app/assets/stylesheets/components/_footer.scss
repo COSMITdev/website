@@ -38,6 +38,20 @@ footer {
   }
 }
 
+// # Colors
+// # =================================================================
+.works {
+  .socialLink {
+    color: $cyan;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}
+
+
 @media (max-width: 768px) {
   footer {
     .socialLinks,

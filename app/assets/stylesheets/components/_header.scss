@@ -109,3 +109,39 @@
     }
   }
 }
+
+.works {
+  .navbar-default {
+    background-color: $cyan;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $cyan;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $blue;
+
+      .icon-bar {
+        background-color: $blue;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $blue;
+
+        .icon-bar {
+          background-color: $cyan;
+        }
+      }
+    }
+  }
+}
