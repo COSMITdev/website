@@ -61,17 +61,21 @@
           h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Já resolvemos problemas para" Já resolvemos problemas para
           .row.u-marginTop40.u-marginBot10
             .col-sm-3.col-md-2
-              = link_to image_tag('lets-jam.png', class: 'img img-responsive -opacity u-centered', alt: "Let's jam"), 'http://letsjam.com/', target: '_blank', title: "Let's Jam"
+              = link_to image_tag('lets-jam.png', class: 'img img-responsive -opacity u-centered', alt: "Let's jam"), work_path(anchor: 'lets-jam'), title: "Let's Jam"
             .col-sm-3.col-md-2
-              = link_to image_tag('educais.png', class: 'img img-responsive -opacity u-centered', alt: 'Educais'), 'http://educais.com.br/', target: '_blank', title: 'Educais'
+              = link_to image_tag('educais.png', class: 'img img-responsive -opacity u-centered', alt: 'Educais'), work_path(anchor: 'educais'), title: 'Educais'
             .col-sm-3.col-md-2
-              = link_to image_tag('enda.png', class: 'img img-responsive -opacity u-centered', alt: 'Enda'), 'http://enda.com.vc/', target: '_blank', title: 'Enda'
+              = link_to image_tag('enda.png', class: 'img img-responsive -opacity u-centered', alt: 'Enda'), work_path(anchor: 'enda'), title: 'Enda'
             .col-sm-3.col-md-2
-              = link_to image_tag('aura.png', class: 'img img-responsive -opacity u-centered', alt: 'Aura'), 'http://aura.art.br/', target: '_blank', title: 'Aura'
+              = link_to image_tag('aura.png', class: 'img img-responsive -opacity u-centered', alt: 'Aura'), work_path(anchor: 'aura'), title: 'Aura'
             .col-sm-3.col-md-2
-              = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), 'http://pagoate.com.br', target: '_blank', title: 'Pago Até'
+              = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), work_path(anchor: 'pago-ate'), title: 'Pago Até'
             .col-sm-3.col-md-2
-              = link_to image_tag('tribo-viva.png', class: 'img img-responsive -opacity u-centered', alt: 'Tribo Viva'), 'http://triboviva.com.br/', target: '_blank', title: 'Tribo Viva'
+              = link_to image_tag('tribo-viva.png', class: 'img img-responsive -opacity u-centered', alt: 'Tribo Viva'), work_path(anchor: 'tribo-viva'), title: 'Tribo Viva'
+          .clearfix
+          .row.u-marginTop10
+            .col-sm-10.u-centered.u-textCenter
+              = link_to 'Saiba mais sobre os projetos', work_path, class: 'linkWork u-textUp u-textBold small', title: 'Saiba mais sobre os projetos'
 
   section.process#process
     .container

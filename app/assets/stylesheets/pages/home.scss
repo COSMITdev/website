@@ -10,13 +10,23 @@
 
   img {
     &.-opacity {
-      opacity: 0.4;
+      opacity: 0.5;
       transition: all .2s;
 
       &:hover,
       &:focus {
         opacity: 1;
       }
+    }
+  }
+
+  .linkWork {
+    color: $gray-medium;
+
+    &:hover,
+    &:focus {
+      color: $magenta;
+      transition: all .2s;
     }
   }
 }
