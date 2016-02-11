@@ -5,7 +5,7 @@ module ApplicationHelper
   end
 
   def define_meta_tags_for_post(post)
-    { title: post.meta_title,
+    { title: "Cosmit Blog - "+post.meta_title,
       description: post.meta_description,
       keywords: post.tags.join(', '),
       og: { url: post_url(post),
