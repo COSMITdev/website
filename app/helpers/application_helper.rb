@@ -1,7 +1,24 @@
 module ApplicationHelper
   def markdown(html)
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
-    markdown.render(html)
+    render_options = {
+        # will remove from the output HTML tags inputted by user
+        filter_html: true,
+        # will insert <br /> tags in paragraphs where are newlines
+        hard_wrap: true,
+        # Prettify
+        prettify: true
+    }
+    # This HTML class is provided in config/initializers/rouge.rb
+    renderer   = HTML.new(render_options)
+    extensions = {
+      autolink: true,
+      tables: true,
+      fenced_code_blocks: true,
+      lax_spacing: true,
+      strikethrough: true
+    }
+
+    Redcarpet::Markdown.new(renderer, extensions).render(html).html_safe
   end
 
   def define_meta_tags_for_post(post)
