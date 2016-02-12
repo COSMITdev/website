@@ -4,6 +4,7 @@ ActiveAdmin.register Post do
 
   index do
     selectable_column
+    column :published
     id_column
     column :slug
     column :title
