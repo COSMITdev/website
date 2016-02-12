@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   belongs_to :author, class_name: 'AdminUser', foreign_key: 'author_id'
 
   validates :hero_image, :title, :body, :slug, :publish_date, :author,
-            :meta_title, :meta_description, :tag_list, presence: true
+            :meta_title, :meta_description, :tag_list, presence: true, if: 'published?'
 
   validates :slug, uniqueness: true
 
