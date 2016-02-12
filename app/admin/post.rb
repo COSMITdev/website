@@ -18,7 +18,6 @@ ActiveAdmin.register Post do
         image_tag post.hero_image.url, size: '300'
       end
       row :title
-      row :body
       row :slug
       row :publish_date do |post|
         l post.publish_date
@@ -27,6 +26,9 @@ ActiveAdmin.register Post do
       row :meta_title
       row :meta_description
       row :tag_list
+      row :body do |post|
+        markdown(post.body).html_safe
+      end
     end
   end
 
