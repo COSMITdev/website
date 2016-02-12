@@ -40,7 +40,7 @@ ActiveAdmin.register Post do
       f.input :title
       f.input :body
       f.input :slug
-      f.input :publish_date
+      f.input :publish_date, as: :datepicker
       f.input :author, as: :select, collection: AdminUser.pluck(:email, :id), include_blank: false
       f.input :meta_title
       f.input :meta_description
