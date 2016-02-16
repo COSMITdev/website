@@ -74,14 +74,6 @@
   }
 }
 
-.works {
-  .navbar-default {
-    .navbar-brand {
-      background-image: asset-url('cosmit-logo.svg');
-    }
-  }
-}
-
 // # Colors
 // # =================================================================
 
@@ -141,15 +133,15 @@
     }
 
     .navbar-toggle {
-      border: 2px solid $cyan;
+      border: 2px solid $blue;
 
       .icon-bar {
-        background-color: $cyan;
+        background-color: $blue;
       }
 
       &:hover,
       &:focus {
-        background-color: $cyan;
+        background-color: $blue;
 
         .icon-bar {
           background-color: $purple-light;
