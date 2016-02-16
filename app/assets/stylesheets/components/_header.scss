@@ -18,6 +18,11 @@
     color: white;
     font-size: 0.875rem;
     padding: 37.5px 20px;
+
+    &:hover,
+    &:focus {
+      transition: all .3s !important;
+    }
   }
 
   .navbar-nav > li:last-of-type > a {
@@ -72,7 +77,7 @@
 .works {
   .navbar-default {
     .navbar-brand {
-      background-image: asset-url('cosmit-logo-2.svg');
+      background-image: asset-url('cosmit-logo.svg');
     }
   }
 }
@@ -120,34 +125,34 @@
 
 .works {
   .navbar-default {
-    background-color: $cyan;
+    background-color: $purple-light;
 
     .navbar-nav > li > a {
       color: white;
 
       &:hover,
       &:focus {
-        color: $blue;
+        color: $cyan;
       }
     }
 
     .navbar-collapse {
-      background-color: $cyan;
+      background-color: $purple-light;
     }
 
     .navbar-toggle {
-      border: 2px solid $blue;
+      border: 2px solid $cyan;
 
       .icon-bar {
-        background-color: $blue;
+        background-color: $cyan;
       }
 
       &:hover,
       &:focus {
-        background-color: $blue;
+        background-color: $cyan;
 
         .icon-bar {
-          background-color: $cyan;
+          background-color: $purple-light;
         }
       }
     }

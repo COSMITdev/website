@@ -62,3 +62,15 @@
     background-color: $purple !important;
   }
 }
+
+.-blue {
+  color: $blue;
+  background-color: transparent;
+  border-color: $blue;
+
+  &:hover,
+  &:focus {
+    color: white !important;
+    background-color: $blue !important;
+  }
+}

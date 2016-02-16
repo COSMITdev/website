@@ -42,7 +42,7 @@ footer {
 // # =================================================================
 .works {
   .socialLink {
-    color: $cyan;
+    color: $purple-light;
 
     &:hover,
     &:focus {
@@ -51,7 +51,8 @@ footer {
   }
 }
 
-
+// # Media Queries
+// # =================================================================
 @media (max-width: 768px) {
   footer {
     .socialLinks,
