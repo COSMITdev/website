@@ -1,14 +1,14 @@
-.works{
-  .img-responsive {
-    vertical-align: bottom;
-  }
-}
-
 .workItem {
   padding: 70px 0 0;
+  overflow: hidden;
 
   &.-gray {
     background-color: $gray-light;
+  }
+
+  .img-responsive {
+    vertical-align: bottom;
+    box-shadow: 0 .5em 2em rgba(0,0,0,0.2);
   }
 
   h2 {
@@ -20,5 +20,40 @@
     line-height: 1.7em;
     font-family: 'Montserrat-Light', Open Sans, sans-serif;
     color: $gray-dark;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      vertical-align: middle;
+      margin-left: -10px;
+
+      &:before {
+        color: gray;
+        content: "・ ";
+        font-size: 1.5rem;
+        line-height: 1em;
+        margin-left: -5px;
+        margin-right: -5px;
+        display: table-cell;
+      }
+    }
+
+    h2 {
+      font-size: 0.875rem;
+      line-height: 1.3em;
+      display: table-cell;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .workItem{
+    .img-responsive {
+      margin-bottom: 20px;
+    }
   }
 }
