@@ -7,7 +7,7 @@ section.pageHero
             h1.u-textCyan title="Nossas experiências" Nossas experiências
             .row
               .col-sm-10.u-centered
-                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Trabalhamos orientados a objetivos que geram resultados no seu negócio" Trabalhamos com objetivos que geram resultados para o seu negócio
+                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Trabalhamos orientados a objetivos que geram resultados no seu negócio" Trabalhamos orientados a objetivos que geram resultados para o seu negócio
 
 section.workList
   .workItem#pago-ate
@@ -19,7 +19,7 @@ section.workList
               = image_tag('pago-ate-work.png', class: 'img img-responsive', alt: "Pago Até")
             .workText
               h2.u-textBlue.u-noMargin.u-marginBot10[title="Pago Até"] Pago Até
-              p.u-marginBot15 Inserido no mercado de intermediação de negociações de compra e venda o Pago Até tinha o grande desafio de validar sua lógica inversa. Com o MVP V1 conseguimos rapidamente atingir este objetivo e pivotar em outros aspectos. A partir disto, diversos ciclos de Desenvolvimento Contínuo se seguiram ajudando a dar mais escalabilidade e validar novas hipóteses de negócio. Em menos de 6 meses online o Pago Até vem dobrando suas métricas mês a mês.
+              p.u-marginBot15 Inserido no mercado de intermediação de negociações de compra e venda o Pago Até tinha o grande desafio de validar sua lógica inversa. Com o MVP V1 conseguimos rapidamente atingir este objetivo e pivotamos em outros aspectos. A partir disto, diversos ciclos de Desenvolvimento Contínuo se seguiram ajudando a dar mais escalabilidade e a validar novas hipóteses do negócio. Em 6 meses o Pago Até vem dobrando suas métricas mês a mês.
               ul.u-marginBot15
                 li
                   h3 title="MVP V1" MVP V1
@@ -31,7 +31,9 @@ section.workList
       .row
         .col-sm-12.col-md-10.u-centered
           .workRow
-            .workText
+            .workImage.u-floatRgt
+              = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
+            .workText.u-floatLft
               h2.u-textBlue.u-noMargin.u-marginBot10[title="Tribo Viva"] Tribo Viva
               p.u-marginBot15 Nossos clientes já estavam rodando um MVP Concierge usando facebook e depósitos bancários. Decidirmos construír um MVP Concierge online onde não havia pagamento ou sequer carrinho de compras. Tudo era simulado e feito manualmente. As vendas dispararam frente ao modelo anterior e trouxeram a segurança necessaria para se investir em ciclos de desenvolvimento posteriores. Hoje a Tribo Viva é a maior plataforma de consumo colaborativo do Brasil.
               ul.u-marginBot15
@@ -40,8 +42,6 @@ section.workList
                 li
                   h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
               = link_to 'Ver site', 'http://www.triboviva.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
-            .workImage
-              = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
   .workItem#enda
     .container
       .row
@@ -61,15 +61,15 @@ section.workList
       .row
         .col-sm-12.col-md-10.u-centered
           .workRow
-            .workText
+            .workImage.u-floatRgt
+              = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+            .workText.u-floatLft
               h2.u-textBlue.u-noMargin.u-marginBot10[title="Aura"] Aura
               p.u-marginBot15 Vender obras de arte online no Brasil é um grande desafio. Ainda mais quando se tem um site de vendas que está inacabado e sem "cara" de e-commerce. Esse foi o nosso cenário inicial de projeto. No processo de Descobrimento do projeto estabelecemos a melhoria da conversão das vendas como foco principal de nosso trabalho. Depois do lançamento o Aura atingiu um crescimento de mais de 300% em suas vendas.
               ul.u-marginBot15
                 li
                   h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
               = link_to 'Ver site', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
-            .workImage
-              = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
   .workItem#lets-jam
     .container
       .row
@@ -91,15 +91,15 @@ section.workList
       .row
         .col-sm-12.col-md-10.u-centered
           .workRow
-            .workText
+            .workImage.u-floatRgt
+              = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
+            .workText.u-floatLft
               h2.u-textBlue.u-noMargin.u-marginBot10[title="Educais"] Educais
               p.u-marginBot15 Quando fomos procurandos pelo empreendedor sua principal necessidade era repensar e finalizar o sistema o quanto antes. No descobrimento do projeto buscamos identificar como poderiamos gerar mais valor para os usuários com menos esforço e custos em desenvolvimento. Em um ciclo rápido de duas semanas a plataforma foi redesenhada e oficialmente lançada. Desde então, o Educais já teve centenas de cursos em seu catálogo.
               ul.u-marginBot15
                 li
                   h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
               = link_to 'Ver site', 'http://www.educais.com.br/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
-            .workImage
-              = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
 
 section.contact.-purple-light#contact
   .container

@@ -82,9 +82,13 @@
     }
   }
 
+  .workRow {
+    display: block;
+  }
+
   .workImage,
   .workText {
+    display: block;
     width: 100%;
-    float: left;
   }
 }
