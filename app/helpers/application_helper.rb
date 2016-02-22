@@ -44,21 +44,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_works
-    { title: "Cosmit - Trabalhos",
-      description: 'Lorem ipsum',
-      keywords: 'Lorem ipsum',
+    { title: "Cosmit Trabalhos - Nossas experiências",
+      description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+      keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
       og: { url: request.url,
             type: 'website',
-            title: 'Lorem ipsum',
+            title: 'Nossos trabalhos e experiências',
             image: image_url('cosmit.jpg'),
             locale: 'pt_BR',
             site_name: 'cosmit.me',
-            description: 'Lorem ipsum'
+            description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
           },
       twiiter: {
-        card: 'Conheça nossos Cases!',
+        card: 'Nossos trabalhos e experiências',
         site: '@COSMITdev',
-        description: 'Lorem ipsum',
+        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
         image: image_url('cosmit.jpg'),
         url: request.url
       }
@@ -68,7 +68,7 @@ module ApplicationHelper
   def meta_tags_for_home
     { title: 'COSMIT - Transformamos ideias em produtos de sucesso',
       description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
-      keywords: 'MVP, Concierge, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios',
+      keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios',
       og: { url: request.url,
             type: 'website',
             title: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
