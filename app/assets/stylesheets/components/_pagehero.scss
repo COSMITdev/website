@@ -26,6 +26,12 @@
   }
 }
 
+.works {
+  .pageHero {
+    background-color: $purple-light;
+  }
+}
+
 // # Media Queries
 // # =================================================================
 @media (max-width: 768px) {

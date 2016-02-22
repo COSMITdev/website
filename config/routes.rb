@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   post 'contato', to: 'pages#contact', as: :contact
 
+  get 'trabalhos', to: 'pages#works', as: :work
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 

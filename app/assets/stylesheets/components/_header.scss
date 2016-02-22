@@ -18,6 +18,11 @@
     color: white;
     font-size: 0.875rem;
     padding: 37.5px 20px;
+
+    &:hover,
+    &:focus {
+      transition: all .3s !important;
+    }
   }
 
   .navbar-nav > li:last-of-type > a {
@@ -104,6 +109,42 @@
 
         .icon-bar {
           background-color: $purple;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  .navbar-default {
+    background-color: $purple-light;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $purple-light;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $blue;
+
+      .icon-bar {
+        background-color: $blue;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $blue;
+
+        .icon-bar {
+          background-color: $purple-light;
         }
       }
     }

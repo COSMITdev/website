@@ -21,7 +21,7 @@ module ApplicationHelper
     Redcarpet::Markdown.new(renderer, extensions).render(html).html_safe
   end
 
-  def define_meta_tags_for_post(post)
+  def meta_tags_for_post(post)
     { title: "Cosmit Blog - "+post.meta_title,
       description: post.meta_description,
       keywords: post.tags.join(', '),
@@ -39,6 +39,50 @@ module ApplicationHelper
         description: @post.meta_description,
         image: @post.hero_image.url,
         url: post_url(@post)
+      }
+    }
+  end
+
+  def meta_tags_for_works
+    { title: "Cosmit Trabalhos - Nossas experiências",
+      description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+      keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
+      og: { url: request.url,
+            type: 'website',
+            title: 'Nossos trabalhos e experiências',
+            image: image_url('cosmit.jpg'),
+            locale: 'pt_BR',
+            site_name: 'cosmit.me',
+            description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+          },
+      twiiter: {
+        card: 'Nossos trabalhos e experiências',
+        site: '@COSMITdev',
+        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_home
+    { title: 'COSMIT - Transformamos ideias em produtos de sucesso',
+      description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
+      keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios',
+      og: { url: request.url,
+            type: 'website',
+            title: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
+            image: image_url('cosmit.jpg'),
+            locale: 'pt_BR',
+            site_name: 'cosmit.me',
+            description: 'Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia'
+          },
+      twiiter: {
+        card: 'Conheça nossos Cases!',
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
       }
     }
   end

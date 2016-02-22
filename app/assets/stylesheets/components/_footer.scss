@@ -38,6 +38,21 @@ footer {
   }
 }
 
+// # Colors
+// # =================================================================
+.works {
+  .socialLink {
+    color: $purple-light;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}
+
+// # Media Queries
+// # =================================================================
 @media (max-width: 768px) {
   footer {
     .socialLinks,

@@ -1,6 +1,6 @@
-- set_meta_tags(define_meta_tags_for_post(@post))
-section.postHero style="background-image: url('#{@post.hero_image.url}')"
+- set_meta_tags(meta_tags_for_post(@post))
 
+section.postHero style="background-image: url('#{@post.hero_image.url}')"
 section.postShow
   .container
     .row

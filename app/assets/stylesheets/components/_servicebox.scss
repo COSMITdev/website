@@ -24,14 +24,7 @@
 
   li {
     vertical-align: middle;
-
-    h2 {
-      font-size: 0.875rem;
-      line-height: 1.3em;
-      display: table-cell;
-      margin: 0;
-      vertical-align: middle;
-    }
+    margin-left: -10px;
 
     &:before {
       color: gray;
@@ -41,6 +34,14 @@
       margin-left: -5px;
       margin-right: -5px;
       display: table-cell;
+    }
+
+    h2 {
+      font-size: 0.875rem;
+      line-height: 1.3em;
+      display: table-cell;
+      margin: 0;
+      vertical-align: middle;
     }
   }
 }

@@ -3,6 +3,10 @@ class PagesController < ApplicationController
     @contact = Contact.new
   end
 
+  def works
+    @contact = Contact.new
+  end
+
   def contact
     @contact = Contact.new(permitted_params)
 
