@@ -14,27 +14,6 @@ html lang="pt-BR" prefix="og: http://ogp.me/ns#"
     meta name="robots" content="index, follow"
     meta name="google" content="notranslate"
 
-    - unless params[:controller] == 'blog' && params[:action] == 'show'
-      / ===== Default Google meta tags
-      title COSMIT - Transformamos ideias em produtos de sucesso
-      meta name="description" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
-      meta name="keywords" content="MVP, Concierge, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios"
-      / ===== Facebook meta tags
-      meta property="og:url" content="http://www.cosmit.me"
-      meta property="og:type" content="website"
-      meta property="og:title" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
-      meta property="og:image" content="#{image_url 'cosmit.jpg'}"
-      meta property="og:locale" content="pt_BR"
-      meta property="og:site_name" content="cosmit.me"
-      meta property="og:description" content="Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia"
-
-      / ====== Twitter meta tags
-      meta name="twitter:card" content="A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso"
-      meta name="twitter:site" content="@COSMITdev"
-      meta name="twitter:description" content="Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia"
-      meta name="twitter:image" content="#{image_url 'cosmit.jpg'}"
-      meta name="twitter:url" content="http://www.cosmit.me"
-
     = display_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
