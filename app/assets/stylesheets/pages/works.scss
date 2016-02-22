@@ -63,6 +63,7 @@
 
   .img-responsive {
     margin-bottom: -1px;
+    width: 100%;
   }
 }
 
@@ -90,5 +91,13 @@
   .workText {
     display: block;
     width: 100%;
+  }
+
+  .-rgt {
+    float: right;
+  }
+
+  .-lft {
+    float: left;
   }
 }
