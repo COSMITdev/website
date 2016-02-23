@@ -21,7 +21,7 @@ ActiveAdmin.register Post do
       row :title
       row :slug
       row :publish_date do |post|
-        l post.publish_date
+        l post.publish_date if post.publish_date
       end
       row :author
       row :meta_title
