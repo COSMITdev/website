@@ -22,19 +22,19 @@ module ApplicationHelper
   end
 
   def meta_tags_for_post_index
-    { title: 'Cosmit Blog - Centro de Controle',
+    { title: 'COSMIT Blog - Centro de Controle',
       description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
       keywords: 'Centro de Controle, ideias, histórias, experiências',
       og: { url: posts_url,
             type: 'blog',
-            title: 'Cosmit Blog - Centro de Controle',
+            title: 'COSMIT Blog - Centro de Controle',
             image: image_url('cosmit.jpg'),
             locale: 'pt_BR',
             site_name: 'cosmit.me',
             description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
           },
       twiiter: {
-        card: 'Cosmit Blog - Centro de Controle',
+        card: 'Centro de Controle',
         site: '@COSMITdev',
         description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
         image: image_url('cosmit.jpg'),
@@ -44,7 +44,7 @@ module ApplicationHelper
   end
 
   def meta_tags_for_post(post)
-    { title: "Cosmit Blog - "+post.meta_title,
+    { title: "COSMIT Blog - "+post.meta_title,
       description: post.meta_description,
       keywords: post.tags.join(', '),
       og: { url: post_url(post),
@@ -66,7 +66,7 @@ module ApplicationHelper
   end
 
   def meta_tags_for_works
-    { title: "Cosmit Trabalhos - Nossas experiências",
+    { title: "COSMIT Trabalhos - Nossas experiências",
       description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
       keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
       og: { url: request.url,
