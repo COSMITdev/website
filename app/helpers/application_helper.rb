@@ -21,6 +21,28 @@ module ApplicationHelper
     Redcarpet::Markdown.new(renderer, extensions).render(html).html_safe
   end
 
+  def meta_tags_for_post_index
+    { title: 'Cosmit Blog - Centro de Controle',
+      description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
+      keywords: 'Centro de Controle, ideias, histórias, experiências',
+      og: { url: posts_url,
+            type: 'blog',
+            title: 'Cosmit Blog - Centro de Controle',
+            image: image_url('cosmit.jpg'),
+            locale: 'pt_BR',
+            site_name: 'cosmit.me',
+            description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          },
+      twiiter: {
+        card: 'Cosmit Blog - Centro de Controle',
+        site: '@COSMITdev',
+        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
+        image: image_url('cosmit.jpg'),
+        url: posts_url
+      }
+    }
+  end
+
   def meta_tags_for_post(post)
     { title: "Cosmit Blog - "+post.meta_title,
       description: post.meta_description,
