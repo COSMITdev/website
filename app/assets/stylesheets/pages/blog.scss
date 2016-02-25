@@ -114,7 +114,23 @@
 }
 
 .shareButtons {
+  display: table;
+
   iframe {
     vertical-align: middle;
+  }
+
+  .buttonFacebook ,
+  .buttonTwitter {
+    display: table-cell;
+    float: left;
+  }
+
+  .buttonFacebook {
+    padding-right: 5px;
+  }
+
+  .buttonTwitter {
+    padding-top: 1px;
   }
 }
