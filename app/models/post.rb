@@ -12,5 +12,5 @@ class Post < ActiveRecord::Base
 
   mount_uploader :hero_image, PostUploader
 
-  scope :published, -> { where(published: true) }
+  scope :published, -> { where(published: true).order(created_at: :desc) }
 end
