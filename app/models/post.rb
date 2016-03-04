@@ -12,5 +12,7 @@ class Post < ActiveRecord::Base
 
   mount_uploader :hero_image, PostUploader
 
-  scope :published, -> { where(published: true).order(publish_date: :desc) }
+  scope :published, -> { where(published: true)
+                         .where('publish_date <= ?', Date.today)
+                         .order(publish_date: :desc) }
 end
