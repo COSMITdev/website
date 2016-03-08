@@ -5,8 +5,14 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+  rescue_from ActiveRecord::RecordNotFound, with: :render_404
+  rescue_from ActionController::ParameterMissing, with: :render_404
 
-  private
+  protected
+
+  def render_404
+    render 'pages/404'
+  end
 
   def user_not_authorized
     flash[:alert] = "Você não tem permissão para fazer isso."
