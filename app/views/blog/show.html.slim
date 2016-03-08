@@ -14,7 +14,10 @@ section.postShow
         .row
           .col-sm-6
             h5.u-marginBot15 Autor:
-            strong = "#{@post.author.name}"
+            p = image_tag @post.author.avatar.url, size: '100x100'
+            strong = @post.author.name
+            h6.u-marginBot15 Bio:
+            p = @post.author.bio
           .col-sm-6
             h5.u-marginBot15 Compartilhe este post:
             .shareButtons
