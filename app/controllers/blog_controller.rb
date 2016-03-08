@@ -7,6 +7,8 @@ class BlogController < ApplicationController
 
   def show
     @post = Post.includes(:author).find(params[:id])
+    @next = @post.next
+    @previous = @post.previous
   end
 
   private
