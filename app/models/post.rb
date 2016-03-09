@@ -15,4 +15,12 @@ class Post < ActiveRecord::Base
   scope :published, -> { where(published: true)
                          .where('publish_date <= ?', Date.today)
                          .order(publish_date: :desc) }
+
+  def previous
+    self.class.published.where("id < ?", self.id).first
+  end
+
+  def next
+    self.class.published.where("id > ?", self.id).first
+  end
 end
