@@ -7,11 +7,16 @@ footer {
 
     &:hover,
     &:focus {
-      span {
+      span,
+      i {
         color: $magenta;
         transition: all .3s;
       }
     }
+  }
+
+  i {
+    font-weight: bold;
   }
 }
 

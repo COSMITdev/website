@@ -20,7 +20,8 @@
 // # Colors
 // # =================================================================
 .home,
-.blog {
+.blog,
+.pages {
   .pageHero {
     background-color: $purple;
   }
@@ -42,6 +43,15 @@
 
     .btn {
       margin-top: 0px !important;
+    }
+
+    &.-error {
+      .btn {
+        width: 100%;
+        display: block;
+        margin-left: 0 !important;
+        margin-bottom: 10px;
+      }
     }
   }
 }
