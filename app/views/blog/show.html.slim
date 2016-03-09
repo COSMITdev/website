@@ -23,6 +23,7 @@ section.postShow
               span.buttonTwitter
                 = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
                                                                         description: @post.meta_description }
+
       .col-sm-10.col-md-7.u-centered
         hr.u-marginTop30.u-marginBot10
         .row
@@ -32,5 +33,8 @@ section.postShow
           .col-sm-4.col-sm-offset-4.text-right
             - if @next.present?
               = link_to "Próximo", post_path(@next), class: 'btn -md -purple -block u-marginTop30', title: 'Próximo'
+      
+      .col-sm-10.col-md-7.u-centered.u-marginTop30
+        = render partial: 'layouts/comments'
 
 = render 'partials/calltoaction'
