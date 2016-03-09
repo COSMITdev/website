@@ -12,11 +12,17 @@ section.postShow
         .postText
           = markdown(@post.body).html_safe
         .row
-          .col-sm-6
+          .col-sm-8
             h5.u-marginBot15 Autor:
-            strong = "#{@post.author.name}"
-          .col-sm-6
-            h5.u-marginBot15 Compartilhe este post:
+            .authorInfo
+              .authorImg
+                = image_tag @post.author.avatar.url, class: 'img img-circle', size: '100x100'
+              .authorTxt
+                strong = @post.author.name
+                br
+                span.u-textGray-dark.small = @post.author.bio
+          .col-sm-4
+            h5.u-marginBot15 Compartilhe:
             .shareButtons
               span.buttonFacebook
                 = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }

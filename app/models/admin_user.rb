@@ -4,7 +4,9 @@ class AdminUser < ActiveRecord::Base
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :posts, dependent: :destroy
+  has_many :posts
 
   validates :name, presence: true
+
+  mount_uploader :avatar, AdminAvatarUploader
 end

@@ -1,0 +1,20 @@
+// # Author
+// # =================================================================
+.authorInfo {
+  display: table;
+}
+
+.authorImg,
+.authorTxt {
+  display: table-cell;
+  vertical-align: top;
+
+  .small {
+    line-height: 1rem;
+    font-style: italic;
+  }
+}
+
+.authorImg {
+  padding-right: 10px;
+}
