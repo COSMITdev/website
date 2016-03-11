@@ -4,12 +4,63 @@ section.pageHero
       .col-sm-12.col-md-8.u-centered.u-textCenter
         .heroContainer.-internal
           .u-verticalAlign
-            h1.u-textBlue title="Nossos Serviços" Nossos Serviços
+            h1.u-textPurple title="Nossos Serviços" Nossos Serviços
             .row
               .col-sm-10.u-centered
                 h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Trabalhamos orientados a objetivos que geram resultados para o seu negócio" Trabalhamos orientados a objetivos que geram resultados para o seu negócio
 
 section.serviceList
+  .serviceItem
+    .container
+      .row
+        .col-sm-12.col-md-8.u-centered
+          = image_tag ('icon-build.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
+          h2.u-marginBot20.u-textMagenta Construção
+          p.subtitle.u-marginTop5.u-marginBot40 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+          .row
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 MVP Concierge
+              p.subtitle.u-marginTop15.u-marginBot30.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 MVP V1
+              p.subtitle.u-marginTop15.u-marginBot30.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 Desenvolvimento Contínuo
+              p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+
+  .serviceItem.-gray
+    .container
+      .row
+        .col-sm-12.col-md-8.u-centered
+          = image_tag ('icon-support.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
+          h2.u-marginBot20.u-textMagenta Suporte & Manutenção
+          p.subtitle.u-marginTop5.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+          .row
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 Manutenção Contínua
+              p.subtitle.u-marginTop15.u-marginBot30.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 Emergência
+              p.subtitle.u-marginTop15.u-marginBot30.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+            .col-sm-4
+              h3.subserviceTitle.u-textPurple.u-marginBot5 Desempenho
+              p.subtitle.u-marginTop15.u-marginBot15.small Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+  .serviceItem
+    .container
+      .row
+        .col-sm-12.col-md-8.u-centered
+          = image_tag ('icon-mentor.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
+          h2.u-marginBot20.u-textMagenta Mentoria de Negócios
+          p.subtitle.u-marginTop5.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+
+section.contact.-magenta#contact
   .container
     .row
       .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Vamos Conversar!" Vamos Conversar!
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Queremos saber mais sobre sua ideia e como podemos te ajudar" Queremos saber mais sobre sua ideia e como podemos te ajudar
+        .row
+          .contactForm.col-sm-10.col-md-6.u-centered
+            = render partial: 'pages/contact', locals: { contact: @contact }
