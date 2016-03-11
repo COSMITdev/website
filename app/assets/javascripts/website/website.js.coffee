@@ -22,6 +22,7 @@ window.Website =
       Website.Scroll
       Website.Maskmoney
       Website.HideNav
+      Website.DownloadPDFHome
     ]
 
     # Some modules that will be used on every page.
