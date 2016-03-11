@@ -18,6 +18,10 @@ class PagesController < ApplicationController
     render :contact
   end
 
+  def services
+    @contact = Contact.new
+  end
+
   private
 
   def permitted_params
