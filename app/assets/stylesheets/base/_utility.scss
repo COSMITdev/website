@@ -118,7 +118,7 @@
 // # Text Transform
 // # =================================================================
 .u-textUp {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .u-textLow {
@@ -187,6 +187,18 @@
 
 .u-textBlue {
   color: $blue;
+}
+
+// # Link
+// # =================================================================
+.u-linkMagenta {
+  color: $magenta;
+
+  &:hover,
+  &:focus {
+    color: $magenta;
+    text-decoration: underline;
+  }
 }
 
 // # Misc
