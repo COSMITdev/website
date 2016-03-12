@@ -87,6 +87,28 @@ module ApplicationHelper
     }
   end
 
+  def meta_tags_for_services
+    { title: "COSMIT Serviços - Nossos Serviços",
+      description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+      keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
+      og: { url: request.url,
+            type: 'website',
+            title: 'Nossos trabalhos e experiências',
+            image: image_url('cosmit.jpg'),
+            locale: 'pt_BR',
+            site_name: 'cosmit.me',
+            description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+          },
+      twiiter: {
+        card: 'Nossos serviços',
+        site: '@COSMITdev',
+        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
   def meta_tags_for_home
     { title: 'COSMIT - Transformamos ideias em produtos de sucesso',
       description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
