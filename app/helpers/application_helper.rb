@@ -89,20 +89,20 @@ module ApplicationHelper
 
   def meta_tags_for_services
     { title: "COSMIT Serviços - Nossos Serviços",
-      description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
-      keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
+      description: 'Somos um time de profissionais capazes de criar, lançar e crescer produtos digitais',
+      keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho",
       og: { url: request.url,
             type: 'website',
-            title: 'Nossos trabalhos e experiências',
+            title: 'Nossos Serviços',
             image: image_url('cosmit.jpg'),
             locale: 'pt_BR',
             site_name: 'cosmit.me',
-            description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+            description: 'Somos um time de profissionais capazes de criar, lançar e crescer produtos digitais'
           },
       twiiter: {
         card: 'Nossos serviços',
         site: '@COSMITdev',
-        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+        description: 'Somos um time de profissionais capazes de criar, lançar e crescer produtos digitais',
         image: image_url('cosmit.jpg'),
         url: request.url
       }
