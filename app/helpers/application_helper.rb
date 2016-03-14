@@ -87,6 +87,28 @@ module ApplicationHelper
     }
   end
 
+  def meta_tags_for_services
+    { title: "COSMIT Serviços - Nossos Serviços",
+      description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais',
+      keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho",
+      og: { url: request.url,
+            type: 'website',
+            title: 'Nossos Serviços',
+            image: image_url('cosmit.jpg'),
+            locale: 'pt_BR',
+            site_name: 'cosmit.me',
+            description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+          },
+      twiiter: {
+        card: 'Nossos serviços',
+        site: '@COSMITdev',
+        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
   def meta_tags_for_home
     { title: 'COSMIT - Transformamos ideias em produtos de sucesso',
       description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',

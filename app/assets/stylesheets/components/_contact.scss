@@ -10,11 +10,35 @@
   &.-cyan {
     background-color: $cyan;
   }
+
+  &.-magenta {
+    background-color: $magenta;
+  }
 }
 
 // # Button color
 // # =================================================================
 .works {
+  .contact {
+    .-magenta {
+      color: $blue;
+      background-color: transparent;
+      border-color: $blue;
+
+      &:hover,
+      &:focus {
+        color: white !important;
+        background-color: $blue !important;
+      }
+    }
+
+    .btn-default:hover{
+      border-color: $blue !important;
+    }
+  }
+}
+
+.services {
   .contact {
     .-magenta {
       color: $blue;

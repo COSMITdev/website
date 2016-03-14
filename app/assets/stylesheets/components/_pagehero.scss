@@ -11,6 +11,10 @@
     }
   }
 
+  h1 {
+    margin-bottom: 10px;
+  }
+
   .subtitle {
     font-size: 1.3125rem;
     line-height: 1.5em;
@@ -20,10 +24,21 @@
 // # Colors
 // # =================================================================
 .home,
-.blog,
 .pages {
   .pageHero {
     background-color: $purple;
+  }
+}
+
+.blog {
+  .pageHero {
+    background-color: $blue;
+  }
+}
+
+.services {
+  .pageHero {
+    background-color: $magenta;
   }
 }
 

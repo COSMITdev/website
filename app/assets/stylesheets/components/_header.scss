@@ -79,7 +79,6 @@
 
 // # ===== Home
 .home,
-.blog,
 .pages {
   .navbar-default {
     background-color: $purple;
@@ -116,6 +115,44 @@
   }
 }
 
+// # ===== Blog
+.blog {
+  .navbar-default {
+    background-color: $blue;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $blue;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $magenta;
+
+      .icon-bar {
+        background-color: $magenta;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $magenta;
+
+        .icon-bar {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
+
+// # ===== Works
 .works {
   .navbar-default {
     background-color: $purple-light;
@@ -134,18 +171,55 @@
     }
 
     .navbar-toggle {
-      border: 2px solid $blue;
+      border: 2px solid $cyan;
 
       .icon-bar {
-        background-color: $blue;
+        background-color: $cyan;
       }
 
       &:hover,
       &:focus {
-        background-color: $blue;
+        background-color: $cyan;
 
         .icon-bar {
           background-color: $purple-light;
+        }
+      }
+    }
+  }
+}
+
+// # ===== Services
+.services {
+  .navbar-default {
+    background-color: $magenta;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $magenta;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $purple;
+
+      .icon-bar {
+        background-color: $purple;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $purple;
+
+        .icon-bar {
+          background-color: $magenta;
         }
       }
     }
