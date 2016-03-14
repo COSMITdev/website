@@ -51,11 +51,32 @@ footer {
 
     &:hover,
     &:focus {
-      color: $blue;
+      color: $cyan;
     }
   }
 }
 
+.services {
+  .socialLink {
+    color: $magenta;
+
+    &:hover,
+    &:focus {
+      color: $purple;
+    }
+  }
+}
+
+.blog {
+  .socialLink {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      color: $magenta;
+    }
+  }
+}
 // # Media Queries
 // # =================================================================
 @media (max-width: 768px) {
