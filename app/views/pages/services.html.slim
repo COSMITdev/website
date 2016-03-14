@@ -1,71 +1,73 @@
 - set_meta_tags(meta_tags_for_services)
-section.pageHero
-  .container
-    .row
-      .col-sm-12.col-md-8.u-centered.u-textCenter
-        .heroContainer.-internal
-          .u-verticalAlign
-            h1.u-textPurple title="Nossos Serviços" Nossos Serviços
-            .row
-              .col-sm-10.u-centered
-                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais" Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais
-
-section.serviceList
-  .serviceItem
+- cache do
+  section.pageHero
     .container
       .row
-        .col-sm-12.col-md-8.u-centered#build
-          = image_tag ('icon-build.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
-          h2.u-marginBot20.u-textMagenta title="Construção" Construção
-          p.subtitle.u-marginTop5.u-marginBot40 Da estratégia e planejamento ao design e desenvolvimento, criamos aplicações web para novos negócios, empresas e startups.
-          .row
-            .col-sm-4#concierge
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP Concierge" MVP Concierge
-              p.subtitle.u-marginTop15.u-marginBot30.small São cinco dias de muito suor e puro empreendedorismo. Vamos validar seu público, problema, solução e preço sem codar uma linha. Utilizando serviços online de terceiros criaremos uma solução que simule o funcionamento do seu negócio. Vamos desvendar juntos o processo seu processo interno e assim você vai ser capaz de fechar suas primeiras vendas tendo um contato direto com seu público.
-            .col-sm-4#mvpv1
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP V1" MVP V1
-              p.subtitle.u-marginTop15.u-marginBot30.small Específico para validações e lançamentos rápidos de novos projetos. Em apenas uma semana de imersão vamos passar pelo entendimento da sua ideia, planejamento, design, desenvolvimento back e front-end, testes e métricas. No final você terá as principais hipóteses do seu negócio transformadas em uma aplicação online pronta para ser testada e vai ser capaz de coletar feedback com seus clientes.
-            .col-sm-4#continous
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-              p.subtitle.u-marginTop15.u-marginBot15.small Aplicações robustas necessitam de uma atenção e dedicação mais profundas. Vamos avaliar suas necessitades e adaptar nosso processo para melhor atendê-lo. Através de ciclos (sprints) de desenvolvimento iremos construír o seu sistema. No final de cada sprint, você terá uma parte do seu software online, pronta para testar. Vamos validar suas métricas e coletar feedback com seu público e assim definir o que precisa mudar.
+        .col-sm-12.col-md-8.u-centered.u-textCenter
+          .heroContainer.-internal
+            .u-verticalAlign
+              h1.u-textPurple title="Nossos Serviços" Nossos Serviços
+              .row
+                .col-sm-10.u-centered
+                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais" Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais
+                  = link_to 'Saiba como vamos te ajudar', service_path(anchor: 'build'), title: 'Saiba como vamos te ajudar', class: 'btn -md -purple u-marginTop10'
+
+  section.serviceList
+    .serviceItem
+      .container
+        .row
+          .col-sm-12.col-md-8.u-centered#build
+            = image_tag ('icon-build.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
+            h2.u-marginBot20.u-textMagenta title="Construção" Construção
+            p.subtitle.u-marginTop5.u-marginBot40 Da estratégia e planejamento ao design e desenvolvimento, criamos aplicações web para novos negócios, empresas e startups.
+            .row
+              .col-sm-4#concierge
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP Concierge" MVP Concierge
+                p.subtitle.u-marginTop15.u-marginBot30.small São cinco dias de muito suor e puro empreendedorismo. Vamos validar seu público, problema, solução e preço sem codar uma linha. Utilizando serviços online de terceiros criaremos uma solução que simule o funcionamento do seu negócio. Vamos desvendar juntos o processo seu processo interno e assim você vai ser capaz de fechar suas primeiras vendas tendo um contato direto com seu público.
+              .col-sm-4#mvpv1
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP V1" MVP V1
+                p.subtitle.u-marginTop15.u-marginBot30.small Específico para validações e lançamentos rápidos de novos projetos. Em apenas uma semana de imersão vamos passar pelo entendimento da sua ideia, planejamento, design, desenvolvimento back e front-end, testes e métricas. No final você terá as principais hipóteses do seu negócio transformadas em uma aplicação online pronta para ser testada e vai ser capaz de coletar feedback com seus clientes.
+              .col-sm-4#continous
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                p.subtitle.u-marginTop15.u-marginBot15.small Aplicações robustas necessitam de uma atenção e dedicação mais profundas. Através de ciclos (sprints) de desenvolvimento iremos construír o seu sistema de forma incremental. No final de cada sprint, você terá uma parte do seu software online, pronta para ser testada. Vamos ir progressivamente validando suas métricas e coletando feedback com seu público para assim definir o que precisamos melhorar.
+            .u-textCenter
+              = link_to 'Vamos trabalhar juntos', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos', class: 'btn -md -magenta u-marginTop30'
+
+    .serviceItem.-gray
+      .container
+        .row
+          .col-sm-12.col-md-8.u-centered#support
+            = image_tag ('icon-support.svg'), class: 'u-centered', alt: 'Suporte & Manutenção'
+            h2.u-marginBot20.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
+            p.subtitle.u-marginTop5.u-marginBot30 Todo sistema web precisa de um trabalho contínuo de aprimoramento, um grande cuidado com desempenho e um bom suporte em casos de emergência.
+            .row
+              .col-sm-4#supportcontinous
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Manutenção Contínua" Manutenção Contínua
+                p.subtitle.u-marginTop15.u-marginBot30.small Neste formato iremos constantemente aprimorar a cobertura de testes, atualizar e refatorar (melhorar) o seu código. Apartir de uma análise cuidadosa vamos planejar a melhor forma de trabalharmos tudo para garantir que o desempenho da sua aplicação esteja impecável.
+              .col-sm-4#emergency
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Emergência" Emergência
+                p.subtitle.u-marginTop15.u-marginBot30.small Seu produto fica fora do ar e você não tem ideia do que aconteceu? É ai que você vai precisar de pessoas experientes e capazes de resolver problemas complexos a sua disposição. Nosso time vai ficar de prontidão para assumir e resolver qualquer problema em sua aplicação no momento que surgir. Assim você pode dormir tranquilamente sabendo que tudo estará seguro.
+              .col-sm-4#performance
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Desempenho" Desempenho
+                p.subtitle.u-marginTop15.u-marginBot15.small Cada segundo em melhoria de desempenho pode aumentar em até 10% suas conversões. Ele afeta diretamente o sucesso do seu negócio. Inicialmente faremos uma análise do seu sistema, identificando os principais problemas. Criaremos um plano de melhorias e trabalharemos para corrigir problemas e dar mais agilidade ao seu sistema.
           .u-textCenter
             = link_to 'Vamos trabalhar juntos', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos', class: 'btn -md -magenta u-marginTop30'
+    .serviceItem
+      .container
+        .row
+          .col-sm-12.col-md-8.u-centered#mentoring
+            = image_tag ('icon-mentor.svg'), class: 'u-centered', alt: 'Mentoria de Negócios'
+            h2.u-marginBot20.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
+            p.subtitle.u-marginTop5.u-marginBot30 A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado, novas ideias e visões para o seu negócio ou projeto. Desta forma vamos fazer com que você ande mais rápido, aprenda de forma inteligente e evite armadilhas desnecessárias.
 
-  .serviceItem.-gray
+  section.contact.-magenta#contact
     .container
       .row
-        .col-sm-12.col-md-8.u-centered#support
-          = image_tag ('icon-support.svg'), class: 'u-centered', alt: 'Suporte & Manutenção'
-          h2.u-marginBot20.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
-          p.subtitle.u-marginTop5.u-marginBot30 Todo sistema web precisa de um trabalho contínuo de aprimoramento, um grande cuidado com desempenho e um bom suporte em casos de emergência.
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Vamos trabalhar juntos!" Vamos trabalhar juntos!
           .row
-            .col-sm-4#supportcontinous
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Manutenção Contínua" Manutenção Contínua
-              p.subtitle.u-marginTop15.u-marginBot30.small Neste formato iremos constantemente aprimorar a cobertura de testes, atualizar e refatorar (melhorar) o seu código. Apartir de uma análise cuidadosa vamos planejar a melhor forma de trabalharmos tudo para garantir que o desempenho da sua aplicação esteja impecável.
-            .col-sm-4#emergency
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Emergência" Emergência
-              p.subtitle.u-marginTop15.u-marginBot30.small Seu produto fica fora do ar e você não tem ideia do que aconteceu? É ai que você vai precisar de pessoas experientes e capazes de resolver problemas complexos a sua disposição. Nosso time vai ficar de prontidão para assumir e resolver qualquer problema em sua aplicação no momento que surgir. Assim você pode dormir tranquilamente sabendo que tudo estará seguro.
-            .col-sm-4#performance
-              h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Desempenho" Desempenho
-              p.subtitle.u-marginTop15.u-marginBot15.small Cada segundo em melhoria de desempenho pode aumentar em até 10% suas conversões. Ele afeta diretamente o sucesso do seu negócio. Inicialmente faremos uma análise do seu sistema, identificando os principais problemas. Criaremos um plano de melhorias e trabalharemos para corrigir problemas e dar mais agilidade ao seu sistema.
-        .u-textCenter
-          = link_to 'Vamos trabalhar juntos', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos', class: 'btn -md -magenta u-marginTop30'
-  .serviceItem
-    .container
-      .row
-        .col-sm-12.col-md-8.u-centered#mentoring
-          = image_tag ('icon-mentor.svg'), class: 'u-centered', alt: 'Mentoria de Negócios'
-          h2.u-marginBot20.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
-          p.subtitle.u-marginTop5.u-marginBot30 A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado, novas ideias e visões para o seu negócio ou projeto. Desta forma vamos fazer com que você ande mais rápido, aprenda de forma inteligente e evite armadilhas desnecessárias.
-
-section.contact.-magenta#contact
-  .container
-    .row
-      .col-sm-12.col-md-10.u-centered
-        h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Vamos trabalhar juntos!" Vamos trabalhar juntos!
-        .row
-          .col-md-8.u-centered
-            p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
-        .row
-          .contactForm.col-sm-10.col-md-6.u-centered
-            = render partial: 'pages/contact', locals: { contact: @contact }
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
+          .row
+            .contactForm.col-sm-10.col-md-6.u-centered
+              = render partial: 'pages/contact', locals: { contact: @contact }

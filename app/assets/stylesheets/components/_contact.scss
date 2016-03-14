@@ -21,19 +21,19 @@
 .works {
   .contact {
     .-magenta {
-      color: $blue;
+      color: $cyan;
       background-color: transparent;
-      border-color: $blue;
+      border-color: $cyan;
 
       &:hover,
       &:focus {
-        color: white !important;
-        background-color: $blue !important;
+        color: $purple-light !important;
+        background-color: $cyan !important;
       }
     }
 
     .btn-default:hover{
-      border-color: $blue !important;
+      border-color: $cyan !important;
     }
   }
 }
@@ -41,19 +41,19 @@
 .services {
   .contact {
     .-magenta {
-      color: $blue;
+      color: $purple;
       background-color: transparent;
-      border-color: $blue;
+      border-color: $purple;
 
       &:hover,
       &:focus {
         color: white !important;
-        background-color: $blue !important;
+        background-color: $purple !important;
       }
     }
 
     .btn-default:hover{
-      border-color: $blue !important;
+      border-color: $purple !important;
     }
   }
 }
