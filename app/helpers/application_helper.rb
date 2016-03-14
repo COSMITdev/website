@@ -1,15 +1,12 @@
 module ApplicationHelper
   def markdown(html)
-    render_options = {
-        # will remove from the output HTML tags inputted by user
-        filter_html: true,
-        # will insert <br /> tags in paragraphs where are newlines
-        hard_wrap: true,
-        # Prettify
-        prettify: true
-    }
     # This HTML class is provided in config/initializers/rouge.rb
-    renderer   = HTML.new(render_options)
+    renderer = RecarpetHTML.new({
+      filter_html: true,
+      hard_wrap: true,
+      prettify: true
+    })
+
     extensions = {
       autolink: true,
       tables: true,
@@ -46,7 +43,7 @@ module ApplicationHelper
   def meta_tags_for_post(post)
     { title: "COSMIT Blog - "+post.meta_title,
       description: post.meta_description,
-      keywords: post.tags.join(', '),
+      keywords: post.meta_tags,
       og: { url: post_url(post),
             type: 'blog',
             title: post.meta_title,

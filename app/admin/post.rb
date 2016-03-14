@@ -1,6 +1,7 @@
 ActiveAdmin.register Post do
   permit_params :hero_image, :title, :body, :slug, :publish_date, :author_id,
-                :meta_title, :meta_description, :tag_list, :published, :hero_image_cache
+                :meta_title, :meta_description, :tag_list, :published, :hero_image_cache,
+                :meta_tags
 
   index do
     selectable_column
@@ -27,6 +28,7 @@ ActiveAdmin.register Post do
       row :meta_title
       row :meta_description
       row :tag_list
+      row :meta_tags
       row :body do |post|
         markdown(post.body).html_safe
       end
@@ -46,6 +48,7 @@ ActiveAdmin.register Post do
       f.input :meta_title
       f.input :meta_description
       f.input :tag_list, input_html: { value: f.object.tag_list.join(', ') }
+      f.input :meta_tags
     end
     f.actions
   end

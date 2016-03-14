@@ -1,6 +1,6 @@
 require 'rouge/plugins/redcarpet'
 
-class HTML < Redcarpet::Render::HTML
+class RecarpetHTML < Redcarpet::Render::HTML
   # to use Rouge with Redcarpet
   include Rouge::Plugins::Redcarpet
   # overriding Redcarpet method
