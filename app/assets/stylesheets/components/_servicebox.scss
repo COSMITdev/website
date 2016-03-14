@@ -8,6 +8,14 @@
   .boxTitle {
     min-height: 70px;
   }
+
+  > a:hover,
+  > a:focus {
+    > h2 {
+      color: $purple;
+      transition: all .2s !important;
+    }
+  }
 }
 
 .serviceIcon {
@@ -36,12 +44,22 @@
       display: table-cell;
     }
 
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      line-height: 1.3em;
+      color: $black;
+
+      &:hover{
+        text-decoration: underline;
+        color: $magenta;
+      }
+    }
+
     h2 {
       font-size: 0.875rem;
-      line-height: 1.3em;
-      display: table-cell;
       margin: 0;
-      vertical-align: middle;
     }
   }
 }
