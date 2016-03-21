@@ -1,0 +1,39 @@
+.newsletter {
+  background-color: $gray-light;
+  padding: 70px 0;
+
+  .mc_embed_signup_scroll {
+    display: table;
+  }
+
+  .mc-field-group,
+  input.button {
+    display: table-cell;
+  }
+
+  .mc-field-group {
+    float: left;
+    width: calc(100% - 200px);
+    margin-right: 10px;
+
+    input {
+      width: 100%;
+      padding: 15px 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .newsletter {
+    .mc-field-group,
+    input.button {
+      display: block;
+      width: 100% !important;
+      float: left;
+    }
+
+    input.button {
+      margin: 15px 0;
+    }
+  }
+}
