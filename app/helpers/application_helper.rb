@@ -50,14 +50,14 @@ module ApplicationHelper
             image: post.hero_image.url,
             locale: 'pt_BR',
             site_name: 'cosmit.me',
-            description: @post.meta_description
+            description: post.meta_description
           },
       twiiter: {
-        card: @post.meta_title,
+        card: post.meta_title,
         site: '@COSMITdev',
-        description: @post.meta_description,
-        image: @post.hero_image.url,
-        url: post_url(@post)
+        description: post.meta_description,
+        image: post.hero_image.url,
+        url: post_url(post)
       }
     }
   end
