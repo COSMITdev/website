@@ -10,16 +10,14 @@ CarrierWave.configure do |config|
   else
     config.storage = :file
     config.enable_processing = false if Rails.env.test? || Rails.env.cucumber?
+  end
+end
 
-module CarrierWave
-  module MiniMagick
-    module DPI
-      def dpi(value)
-        manipulate! do |img|
-          img.density value
-          img
-        end
-      end
+module CarrierWave::MiniMagick::DPI
+  def dpi(value)
+    manipulate! do |img|
+      img.density value
+      img
     end
   end
 end
