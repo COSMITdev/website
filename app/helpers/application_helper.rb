@@ -30,7 +30,7 @@ module ApplicationHelper
             site_name: 'cosmit.me',
             description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
           },
-      twiiter: {
+      twitter: {
         card: 'Centro de Controle',
         site: '@COSMITdev',
         description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
@@ -47,16 +47,16 @@ module ApplicationHelper
       og: { url: post_url(post),
             type: 'blog',
             title: post.meta_title,
-            image: post.hero_image.url,
+            image: post.hero_image.url(:hero),
             locale: 'pt_BR',
             site_name: 'cosmit.me',
             description: post.meta_description
           },
-      twiiter: {
+      twitter: {
         card: post.meta_title,
         site: '@COSMITdev',
         description: post.meta_description,
-        image: post.hero_image.url,
+        image: post.hero_image.url(:hero),
         url: post_url(post)
       }
     }
@@ -74,7 +74,7 @@ module ApplicationHelper
             site_name: 'cosmit.me',
             description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
           },
-      twiiter: {
+      twitter: {
         card: 'Nossos trabalhos e experiências',
         site: '@COSMITdev',
         description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
@@ -96,7 +96,7 @@ module ApplicationHelper
             site_name: 'cosmit.me',
             description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
           },
-      twiiter: {
+      twitter: {
         card: 'Nossos serviços',
         site: '@COSMITdev',
         description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais',
@@ -118,7 +118,7 @@ module ApplicationHelper
             site_name: 'cosmit.me',
             description: 'Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia'
           },
-      twiiter: {
+      twitter: {
         card: 'Conheça nossos Cases!',
         site: '@COSMITdev',
         description: '',
