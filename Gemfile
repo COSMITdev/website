@@ -78,7 +78,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor', '~> 0.0.3'
   gem 'passenger', '~> 5.0'
 end
