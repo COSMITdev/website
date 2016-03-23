@@ -1,6 +1,7 @@
 {
   "name": "website",
   "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
   },
   "env": {
     "LANG": {
@@ -16,6 +17,24 @@
       "required": true
     },
     "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "required": true
+    },
+    "AWS_BUCKET_NAME": {
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "required": true
+    },
+    "CLOUDFRONT_URL": {
+      "required": true
+    },
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
       "required": true
     }
   },
