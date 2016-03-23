@@ -5,7 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'admin@example.com',
+                  avatar: File.open(Rails.root.join('spec', 'fixtures', 'avatar.png')),
+                  password: 'password',
+                  password_confirmation: 'password')
 
 30.times do |index|
   Post.create!(
@@ -18,6 +21,7 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
     author: AdminUser.last,
     meta_title: "Post de Exemplo #{index}",
     meta_description: "Quer saber como criar um post? Check this out!",
+    meta_tags: "ruby, rails, productivity",
     tag_list: "ruby, rails, productivity"
   )
 end
