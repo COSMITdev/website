@@ -8,6 +8,16 @@ class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
   rescue_from ActionController::ParameterMissing, with: :render_404
 
+  before_action :set_locale
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+
   protected
 
   def render_404
