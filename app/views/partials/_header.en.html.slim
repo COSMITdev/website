@@ -24,5 +24,6 @@
               = link_to 'Contact', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'u-textUp'
             - else
               = link_to 'Contact', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'u-textUp'
-          li
-            = link_to 'PT', url_for(locale: 'pt-BR'), title: 'Change to Portuguese', class: 'u-textUp'
+          - if params[:controller] != 'blog'
+            li
+              = link_to 'PT', url_for(locale: 'pt-BR'), title: 'Change to Portuguese', class: 'u-textUp'
