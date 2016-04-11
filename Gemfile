@@ -57,6 +57,8 @@ gem 'appsignal'
 gem 'meta-tags'
 # Identify and set language based on country
 gem 'geocoder'
+# Translate routes for better SEO
+gem 'route_translator'
 
 group :development do
   gem 'rack-mini-profiler'
@@ -70,6 +72,7 @@ group :development, :test do
   gem 'thin', '~> 1.6.3'
   gem 'dotenv-rails', '~> 2.0.2'
   gem 'pry-rails'
+  gem 'quiet_assets'
 end
 
 group :test do

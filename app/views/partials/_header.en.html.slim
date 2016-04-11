@@ -12,18 +12,18 @@
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
           li
-            = link_to 'Products', service_path, title: 'Serviços', class: 'u-textUp'
+            = link_to 'Products', service_path, title: 'Products', class: 'u-textUp'
           li
-            = link_to 'Cases', work_path, title: 'Trabalhos', class: 'u-textUp'
+            = link_to 'Cases', work_path, title: 'Cases', class: 'u-textUp'
           li
-            = link_to 'Process', root_path(anchor: 'process'), title: 'Como trabalhamos', class: 'u-textUp'
+            = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
           li
             - if current_page? work_path
-              = link_to 'Contact', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'u-textUp'
+              = link_to 'Contact', work_path(anchor: 'contact'), title: 'Lets work together!', class: 'u-textUp'
             - elsif current_page? service_path
-              = link_to 'Contact', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'u-textUp'
+              = link_to 'Contact', service_path(anchor: 'contact'), title: 'Lets work together!', class: 'u-textUp'
             - else
-              = link_to 'Contact', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'u-textUp'
+              = link_to 'Contact', root_path(anchor: 'contact'), title: 'Lets Talk!', class: 'u-textUp'
           - if params[:controller] != 'blog'
             li
               = link_to 'PT', url_for(locale: 'pt-BR'), title: 'Change to Portuguese', class: 'u-textUp'

@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
-  scope '(:locale)', locale: /pt-BR|en/ do
-    root 'pages#home'
-    post 'contato', to: 'pages#contact', as: :contact
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
-    get 'trabalhos', to: 'pages#works',    as: :work
-    get 'servicos',  to: 'pages#services', as: :service
-    get '404',       to: 'pages#404',      as: :not_found
-
-    devise_for :admin_users, ActiveAdmin::Devise.config
-    ActiveAdmin.routes(self)
-  end
+  # scope '(:locale)', locale: /pt-BR|en/ do
+    localized do
+      root 'pages#home'
+      get 'works',     to: 'pages#works',    as: :work
+      get 'services',  to: 'pages#services', as: :service
+      get '404',       to: 'pages#404',      as: :not_found
+      post 'contact',  to: 'pages#contact',  as: :contact
+    end
+  # end
 
   resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
 

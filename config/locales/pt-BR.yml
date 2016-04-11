@@ -1,0 +1,6 @@
+pt-BR:
+  routes:
+    works: 'trabalhos'
+    services: 'servicos'
+    contact: 'contato'
+    process: 'processo'
