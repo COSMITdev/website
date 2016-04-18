@@ -15,4 +15,6 @@
                 / = link_to 'https://github.com/cosmitdev', title: 'Github', target: '_blank', class: 'socialLink' do
                   i.fa.fa-github
             .col-sm-6
-              p.small.u-noMargin.u-textGray-medium.u-marginTop10 Made with <i class="fa fa-heart"></i> by <span>COSMIT</span>
+              p.small.u-noMargin.u-textGray-medium.u-marginTop10
+                = link_to 'PT version', url_for(locale: 'pt-BR'), title: 'Change to Portuguese', class: 'u-linkMagenta'
+                span.love Made with <i class="fa fa-heart"></i> by <span>COSMIT</span>

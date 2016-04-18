@@ -5,12 +5,16 @@ footer {
   p {
     float: right;
 
-    &:hover,
-    &:focus {
-      span,
-      i {
-        color: $magenta;
-        transition: all .3s;
+    span.love {
+      margin-left: 20px;
+
+      &:hover,
+      &:focus {
+        span,
+        i {
+          color: $magenta;
+          transition: all .3s;
+        }
       }
     }
   }
