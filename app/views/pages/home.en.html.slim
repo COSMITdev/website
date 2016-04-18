@@ -1,0 +1,123 @@
+- set_meta_tags(meta_tags_for_home)
+
+- cache do
+  section.pageHero
+    .container
+      .row
+        .col-sm-12.col-md-8.u-centered.u-textCenter
+          .heroContainer
+            .u-verticalAlign
+              h1.u-textMagenta title="We transform ideas into successful products" We transform ideas into successful products
+              .row
+                .col-sm-10.u-centered
+                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We help startups and small business to validate and achieve product market fit" We help startups and small business to validate and achieve product market fit
+                  = link_to "Contact us", root_path(anchor: 'contact'), title: "Contact us", class: 'btn -lg -magenta u-marginTop20'
+
+  section.service#service
+    .container
+      .row
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="How we can help you?" How we can help you?
+          .row
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
+                | We think critically, dream big and work hard to deliver solutions that make people's lives better
+          .row
+            .col-sm-6.col-md-5.col-md-offset-1
+              .serviceBox
+                = image_tag ('icon-build.svg'), class: 'serviceIcon', alt: 'Build / Development'
+                = link_to service_path(anchor: 'build') do
+                  h2.u-noMargin.boxTitle.u-textMagenta title="Build" Build
+                p.subtitle.u-marginTop15.u-marginBot15.small From planning to design and development, we build and validate web and mobile apps for startups and small business.
+                ul.boxList
+                  li
+                    = link_to service_path(anchor: 'mvpconcirge') do
+                      h2 title="MVP Concierge" MVP Concierge
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+            .col-sm-6.col-md-5
+              .serviceBox
+                = image_tag ('icon-support.svg'), class: 'serviceIcon', alt: 'Support & Maintenance'
+                = link_to service_path(anchor: 'support') do
+                  h2.u-noMargin.boxTitle.u-textMagenta title="Support & Maintenance" Support & Maintenance
+                p.subtitle.u-marginTop15.u-marginBot15.small Every web and mobile product needs a continous improvement and a good support in emergency cases.
+                ul.boxList
+                  li
+                    = link_to service_path(anchor: 'supportcontinous') do
+                      h2 title="Continous Maintenance" Continous Maintenance
+                  li
+                    = link_to service_path(anchor: 'emergency') do
+                      h2 title="Emergency" Emergency
+                  li
+                    = link_to service_path(anchor: 'performance') do
+                      h2 title="Performance" Performance
+          .row
+            .col-sm-12.col-md-10.u-textCenter.u-centered
+              h3.u-h2.u-noMargin.u-textCenter.u-marginTop20 title="Want to understand how we can help you?" Want to understand how we can help you?
+              = link_to "Contact us", root_path(anchor: 'contact'), title: "Contact us", class: 'btn -md -magenta u-marginTop20'
+
+  section.work#work
+    .container
+      .row
+        .col-sm-12.u-centered
+          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="We have solved problems to" We have solved problems to
+          .row.u-marginTop40.u-marginBot10
+            .col-sm-3.col-md-2
+              = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), work_path(anchor: 'pago-ate'), title: 'Pago Até'
+            .col-sm-3.col-md-2
+              = link_to image_tag('tribo-viva.png', class: 'img img-responsive -opacity u-centered', alt: 'Tribo Viva'), work_path(anchor: 'tribo-viva'), title: 'Tribo Viva'
+            .col-sm-3.col-md-2
+              = link_to image_tag('enda.png', class: 'img img-responsive -opacity u-centered', alt: 'Enda'), work_path(anchor: 'enda'), title: 'Enda'
+            .col-sm-3.col-md-2
+              = link_to image_tag('aura.png', class: 'img img-responsive -opacity u-centered', alt: 'Aura'), work_path(anchor: 'aura'), title: 'Aura'
+            .col-sm-3.col-md-2
+              = link_to image_tag('lets-jam.png', class: 'img img-responsive -opacity u-centered', alt: "Let's jam"), work_path(anchor: 'lets-jam'), title: "Let's Jam"
+            .col-sm-3.col-md-2
+              = link_to image_tag('educais.png', class: 'img img-responsive -opacity u-centered', alt: 'Educais'), work_path(anchor: 'educais'), title: 'Educais'
+          .clearfix
+          .row.u-marginTop10
+            .col-sm-10.u-centered.u-textCenter
+              h4.u-noMargin.u-marginTop10.u-textLight.textSmall.u-textGray-medium And over 30 small business and startups
+
+  section.process#process
+    .container
+      .row
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="How we work" How we work
+          .row
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="We're honest and trasparant in all our process. We want to be part of your team, a collaborator to your project."
+                | We're honest and trasparant in all our process. We want to be part of your team, a collaborator to your project.
+          .row
+            .col-sm-4
+              .processBox
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 1
+                h4.u-noMargin.boxTitle.u-textMagenta title="Discovery" Discovery
+                p.subtitle.u-noMargin.u-marginTop10.small Every project begins with the discovery phase that is the basis of what the product should become. It helps us to set the initial scope and to define which way the design and development should follow.
+            .col-sm-4
+              .processBox
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 2
+                h4.u-noMargin.boxTitle.u-textMagenta title="Design & Development" Design & Development
+                p.subtitle.u-noMargin.u-marginTop10.small The best products are built for people, and with people in mind. We will identify your main business hypothesis, focus on what is important and design and develop a product always considering your user's real needs.
+            .col-sm-4
+              .processBox
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 3
+                h4.u-noMargin.boxTitle.u-textMagenta title="Validation & Product Market Fit" Validation & Product Market Fit
+                p.subtitle.u-noMargin.u-marginTop10.small Validation is essential to know if we're in the right path. We will help you to define your metrics and how you will track your success or failure. Always focusing the best way to achieve your product market fit.
+
+  section.contact.-purple#contact
+    .container
+      .row
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textMagenta.u-textCenter title="Let's talk"
+            | Let's talk
+          .row
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Schedule a free online consultancy and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultancy and talk with our team about your ideas, problems and how we can help you
+          .row
+            .contactForm.col-sm-10.col-md-6.u-centered
+              = render partial: 'pages/contact', locals: { contact: @contact }

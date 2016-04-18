@@ -19,11 +19,11 @@
             = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
           li
             - if current_page? work_path
-              = link_to 'Contact', work_path(anchor: 'contact'), title: 'Lets work together!', class: 'u-textUp'
+              = link_to 'Contact us', work_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
             - elsif current_page? service_path
-              = link_to 'Contact', service_path(anchor: 'contact'), title: 'Lets work together!', class: 'u-textUp'
+              = link_to 'Contact us', service_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
             - else
-              = link_to 'Contact', root_path(anchor: 'contact'), title: 'Lets Talk!', class: 'u-textUp'
+              = link_to 'Contact us', root_path(anchor: 'contact'), title: "Let's Talk!", class: 'u-textUp'
           - if params[:controller] != 'blog'
             li
               = link_to 'PT', url_for(locale: 'pt-BR'), title: 'Change to Portuguese', class: 'u-textUp'
