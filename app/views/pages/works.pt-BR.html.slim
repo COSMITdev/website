@@ -23,12 +23,19 @@
                 = image_tag('pago-ate-work.png', class: 'img img-responsive', alt: "Pago Até")
               .workText
                 h2.u-textBlue.u-noMargin.u-marginBot10[title="Pago Até"] Pago Até
-                p.u-marginBot15 Inserido no mercado de intermediação de negociações de compra e venda, o Pago Até tinha como desafio validar sua lógica inversa. Com o MVP V1 conseguimos atingir este objetivo rapidamente com baixo custo. A partir disto, tivemos diversos ciclos de Desenvolvimento Contínuo que ajudaram a dar uma maior escalabilidade e fazer novas validações. Com poucos meses de vida o Pago Até vem despontanto como o principal site de anúncios de compras do país.
+                p.u-marginBot15
+                  | Inserido no mercado de intermediação de negociações de compra e venda, o Pago Até tinha como desafio validar sua lógica inversa. Com o 
+                  = link_to 'MVP V1', service_path(anchor: 'mvpv1')
+                  |  conseguimos atingir este objetivo rapidamente com baixo custo. A partir disto, tivemos diversos ciclos de 
+                  = link_to 'Desenvolvimento Contínuo', service_path(anchor: 'continous')
+                  |  que ajudaram a dar uma maior escalabilidade e fazer novas validações. Com poucos meses de vida o Pago Até vem despontanto como o principal site de anúncios de compras do país.
                 ul.u-marginBot15
                   li
-                    h3 title="MVP V1" MVP V1
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
                   li
-                    h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
                 = link_to 'Ver site', 'http://www.pagoate.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
     .workItem.-gray#tribo-viva
       .container
@@ -39,12 +46,21 @@
                 = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
               .workText
                 h2.u-textBlue.u-noMargin.u-marginBot10[title="Tribo Viva"] Tribo Viva
-                p.u-marginBot15 Nossos clientes já estavam rodando um MVP concierge usando facebook e depósitos bancários. Decidimos construír um MVP Concierge online onde não havia pagamento ou sequer carrinho de compras. Tudo era simulado e feito manualmente. As vendas dispararam frente ao modelo anterior e trouxeram a segurança necessária para se investir em ciclos de desenvolvimento posteriores. Hoje a Tribo Viva é a maior plataforma de consumo colaborativo do Brasil.
+                p.u-marginBot15
+                  | Nossos clientes já estavam rodando um 
+                  = link_to 'MVP concierge', service_path(anchor: 'mvpconcierge')
+                  |  usando facebook e depósitos bancários. Decidimos construír um 
+                  = link_to 'MVP concierge', service_path(anchor: 'mvpconcierge')
+                  |  online onde não havia pagamento ou sequer carrinho de compras. Tudo era simulado e feito manualmente. As vendas dispararam frente ao modelo anterior e trouxeram a segurança necessária para se investir em 
+                  = link_to 'ciclos de desenvolvimento', service_path(anchor: 'continous')
+                  |  posteriores. Hoje a Tribo Viva é a maior plataforma de consumo colaborativo do Brasil.
                 ul.u-marginBot15
                   li
-                    h3 title="MVP Concierge" MVP Concierge
+                    = link_to service_path(anchor: 'mvpconcierge') do
+                      h2 title="MVP Concierge" MVP Concierge
                   li
-                    h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
                 = link_to 'Ver site', 'http://www.triboviva.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
@@ -57,10 +73,14 @@
                 = image_tag('enda-work.png', class: 'img img-responsive', alt: "Enda")
               .workText
                 h2.u-textBlue.u-noMargin.u-marginBot10[title="Enda"] Enda
-                p.u-marginBot15 Com uma grande experiência na área contábil, nosso cliente teve a ideia de ajudar pessoas comuns no dia-a-dia burocrático da contratação e gestão de um(a) empregado(a) doméstico(a). Antes de desenvolver uma plataforma online ele buscou validar a ideia de forma manual atraindo alguns clientes pagantes. Com o MVP V1 criamos um sistema capaz de automatizar alguns de seus processos permitindo atingir e gerenciar uma grande escala de clientes gerando tração necessária para o negócio.
+                p.u-marginBot15
+                  | Com uma grande experiência na área contábil, nosso cliente teve a ideia de ajudar pessoas comuns no dia-a-dia burocrático da contratação e gestão de um(a) empregado(a) doméstico(a). Antes de desenvolver uma plataforma online ele buscou validar a ideia de forma manual atraindo alguns clientes pagantes. Com o 
+                  = link_to 'MVP V1', service_path(anchor: 'mvpv1')
+                  |  criamos um sistema capaz de automatizar alguns de seus processos permitindo atingir e gerenciar uma grande escala de clientes gerando tração necessária para o negócio.
                 ul.u-marginBot15
                   li
-                    h3 title="MVP V1" MVP V1
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
                 = link_to 'Ver site', 'http://www.enda.com.vc/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
     .workItem.-gray#aura
       .container
@@ -74,7 +94,8 @@
                 p.u-marginBot15 Vender obras de arte online no Brasil é um grande desafio. Ainda mais quando se tem um site de vendas que está inacabado e sem "cara" de e-commerce. Esse foi o nosso cenário inicial de projeto. No processo de Descobrimento do projeto estabelecemos a melhoria da conversão das vendas como foco principal de nosso trabalho. Depois do lançamento o Aura atingiu um crescimento de mais de 300% em suas vendas.
                 ul.u-marginBot15
                   li
-                    h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
                 = link_to 'Ver site', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
@@ -87,12 +108,17 @@
                 = image_tag('lets-jam-work.png', class: 'img img-responsive', alt: "Let's Jam")
               .workText
                 h2.u-textBlue.u-noMargin.u-marginBot10[title="Let's Jam"] Let's Jam
-                p.u-marginBot15 Feito por quem ama música o Let's Jam conecta pessoas para fazerem uma "jam". Em um primeiro momento desenvolvolvemos um sistema simples que permitia este encontro entre um grupo de deseconhecidos. Isto ajudou a criar uma base sólida para avançarmos com ciclos de desenvolvimento introduzindo mais funcionalidades de forma contínua, permitindo uma interação mais profunda entre os participantes.
+                p.u-marginBot15
+                  | Feito por quem ama música o Let's Jam conecta pessoas para fazerem uma "jam". Em um primeiro momento desenvolvemos um sistema simples que permitia este encontro entre um grupo de desconhecidos. Isto ajudou a criar uma base sólida para avançarmos com 
+                  = link_to 'ciclos de desenvolvimento', service_path(anchor: 'continous')
+                  |  introduzindo mais funcionalidades de forma contínua, permitindo uma interação mais profunda entre os participantes.
                 ul.u-marginBot15
                   li
-                    h3 title="MVP V1" MVP V1
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
                   li
-                    h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
                 = link_to 'Ver site', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
     .workItem.-gray#educais
       .container
@@ -103,10 +129,11 @@
                 = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
               .workText
                 h2.u-textBlue.u-noMargin.u-marginBot10[title="Educais"] Educais
-                p.u-marginBot15 Quando fomos procurandos pelo empreendedor sua principal necessidade era repensar e finalizar o sistema o mais rápido possível. No Descobrimento do projeto buscamos identificar como poderiamos gerar mais valor para os seus clientes com menos esforço e custos em desenvolvimento. Em um ciclo rápido de duas semanas a plataforma foi redesenhada e oficialmente lançada. Desde então, o Educais já teve centenas de cursos disponíveis em seu catálogo.
+                p.u-marginBot15 Quando fomos procurados pelo empreendedor sua principal necessidade era repensar e finalizar o sistema o mais rápido possível. No Descobrimento do projeto buscamos identificar como poderiamos gerar mais valor para os seus clientes com menos esforço e custos em desenvolvimento. Em um ciclo rápido de duas semanas a plataforma foi redesenhada e oficialmente lançada. Desde então, o Educais já teve centenas de cursos disponíveis em seu catálogo.
                 ul.u-marginBot15
                   li
-                    h3 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
                 = link_to 'Ver site', 'http://www.educais.com.br/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
