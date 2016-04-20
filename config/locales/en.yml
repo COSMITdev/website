@@ -1,4 +1,11 @@
 en:
+  number:
+    currency:
+      format:
+        delimiter: ','
+        separator: '.'
+        unit: '$'
+
   routes:
     works: 'works'
     services: 'services'
