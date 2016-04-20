@@ -1,0 +1,61 @@
+pt-BR:
+  meta_tags:
+    post:
+      show:
+        og:
+          locale: 'en'
+
+      index:
+        title: 'COSMIT Blog - Centro de Controle'
+        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        keywords: 'Centro de Controle, ideias, histórias, experiências'
+        og:
+          title: 'COSMIT Blog - Centro de Controle'
+          locale: 'pt_BR'
+          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        twitter:
+          card: 'Centro de Controle'
+          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+
+    pages:
+      home:
+        title: 'COSMIT - Transformamos ideias em produtos de sucesso'
+        description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso'
+        keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios'
+        og:
+          title: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia'
+        twitter:
+          card: 'Conheça nossos Cases!'
+          site: '@COSMITdev'
+          description: ''
+
+      works:
+        title: "COSMIT Trabalhos - Nossas experiências"
+        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+        keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
+        og:
+          title: 'Nossos trabalhos e experiências'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+        twitter:
+          card: 'Nossos trabalhos e experiências'
+          site: '@COSMITdev'
+          description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+
+      services:
+        title: "COSMIT Serviços - Nossos Serviços"
+        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+        keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
+        og:
+          title: 'Nossos Serviços'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+        twitter:
+          card: 'Nossos serviços'
+          site: '@COSMITdev'
+          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
