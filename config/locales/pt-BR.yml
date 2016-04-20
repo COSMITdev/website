@@ -4,3 +4,6 @@ pt-BR:
     services: 'servicos'
     contact: 'contato'
     process: 'processo'
+  contact:
+    success: 'Obrigado(a) pelo contato! Em breve retornaremos.'
+    failure: 'Revise os campos com erro!'

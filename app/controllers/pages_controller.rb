@@ -13,6 +13,9 @@ class PagesController < ApplicationController
     if @contact.valid?
       ContactMailer.contact(@contact).deliver_now
       @contact = Contact.new # empty fields on form
+      @message = I18n.t('contact.success')
+    else
+      @message = I18n.t('contact.failure')
     end
 
     render :contact

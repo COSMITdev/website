@@ -4,3 +4,6 @@ en:
     services: 'services'
     contact: 'contact'
     process: 'process'
+  contact:
+    success: 'Thanks! Soon we will get in touch with you.'
+    failure: 'Review the form for errors'

@@ -5,6 +5,8 @@ class ContactMailer < ApplicationMailer
     @budget = contact.budget
     @message = contact.message
 
-    mail from: @email, to: "contato@cosmit.me", subject: "Uhaa, mais um peixe na rede!"
+    destiny = I18n.locale == :'pt-BR' ? "contato@cosmit.me" : "hi@cosmit.me"
+
+    mail from: @email, to: destiny, subject: "Uhaa, mais um peixe na rede!"
   end
 end
