@@ -15,11 +15,15 @@ class ApplicationController < ActionController::Base
   end
 
   def set_locale
-    I18n.locale = params[:locale] || if request.location.country_code == 'BR'
-                                       :'pt-BR'
-                                     else
-                                       :en
-                                     end
+    begin
+      location  = request.location.country_code
+    rescue Errno::EHOSTUNREACH, Errno::ETIMEDOUT, Errno::ENETUNREACH, Geocoder::NetworkError
+      # primary service unreachable, try secondary...
+      page     = Net::HTTP.get(URI('https://geoip-db.com/json/geoip.php'))
+      location = JSON.parse(page)['country_code']
+    end
+
+    I18n.locale = params[:locale] || (location == 'BR' ? :'pt-BR' : :en)
   end
 
   protected
