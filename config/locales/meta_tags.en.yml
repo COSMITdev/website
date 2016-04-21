@@ -1,0 +1,61 @@
+en:
+  meta_tags:
+    post:
+      show:
+        og:
+          locale: 'en'
+
+      index:
+        title: 'COSMIT Blog - Centro de Controle'
+        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        keywords: 'Centro de Controle, ideias, histórias, experiências'
+        og:
+          title: 'COSMIT Blog - Centro de Controle'
+          locale: 'en'
+          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        twitter:
+          card: 'Centro de Controle'
+          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+
+    pages:
+      home:
+        title: 'COSMIT - We transform ideas into successful products'
+        description: 'COSMIT is a web and mobile consultancy that transform ideas into successful products'
+        keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
+        og:
+          title: 'COSMIT is a web and mobile consultancy that transform ideas into successful products'
+          locale: 'en'
+          site_name: 'cosmit.me/en'
+          description: "We're a team of experts passionate by solving problems through design and technology"
+        twitter:
+          card: 'We transform ideas into sucessful products'
+          site: '@COSMITdev'
+          description: "We're a team of experts passionate by solving problems through design and technology"
+
+      works:
+        title: "COSMIT Works"
+        description: 'We work guided by goals that generate real results for your business'
+        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, Concierge, MVP Concierge, MVP V1, Continous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
+        og:
+          title: 'Our experiences'
+          locale: 'en'
+          site_name: 'cosmit.me/en'
+          description: 'We work guided by goals that generate real results for your business'
+        twitter:
+          card: 'Our experiences'
+          site: '@COSMITdev'
+          description: 'We work guided by goals that generate real results for your business'
+
+      services:
+        title: "COSMIT Services"
+        description: 'We help startups and small business to develop, launch, validate and achieve product market fit'
+        keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continous Development, MVP, MVP V1, MVP Concierge, Continous Maintenance, Emergency, Performance"
+        og:
+          title: 'Our Services'
+          locale: 'en'
+          site_name: 'cosmit.me/en'
+          description: 'We help startups and small business to develop, launch, validate and achieve product market fit'
+        twitter:
+          card: 'Our Services'
+          site: '@COSMITdev'
+          description: 'We help startups and small business to develop, launch, validate and achieve product market fit'

@@ -1,0 +1,149 @@
+- set_meta_tags(meta_tags_for_works)
+
+- cache do
+  section.pageHero
+    .container
+      .row
+        .col-sm-12.col-md-8.u-centered.u-textCenter
+          .heroContainer.-internal
+            .u-verticalAlign
+              h1.u-textCyan title="Our experiences" Our experiences
+              .row
+                .col-sm-10.u-centered
+                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We work guided by goals that generate real results for your business" We work guided by goals that generate real results for your business
+                  = link_to "Let's work together", work_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -cyan u-marginTop10'
+
+  section.workList
+    .workItem#pago-ate
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage
+                = image_tag('pago-ate-work.png', class: 'img img-responsive', alt: "Pago Até")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Pago Até"] Pago Até
+                p.u-marginBot15
+                  | Inserted in the purchase and sale negotiations market, Pago Até had the challenge to validate its inverse logic. With the 
+                  = link_to 'MVP V1', service_path(anchor: 'mvpv1')
+                  |  we were able to achieve this goal quickly with low cost. Since that, we had several Continuous Development cycles which has created a greater scalability and has achieve new validations. With a few months of life Pago Até is emmerging as the main reverse sales ads website of Brazil.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+                = link_to 'Visit website', 'http://www.pagoate.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+    .workItem.-gray#tribo-viva
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage.visible-xs
+                = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Tribo Viva"] Tribo Viva
+                p.u-marginBot15
+                  | Our clients were already running a 
+                  = link_to 'MVP Concierge', service_path(anchor: 'mvpconcierge')
+                  |  using a facebook page and bank deposits. We decide to improve their 
+                  = link_to 'MVP Concierge', service_path(anchor: 'mvpconcierge')
+                  |  by developing a online solution that had no checkout, payment or even a shopping cart. Everything was simulated and done manually. Sales skyrocketed over the previous model and brought the necessary security to invest in later 
+                  = link_to 'development cycles', service_path(anchor: 'continous')
+                  | . Today Tribo Viva is the largest collaborative consumption platform in Brazil.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'mvpconcierge') do
+                      h2 title="MVP Concierge" MVP Concierge
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+                = link_to 'Visit website', 'http://www.triboviva.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+              .workImage.hidden-xs
+                = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
+    .workItem#enda
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage
+                = image_tag('enda-work.png', class: 'img img-responsive', alt: "Enda")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Enda"] Enda
+                p.u-marginBot15 
+                  | With a great experience in accounting, our client had the idea of helping ordinary people with the bureaucratic day-to-day of hiring and management of a housekeeper. Before developing an online platform, they have validated the business idea manually doing all the procedures for some paid customers. With the 
+                  = link_to 'MVP V1', service_path(anchor: 'mvpv1')
+                  |  we were able to automate some of their processes which have allowed them to achieve and manage a wide range of customers generating the needed traction for the business.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
+                = link_to 'Visit website', 'http://www.enda.com.vc/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+    .workItem.-gray#aura
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage.visible-xs
+                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Aura"] Aura
+                p.u-marginBot15
+                  | Sell art online is a huge challenge in Brazil. Even more when you have a sales website that is unfinished and don't have a "face" of e-commerce. This was our initial project scenario. In the Discovery phase we have established the improvement of sales conversion as the main focus of our work. After the launch Aura has achieved over 300% growth in sales.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+                = link_to 'Visit website', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+              .workImage.hidden-xs
+                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+    .workItem#lets-jam
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage
+                = image_tag('lets-jam-work.png', class: 'img img-responsive', alt: "Let's Jam")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Let's Jam"] Let's Jam
+                p.u-marginBot15
+                  | Made by those who love music, Let's Jam allows people to connect with each other to make a "jam". In a first moment, we developed a simple system that allows this encounter between a group of strangers. This helped to create a solid basis to move forward with development cycles by introducing more functionality continuously, allowing a deeper interaction among users.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+                = link_to 'Visit website', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+    .workItem.-gray#educais
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage.visible-xs
+                = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Educais"] Educais
+                p.u-marginBot15 When we were approached by the Educais team their main concern was to rethink and finalize system the fastest way as possible. In the Discovery phase we have sought to identify how we could generate more value for theirs customers with less effort and cost in development. In a rapid cycle of two weeks the platform was redesigned and officially launched. Since then, Educais already had hundreds of courses available in its catalog.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'continous') do
+                      h2 title="Continous Development" Continous Development
+                = link_to 'Visit website', 'http://www.educais.com.br/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+              .workImage.hidden-xs
+                = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
+
+  section.contact.-purple-light#contact
+    .container
+      .row
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Let's work together!"
+            | Let's work together!
+          .row
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Schedule a free online consultancy and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultancy and talk with our team about your ideas, problems and how we can help you
+          .row
+            .contactForm.col-sm-10.col-md-6.u-centered
+              = render partial: 'pages/contact', locals: { contact: @contact }

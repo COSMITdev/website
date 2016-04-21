@@ -5,12 +5,16 @@ footer {
   p {
     float: right;
 
-    &:hover,
-    &:focus {
-      span,
-      i {
-        color: $magenta;
-        transition: all .3s;
+    span.love {
+      margin-left: 20px;
+
+      &:hover,
+      &:focus {
+        span,
+        i {
+          color: $magenta;
+          transition: all .3s;
+        }
       }
     }
   }
@@ -54,8 +58,18 @@ footer {
       color: $cyan;
     }
   }
+
+  p a {
+    color: $purple-light;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
+.home,
 .services {
   .socialLink {
     color: $magenta;
@@ -63,6 +77,15 @@ footer {
     &:hover,
     &:focus {
       color: $purple;
+    }
+  }
+
+  p a {
+    color: $magenta;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
 }

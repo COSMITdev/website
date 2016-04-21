@@ -21,7 +21,7 @@ html lang="pt-BR" prefix="og: http://ogp.me/ns#"
 
   script#dsq-count-scr async="" src="//cosmit.disqus.com/count.js" 
 
-  body class="#{params[:controller]} #{params[:action]}"
+  body class="#{params[:controller]} #{params[:action]}" data-unit="#{I18n.t('number.currency.format.unit')}" data-separator="#{I18n.t('number.currency.format.separator')}" data-delimiter="#{I18n.t('number.currency.format.delimiter')}"
     = initjs_tag "Website"
     = render 'layouts/flash'
     = render 'partials/header'

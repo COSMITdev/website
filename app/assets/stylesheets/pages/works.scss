@@ -19,7 +19,19 @@
     line-height: 1.7em;
     font-family: 'Montserrat-Light', Open Sans, sans-serif;
     color: $gray-dark;
+
+    a {
+      color: $gray-dark;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+        text-decoration: underline;
+        transition: all .2s;
+      }
+    }
   }
+
 
   ul {
     list-style: none;
@@ -39,12 +51,21 @@
       }
     }
 
-    h3 {
+    h2,
+    a {
       font-size: 0.875rem !important;
       line-height: 1.3em;
       display: table-cell;
       margin: 0;
       vertical-align: middle;
+      color: $black;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+        text-decoration: underline;
+        transition: all .2s;
+      }
     }
   }
 }

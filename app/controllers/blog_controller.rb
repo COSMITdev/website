@@ -1,5 +1,6 @@
 class BlogController < ApplicationController
   before_action :check_permission, only: :show
+  before_action :set_locale
 
   def index
     @posts = Post.includes(:author).published.order(created_at: :desc)
@@ -9,6 +10,10 @@ class BlogController < ApplicationController
     @post = Post.includes(:author).find(params[:id])
     @next = @post.next
     @previous = @post.previous
+  end
+
+  def set_locale
+    I18n.locale = :'pt-BR'
   end
 
   private

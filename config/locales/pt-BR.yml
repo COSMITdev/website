@@ -1,0 +1,16 @@
+pt-BR:
+  number:
+    currency:
+      format:
+        delimiter: '.'
+        separator: ','
+        unit: 'R$'
+
+  routes:
+    works: 'trabalhos'
+    services: 'servicos'
+    contact: 'contato'
+    process: 'processo'
+  contact:
+    success: 'Obrigado(a) pelo contato! Em breve retornaremos.'
+    failure: 'Revise os campos com erro!'

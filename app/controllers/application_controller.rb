@@ -8,6 +8,26 @@ class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
   rescue_from ActionController::ParameterMissing, with: :render_404
 
+  before_action :set_locale
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
+
+  def set_locale
+    begin
+      location = request.location.country_code
+    rescue Errno::EHOSTUNREACH, Errno::ETIMEDOUT, Errno::ENETUNREACH, Geocoder::NetworkError
+      # primary service unreachable, try secondary...
+      Geocoder.configure(ip_lookup: :ipinfo_io)
+      location = request.location.country_code
+    end
+
+    printf location
+
+    I18n.locale = params[:locale] || (location == 'BR' ? :'pt-BR' : :en)
+  end
+
   protected
 
   def render_404

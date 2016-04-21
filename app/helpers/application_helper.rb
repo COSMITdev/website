@@ -19,21 +19,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_post_index
-    { title: 'COSMIT Blog - Centro de Controle',
-      description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
-      keywords: 'Centro de Controle, ideias, histórias, experiências',
+    { title: I18n.t('meta_tags.post.index.title'),
+      description: I18n.t('meta_tags.post.index.description'),
+      keywords: I18n.t('meta_tags.post.index.keywords'),
       og: { url: posts_url,
             type: 'blog',
-            title: 'COSMIT Blog - Centro de Controle',
+            title: I18n.t('meta_tags.post.index.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: 'pt_BR',
+            locale: I18n.t('meta_tags.post.index.og.locale'),
             site_name: 'cosmit.me',
-            description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+            description: I18n.t('meta_tags.post.index.og.description')
           },
       twitter: {
-        card: 'Centro de Controle',
+        card: I18n.t('meta_tags.post.index.twitter.card'),
         site: '@COSMITdev',
-        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time',
+        description: I18n.t('meta_tags.post.index.twitter.description'),
         image: image_url('cosmit.jpg'),
         url: posts_url
       }
@@ -48,7 +48,7 @@ module ApplicationHelper
             type: 'blog',
             title: post.meta_title,
             image: post.hero_image.url(:hero),
-            locale: 'pt_BR',
+            locale: I18n.t('meta_tags.post.show.og.locale'),
             site_name: 'cosmit.me',
             description: post.meta_description
           },
@@ -63,21 +63,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_works
-    { title: "COSMIT Trabalhos - Nossas experiências",
-      description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
-      keywords: "Experiências, Objetivos, Negócio, MVP, Concierge, MVP Concierge, MVP V1, Desenvolvimento Contínuo, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais",
+    { title: I18n.t('meta_tags.pages.works.title'),
+      description: I18n.t('meta_tags.pages.works.description'),
+      keywords: I18n.t('meta_tags.pages.works.keywords'),
       og: { url: request.url,
             type: 'website',
-            title: 'Nossos trabalhos e experiências',
+            title: I18n.t('meta_tags.pages.works.og.title'),
             image: image_url('cosmit.jpg'),
             locale: 'pt_BR',
             site_name: 'cosmit.me',
-            description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
+            description: I18n.t('meta_tags.pages.works.og.description')
           },
       twitter: {
-        card: 'Nossos trabalhos e experiências',
+        card: I18n.t('meta_tags.pages.works.twitter.card'),
         site: '@COSMITdev',
-        description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio',
+        description: I18n.t('meta_tags.pages.works.twitter.description'),
         image: image_url('cosmit.jpg'),
         url: request.url
       }
@@ -85,21 +85,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_services
-    { title: "COSMIT Serviços - Nossos Serviços",
-      description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais',
-      keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho",
+    { title: I18n.t('meta_tags.pages.services.title'),
+      description: I18n.t('meta_tags.pages.services.description'),
+      keywords: I18n.t('meta_tags.pages.services.keywords'),
       og: { url: request.url,
             type: 'website',
-            title: 'Nossos Serviços',
+            title: I18n.t('meta_tags.pages.services.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: 'pt_BR',
+            locale: I18n.t('meta_tags.pages.services.og.locale'),
             site_name: 'cosmit.me',
-            description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+            description: I18n.t('meta_tags.pages.services.og.description')
           },
       twitter: {
-        card: 'Nossos serviços',
+        card: I18n.t('meta_tags.pages.services.twitter.card'),
         site: '@COSMITdev',
-        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais',
+        description: I18n.t('meta_tags.pages.services.twitter.description'),
         image: image_url('cosmit.jpg'),
         url: request.url
       }
@@ -107,19 +107,19 @@ module ApplicationHelper
   end
 
   def meta_tags_for_home
-    { title: 'COSMIT - Transformamos ideias em produtos de sucesso',
-      description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
-      keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios',
+    { title: I18n.t('meta_tags.pages.home.title'),
+      description: I18n.t('meta_tags.pages.home.description'),
+      keywords: I18n.t('meta_tags.pages.home.keywords'),
       og: { url: request.url,
             type: 'website',
-            title: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso',
+            title: I18n.t('meta_tags.pages.home.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: 'pt_BR',
+            locale: I18n.t('meta_tags.pages.home.og.locale'),
             site_name: 'cosmit.me',
-            description: 'Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia'
+            description: I18n.t('meta_tags.pages.home.og.description')
           },
       twitter: {
-        card: 'Conheça nossos Cases!',
+        card: I18n.t('meta_tags.pages.home.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),

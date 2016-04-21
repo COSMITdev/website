@@ -1,0 +1,27 @@
+- cache do
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+      / Collect the nav links, forms, and other content for toggling
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          li
+            = link_to 'Services', service_path, title: 'Services', class: 'u-textUp'
+          li
+            = link_to 'Work', work_path, title: 'Work', class: 'u-textUp'
+          li
+            = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
+          li
+            - if current_page? work_path
+              = link_to 'Contact us', work_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
+            - elsif current_page? service_path
+              = link_to 'Contact us', service_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
+            - else
+              = link_to 'Contact us', root_path(anchor: 'contact'), title: "Let's Talk!", class: 'u-textUp'
+          - if params[:controller] != 'blog'
