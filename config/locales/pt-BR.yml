@@ -7,7 +7,7 @@ pt-BR:
         unit: 'R$'
 
   routes:
-    works: 'trabalhos'
+    work: 'trabalhos'
     services: 'servicos'
     contact: 'contato'
     process: 'processo'

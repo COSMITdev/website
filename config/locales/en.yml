@@ -7,7 +7,7 @@ en:
         unit: '$'
 
   routes:
-    works: 'works'
+    work: 'works'
     services: 'services'
     contact: 'contact'
     process: 'process'
