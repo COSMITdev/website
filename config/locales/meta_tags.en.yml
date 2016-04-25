@@ -35,7 +35,7 @@ en:
       works:
         title: "COSMIT Works"
         description: 'We work guided by goals that generate real results for your business'
-        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, Concierge, MVP Concierge, MVP V1, Continous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
+        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, Concierge, MVP Concierge, MVP V1, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
         og:
           title: 'Our experiences'
           locale: 'en'
@@ -49,7 +49,7 @@ en:
       services:
         title: "COSMIT Services"
         description: 'We help startups and small business to develop, launch, validate and achieve product market fit'
-        keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continous Development, MVP, MVP V1, MVP Concierge, Continous Maintenance, Emergency, Performance"
+        keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continuous Development, MVP, MVP V1, MVP Concierge, Continuous Maintenance, Emergency, Performance"
         og:
           title: 'Our Services'
           locale: 'en'
