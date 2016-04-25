@@ -70,7 +70,7 @@ module ApplicationHelper
             type: 'website',
             title: I18n.t('meta_tags.pages.works.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: 'pt_BR',
+            locale: I18n.t('meta_tags.pages.works.og.locale'),
             site_name: 'cosmit.me',
             description: I18n.t('meta_tags.pages.works.og.description')
           },
