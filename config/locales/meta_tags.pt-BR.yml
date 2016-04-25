@@ -3,7 +3,7 @@ pt-BR:
     post:
       show:
         og:
-          locale: 'en'
+          locale: 'pt_BR'
 
       index:
         title: 'COSMIT Blog - Centro de Controle'
