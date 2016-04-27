@@ -11,10 +11,9 @@ Rails.application.routes.draw do
     get 'services',  to: 'pages#services', as: :service
     get '404',       to: 'pages#404',      as: :not_found
     post 'contact',  to: 'pages#contact',  as: :contact
-  end
-  # end
 
-  resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
+    resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
+  end
 
   # Keep this always at the end of file to grab 404 problems
   get '*path', to: 'pages#404', via: :all
