@@ -14,6 +14,7 @@ class Post < ActiveRecord::Base
   mount_uploader :hero_image, PostUploader
 
   scope :published, -> { where(published: true)
+                         .where(language: I18n.locale.to_s)
                          .where('publish_date <= ?', Date.today)
                          .order(publish_date: :desc) }
 
