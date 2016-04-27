@@ -38,6 +38,7 @@ ActiveAdmin.register Post do
   form do |f|
     f.inputs do
       f.input :published
+      f.input :language, as: :select, collection: I18n.available_locales.map{|lang| lang.to_s}, include_blank: false
       f.input :hero_image
       f.input :hero_image_cache, as: :hidden
       f.input :title
