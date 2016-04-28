@@ -55,8 +55,6 @@ gem 'google-analytics-rails', '~> 1.0'
 gem 'appsignal'
 # For dynamic meta tags & og tags
 gem 'meta-tags'
-# Identify and set language based on country
-gem 'geocoder'
 # Translate routes for better SEO
 gem 'route_translator'
 
