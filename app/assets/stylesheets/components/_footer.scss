@@ -50,85 +50,93 @@ footer {
 // # Colors
 // # =================================================================
 .works {
-  .socialLink {
-    color: $purple-light;
+  footer {
+    .socialLink {
+      color: $purple-light;
 
-    &:hover,
-    &:focus {
-      color: $cyan;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
     }
-  }
 
-  p a {
-    color: $purple-light;
+    p a {
+      color: $purple-light;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: $cyan;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $cyan;
+      }
     }
   }
 }
 
 .services {
-  .socialLink {
-    color: $purple;
+  footer {
+    .socialLink {
+      color: $purple;
 
-    &:hover,
-    &:focus {
-      color: $magenta;
+      &:hover,
+      &:focus {
+        color: $magenta;
+      }
     }
-  }
 
-  p a {
-    color: $purple;
+    p a {
+      color: $purple;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: $magenta;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $magenta;
+      }
     }
   }
 }
 
 .home {
-  .socialLink {
-    color: $blue;
+  footer {
+    .socialLink {
+      color: $blue;
 
-    &:hover,
-    &:focus {
-      color: $cyan;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
     }
-  }
 
-  p a {
-    color: $blue;
+    p a {
+      color: $blue;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: $cyan;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $cyan;
+      }
     }
   }
 }
 
 .blog {
-  .socialLink {
-    color: $magenta;
+  footer {
+    .socialLink {
+      color: $magenta;
 
-    &:hover,
-    &:focus {
-      color: $purple;
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
     }
-  }
 
-  p a {
-    color: $magenta;
+    p a {
+      color: $magenta;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: $purple;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $purple;
+      }
     }
   }
 }
