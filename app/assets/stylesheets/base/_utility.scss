@@ -201,6 +201,16 @@
   }
 }
 
+.u-linkCyan {
+  color: $cyan;
+
+  &:hover,
+  &:focus {
+    color: $cyan;
+    text-decoration: underline;
+  }
+}
+
 // # Misc
 // # =================================================================
 .u-imageReplace {

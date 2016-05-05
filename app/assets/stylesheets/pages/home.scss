@@ -31,6 +31,17 @@
   }
 }
 
+.home {
+  .btn {
+    &.-cyan {
+      &:hover,
+      &:focus {
+        color: $blue !important;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .work {
     .row .u-marginTop40 {

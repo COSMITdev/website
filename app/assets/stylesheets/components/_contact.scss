@@ -14,10 +14,15 @@
   &.-magenta {
     background-color: $magenta;
   }
+
+  &.-blue {
+    background-color: $blue;
+  }
 }
 
-// # Button color
+// # Form colors
 // # =================================================================
+.home,
 .works {
   .contact {
     .-magenta {
@@ -27,52 +32,13 @@
 
       &:hover,
       &:focus {
-        color: $purple-light !important;
-        background-color: $cyan !important;
+        color: $blue;
+        background-color: $cyan;
       }
     }
 
     .btn-default:hover{
-      border-color: $cyan !important;
-    }
-  }
-
-  .has-error {
-    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
-    select,
-    textarea {
-      border: 2px solid $blue !important;
-    }
-  }
-
-  .has-error .help-block,
-  .has-error .radio,
-  .has-error .checkbox,
-  .has-error .radio-inline,
-  .has-error .checkbox-inline,
-  .has-error .control-label,
-  .has-error.radio label,
-  .has-error.checkbox label {
-    color: $blue;
-  }
-}
-
-.services {
-  .contact {
-    .-magenta {
-      color: $purple;
-      background-color: transparent;
-      border-color: $purple;
-
-      &:hover,
-      &:focus {
-        color: white !important;
-        background-color: $purple !important;
-      }
-    }
-
-    .btn-default:hover{
-      border-color: $purple !important;
+      border-color: $cyan;
     }
   }
 
@@ -93,5 +59,32 @@
   .has-error.radio label,
   .has-error.checkbox label {
     color: $cyan;
+  }
+}
+
+.services {
+  .contact {
+    .btn-default:hover{
+      border-color: $magenta;
+    }
+  }
+
+  .has-error {
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+      border: 2px solid $magenta !important;
+    }
+  }
+
+  .has-error .help-block,
+  .has-error .radio,
+  .has-error .checkbox,
+  .has-error .radio-inline,
+  .has-error .checkbox-inline,
+  .has-error .control-label,
+  .has-error.radio label,
+  .has-error.checkbox label {
+    color: $magenta;
   }
 }

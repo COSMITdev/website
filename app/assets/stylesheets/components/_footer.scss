@@ -65,27 +65,49 @@ footer {
     &:hover,
     &:focus {
       text-decoration: underline;
+      color: $cyan;
     }
   }
 }
 
-.home,
 .services {
   .socialLink {
-    color: $magenta;
+    color: $purple;
 
     &:hover,
     &:focus {
-      color: $purple;
+      color: $magenta;
     }
   }
 
   p a {
-    color: $magenta;
+    color: $purple;
 
     &:hover,
     &:focus {
       text-decoration: underline;
+      color: $magenta;
+    }
+  }
+}
+
+.home {
+  .socialLink {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      color: $cyan;
+    }
+  }
+
+  p a {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $cyan;
     }
   }
 }
@@ -100,6 +122,7 @@ footer {
     }
   }
 }
+
 // # Media Queries
 // # =================================================================
 @media (max-width: 768px) {

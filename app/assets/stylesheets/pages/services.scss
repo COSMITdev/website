@@ -28,7 +28,7 @@
 .services {
   .contact {
     label {
-      color: $purple;
+      color: $magenta;
     }
 
     input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
@@ -37,7 +37,7 @@
     button[data-toggle="dropdown"] {
       &:active,
       &:focus {
-        border: 2px solid $purple !important;
+        border: 2px solid $magenta !important;
       }
     }
   }

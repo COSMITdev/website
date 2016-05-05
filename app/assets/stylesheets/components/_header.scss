@@ -77,8 +77,7 @@
 // # Colors
 // # =================================================================
 
-// # ===== Home
-.home,
+// # ===== pages
 .pages {
   .navbar-default {
     background-color: $purple;
@@ -115,7 +114,8 @@
   }
 }
 
-// # ===== Blog
+// # ===== Blog & Home
+.home,
 .blog {
   .navbar-default {
     background-color: $blue;
@@ -143,6 +143,36 @@
       &:hover,
       &:focus {
         background-color: $magenta;
+
+        .icon-bar {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
+
+// # ===== Blog & Home
+.home {
+  .navbar-default {
+    .navbar-nav > li > a {
+
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
+    }
+
+    .navbar-toggle {
+      border: 2px solid $cyan;
+
+      .icon-bar {
+        background-color: $cyan;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $cyan;
 
         .icon-bar {
           background-color: $blue;
@@ -192,34 +222,34 @@
 // # ===== Services
 .services {
   .navbar-default {
-    background-color: $magenta;
+    background-color: $purple;
 
     .navbar-nav > li > a {
       color: white;
 
       &:hover,
       &:focus {
-        color: $purple;
+        color: $magenta;
       }
     }
 
     .navbar-collapse {
-      background-color: $magenta;
+      background-color: $purple;
     }
 
     .navbar-toggle {
-      border: 2px solid $purple;
+      border: 2px solid $magenta;
 
       .icon-bar {
-        background-color: $purple;
+        background-color: $magenta;
       }
 
       &:hover,
       &:focus {
-        background-color: $purple;
+        background-color: $magenta;
 
         .icon-bar {
-          background-color: $magenta;
+          background-color: $purple;
         }
       }
     }

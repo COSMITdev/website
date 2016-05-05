@@ -14,6 +14,45 @@
                   = link_to "Let's work together", work_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -cyan u-marginTop10'
 
   section.workList
+    .workItem#lets-jam
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage
+                = image_tag('lets-jam-work.png', class: 'img img-responsive', alt: "Let's Jam")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Let's Jam"] Let's Jam
+                p.u-marginBot15
+                  | Made by those who love music, Let's Jam allows people to connect with each other to make a "jam". In a first moment, we developed a simple system that allows this encounter between a group of strangers. This helped to create a solid basis to move forward with development cycles by introducing more functionality continuously, allowing a deeper interaction among users.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP V1
+                  li
+                    = link_to service_path(anchor: 'continuous') do
+                      h2 title="Continuous Development" Continuous Development
+                = link_to 'Visit website', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+
+    .workItem.-gray#aura
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            .workRow
+              .workImage.visible-xs
+                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+              .workText
+                h2.u-textBlue.u-noMargin.u-marginBot10[title="Aura"] Aura
+                p.u-marginBot15
+                  | Sell art online is a huge challenge in Brazil. Even more when you have a sales website that is unfinished and don't have a "face" of e-commerce. This was our initial project scenario. In the Discovery phase we have established the improvement of sales conversion as the main focus of our work. After the launch Aura has achieved over 300% growth in sales.
+                ul.u-marginBot15
+                  li
+                    = link_to service_path(anchor: 'continuous') do
+                      h2 title="Continuous Development" Continuous Development
+                = link_to 'Visit website', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+              .workImage.hidden-xs
+                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+
     .workItem#pago-ate
       .container
         .row
@@ -35,6 +74,7 @@
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Continuous Development" Continouus Development
                 = link_to 'Visit website', 'http://www.pagoate.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+
     .workItem.-gray#tribo-viva
       .container
         .row
@@ -55,6 +95,7 @@
                 = link_to 'Visit website', 'http://www.triboviva.com.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
               .workImage.hidden-xs
                 = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
+
     .workItem#enda
       .container
         .row
@@ -73,43 +114,7 @@
                     = link_to service_path(anchor: 'mvpv1') do
                       h2 title="MVP V1" MVP V1
                 = link_to 'Visit website', 'http://www.enda.com.vc/', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
-    .workItem.-gray#aura
-      .container
-        .row
-          .col-sm-12.col-md-10.u-centered
-            .workRow
-              .workImage.visible-xs
-                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
-              .workText
-                h2.u-textBlue.u-noMargin.u-marginBot10[title="Aura"] Aura
-                p.u-marginBot15
-                  | Sell art online is a huge challenge in Brazil. Even more when you have a sales website that is unfinished and don't have a "face" of e-commerce. This was our initial project scenario. In the Discovery phase we have established the improvement of sales conversion as the main focus of our work. After the launch Aura has achieved over 300% growth in sales.
-                ul.u-marginBot15
-                  li
-                    = link_to service_path(anchor: 'continuous') do
-                      h2 title="Continuous Development" Continuous Development
-                = link_to 'Visit website', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
-              .workImage.hidden-xs
-                = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
-    .workItem#lets-jam
-      .container
-        .row
-          .col-sm-12.col-md-10.u-centered
-            .workRow
-              .workImage
-                = image_tag('lets-jam-work.png', class: 'img img-responsive', alt: "Let's Jam")
-              .workText
-                h2.u-textBlue.u-noMargin.u-marginBot10[title="Let's Jam"] Let's Jam
-                p.u-marginBot15
-                  | Made by those who love music, Let's Jam allows people to connect with each other to make a "jam". In a first moment, we developed a simple system that allows this encounter between a group of strangers. This helped to create a solid basis to move forward with development cycles by introducing more functionality continuously, allowing a deeper interaction among users.
-                ul.u-marginBot15
-                  li
-                    = link_to service_path(anchor: 'mvpv1') do
-                      h2 title="MVP V1" MVP V1
-                  li
-                    = link_to service_path(anchor: 'continuous') do
-                      h2 title="Continuous Development" Continuous Development
-                = link_to 'Visit website', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+
     .workItem.-gray#educais
       .container
         .row
