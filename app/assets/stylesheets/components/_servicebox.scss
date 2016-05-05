@@ -2,7 +2,7 @@
   background-color: $gray-light;
   border-radius: $boxRadius;
   margin-bottom: 30px;
-  min-height: 455px;
+  min-height: 430px;
   padding: 30px;
 
   .boxTitle {
@@ -20,7 +20,7 @@
 
 .serviceIcon {
   width: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 15px;
 }
 
@@ -64,10 +64,21 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .serviceBox {
+    min-height: 510px;
+  }
+}
+
+@media (max-width: 991px) {
+  .serviceBox {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .serviceBox {
     min-height: auto;
-    padding-bottom: 40px;
 
     .boxTitle {
       min-height: auto;

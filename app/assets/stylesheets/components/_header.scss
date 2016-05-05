@@ -1,6 +1,6 @@
 .navbar {
   border: none;
-  height: 95px;
+  height: 85px;
   margin-bottom: 0;
   z-index: 1040;
   top: 0;
@@ -8,7 +8,7 @@
 }
 
 .-up {
-  top: - 95px;
+  top: -85px;
 }
 
 .navbar-default {
@@ -17,7 +17,7 @@
   .navbar-nav > li > a {
     color: white;
     font-size: 0.875rem;
-    padding: 37.5px 20px;
+    padding: 32.5px 20px;
 
     &:hover,
     &:focus {
@@ -26,7 +26,7 @@
   }
 
   .navbar-nav > li:last-of-type > a {
-    padding: 37.5px 0px 37.5px 20px;
+    padding: 32.5px 0px 32.5px 20px;
   }
 
   .navbar-collapse {
@@ -43,8 +43,8 @@
 
   .navbar-toggle {
     border-radius: $buttonRadius;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 13px 10px;
 
     &:hover,
@@ -66,7 +66,7 @@
     width: 224.5px;
     background-position: center center;
     background-size: cover;
-    margin-top: 30px;
+    margin-top: 25px;
 
     @media (max-width: 768px) {
       margin-left: 15px;

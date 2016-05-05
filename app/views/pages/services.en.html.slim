@@ -19,15 +19,15 @@
         .row
           .col-sm-12.col-md-8.u-centered#build
             = image_tag ('icon-build.svg'), class: 'u-centered', alt: 'Build / Development'
-            h2.u-marginBot10.u-marginTop15.u-textMagenta title="Build" Build
-            p.subtitle.u-marginTop5.u-marginBot15 From planning to design and development, we build and validate web and mobile apps for startups and small business.
+            h2.u-marginBot5.u-marginTop10.u-textMagenta title="Build" Build
+            p.subtitle.u-marginTop5.u-marginBot10 From planning to design and development, we build and validate web and mobile apps for startups and small business.
             .row
               .col-sm-6#mvpv1
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP V1" MVP V1
-                p.subtitle.u-marginTop5.u-marginBot15.small In just two weeks of immersion, we go through the understanding of your idea, planning, A/B tests, design, back and front-end development, metrics and validation. At the end, you will have the main assumptions of your business tested and validated, transformed into an application ready to collect feedback from your customers.
+                p.subtitle.u-noMargin.small In just two weeks of immersion, we go through the understanding of your idea, planning, A/B tests, design, back and front-end development, metrics and validation. At the end, you will have the main assumptions of your business tested and validated, transformed into an application ready to collect feedback from your customers.
               .col-sm-6#continuous
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Continuous Development" Continuous Development
-                p.subtitle.u-marginTop5.u-marginBot15.small Together we will analyze and create a personalized plan of development to fit your needs. Through sprints of planning, design, development and test, we will build your product incrementally. At the end of each sprint, you will have a part of your product online ready to be tested. We will progressively track your metrics and validate your assumptions in order to define which way to go.
+                p.subtitle.u-noMargin.small Together we will analyze and create a personalized plan of development to fit your needs. Through sprints of planning, design, development and test, we will build your product incrementally. At the end of each sprint, you will have a part of your product online ready to be tested. We will progressively track your metrics and validate your assumptions in order to define which way to go.
 
             .u-textCenter
               = link_to "Let's work together", service_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -magenta u-marginTop30'
@@ -37,18 +37,18 @@
         .row
           .col-sm-12.col-md-8.u-centered#support
             = image_tag ('icon-support.svg'), class: 'u-centered', alt: 'Support & Maintenance'
-            h2.u-marginBot10.u-marginTop15.u-textMagenta title="Support & Maintenance" Support & Maintenance
-            p.subtitle.u-marginTop5.u-marginBot15 Every web and mobile product needs a continuous improvement and a good support in emergency cases.
+            h2.u-marginBot5.u-marginTop10.u-textMagenta title="Support & Maintenance" Support & Maintenance
+            p.subtitle.u-marginTop5.u-marginBot10 Every web and mobile product needs a continuous improvement and a good support in emergency cases.
             .row
               .col-sm-4#supportcontinuous
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Continuous Maintenance" Continuous Maintenance
-                p.subtitle.u-marginTop5.u-marginBot15.small All product needs a continuous improvement work to keep it smoothly and generating good results. In this work format, we'll constantly improve your system test coverage, update and refactor your code and improve the general performance of your product.
+                p.subtitle.u-noMargin.small All product needs a continuous improvement work to keep it smoothly and generating good results. In this work format, we'll constantly improve your system test coverage, update and refactor your code and improve the general performance of your product.
               .col-sm-4#emergency
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Emergency" Emergency
-                p.subtitle.u-marginTop5.u-marginBot15.small Your system goes offline and you have no idea what happened? This is why you'll need an experienced and able to solve complex problems people at your disposal. Our team will be on standby to take over and solve any problem in your application when they occur. So you can sleep quietly knowing that everything will be safe.
+                p.subtitle.u-noMargin.small Your system goes offline and you have no idea what happened? This is why you'll need an experienced and able to solve complex problems people at your disposal. Our team will be on standby to take over and solve any problem in your application when they occur. So you can sleep quietly knowing that everything will be safe.
               .col-sm-4#performance
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Performance" Performance
-                p.subtitle.u-marginTop5.u-marginBot15.small Every second in performance improvement can increase up to 10% your conversions. It directly affects the success of your business. Initially, we will do an analysis of your system, identifying the main problems. We will create an improvement plan and work to correct problems and give more agility to your system.
+                p.subtitle.u-noMargin.small Every second in performance improvement can increase up to 10% your conversions. It directly affects the success of your business. Initially, we will do an analysis of your system, identifying the main problems. We will create an improvement plan and work to correct problems and give more agility to your system.
           .u-textCenter
             = link_to "Let's work together", service_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -magenta u-marginTop30'
 
@@ -60,7 +60,7 @@
             | Let's work together!
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you
+              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you
           .row
             .contactForm.col-sm-10.col-md-6.u-centered
               = render partial: 'pages/contact', locals: { contact: @contact }

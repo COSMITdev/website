@@ -12,7 +12,7 @@
                 .col-sm-10.u-centered
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps" 
                     | We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps
-                  = link_to "Contact us", root_path(anchor: 'contact'), title: "Contact us", class: 'btn -lg -cyan u-marginTop20'
+                  = link_to "Contact us", root_path(anchor: 'contact'), title: "Contact us", class: 'btn -lg -cyan u-marginTop15'
 
   section.service#service
     .container
@@ -21,7 +21,7 @@
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How can we help you?" How can we help you?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
                 | We think critically, dream big and work hard to deliver solutions that make people's lives better
           .row
             .col-sm-6.col-md-5.col-md-offset-1
@@ -29,7 +29,7 @@
                 = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'Build / Development'
                 = link_to service_path(anchor: 'build') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Build" Build
-                p.subtitle.u-marginTop15.u-marginBot15.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
+                p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'mvpv1') do
@@ -42,7 +42,7 @@
                 = image_tag ('icon-support-cyan.svg'), class: 'serviceIcon', alt: 'Support & Maintenance'
                 = link_to service_path(anchor: 'support') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Support & Maintenance" Support & Maintenance
-                p.subtitle.u-marginTop15.u-marginBot15.small Every web and mobile product needs a continuous improvement and a good support in emergency situations.
+                p.subtitle.u-marginTop5.u-marginBot10.small Every web and mobile product needs a continuous improvement and a good support in emergency situations.
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'supportcontinuous') do
@@ -87,24 +87,24 @@
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How do we work?" How do we work?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="We're honest and transparent in all our process. We want to be part of your team, a collaborator to your project."
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We're honest and transparent in all our process. We want to be part of your team, a collaborator to your project."
                 | We're honest and transparent in all our process. We want to be part of your team, a collaborator to your project.
           .row
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 1
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 1
                 h4.u-noMargin.boxTitle.u-textBlue title="Discovery" Discovery
-                p.subtitle.u-noMargin.u-marginTop10.small Every project begins with the discovery phase that is the basis of what the product should become. It helps us to set the initial scope and to define which way the design and development should follow.
+                p.subtitle.u-noMargin.u-marginTop5.small Every project begins with the discovery phase that is the basis of what the product should become. It helps us to set the initial scope and to define which way the design and development should follow.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 2
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 2
                 h4.u-noMargin.boxTitle.u-textBlue title="Design & Development" Design & Development
-                p.subtitle.u-noMargin.u-marginTop10.small The best products are built for people, and with people in mind. We will identify your main business hypothesis, focus on what is important and design and develop a product always considering your user's real needs.
+                p.subtitle.u-noMargin.u-marginTop5.small The best products are built for people, and with people in mind. We will identify your main business hypothesis, focus on what is important and design and develop a product always considering your user's real needs.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 3
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 3
                 h4.u-noMargin.boxTitle.u-textBlue title="Validation & Product Market Fit" Validation & Product Market Fit
-                p.subtitle.u-noMargin.u-marginTop10.small Validation is essential to know if we're in the right path. We will help you to define your metrics and how you will track your success or failure. Always focusing the best way to achieve your product market fit.
+                p.subtitle.u-noMargin.u-marginTop5.small Validation is essential to know if we're in the right path. We will help you to define your metrics and how you will track your success or failure. Always focusing the best way to achieve your product market fit.
 
   section.contact.-blue#contact
     .container
@@ -114,7 +114,7 @@
             | Let's talk
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you
+              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you
           .row
             .contactForm.col-sm-10.col-md-6.u-centered
               = render partial: 'pages/contact', locals: { contact: @contact }

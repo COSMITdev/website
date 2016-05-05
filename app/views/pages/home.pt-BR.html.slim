@@ -11,7 +11,7 @@
               .row
                 .col-sm-10.u-centered
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Já ajudamos startups e empresas a planejar, desenhar, desenvolver, validar e atingir o product market fit de apps web e mobile" Já ajudamos startups e empresas a planejar, desenhar, desenvolver, validar e atingir o product market fit de apps web e mobile
-                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -cyan u-marginTop20'
+                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -cyan u-marginTop15'
 
   section.service#service
     .container
@@ -20,14 +20,14 @@
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como podemos ajudar?" Como podemos ajudar?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas" Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas" Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas
           .row
             .col-sm-6.col-md-4
               .serviceBox
                 = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
                 = link_to service_path(anchor: 'build') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Construção" Construção
-                p.subtitle.u-marginTop15.u-marginBot15.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
+                p.subtitle.u-marginTop5.u-marginBot10.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'mvpconcirge') do
@@ -43,7 +43,7 @@
                 = image_tag ('icon-support-cyan.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
                 = link_to service_path(anchor: 'support') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Suporte & Manutenção" Suporte & Manutenção
-                p.subtitle.u-marginTop15.u-marginBot15.small Todo sistema web precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
+                p.subtitle.u-marginTop5.u-marginBot10.small Todo sistema web precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'supportcontinuous') do
@@ -59,7 +59,7 @@
                 = image_tag ('icon-mentor-cyan.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
                 = link_to service_path(anchor: 'mentoring') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Mentoria de Negócios" Mentoria de Negócios
-                p.subtitle.u-noMargin.u-marginTop15.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
+                p.subtitle.u-noMargin.u-marginTop5.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
           .row
             .col-sm-12.col-md-10.u-textCenter.u-centered
               = render partial: 'partials/download'
@@ -94,23 +94,23 @@
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como Trabalhamos?" Como Trabalhamos?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto" Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto" Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto
           .row
-            .col-sm-4
+            .col-sm-6.col-md-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 1
+                .u-h1.u-noMargin.u-textCyan 1
                 h4.u-noMargin.boxTitle.u-textBlue title="Descobrimento" Descobrimento
-                p.subtitle.u-noMargin.u-marginTop10.small Todo projeto começa com a fase de descobrimento que é a base do que o produto deve ser. Ele nos ajuda na definição do escopo inicial e da definição do caminho pelo qual o design e o desenvolvimento devem trilhar.
-            .col-sm-4
+                p.subtitle.u-noMargin.u-marginTop5.small Todo projeto começa com a fase de descobrimento que é a base do que o produto deve ser. Ele nos ajuda na definição do escopo inicial e da definição do caminho pelo qual o design e o desenvolvimento devem trilhar.
+            .col-sm-6.col-md-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 2
+                .u-h1.u-noMargin.u-textCyan 2
                 h4.u-noMargin.boxTitle.u-textBlue title="Design & Desenvolvimento" Design & Desenvolvimento
-                p.subtitle.u-noMargin.u-marginTop10.small Os melhores produtos são construídos para pessoas, e com pessoas em mente. Identificamos os seus principais usuários e criamos interfaces e funcionalidades que se encaixam nas suas reais necessidades.
-            .col-sm-4
+                p.subtitle.u-noMargin.u-marginTop5.small Os melhores produtos são construídos para pessoas, e com pessoas em mente. Identificamos os seus principais usuários e criamos interfaces e funcionalidades que se encaixam nas suas reais necessidades.
+            .col-sm-6.col-md-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 3
+                .u-h1.u-noMargin.u-textCyan 3
                 h4.u-noMargin.boxTitle.u-textBlue title="Validação" Validação
-                p.subtitle.u-noMargin.u-marginTop10.small Validar é essêncial para sabermos se estamos no caminho certo. É a base de todo o aprendizado. Assim minizamos os riscos de decisões de negócio mal fundamentadas e aumentamos suas chances ser bem sucedido.
+                p.subtitle.u-noMargin.u-marginTop5.small Validar é essêncial para sabermos se estamos no caminho certo. É a base de todo o aprendizado. Assim minizamos os riscos de decisões de negócio mal fundamentadas e aumentamos suas chances ser bem sucedido.
 
   section.contact.-blue#contact
     .container
@@ -119,7 +119,7 @@
           h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Vamos Conversar!" Vamos Conversar!
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
+              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
           .row
             .contactForm.col-sm-10.col-md-6.u-centered
               = render partial: 'pages/contact', locals: { contact: @contact }
