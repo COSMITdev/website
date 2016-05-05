@@ -4,29 +4,29 @@
   section.pageHero
     .container
       .row
-        .col-sm-12.col-md-8.u-centered.u-textCenter
+        .col-sm-12.col-md-9.u-centered.u-textCenter
           .heroContainer
             .u-verticalAlign
-              h1.u-textMagenta title="Transformamos ideias em produtos de sucesso" Transformamos ideias em produtos de sucesso
+              h1.u-textCyan title="Transformamos suas ideias em produtos de sucesso" Transformamos suas ideias em produtos de sucesso
               .row
                 .col-sm-10.u-centered
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia" Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia
-                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -magenta u-marginTop30'
+                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -cyan u-marginTop20'
 
   section.service#service
     .container
       .row
         .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Como podemos ajudar?" Como podemos ajudar?
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como podemos ajudar?" Como podemos ajudar?
           .row
             .col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas" Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas
           .row
             .col-sm-6.col-md-4
               .serviceBox
-                = image_tag ('icon-build.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
+                = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
                 = link_to service_path(anchor: 'build') do
-                  h2.u-noMargin.boxTitle.u-textMagenta title="Construção" Construção
+                  h2.u-noMargin.boxTitle.u-textBlue title="Construção" Construção
                 p.subtitle.u-marginTop15.u-marginBot15.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
                 ul.boxList
                   li
@@ -40,9 +40,9 @@
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
             .col-sm-6.col-md-4
               .serviceBox
-                = image_tag ('icon-support.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
+                = image_tag ('icon-support-cyan.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
                 = link_to service_path(anchor: 'support') do
-                  h2.u-noMargin.boxTitle.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
+                  h2.u-noMargin.boxTitle.u-textBlue title="Suporte & Manutenção" Suporte & Manutenção
                 p.subtitle.u-marginTop15.u-marginBot15.small Todo sistema web precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
                 ul.boxList
                   li
@@ -58,7 +58,7 @@
               .serviceBox
                 = image_tag ('icon-mentor.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
                 = link_to service_path(anchor: 'mentoring') do
-                  h2.u-noMargin.boxTitle.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
+                  h2.u-noMargin.boxTitle.u-textBlue title="Mentoria de Negócios" Mentoria de Negócios
                 p.subtitle.u-marginTop15.u-marginBot15.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
           .row
             .col-sm-12.col-md-10.u-textCenter.u-centered
@@ -68,7 +68,7 @@
     .container
       .row
         .col-sm-12.u-centered
-          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Já resolvemos problemas para" Já resolvemos problemas para
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Já resolvemos problemas para" Já resolvemos problemas para
           .row.u-marginTop40.u-marginBot10
             .col-sm-3.col-md-2
               = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), work_path(anchor: 'pago-ate'), title: 'Pago Até'
@@ -91,32 +91,32 @@
     .container
       .row
         .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textPurple.u-textCenter title="Como Trabalhamos" Como Trabalhamos
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como Trabalhamos" Como Trabalhamos
           .row
             .col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot40.u-textGray-medium.u-textCenter title="Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto" Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto
           .row
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 1
-                h4.u-noMargin.boxTitle.u-textMagenta title="Descobrimento" Descobrimento
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 1
+                h4.u-noMargin.boxTitle.u-textBlue title="Descobrimento" Descobrimento
                 p.subtitle.u-noMargin.u-marginTop10.small Todo projeto começa com a fase de descobrimento que é a base do que o produto deve ser. Ele nos ajuda na definição do escopo inicial e da definição do caminho pelo qual o design e o desenvolvimento devem trilhar.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 2
-                h4.u-noMargin.boxTitle.u-textMagenta title="Design & Desenvolvimento" Design & Desenvolvimento
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 2
+                h4.u-noMargin.boxTitle.u-textBlue title="Design & Desenvolvimento" Design & Desenvolvimento
                 p.subtitle.u-noMargin.u-marginTop10.small Os melhores produtos são construídos para pessoas, e com pessoas em mente. Identificamos os seus principais usuários e criamos interfaces e funcionalidades que se encaixam nas suas reais necessidades.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textPurple 3
-                h4.u-noMargin.boxTitle.u-textMagenta title="Validação" Validação
+                .u-h1.u-noMargin.u-marginTop10.u-marginBot10.u-textCyan 3
+                h4.u-noMargin.boxTitle.u-textBlue title="Validação" Validação
                 p.subtitle.u-noMargin.u-marginTop10.small Validar é essêncial para sabermos se estamos no caminho certo. É a base de todo o aprendizado. Assim minizamos os riscos de decisões de negócio mal fundamentadas e aumentamos suas chances ser bem sucedido.
 
-  section.contact.-purple#contact
+  section.contact.-blue#contact
     .container
       .row
         .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textMagenta.u-textCenter title="Vamos Conversar!" Vamos Conversar!
+          h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Vamos Conversar!" Vamos Conversar!
           .row
             .col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot40.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar

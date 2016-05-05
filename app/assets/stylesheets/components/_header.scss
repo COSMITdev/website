@@ -114,9 +114,45 @@
   }
 }
 
-// # ===== Blog & Home
-.home,
+// # ===== Blog
 .blog {
+  .navbar-default {
+    background-color: $magenta;
+
+    .navbar-nav > li > a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $magenta;
+    }
+
+    .navbar-toggle {
+      border: 2px solid $purple;
+
+      .icon-bar {
+        background-color: $purple;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $purple;
+
+        .icon-bar {
+          background-color: $magenta;
+        }
+      }
+    }
+  }
+}
+
+// # ===== Home
+.home {
   .navbar-default {
     background-color: $blue;
 
@@ -125,42 +161,12 @@
 
       &:hover,
       &:focus {
-        color: $magenta;
+        color: $cyan;
       }
     }
 
     .navbar-collapse {
       background-color: $blue;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $magenta;
-
-      .icon-bar {
-        background-color: $magenta;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $magenta;
-
-        .icon-bar {
-          background-color: $blue;
-        }
-      }
-    }
-  }
-}
-
-// # ===== Blog & Home
-.home {
-  .navbar-default {
-    .navbar-nav > li > a {
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
     }
 
     .navbar-toggle {

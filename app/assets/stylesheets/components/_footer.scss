@@ -114,11 +114,21 @@ footer {
 
 .blog {
   .socialLink {
-    color: $blue;
+    color: $magenta;
 
     &:hover,
     &:focus {
-      color: $magenta;
+      color: $purple;
+    }
+  }
+
+  p a {
+    color: $magenta;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $purple;
     }
   }
 }
