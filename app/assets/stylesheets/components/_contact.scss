@@ -31,8 +31,7 @@
 
 // # Form colors
 // # =================================================================
-.home,
-.works {
+.home {
   .contact {
     .-magenta {
       color: $cyan;
@@ -55,7 +54,45 @@
     input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
     select,
     textarea {
-      border: 2px solid $cyan !important;
+      border: 2px solid $error !important;
+    }
+  }
+
+  .has-error .help-block,
+  .has-error .radio,
+  .has-error .checkbox,
+  .has-error .radio-inline,
+  .has-error .checkbox-inline,
+  .has-error .control-label,
+  .has-error.radio label,
+  .has-error.checkbox label {
+    color: $error;
+  }
+}
+
+.works {
+  .contact {
+    .-magenta {
+      color: $cyan;
+      background-color: transparent;
+      border-color: $cyan;
+
+      &:hover,
+      &:focus {
+        color: $purple-light;
+        background-color: $cyan;
+      }
+    }
+
+    .btn-default:hover{
+      border-color: $cyan;
+    }
+
+    .has-error {
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+      border: 2px solid $error !important;
     }
   }
 
@@ -69,16 +106,6 @@
   .has-error.checkbox label {
     color: $cyan;
   }
-}
-
-.works {
-  .contact {
-    .-magenta {
-      &:hover,
-      &:focus {
-        color: $purple-light;
-      }
-    }
   }
 }
 
@@ -93,7 +120,7 @@
     input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
     select,
     textarea {
-      border: 2px solid $magenta !important;
+      border: 2px solid $error !important;
     }
   }
 
@@ -105,6 +132,6 @@
   .has-error .control-label,
   .has-error.radio label,
   .has-error.checkbox label {
-    color: $magenta;
+    color: $error;
   }
 }
