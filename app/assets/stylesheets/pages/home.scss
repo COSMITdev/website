@@ -2,7 +2,7 @@
 .work,
 .process,
 .contact {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .work {
@@ -31,6 +31,17 @@
   }
 }
 
+.home {
+  .btn {
+    &.-cyan {
+      &:hover,
+      &:focus {
+        color: $blue !important;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .work {
     .row .u-marginTop40 {
@@ -48,7 +59,7 @@
   .work,
   .process,
   .contact {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .service {
@@ -64,7 +75,7 @@
   .work,
   .process,
   .contact {
-    padding: 35px 0;
+    padding: 30px 0;
   }
 
   .work {

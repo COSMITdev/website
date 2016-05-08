@@ -50,56 +50,97 @@ footer {
 // # Colors
 // # =================================================================
 .works {
-  .socialLink {
-    color: $purple-light;
+  footer {
+    .socialLink {
+      color: $purple-light;
 
-    &:hover,
-    &:focus {
-      color: $cyan;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
     }
-  }
 
-  p a {
-    color: $purple-light;
+    p a {
+      color: $purple-light;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $cyan;
+      }
     }
   }
 }
 
-.home,
 .services {
-  .socialLink {
-    color: $magenta;
-
-    &:hover,
-    &:focus {
+  footer {
+    .socialLink {
       color: $purple;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+      }
+    }
+
+    p a {
+      color: $purple;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $magenta;
+      }
     }
   }
+}
 
-  p a {
-    color: $magenta;
+.home {
+  footer {
+    .socialLink {
+      color: $blue;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
+    }
+
+    p a {
+      color: $blue;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $cyan;
+      }
     }
   }
 }
 
 .blog {
-  .socialLink {
-    color: $blue;
-
-    &:hover,
-    &:focus {
+  footer {
+    .socialLink {
       color: $magenta;
+
+      &:hover,
+      &:focus {
+        color: $purple;
+      }
+    }
+
+    p a {
+      color: $magenta;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $purple;
+      }
     }
   }
 }
+
 // # Media Queries
 // # =================================================================
 @media (max-width: 768px) {

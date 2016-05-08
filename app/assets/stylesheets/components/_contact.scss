@@ -14,11 +14,24 @@
   &.-magenta {
     background-color: $magenta;
   }
+
+  &.-blue {
+    background-color: $blue;
+  }
+
+  a {
+    transition: all .2s;
+  }
+
+  hr {
+    border-top: 1px solid #fff;
+    opacity: .2;
+  }
 }
 
-// # Button color
+// # Form colors
 // # =================================================================
-.works {
+.home {
   .contact {
     .-magenta {
       color: $cyan;
@@ -27,13 +40,13 @@
 
       &:hover,
       &:focus {
-        color: $purple-light !important;
-        background-color: $cyan !important;
+        color: $blue;
+        background-color: $cyan;
       }
     }
 
     .btn-default:hover{
-      border-color: $cyan !important;
+      border-color: $cyan;
     }
   }
 
@@ -41,7 +54,7 @@
     input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
     select,
     textarea {
-      border: 2px solid $blue !important;
+      border: 2px solid $error !important;
     }
   }
 
@@ -53,34 +66,33 @@
   .has-error .control-label,
   .has-error.radio label,
   .has-error.checkbox label {
-    color: $blue;
+    color: $error;
   }
 }
 
-.services {
+.works {
   .contact {
     .-magenta {
-      color: $purple;
+      color: $cyan;
       background-color: transparent;
-      border-color: $purple;
+      border-color: $cyan;
 
       &:hover,
       &:focus {
-        color: white !important;
-        background-color: $purple !important;
+        color: $purple-light;
+        background-color: $cyan;
       }
     }
 
     .btn-default:hover{
-      border-color: $purple !important;
+      border-color: $cyan;
     }
-  }
 
-  .has-error {
+    .has-error {
     input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
     select,
     textarea {
-      border: 2px solid $cyan !important;
+      border: 2px solid $error !important;
     }
   }
 
@@ -93,5 +105,33 @@
   .has-error.radio label,
   .has-error.checkbox label {
     color: $cyan;
+  }
+  }
+}
+
+.services {
+  .contact {
+    .btn-default:hover{
+      border-color: $magenta;
+    }
+  }
+
+  .has-error {
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+      border: 2px solid $error !important;
+    }
+  }
+
+  .has-error .help-block,
+  .has-error .radio,
+  .has-error .checkbox,
+  .has-error .radio-inline,
+  .has-error .checkbox-inline,
+  .has-error .control-label,
+  .has-error.radio label,
+  .has-error.checkbox label {
+    color: $error;
   }
 }

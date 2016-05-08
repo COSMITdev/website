@@ -1,8 +1,8 @@
 .processBox {
   background-color: $gray-light;
   border-radius: $boxRadius;
-  margin-bottom: 30px;
-  min-height: 395px;
+  margin-bottom: 15px;
+  min-height: 355px;
   padding: 30px;
 
   .boxTitle {
@@ -10,10 +10,15 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .processBox {
+    min-height: 439px;
+  }
+}
+
 @media (max-width: 767px) {
   .processBox {
     min-height: auto;
-    padding-bottom: 40px;
 
     .u-h1 {
       margin-top: 0px !important;
