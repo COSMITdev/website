@@ -33,6 +33,9 @@
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'mvpv1') do
+                      h2 title="MVP V1" MVP Slim
+                  li
+                    = link_to service_path(anchor: 'mvpv1') do
                       h2 title="MVP V1" MVP V1
                   li
                     = link_to service_path(anchor: 'continuous') do
@@ -50,9 +53,6 @@
                   li
                     = link_to service_path(anchor: 'emergency') do
                       h2 title="Emergency" Emergency
-                  li
-                    = link_to service_path(anchor: 'performance') do
-                      h2 title="Performance" Performance
           .row
             .col-sm-12.col-md-10.u-textCenter.u-centered
               = render 'partials/download'
@@ -87,25 +87,24 @@
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How do we work?" How do we work?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We're honest and transparent in all our process. We want to be part of your team, a collaborator to your project."
-                | We're honest and transparent in all our process. We want to be part of your team, a collaborator to your project.
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We believe that the best software changes often and you can only learn if you test fast and fail faster."
+                | We believe that the best software changes often and you can only learn if you test fast and fail faster.
           .row
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 1
+                .u-h1.u-noMargin.u-marginBot5.u-textCyan 1
                 h4.u-noMargin.boxTitle.u-textBlue title="Discovery" Discovery
-                p.subtitle.u-noMargin.u-marginTop5.small Every project begins with the discovery phase that is the basis of what the product should become. It helps us to set the initial scope and to define which way the design and development should follow.
+                p.subtitle.u-noMargin.u-marginTop5.small Every project starts with the discovery phase. The idea here is to understand and validate the business behind the product and also give a clear direction in which design and development should follow.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 2
-                h4.u-noMargin.boxTitle.u-textBlue title="Design & Development" Design & Development
-                p.subtitle.u-noMargin.u-marginTop5.small The best products are built for people, and with people in mind. We will identify your main business hypothesis, focus on what is important and design and develop a product always considering your user's real needs.
+                .u-h1.u-noMargin.u-marginBot5.u-textCyan 2
+                h4.u-noMargin.boxTitle.u-textBlue title="Design" Design
+                p.subtitle.u-noMargin.u-marginTop5.small Products need to be built for people, and with people in mind. We will transform all the ideas into sketches and then create prototypes that will be tested with your real users. This way we can validate your product design before we code a line.
             .col-sm-4
               .processBox
-                .u-h1.u-noMargin.u-marginTop10.u-marginBot5.u-textCyan 3
-                h4.u-noMargin.boxTitle.u-textBlue title="Validation & Product Market Fit" Validation & Product Market Fit
-                p.subtitle.u-noMargin.u-marginTop5.small Validation is essential to know if we're in the right path. We will help you to define your metrics and how you will track your success or failure. Always focusing the best way to achieve your product market fit.
-
+                .u-h1.u-noMargin.u-marginBot5.u-textCyan 3
+                h4.u-noMargin.boxTitle.u-textBlue title="Development" Development
+                p.subtitle.u-noMargin.u-marginTop5.small Validating your business and design before coding will minimize your risks and costs. In this stage, we will focus on delivering first the features that generate more value. The sooner you test it online, the sooner you'll reach your product market fit.
   section.contact.-blue#contact
     .container
       .row
