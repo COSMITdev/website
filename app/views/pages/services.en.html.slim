@@ -22,15 +22,27 @@
             h2.u-marginBot5.u-marginTop10.u-textMagenta title="Build" Build
             p.subtitle.u-marginTop5.u-marginBot10 From planning to design and development, we build and validate web and mobile apps for startups and small business.
             .row
-              .col-sm-6#mvpv1
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP V1" MVP V1
-                p.subtitle.u-noMargin.small In just two weeks of immersion, we go through the understanding of your idea, planning, A/B tests, design, back and front-end development, metrics and validation. At the end, you will have the main assumptions of your business tested and validated, transformed into an application ready to collect feedback from your customers.
+              .col-sm-6#mvpslim
+                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP Slim" MVP Slim
+                p.subtitle.u-noMargin.small 
+                  | It consist in an one week work an one week process were we understand your product idea, plan, design, develop and launch an online product ready to validate your core business assumption with your costumers. See our 
+                  = link_to 'Demo Project', 'http://demo.cosmit.me', target: '_blank', class: 'u-linkMagenta'
+                  |  of this product.
+                p.subtitle.u-textGray-dark.u-noMargin.u-marginTop10.small
+                  span.u-textBold Good for:
+                  |  low budget and rapid validation
+
               .col-sm-6#continuous
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Continuous Development" Continuous Development
-                p.subtitle.u-noMargin.small Together we will analyze and create a personalized plan of development to fit your needs. Through sprints of planning, design, development and test, we will build your product incrementally. At the end of each sprint, you will have a part of your product online ready to be tested. We will progressively track your metrics and validate your assumptions in order to define which way to go.
+                p.subtitle.u-noMargin.small We will analyze and create a personalized plan of development to fit your needs. Throughout sprints of planning, design, and development, we will build your product incrementally. At the end of each sprint, you will have a part of your product online ready to be tested. We will progressively track your metrics and validate your assumptions in order to achieve your product market fit.
+                p.subtitle.u-textGray-dark.u-noMargin.u-marginTop10.small
+                  span.u-textBold Good for:
+                  |  creating a larger and solid product
 
             .u-textCenter
-              = link_to "Let's work together", service_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -magenta u-marginTop30'
+              = link_to 'Download our Process PDF', 'https://s3.amazonaws.com/cosmit-documents/COSMIT-process-EN.pdf', class: 'btn -md -magenta u-marginTop30 u-marginBot20 js-download-pdf-services', target: '_blank', download: 'Download our Process PDF'
+              br
+              = link_to "Let's work together", service_path(anchor: 'contact'), title: "Let's work together", class: 'u-linkMagenta u-textUp'
 
     .serviceItem.-gray
       .container
@@ -40,15 +52,12 @@
             h2.u-marginBot5.u-marginTop10.u-textMagenta title="Support & Maintenance" Support & Maintenance
             p.subtitle.u-marginTop5.u-marginBot10 Every web and mobile product needs a continuous improvement and a good support in emergency cases.
             .row
-              .col-sm-4#supportcontinuous
+              .col-sm-6#supportcontinuous
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Continuous Maintenance" Continuous Maintenance
                 p.subtitle.u-noMargin.small All product needs a continuous improvement work to keep it smoothly and generating good results. In this work format, we'll constantly improve your system test coverage, update and refactor your code and improve the general performance of your product.
-              .col-sm-4#emergency
+              .col-sm-6#emergency
                 h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Emergency" Emergency
                 p.subtitle.u-noMargin.small Your system goes offline and you have no idea what happened? This is why you'll need an experienced and able to solve complex problems people at your disposal. Our team will be on standby to take over and solve any problem in your application when they occur. So you can sleep quietly knowing that everything will be safe.
-              .col-sm-4#performance
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Performance" Performance
-                p.subtitle.u-noMargin.small Every second in performance improvement can increase up to 10% your conversions. It directly affects the success of your business. Initially, we will do an analysis of your system, identifying the main problems. We will create an improvement plan and work to correct problems and give more agility to your system.
           .u-textCenter
             = link_to "Let's work together", service_path(anchor: 'contact'), title: "Let's work together", class: 'btn -md -magenta u-marginTop30'
 

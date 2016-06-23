@@ -32,11 +32,8 @@
                 p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
                 ul.boxList
                   li
-                    = link_to service_path(anchor: 'mvpv1') do
-                      h2 title="MVP V1" MVP Slim
-                  li
-                    = link_to service_path(anchor: 'mvpv1') do
-                      h2 title="MVP V1" MVP V1
+                    = link_to service_path(anchor: 'mvpslim') do
+                      h2 title="MVP Slim" MVP Slim
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Continuous Development" Continuous Development
@@ -105,6 +102,10 @@
                 .u-h1.u-noMargin.u-marginBot5.u-textCyan 3
                 h4.u-noMargin.boxTitle.u-textBlue title="Development" Development
                 p.subtitle.u-noMargin.u-marginTop5.small Validating your business and design before coding will minimize your risks and costs. In this stage, we will focus on delivering first the features that generate more value. The sooner you test it online, the sooner you'll reach your product market fit.
+        .u-textCenter
+          = link_to 'Download our Process PDF', 'https://s3.amazonaws.com/cosmit-documents/COSMIT-process-EN.pdf', class: 'btn -md -magenta u-marginTop30 u-marginBot20 js-download-pdf-services', target: '_blank', download: 'Download our Process PDF'
+          br
+          = link_to "See our MVP Slim Demo project", 'http://demo.cosmit.me', title: "See our Demo project", class: 'u-linkMagenta u-textUp', target: '_blank'
   section.contact.-blue#contact
     .container
       .row
