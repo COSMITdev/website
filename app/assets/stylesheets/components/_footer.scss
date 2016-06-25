@@ -49,6 +49,30 @@ footer {
 
 // # Colors
 // # =================================================================
+.services,
+.pages {
+  footer {
+    .socialLink {
+      color: $purple;
+
+      &:hover,
+      &:focus {
+        color: $magenta;
+      }
+    }
+
+    p a {
+      color: $purple;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $magenta;
+      }
+    }
+  }
+}
+
 .works {
   footer {
     .socialLink {
@@ -67,29 +91,6 @@ footer {
       &:focus {
         text-decoration: underline;
         color: $cyan;
-      }
-    }
-  }
-}
-
-.services {
-  footer {
-    .socialLink {
-      color: $purple;
-
-      &:hover,
-      &:focus {
-        color: $magenta;
-      }
-    }
-
-    p a {
-      color: $purple;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        color: $magenta;
       }
     }
   }

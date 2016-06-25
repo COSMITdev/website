@@ -23,8 +23,7 @@
 
 // # Colors
 // # =================================================================
-.home,
-.pages {
+.home {
   .pageHero {
     background-color: $blue;
   }
@@ -46,6 +45,10 @@
   .pageHero {
     background-color: $purple-light;
   }
+}
+
+.-error {
+  background-color: $purple;
 }
 
 // # Media Queries
