@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
   end
 
+  get 'mvp', to: 'pages#mvp', constraints: { subdomain: 'mvp' }
+
   # Keep this always at the end of file to grab 404 problems
   get '*path', to: 'pages#404', via: :all
 end
