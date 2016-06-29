@@ -1,6 +1,17 @@
 // # =================================================================
 // # MVP page
 // # =================================================================
+.mvp {
+  .btn {
+    &.-cyan {
+      &:hover,
+      &:focus {
+        color: $blue !important;
+      }
+    }
+  }
+}
+
 .mvpProblem,
 .mvpWhy {
   p {
@@ -19,7 +30,7 @@
 }
 
 .mvpWhy {
-  padding: 80px 0 70px;
+  padding: 80px 0;
   background-color: $gray-light;
 
   i {
@@ -53,6 +64,10 @@
 }
 
 #demo {
+  h2 {
+    font-size: 1.9375rem;
+  }
+
   i {
     font-size: 1.6rem;
     color: $gray-medium;

@@ -7,21 +7,36 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+        - if params[:action] == 'mvp'
+          = link_to 'COSMIT', mvp_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+        - else
+          = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
       / Collect the nav links, forms, and other content for toggling
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
-          li
-            = link_to 'Services', service_path, title: 'Services', class: 'u-textUp'
-          li
-            = link_to 'Work', work_path, title: 'Work', class: 'u-textUp'
-          li
-            = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
-          li
-            - if current_page? work_path
-              = link_to 'Contact us', work_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
-            - elsif current_page? service_path
-              = link_to 'Contact us', service_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
-            - else
-              = link_to 'Contact us', root_path(anchor: 'contact'), title: "Let's Talk!", class: 'u-textUp'
-          - if params[:controller] != 'blog'
+          - if params[:action] == 'mvp'
+            li
+              = link_to 'Why', mvp_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
+            li
+              = link_to 'Result', mvp_path(anchor: 'result'), title: 'Result', class: 'u-textUp'
+            li
+              = link_to 'How', mvp_path(anchor: 'how'), title: 'How', class: 'u-textUp'
+            li
+              = link_to 'Pricing', mvp_path(anchor: 'contact'), title: 'Pricing', class: 'u-textUp'
+            li
+              = link_to 'Get started', mvp_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'
+          - else
+            li
+              = link_to 'Services', service_path, title: 'Services', class: 'u-textUp'
+            li
+              = link_to 'Work', work_path, title: 'Work', class: 'u-textUp'
+            li
+              = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
+            li
+              - if current_page? work_path
+                = link_to 'Contact us', work_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
+              - elsif current_page? service_path
+                = link_to 'Contact us', service_path(anchor: 'contact'), title: "Let's work together!", class: 'u-textUp'
+              - else
+                = link_to 'Contact us', root_path(anchor: 'contact'), title: "Let's Talk!", class: 'u-textUp'
+            - if params[:controller] != 'blog'
