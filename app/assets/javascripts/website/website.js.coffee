@@ -15,6 +15,7 @@ window.Website =
 
   init: ->
     # Something here. This is called in every page.
+    $('[data-toggle="tooltip"]').tooltip()
 
   modules: ->
     [

@@ -5,15 +5,18 @@
         .col-sm-12.col-md-10.u-centered
           .row
             .col-sm-4.col-md-6
-              .socialLinks
-                = link_to 'http://www.facebook.com/Cosmit-170783249948401/', title: 'Like us on Facebook', target: '_blank', class: 'socialLink' do
-                  i.fa.fa-facebook
-                = link_to 'http://twitter.com/cosmitdev', title: 'Follow us on Twitter', target: '_blank', class: 'socialLink' do
-                  i.fa.fa-twitter
-                = link_to 'http://www.linkedin.com/company/cosmit', title: 'Follow us on Linkedin', target: '_blank', class: 'socialLink' do
-                  i.fa.fa-linkedin
-                = link_to 'https://github.com/cosmitdev/', title: 'Our nerd HQ', target: '_blank', class: 'socialLink' do
-                  i.fa.fa-github
+              - if params[:action] == 'mvp'
+                p.small.u-noMargin.u-textGray-medium.u-marginTop10.u-floatLft 1139 College West, Toronto, ON - hi@cosmit.me | +1 (437) 345-9791
+              - else
+                .socialLinks
+                  = link_to 'http://www.facebook.com/Cosmit-170783249948401/', title: 'Like us on Facebook', target: '_blank', class: 'socialLink' do
+                    i.fa.fa-facebook
+                  = link_to 'http://twitter.com/cosmitdev', title: 'Follow us on Twitter', target: '_blank', class: 'socialLink' do
+                    i.fa.fa-twitter
+                  = link_to 'http://www.linkedin.com/company/cosmit', title: 'Follow us on Linkedin', target: '_blank', class: 'socialLink' do
+                    i.fa.fa-linkedin
+                  = link_to 'https://github.com/cosmitdev/', title: 'Our nerd HQ', target: '_blank', class: 'socialLink' do
+                    i.fa.fa-github
             .col-sm-8.col-md-6
               p.small.u-noMargin.u-textGray-medium.u-marginTop10
                 span.u-marginRgt20 © Copyright 2016
