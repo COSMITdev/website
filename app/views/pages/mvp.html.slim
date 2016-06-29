@@ -1,12 +1,215 @@
 section.pageHero
+  .container
+    .row
+      .col-sm-12.col-md-9.u-centered.u-textCenter
+        .heroContainer
+          .u-verticalAlign
+            h1.u-textCyan title="One week web product that validates your idea" One week web product that validates your idea
+            .row
+              .col-sm-10.u-centered
+                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We help non-technical founders to build small web products and validate their ideas in just one week"
+                  | We help non-technical founders to build small web products and validate their ideas in just one week
+                = link_to "Know more", root_path(anchor: 'contact'), title: "Know more", class: 'btn -lg -cyan u-marginTop15'
+section.mvpProblem
+  .container
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Your challenges" Your challenges
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
+              | We think critically, dream big and work hard to deliver solutions that make people's lives better
+        .row
+          .col-md-10.u-centered
+            ul
+              li 
+                span.icon
+                  i.fa.fa-check
+                span
+                  h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 The dream / who you are
+                  p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              li 
+                span.icon
+                  i.fa.fa-check
+                span
+                  h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 Building a software
+                  p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              li 
+                span.icon
+                  i.fa.fa-check
+                span
+                  h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 Finding people
+                  p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+section.mvpWhy
+  .container
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Why MVP Slim?" Why MVP Slim?
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
+              | We think critically, dream big and work hard to deliver solutions that make people's lives better
+        .row
+          .col-sm-4
+            h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 Full package
+            p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          .col-sm-4
+            h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 Fast and cheap
+            p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          .col-sm-4
+            h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5 Focused
+            p.u-textLight.u-noMargin.u-marginBot30 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+section.mvpResult
+  .container
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="What will you get?" What will you get?
+        .row
+          .col-sm-8.col-md-8.u-centered
+            ul.u-marginTop20
+              li.u-marginBot15
+                i.fa.fa-check
+                h3.u-h2.u-textLight A business review document
+              li.u-marginBot15
+                i.fa.fa-check
+                h3.u-h2.u-textLight A well designed product
+              li.u-marginBot15
+                i.fa.fa-check
+                h3.u-h2.u-textLight Your core product assumption into software
+              li.u-marginBot15
+                i.fa.fa-check
+                h3.u-h2.u-textLight An online web product ready to be launched
+section.workList
+  .workItem.-gray#demo
     .container
       .row
-        .col-sm-12.col-md-9.u-centered.u-textCenter
-          .heroContainer
-            .u-verticalAlign
-              h1.u-textCyan title="Build a small web product and validate your idea in one week" Build a small web product and validate your idea in one week
-              .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We help non-technical founders build and validate their product ideas"
-                    | We help non-technical founders build and validate their product ideas
-                  = link_to "Contact us", root_path(anchor: 'contact'), title: "Contact us", class: 'btn -lg -cyan u-marginTop15'
+        .col-sm-12.col-md-10.u-centered
+          .workRow
+            .workImage.visible-xs
+              = image_tag('aura-work.png', class: 'img img-responsive', alt: "Demo Project")
+            .workText
+              h2.u-textBlue.u-noMargin.u-marginBot10[title="Demo Project"] Demo Project
+              p.u-marginBot15
+                | Sell art online is a huge challenge in Brazil. Even more when you have a sales website that is unfinished and don't have a "face" of e-commerce. This was our initial project scenario. In the Discovery phase we have established the improvement of sales conversion as the main focus of our work. After the launch Aura has achieved over 300% growth in sales.
+              .clearfix
+              = link_to 'Visit demo project', 'http://demo.cosmit.me', target: '_blank', class: 'btn -sm -magenta u-marginRgt15 u-marginBot30', title: 'Visit demo project'
+              = link_to 'http://github.com/cosmitdev/demo-project', title: 'See on Github', target: '_blank', class: 'u-marginBot30 u-marginTop5 demoIcon-github' do
+                i.fa.fa-github
+            .workImage.hidden-xs
+              = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
+section.mvpProcess
+  .container
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How does it works?" How does it works?
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Lean Startup and Agile are our core work philosophy"
+              | Lean Startup and Agile are our core work philosophy
+        .row
+          .col-sm-4
+            .processBox
+              .u-h1.u-noMargin.u-marginBot5.u-textCyan 1
+              h4.u-noMargin.boxTitle.u-textBlue title="Discovery" Discovery
+              p.subtitle.u-noMargin.u-marginTop5.small Every project starts with the discovery phase. The idea here is to understand and validate the business behind the product and also give a clear direction in which design and development should follow.
+          .col-sm-4
+            .processBox
+              .u-h1.u-noMargin.u-marginBot5.u-textCyan 2
+              h4.u-noMargin.boxTitle.u-textBlue title="Design" Design
+              p.subtitle.u-noMargin.u-marginTop5.small Products need to be built for people, and with people in mind. We will transform all the ideas into sketches and then create prototypes that will be tested with your real users. This way we can validate your product design before we code a line.
+          .col-sm-4
+            .processBox
+              .u-h1.u-noMargin.u-marginBot5.u-textCyan 3
+              h4.u-noMargin.boxTitle.u-textBlue title="Development" Development
+              p.subtitle.u-noMargin.u-marginTop5.small Validating your business and design before coding will minimize your risks and costs. In this stage, we will focus on delivering first the features that generate more value. The sooner you test it online, the sooner you'll reach your product market fit.
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-marginTop60.u-textBlue.u-textCenter title="The week routine" The week routine
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We work from 9am until 6pm and our daily happens at 10am"
+              | We work from 9am until 6pm and our daily happens at 10am
+        .row
+          .col-sm-12.col-md-10.u-centered
+            table.table.table-striped.table-rounded
+              thead
+                tr
+                  th MON
+                  th TUE
+                  th WED
+                  th THU
+                  th FRI
+              tbody
+                tr
+                  td Product intro
+                  td DB Plan
+                  td Development
+                  td Development
+                  td Development
+                tr
+                  td Product goals
+                  td Flowchart
+                  td
+                  td
+                  td Test
+                tr
+                  td Assumptions
+                  td Wireframes
+                  td
+                  td
+                  td Deploy
+                tr
+                  td User stories
+                  td Mockups
+                  td
+                  td
+                  td Sprint Review
+                tr
+                  td Sprint plan
+                  td Dev Start
+                  td
+                  td
+                  td
+                tr
+                  td Task plan
+                  td
+                  td
+                  td
+                  td
+                tr
+                  td Decision
+                  td 
+                  td
+                  td
+                  td
+section.contact.-blue#contact
+  .container
+    .row
+      .col-sm-12.col-md-10.u-centered
+        h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Let's talk"
+          | Let's talk
+        .row
+          .col-md-8.u-centered
+            p.subtitle.u-noMargin.u-marginBot30.u-textWhite.u-textCenter title="Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you" Schedule a free online consultation and talk with our team about your ideas, problems and how we can help you
+        .row
+          .contactForm.col-sm-7.col-md-6.col-md-offset-1.col-sm-push-5
+            = render partial: 'pages/contact', locals: { contact: @contact }
+          .col-sm-5.col-md-5.col-sm-pull-7.col-md-pull-7
+            h4.u-noMargin.u-marginBot5.u-marginTop10.u-textWhite.u-textNormal Canadian office
+            p.u-noMargin.u-textWhite.u-textLight
+              i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              | 1139 College West - Toronto, ON
+              br
+              i.fa.u-textCyan.fa-envelope.u-marginRgt10
+              = mail_to 'hi@cosmit.me', 'hi@cosmit.me', class: 'u-linkWhite'
+              br
+              i.fa.u-textCyan.fa-phone.u-marginRgt10
+              = link_to '+1 (437) 345-9791', 'tel:4373459791', class: 'u-linkWhite'
+            hr.u-marginTop30
+            h4.u-noMargin.u-marginBot5.u-marginTop30.u-textWhite.u-textNormal Brazilian office
+            p.u-noMargin.u-marginBot40.u-textWhite.u-textLight
+              i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              | Av. Lucas de Oliveira, 894 - Porto Alegre, RS
+              br
+              i.fa.u-textCyan.fa-envelope.u-marginRgt10
+              = mail_to 'contato@cosmit.me', 'contato@cosmit.me', class: 'u-linkWhite'

@@ -25,6 +25,10 @@ class PagesController < ApplicationController
     @contact = Contact.new
   end
 
+  def mvp
+    @contact = Contact.new
+  end
+
   private
 
   def permitted_params

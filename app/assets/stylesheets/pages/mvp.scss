@@ -1,0 +1,138 @@
+// # =================================================================
+// # MVP page
+// # =================================================================
+.mvpProblem {
+  padding: 70px 0 60px;
+
+  ul {
+    list-style: none;
+    padding: 0 ;
+
+    li {
+      display: table;
+
+      span {
+        display: table-cell;
+
+        &.icon {
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+
+.mvpWhy {
+  padding: 80px 0 70px;
+  background-color: $gray-light;
+}
+
+.mvpResult {
+  padding: 70px 0 60px;
+
+  ul {
+    list-style: none;
+    padding: 0 ;
+
+    li {
+      display: table;
+    }
+
+    i {
+      color: $cyan;
+      font-size: 1.3125rem;
+      display: table-cell;
+      padding-right: 10px;
+    }
+
+    h3 {
+      display: table-cell;
+    }
+  }
+}
+
+#demo {
+  i {
+    font-size: 1.6rem;
+    color: $gray-medium;
+
+    &:hover,
+    &:focus {
+      color: $magenta;
+      transition: all .3s;
+    }
+  }
+
+  .btn {
+    float: left;
+  }
+
+  .demoIcon-github {
+    display: inline-block;
+  }
+}
+
+.mvpProcess {
+  padding: 70px 0 80px;
+
+  table.table-striped {
+    background-color: $gray-light;
+    font-size: .875rem;
+
+    thead {
+      color: white;
+      background-color: $blue;
+      font-size: .75rem;
+
+      th {
+        border: 0;
+      }
+    }
+
+    tbody {
+      font-family: 'Montserrat-Light';
+
+      td {
+        border: 0;
+      }
+    }
+
+    & > tbody > tr > td,
+    & > thead > tr > th {
+      padding: 10px 15px;
+    }
+
+    & .table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: $gray;
+    }
+  }
+
+  .table-rounded {
+    border-collapse: separate;
+    border-radius: $globalRadius;
+
+    & th {
+      border-top: none;
+    }
+
+    & th:first-child {
+      border-radius: $globalRadius 0 0 0;
+    }
+
+    & th:last-child {
+      border-radius: 0 $globalRadius 0 0;
+    }
+
+    & th:only-child{
+      border-radius: $globalRadius $globalRadius 0 0;
+    }
+
+    & tr:last-child td:first-child {
+      border-radius: 0 0 0 $globalRadius;
+    }
+
+    & tr:last-child td:last-child {
+      border-radius: 0 0 $globalRadius 0;
+    }
+  }
+}
