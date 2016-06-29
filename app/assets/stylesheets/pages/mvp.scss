@@ -10,6 +10,20 @@
       }
     }
   }
+
+  .tooltip {
+    opacity: 1;
+  }
+
+  .tooltip.top .tooltip-arrow {
+    border-top-color: $cyan;
+  }
+
+  .tooltip-inner {
+    background-color: $cyan;
+    color: $blue;
+    padding: 5px 11px;
+  }
 }
 
 .mvpProblem,
@@ -182,4 +196,3 @@ section.pricing {
     }
   }
 }
-
