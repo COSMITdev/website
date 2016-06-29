@@ -18,5 +18,6 @@
               p.small.u-noMargin.u-textGray-medium.u-marginTop10
                 span.u-marginRgt20 © Copyright 2016
                 span 
-                  = link_to 'PT version', url_for(locale: 'pt-BR'), title: 'Trocar para Português'
+                  - unless params[:action] == 'mvp'
+                    = link_to 'PT version', url_for(locale: 'pt-BR'), title: 'Trocar para Português'
                   span.love Made with <i class="fa fa-heart"></i> by <span>COSMIT</span>
