@@ -29,7 +29,7 @@
 .mvpProblem,
 .mvpWhy {
   p {
-    line-height: 1.6rem;
+    line-height: 1.7rem;
   }
 }
 
@@ -103,7 +103,11 @@
 }
 
 .mvpProcess {
-  padding: 70px 0 80px;
+  padding: 70px 0 70px;
+
+  .processBox {
+    min-height: 320px;
+  }
 
   table.table-striped {
     background-color: $gray-light;
@@ -168,8 +172,8 @@
 }
 
 section.pricing {
-  background-color: $gray-light;
   padding: 70px 0 80px;
+  background-color: $gray-light;
 }
 
 .pricingBox {
