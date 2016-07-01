@@ -96,7 +96,8 @@ footer {
   }
 }
 
-.home {
+.home,
+.mvp {
   footer {
     .socialLink {
       color: $blue;
@@ -149,7 +150,7 @@ footer {
     .socialLinks,
     p {
       text-align: center;
-      float: none;
+      float: none !important;
     }
   }
 }

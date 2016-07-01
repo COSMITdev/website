@@ -3,7 +3,13 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   scope '(:locale)', locale: /pt-BR|en/ do
-    root 'pages#home'
+    constraints subdomain: '' do
+      root to: 'pages#home', as: :root
+    end
+
+    constraints subdomain: 'mvp' do
+      root to: 'pages#mvp', as: :mvp
+    end
   end
 
   localized do
@@ -14,7 +20,6 @@ Rails.application.routes.draw do
 
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
   end
-
   # Keep this always at the end of file to grab 404 problems
-  get '*path', to: 'pages#404', via: :all
+  # get '*path', to: 'pages#404', via: :all
 end

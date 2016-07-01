@@ -1,0 +1,265 @@
+// # =================================================================
+// # MVP page
+// # =================================================================
+.mvp {
+  .btn {
+    &.-cyan {
+      &:hover,
+      &:focus {
+        color: $blue !important;
+      }
+    }
+  }
+
+  .tooltip {
+    opacity: 1;
+  }
+
+  .tooltip.top .tooltip-arrow {
+    border-top-color: $cyan;
+  }
+
+  .tooltip-inner {
+    background-color: $cyan;
+    color: $blue;
+    padding: 5px 11px;
+  }
+}
+
+.mvpProblem,
+.mvpWhy {
+  p {
+    line-height: 1.7rem;
+  }
+}
+
+.mvpProblem {
+  padding: 70px 0 60px;
+
+  i {
+    font-size: 5.25rem;
+    color: $cyan;
+    paddin-top: 15px;
+  }
+}
+
+.mvpWhy {
+  padding: 80px 0;
+  background-color: $gray-light;
+
+  i {
+    color: $cyan;
+    font-size: 6.25rem;
+  }
+}
+
+.mvpResult {
+  padding: 70px 0 60px;
+
+  ul {
+    list-style: none;
+    padding: 0 ;
+
+    li {
+      display: table;
+    }
+
+    i {
+      color: $cyan;
+      font-size: 1.3125rem;
+      display: table-cell;
+      padding-right: 10px;
+    }
+
+    h3 {
+      display: table-cell;
+    }
+  }
+}
+
+#demo {
+  h2 {
+    font-size: 1.9375rem;
+  }
+
+  i {
+    font-size: 1.6rem;
+    color: $gray-medium;
+
+    &:hover,
+    &:focus {
+      color: $magenta;
+      transition: all .3s;
+    }
+  }
+
+  .btn {
+    float: left;
+  }
+
+  .demoIcon-github {
+    display: inline-block;
+  }
+}
+
+.mvpProcess {
+  padding: 70px 0 70px;
+
+  .processBox {
+    min-height: 320px;
+  }
+
+  .table-responsive {
+    border: 0;
+  }
+
+  table.table-striped {
+    background-color: $gray-light;
+    font-size: .875rem;
+
+    thead {
+      color: white;
+      background-color: $blue;
+      font-size: .75rem;
+
+      th {
+        border: 0;
+      }
+    }
+
+    tbody {
+      font-family: 'Montserrat-Light';
+
+      td {
+        border: 0;
+      }
+    }
+
+    & > tbody > tr > td,
+    & > thead > tr > th {
+      padding: 10px 15px;
+    }
+
+    & .table-striped > tbody > tr:nth-of-type(odd) {
+      background-color: $gray;
+    }
+  }
+
+  .table-rounded {
+    border-collapse: separate;
+    border-radius: $globalRadius;
+
+    & th {
+      border-top: none;
+    }
+
+    & th:first-child {
+      border-radius: $globalRadius 0 0 0;
+    }
+
+    & th:last-child {
+      border-radius: 0 $globalRadius 0 0;
+    }
+
+    & th:only-child{
+      border-radius: $globalRadius $globalRadius 0 0;
+    }
+
+    & tr:last-child td:first-child {
+      border-radius: 0 0 0 $globalRadius;
+    }
+
+    & tr:last-child td:last-child {
+      border-radius: 0 0 $globalRadius 0;
+    }
+  }
+}
+
+.mvpPricing {
+  padding: 70px 0 80px;
+  background-color: $gray-light;
+}
+
+.pricingBox {
+  background-color: white;
+  text: center;
+  border-radius: $boxRadius;
+
+  .pricingBox-header {
+    padding: 15px;
+    background-color: $blue;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+
+  .pricingBox-body {
+    padding: 40px 30px;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .mvpProcess {
+      .processBox {
+        min-height: 394px;
+      }
+    }
+}
+
+@media (max-width: 769px) {
+  .mvp {
+    .mvpProblem {
+      padding: 50px 0 30px;
+    }
+    .mvpWhy {
+      padding: 50px 0;
+    }
+
+    .mvpResult {
+      padding: 50px 0 40px;
+    }
+
+    .mvpWorklist {
+      .workItem {
+        padding: 40px 0 0 !important;
+      }
+    }
+
+    .mvpProcess {
+      padding: 50px 0 40px;
+    }
+
+    .mvpPricing {
+      padding: 50px 0 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mvpProcess {
+      .processBox {
+        min-height: auto;
+      }
+    }
+}
+
+@media (max-width: 600px) {
+  .mvpProblem,
+  .mvpWhy {
+    i {
+      font-size: 3.25rem;
+      margin-top: 5px !important;
+    }
+
+    p {
+      margin-bottom: 15px !important;
+    }
+  }
+}
