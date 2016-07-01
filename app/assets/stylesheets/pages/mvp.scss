@@ -109,6 +109,10 @@
     min-height: 320px;
   }
 
+  .table-responsive {
+    border: 0;
+  }
+
   table.table-striped {
     background-color: $gray-light;
     font-size: .875rem;
@@ -171,7 +175,7 @@
   }
 }
 
-section.pricing {
+.mvpPricing {
   padding: 70px 0 80px;
   background-color: $gray-light;
 }
@@ -197,6 +201,65 @@ section.pricing {
 
     p {
       padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .mvpProcess {
+      .processBox {
+        min-height: 394px;
+      }
+    }
+}
+
+@media (max-width: 769px) {
+  .mvp {
+    .mvpProblem {
+      padding: 50px 0 30px;
+    }
+    .mvpWhy {
+      padding: 50px 0;
+    }
+
+    .mvpResult {
+      padding: 50px 0 40px;
+    }
+
+    .mvpWorklist {
+      .workItem {
+        padding: 40px 0 0 !important;
+      }
+    }
+
+    .mvpProcess {
+      padding: 50px 0 40px;
+    }
+
+    .mvpPricing {
+      padding: 50px 0 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mvpProcess {
+      .processBox {
+        min-height: auto;
+      }
+    }
+}
+
+@media (max-width: 600px) {
+  .mvpProblem,
+  .mvpWhy {
+    i {
+      font-size: 3.25rem;
+      margin-top: 5px !important;
+    }
+
+    p {
+      margin-bottom: 15px !important;
     }
   }
 }
