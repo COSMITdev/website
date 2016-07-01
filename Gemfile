@@ -49,10 +49,6 @@ gem 'draper', '~> 1.3'
 gem 'nprogress-rails', '~> 0.1.6'
 # Masks for monetary fields
 gem 'maskmoney-rails'
-# Google Analytics gem
-gem 'google-analytics-rails', '~> 1.0'
-# For performance analytics
-gem 'appsignal'
 # For dynamic meta tags & og tags
 gem 'meta-tags'
 # Translate routes for better SEO

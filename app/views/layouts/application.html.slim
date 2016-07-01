@@ -8,7 +8,6 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
     meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"]
     / Bing validation
     meta name="msvalidate.01" content="18C625B578176124BAC8B97E5FA6756B"
-    = analytics_init if GoogleAnalytics.valid_tracker?
 
     / ===== Default Google meta tags
     meta name="robots" content="index, follow"
@@ -34,6 +33,7 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
       = render 'partials/google_web_font'
 
     - if Rails.env.production?
+      = render 'partials/javascript'
       = render 'partials/hotjar'
       = render 'partials/facebook_pixel'
       / Navegg JS script
