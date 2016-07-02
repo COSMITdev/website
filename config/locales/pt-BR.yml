@@ -14,3 +14,4 @@ pt-BR:
   contact:
     success: 'Obrigado(a) pelo contato! Em breve retornaremos.'
     failure: 'Revise os campos com erro!'
+    url_message: 'obrigado'

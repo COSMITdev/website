@@ -1,12 +1,12 @@
 if (<%= @contact.errors.any? %>) {
-  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>')
+  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>');
   Website.Flash.init();
 } else {
-  $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>')
+  window.location.hash = "<%= t('contact.url_message') %>";
+  $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
   Website.Flash.init();
-  ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato')
-  window.location.hash = 'obrigado';
+  // ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato');
 }
 
 $(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));
-Website.Maskmoney.init()
+Website.Maskmoney.init();

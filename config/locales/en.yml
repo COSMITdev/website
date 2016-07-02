@@ -14,3 +14,4 @@ en:
   contact:
     success: 'Thanks! We will get in touch soon.'
     failure: 'Review errors in the form and try again'
+    url_message: 'thankyou'
