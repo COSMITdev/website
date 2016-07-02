@@ -21,7 +21,7 @@ en:
       home:
         title: 'COSMIT - We transform your ideas into successful products'
         description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
-        keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
+        keywords: 'MVP, MVP Slim, Discovery, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
         og:
           title: 'We transform your ideas into successful products'
           locale: 'en'
@@ -35,7 +35,7 @@ en:
       works:
         title: "COSMIT Works"
         description: 'We work guided by goals that generate real and trackable results for your business'
-        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, Concierge, MVP Concierge, MVP V1, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
+        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, MVP Slim, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
         og:
           title: 'Our experiences'
           locale: 'en'
@@ -49,7 +49,7 @@ en:
       services:
         title: "COSMIT Services"
         description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
-        keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continuous Development, MVP, MVP V1, MVP Concierge, Continuous Maintenance, Emergency, Performance"
+        keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continuous Development, MVP, MVP Slim, Continuous Maintenance, Emergency"
         og:
           title: 'Our Services'
           locale: 'en'
@@ -59,3 +59,18 @@ en:
           card: 'Our Services'
           site: '@COSMITdev'
           description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
+
+      mvp:
+        title: "COSMIT MVP Slim"
+        description: "Validate your idea with a one-week web product"
+        keywords: "MVP, MVP Slim, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
+        og:
+          title: 'MVP Slim'
+          locale: 'en'
+          site_name: 'mvp.cosmit.me'
+          description: "Validate your idea with a one-week web product"
+        twitter:
+          card: 'MVP Slim'
+          site: '@COSMITdev'
+          description: "Validate your idea with a one-week web product"
+
