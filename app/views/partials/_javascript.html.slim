@@ -11,6 +11,22 @@
       ga('create', 'UA-73080659-3', 'auto');
       ga('send', 'pageview');
 
+      (function() {
+        var slk = document.createElement('script');
+        slk.src = 'https://cdn.slaask.com/chat.js';
+        slk.type = 'text/javascript';
+        slk.async = 'true';
+        slk.onload = slk.onreadystatechange = function() {
+          var rs = this.readyState;
+          if (rs && rs != 'complete' && rs != 'loaded') return;
+          try {
+            _slaask.init('c1b426900eadaf26f7c356a772918161');
+          } catch (e) {}
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(slk, s);
+      })();
+
   - else
     javascript:
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
