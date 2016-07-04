@@ -1,0 +1,6 @@
+= simple_form_for :subscription, url: subscription_path, method: :delete, remote: true do |f|
+  = f.input :email, label: "What's the email you want to unsubscribe?", placeholder: 'email@example.com',
+                    class: '-block', input_html: { title: "What's your email?",
+                                                   value: params[:email] }
+  = f.button :submit, 'Send', title: 'Send', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30',
+    data: { disable_with: 'Saying bye to everyone...' }

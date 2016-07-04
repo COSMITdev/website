@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       # For some unknown reason this routes don't work
       # when declared as 'root to'
       match '/', to: 'subscriptions#index', as: :course, via: 'get'
+      get 'unsubscribe', to: 'subscriptions#unsubscribe', as: :unsubscribe
     end
 
     localized do

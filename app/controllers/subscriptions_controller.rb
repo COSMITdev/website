@@ -7,7 +7,6 @@ class SubscriptionsController < ApplicationController
     @subscription = Subscription.new(permitted_params)
 
     if @subscription.save
-      # SubscriptionMailer.subscription(@subscription).deliver_now
       @subscription = Subscription.new # empty fields on form
       @message = I18n.t('subscription.success')
     else
@@ -18,17 +17,28 @@ class SubscriptionsController < ApplicationController
   end
 
   def destroy
-    @subscription = Subscription.find_by(email: params[:email])
-
-    if @subscription.destroy
-      # SubscriptionMailer.subscription(@subscription).deliver_now
-      @message = I18n.t('subscription.destroy.success')
+    @subscription = Subscription.find_by(email: params[:subscription][:email])
+    @success, @error = false, false
+    if params[:subscription][:email].present?
+      if @subscription.present? && @subscription.destroy
+        @message = I18n.t('subscription.destroy.success')
+        @success = true
+      elsif @subscription.nil?
+        @message = I18n.t('subscription.destroy.not_found')
+        @error = true
+      else
+        @message = I18n.t('subscription.destroy.failure')
+        @error = true
+      end
     else
-      @message = I18n.t('subscription.destroy.failure')
+      @message = I18n.t('subscription.destroy.empty_email')
+      @error = true
     end
 
     render :destroy
   end
+
+  def unsubscribe;end
 
   private
 

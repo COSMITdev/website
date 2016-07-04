@@ -18,4 +18,9 @@ en:
   subscription:
     success: 'You subscribed with success!'
     failure: 'Review errors in the subscriptions and try again'
+    destroy:
+      success: 'Hope to see you soon again =('
+      failure: 'Something went wrong...'
+      empty_email: 'You must provide an email to Unsubscribe'
+      not_found: 'Email not found'
     url_message: 'subscribed'
