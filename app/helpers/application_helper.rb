@@ -1,4 +1,14 @@
 module ApplicationHelper
+  def google_analytics_tacking_code(action)
+    if action == 'mvp'
+      ENV['ANALYTICS_MVP']
+    elsif action == 'course'
+      ENV['ANALYTICS_COURSE']
+    else
+      ENV['ANALYTICS_GENERAL']
+    end
+  end
+
   def markdown(html)
     # This HTML class is provided in config/initializers/rouge.rb
     renderer = RecarpetHTML.new({
