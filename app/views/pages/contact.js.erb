@@ -5,7 +5,7 @@ if (<%= @contact.errors.any? %>) {
   window.location.hash = "<%= t('contact.url_message') %>";
   $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
   Website.Flash.init();
-  // ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato');
+  ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato');
 }
 
 $(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));
