@@ -1,4 +1,4 @@
-- set_meta_tags(meta_tags_for_course)
+- set_meta_tags(meta_tags_for_mvp)
 - cache do
   section.pageHero
     .container
@@ -6,13 +6,13 @@
         .col-sm-12.col-md-9.u-centered
           .heroContainer.u-textCenter
             .u-verticalAlign
-              h1.u-textCyan title="Just some courses...you know..." Just some courses...you know...
+              h1.u-textCyan title="Validate your idea with a one-week web product" Validate your idea with a one-week web product
               .row
                 .col-sm-10.u-centered
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We help entrepreneurs with no time to waste to rapidly validate their ideas with a small web product" We help entrepreneurs with no time to waste to rapidly validate their ideas with a small web product
-                  = link_to "Get started", course_path(anchor: 'subscribe'), title: "Get started", class: 'btn -lg -cyan u-marginTop15 u-marginBot30'
+                  = link_to "Get started", mvp_path(anchor: 'contact'), title: "Get started", class: 'btn -lg -cyan u-marginTop15 u-marginBot30'
                   .clearfix
-                  = link_to "Learn more", course_path(anchor: 'problems'), title: "Learn more", class: 'u-marginTop30 u-linkCyan u-textUp'
+                  = link_to "Learn more", mvp_path(anchor: 'problems'), title: "Learn more", class: 'u-marginTop30 u-linkCyan u-textUp'
   section.mvpProblem#problems
     .container
       .row
@@ -64,7 +64,7 @@
               h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5.u-textSemiBold Focused
               p.u-textLight.u-noMargin.u-marginBot30.u-textGray-dark We like to keep things simple. Focusing on the things that matter helps you to faster discover your value proposition and validate your assumptions. This way you will not be concerned about useless things and will be able to put all your effort into the important ones.
             .col-sm-10.u-centered.u-textCenter
-              = link_to "Get started", course_path(anchor: 'subscribe'), title: "Get started", class: 'btn -md -cyan u-marginTop15'
+              = link_to "Get started", mvp_path(anchor: 'contact'), title: "Get started", class: 'btn -md -cyan u-marginTop15'
   section.mvpResult#result
     .container
       .row
@@ -228,8 +228,8 @@
               p.u-textGray-dark.u-noMargin.u-marginBot15.u-textLight Validate your idea in just one week with MVP Slim
               p.small.u-textGray.u-textLight 
                 | *Consult price for other currencies
-              = link_to 'Get Started', course_path(anchor: 'subscribe'), class: 'btn -md -cyan'
-  section.contact.-blue#subscribe
+              = link_to 'Get Started', mvp_path(anchor: 'contact'), class: 'btn -md -cyan'
+  section.contact.-blue#contact
     .container
       .row
         .col-sm-12.col-md-10.u-centered
@@ -238,5 +238,5 @@
             .col-sm-10.col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot30.u-textWhite.u-textCenter title="Schedule a free online consultation to set everything to start working with us or talk about your doubts" Schedule a free online consultation to set everything to start working with us or talk about your doubts
           .row
-            .subscriptionForm.col-sm-7.col-md-6.u-centered
-              = render partial: 'subscriptions/subscription', locals: { subscription: @subscription }
+            .contactForm.col-sm-7.col-md-6.u-centered
+              = render partial: 'contacts/contact', locals: { contact: @contact }

@@ -6,7 +6,7 @@
         .col-sm-12.col-md-9.u-centered
           .heroContainer.u-textCenter
             .u-verticalAlign
-              h1.u-textCyan title="Validate your idea with a one-week web product" Validate your idea with a one-week web product
+              h1.u-textCyan title="Subscribe to our Newsletter" Subscribe to our Newsletter
               .row
                 .col-sm-10.u-centered
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="We help entrepreneurs with no time to waste to rapidly validate their ideas with a small web product" We help entrepreneurs with no time to waste to rapidly validate their ideas with a small web product
@@ -238,5 +238,5 @@
             .col-sm-10.col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot30.u-textWhite.u-textCenter title="Schedule a free online consultation to set everything to start working with us or talk about your doubts" Schedule a free online consultation to set everything to start working with us or talk about your doubts
           .row
-            .contactForm.col-sm-7.col-md-6.u-centered
-              = render partial: 'pages/contact', locals: { contact: @contact }
+            .subscriptionForm.col-sm-7.col-md-6.u-centered
+              = render partial: 'subscriptions/subscription', locals: { subscription: @subscription }

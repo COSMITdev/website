@@ -8,4 +8,4 @@ if (<%= @subscription.errors.any? %>) {
   // ga('send', 'event', 'Inscrição', 'Formulário inscrição', 'Envio de formulário de inscrição');
 }
 
-$(".subscriptionForm").html($("<%= escape_javascript(render partial: 'pages/subscription', locals: { subscription: @subscription }) %>"));
+$(".subscriptionForm").html($("<%= escape_javascript(render partial: 'subscriptions/subscription', locals: { subscription: @subscription }) %>"));
