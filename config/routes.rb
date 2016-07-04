@@ -3,8 +3,18 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   scope '(:locale)', locale: /pt-BR|en/ do
-    match '/', to: 'pages#home', constraints: { subdomain: '' }, as: :root, via: 'get'
-    match '/', to: 'pages#mvp', constraints: { subdomain: /.+/ }, as: :mvp, via: 'get'
+    constraints subdomain: '' do
+      match '/', to: 'pages#home', as: :root, via: 'get'
+    end
+
+    constraints subdomain: 'mvp' do
+      match '/', to: 'pages#mvp', as: :mvp, via: 'get'
+    end
+
+    constraints subdomain: 'course' do
+      match '/', to: 'pages#course', as: :course, via: 'get'
+      post 'subscription', to: 'pages#subscription', as: :subscription
+    end
 
     localized do
       get 'work',      to: 'pages#works',    as: :work

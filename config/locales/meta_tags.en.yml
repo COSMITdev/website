@@ -74,3 +74,16 @@ en:
           site: '@COSMITdev'
           description: "Validate your idea with a one-week web product"
 
+      course:
+        title: "COSMIT Course"
+        description: "Validate your idea with a one-week web product"
+        keywords: "Course, Course, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
+        og:
+          title: 'Course'
+          locale: 'en'
+          site_name: 'course.cosmit.me'
+          description: "Validate your idea with a one-week web product"
+        twitter:
+          card: 'Course'
+          site: '@COSMITdev'
+          description: "Validate your idea with a one-week web product"

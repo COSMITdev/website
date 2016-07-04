@@ -15,3 +15,7 @@ en:
     success: 'Thanks! We will get in touch soon.'
     failure: 'Review errors in the form and try again'
     url_message: 'thankyou'
+  subscription:
+    success: 'You subscribed with success!'
+    failure: 'Review errors in the subscriptions and try again'
+    url_message: 'subscribed'
