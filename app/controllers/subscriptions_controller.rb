@@ -8,6 +8,7 @@ class SubscriptionsController < ApplicationController
 
     if @subscription.save
       @subscription = Subscription.new # empty fields on form
+      SubscriptionMailer.lesson(@subscription).deliver_now
       @message = I18n.t('subscription.success')
     else
       @message = I18n.t('subscription.failure')
