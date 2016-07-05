@@ -1,0 +1,28 @@
+- set_meta_tags(meta_tags_for_post_index)
+
+section.pageHero
+  .container
+    .row
+      .col-sm-12.col-md-8.u-centered.u-textCenter
+        .heroContainer.-internal
+          .u-verticalAlign
+            h1.u-textPurple title="Controle Center" Control Center
+            .row
+              .col-sm-10.u-centered
+                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 Uma coleção das melhores ideias, histórias e experiências do nosso time
+
+section.postIndex
+  .container
+    .row
+      .col-sm-10.col-md-7.u-centered
+        - @posts.each do |post|
+          .postItem.u-paddingBot15.u-marginBot50
+            = link_to post do
+              h2.postTitle.u-noMargin.u-marginBot15 title="#{post.title}" = post.title
+              p.postText.u-marginBot15 title="Ler mais" = truncate(post.body, length: 140, omission: ' »')
+            ul.postTags
+              span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} em "
+              - post.tags.each do |tag|
+                li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
+
+= render 'partials/newsletter'

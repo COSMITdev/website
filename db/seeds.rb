@@ -22,7 +22,8 @@ AdminUser.create!(email: 'admin@example.com',
     meta_title: "Post de Exemplo #{index}",
     meta_description: "Quer saber como criar um post? Check this out!",
     meta_tags: "ruby, rails, productivity",
-    tag_list: "ruby, rails, productivity"
+    tag_list: "ruby, rails, productivity",
+    language: ["en", "pt-BR"].shuffle.first
   )
 end
 
