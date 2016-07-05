@@ -7,8 +7,8 @@ class SubscriptionsController < ApplicationController
     @subscription = Subscription.new(permitted_params)
 
     if @subscription.save
-      @subscription = Subscription.new # empty fields on form
       SubscriptionMailer.lesson(@subscription).deliver_now if Newsletter.find(@subscription.current_newsletter)
+      @subscription = Subscription.new # empty fields on form
       @message = I18n.t('subscription.success')
     else
       @message = I18n.t('subscription.failure')
