@@ -20,6 +20,7 @@ Rails.application.routes.draw do
       # when declared as 'root to'
       match '/', to: 'subscriptions#index', as: :course, via: 'get'
       get 'unsubscribe', to: 'subscriptions#unsubscribe', as: :unsubscribe
+      get 'next', to: 'subscriptions#next', as: :next_newsletter
     end
 
     localized do

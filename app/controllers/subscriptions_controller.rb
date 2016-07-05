@@ -41,6 +41,21 @@ class SubscriptionsController < ApplicationController
 
   def unsubscribe;end
 
+  def next
+    if params[:email].present?
+      subscriber = Subscription.find_by(email: params[:email])
+      if Newsletter.where(id: subscriber.current_newsletter).any?
+        SubscriptionMailer.lesson(subscriber).deliver_now
+        subscriber.update_attributes(current_newsletter: subscriber.current_newsletter+1)
+        @message = t('subscription.next_lesson.success')
+      else
+        @message = t('subscription.next_lesson.not_found')
+      end
+    else
+      @message = t('subscription.next_lesson.provide_email')
+    end
+  end
+
   private
 
   def permitted_params
