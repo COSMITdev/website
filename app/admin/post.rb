@@ -1,7 +1,7 @@
 ActiveAdmin.register Post do
   permit_params :hero_image, :title, :body, :slug, :publish_date, :author_id,
                 :meta_title, :meta_description, :tag_list, :published, :hero_image_cache,
-                :meta_tags
+                :meta_tags, :language
 
   index do
     selectable_column
