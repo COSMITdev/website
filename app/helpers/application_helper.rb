@@ -12,7 +12,7 @@ module ApplicationHelper
   def markdown(html)
     # This HTML class is provided in config/initializers/rouge.rb
     renderer = RecarpetHTML.new({
-      filter_html: true,
+      filter_html: false,
       hard_wrap: true,
       prettify: true
     })
