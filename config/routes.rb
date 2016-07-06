@@ -38,5 +38,5 @@ Rails.application.routes.draw do
   end
 
   # Keep this always at the end of file to grab 404 problems
-  # get '*path', to: 'pages#404', via: :all
+  get '*path', to: 'pages#404', via: :all
 end
