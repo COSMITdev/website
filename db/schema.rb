@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427013800) do
+ActiveRecord::Schema.define(version: 20160705140049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,13 @@ ActiveRecord::Schema.define(version: 20160427013800) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
+  create_table "newsletters", force: :cascade do |t|
+    t.string   "subject",    default: "", null: false
+    t.text     "body",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string   "hero_image"
     t.string   "title"
@@ -82,6 +89,16 @@ ActiveRecord::Schema.define(version: 20160427013800) do
   end
 
   add_index "posts", ["author_id"], name: "index_posts_on_author_id", using: :btree
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.string   "name",               default: "", null: false
+    t.string   "email",              default: "", null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.integer  "current_newsletter", default: 1,  null: false
+  end
+
+  add_index "subscriptions", ["email"], name: "index_subscriptions_on_email", using: :btree
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"

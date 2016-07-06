@@ -59,3 +59,17 @@ pt-BR:
           card: 'Nossos serviços'
           site: '@COSMITdev'
           description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+
+      course:
+        title: "COSMIT Cursos"
+        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+        keywords: "Cursos, Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
+        og:
+          title: 'Nossos Cursos'
+          locale: 'pt_BR'
+          site_name: 'course.cosmit.me'
+          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+        twitter:
+          card: 'Nossos Cursos'
+          site: '@COSMITdev'
+          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'

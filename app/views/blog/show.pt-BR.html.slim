@@ -1,0 +1,48 @@
+- set_meta_tags(meta_tags_for_post(@post))
+
+section.postHero style="background-image: url('#{@post.hero_image.url(:hero)}')"
+section.postShow
+  .container
+    .row
+      .col-sm-10.col-md-7.u-centered
+        h1.postTitle.u-marginBot15 = @post.title
+        ul.postTags
+          - @post.tags.each do |tag|
+            li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
+        .postText
+          = markdown(@post.body).html_safe
+        .row
+          .col-sm-8
+            h5.u-marginBot15 Autor:
+            .authorInfo
+              .authorImg
+                = image_tag @post.author.avatar.url, class: 'img img-circle', size: '100x100'
+              .authorTxt
+                strong = @post.author.name
+                br
+                span.u-textGray-dark.small = @post.author.bio
+          .col-sm-4
+            h5.u-marginBot15 Compartilhe:
+            .shareButtons
+              span.buttonFacebook
+                = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
+              span.buttonTwitter
+                = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
+                                                                            description: @post.meta_description }
+
+      .col-sm-10.col-md-7.u-centered
+        hr.u-marginTop30.u-marginBot10
+        .row
+          .col-sm-4.text-left
+            - if @previous.present?
+              = link_to "Anterior", post_path(@previous), class: 'btn -md -purple -block u-marginTop30', title: 'Anterior',
+                data: { disable_with: 'Carregando...' }
+          .col-sm-4.col-sm-offset-4.text-right
+            - if @next.present?
+              = link_to "Próximo", post_path(@next), class: 'btn -md -purple -block u-marginTop30', title: 'Próximo',
+                data: { disable_with: 'Carregando...' }
+      
+      .col-sm-10.col-md-7.u-centered.u-marginTop30
+        = render partial: 'layouts/comments'
+
+= render 'partials/newsletter'

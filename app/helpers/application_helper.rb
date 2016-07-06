@@ -1,8 +1,18 @@
 module ApplicationHelper
+  def google_analytics_tacking_code(action)
+    if action == 'mvp'
+      ENV['ANALYTICS_MVP']
+    elsif action == 'course'
+      ENV['ANALYTICS_COURSE']
+    else
+      ENV['ANALYTICS_GENERAL']
+    end
+  end
+
   def markdown(html)
     # This HTML class is provided in config/initializers/rouge.rb
     renderer = RecarpetHTML.new({
-      filter_html: true,
+      filter_html: false,
       hard_wrap: true,
       prettify: true
     })
@@ -142,6 +152,28 @@ module ApplicationHelper
           },
       twitter: {
         card: I18n.t('meta_tags.pages.mvp.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_course
+    { title: I18n.t('meta_tags.pages.course.title'),
+      description: I18n.t('meta_tags.pages.course.description'),
+      keywords: I18n.t('meta_tags.pages.course.keywords'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.pages.course.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.pages.course.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.pages.course.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.pages.course.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),

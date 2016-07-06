@@ -61,6 +61,7 @@
   h1, h2, h3, h4 {
     line-height: 1.1em !important;
     color: $black;
+    margin-top: 35px;
   }
 
   h1 {
@@ -110,6 +111,14 @@
       padding: 6px 13px;
       border: 1px solid $gray-light;
     }
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+
+  .hint {
+    margin-top: -10px;
   }
 }
 

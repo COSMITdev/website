@@ -8,5 +8,5 @@ if (<%= @contact.errors.any? %>) {
   ga('send', 'event', 'Contato', 'Formulário contato', 'Envio de formulário de contato');
 }
 
-$(".contactForm").html($("<%= escape_javascript(render partial: 'pages/contact', locals: { contact: @contact }) %>"));
+$(".contactForm").html($("<%= escape_javascript(render partial: 'contacts/contact', locals: { contact: @contact }) %>"));
 Website.Maskmoney.init();

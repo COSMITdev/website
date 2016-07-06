@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -40,6 +40,7 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'devise', '~> 3.5.2'
 gem 'devise-i18n', '~> 0.12.1'
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
 gem 'simple_form', '~> 3.1.0'
 gem 'pundit', '~> 1.0.1'
 gem 'autoprefixer-rails', '~> 5.2.1'

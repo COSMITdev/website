@@ -1,0 +1,11 @@
+if (<%= @subscription.errors.any? %>) {
+  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>');
+  Website.Flash.init();
+} else {
+  window.location.hash = "<%= t('subscription.url_message') %>";
+  $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
+  Website.Flash.init();
+  // ga('send', 'event', 'Inscrição', 'Formulário inscrição', 'Envio de formulário de inscrição');
+}
+
+$(".subscriptionForm").html($("<%= escape_javascript(render partial: 'subscriptions/subscription', locals: { subscription: @subscription }) %>"));

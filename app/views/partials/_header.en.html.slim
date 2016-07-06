@@ -7,14 +7,14 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        - if params[:action] == 'mvp'
+        - if params[:controller] == 'mvp'
           = link_to 'COSMIT', mvp_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
         - else
           = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
       / Collect the nav links, forms, and other content for toggling
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
-          - if params[:action] == 'mvp'
+          - if params[:controller] == 'mvp'
             li
               = link_to 'Why', mvp_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
             li
