@@ -13,7 +13,7 @@ section.postShow
           = markdown(@post.body).html_safe
         .row
           .col-sm-8
-            h5.u-marginBot15 Autor:
+            h5.u-marginBot15 Author:
             .authorInfo
               .authorImg
                 = image_tag @post.author.avatar.url, class: 'img img-circle', size: '100x100'
@@ -22,7 +22,7 @@ section.postShow
                 br
                 span.u-textGray-dark.small = @post.author.bio
           .col-sm-4
-            h5.u-marginBot15 Compartilhe:
+            h5.u-marginBot15 Share:
             .shareButtons
               span.buttonFacebook
                 = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
