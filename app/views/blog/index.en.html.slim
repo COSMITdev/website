@@ -6,10 +6,10 @@ section.pageHero
       .col-sm-12.col-md-8.u-centered.u-textCenter
         .heroContainer.-internal
           .u-verticalAlign
-            h1.u-textPurple title="Controle Center" Control Center
+            h1.u-textPurple title="Ground Control" Ground Control
             .row
               .col-sm-10.u-centered
-                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 Uma coleção das melhores ideias, histórias e experiências do nosso time
+                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="A collection of our team's best ideas, stories and experiences" A collection of our team's best ideas, stories and experiences
 
 section.postIndex
   .container
@@ -19,9 +19,9 @@ section.postIndex
           .postItem.u-paddingBot15.u-marginBot50
             = link_to post do
               h2.postTitle.u-noMargin.u-marginBot15 title="#{post.title}" = post.title
-              p.postText.u-marginBot15 title="Ler mais" = truncate(post.body, length: 140, omission: ' »')
+              p.postText.u-marginBot15 title="Read more" = truncate(post.body, length: 140, omission: ' »')
             ul.postTags
-              span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} em "
+              span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} on "
               - post.tags.each do |tag|
                 li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
 
