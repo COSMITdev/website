@@ -3,7 +3,7 @@ en:
     post:
       show:
         og:
-          locale: 'en'
+          locale: 'en_US'
 
       index:
         title: 'COSMIT Blog - Centro de Controle'
@@ -11,7 +11,7 @@ en:
         keywords: 'Centro de Controle, ideias, histórias, experiências'
         og:
           title: 'COSMIT Blog - Centro de Controle'
-          locale: 'en'
+          locale: 'en_US'
           description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
         twitter:
           card: 'Centro de Controle'
@@ -24,7 +24,7 @@ en:
         keywords: 'MVP, MVP Slim, Discovery, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
         og:
           title: 'We transform your ideas into successful products'
-          locale: 'en'
+          locale: 'en_US'
           site_name: 'cosmit.me/en'
           description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
         twitter:
@@ -38,7 +38,7 @@ en:
         keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, MVP Slim, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
         og:
           title: 'Our experiences'
-          locale: 'en'
+          locale: 'en_US'
           site_name: 'cosmit.me/en'
           description: 'We work guided by goals that generate real and trackable results for your business'
         twitter:
@@ -52,7 +52,7 @@ en:
         keywords: "Services, Build, Support & Maintenance, Support, Maintenance, Continuous Development, MVP, MVP Slim, Continuous Maintenance, Emergency"
         og:
           title: 'Our Services'
-          locale: 'en'
+          locale: 'en_US'
           site_name: 'cosmit.me/en'
           description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
         twitter:
@@ -66,7 +66,7 @@ en:
         keywords: "MVP, MVP Slim, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'MVP Slim'
-          locale: 'en'
+          locale: 'en_US'
           site_name: 'mvp.cosmit.me'
           description: "Validate your idea with a one-week web product"
         twitter:
@@ -80,7 +80,7 @@ en:
         keywords: "Course, Course, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'Course'
-          locale: 'en'
+          locale: 'en_US'
           site_name: 'course.cosmit.me'
           description: "Validate your idea with a one-week web product"
         twitter:
