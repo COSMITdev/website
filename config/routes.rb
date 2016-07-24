@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     get 'services',  to: 'pages#services', as: :service
     get '404',       to: 'pages#404',      as: :not_found
     post 'contact',  to: 'pages#contact',  as: :contact
-    get 'mvp',       to: 'mvp#index',      as: :mvp
+    get 'mvpslim',       to: 'mvp#index',      as: :mvp
 
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
     resource :contact, only: :create
