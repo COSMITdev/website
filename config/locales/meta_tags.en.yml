@@ -62,17 +62,17 @@ en:
 
       mvp:
         title: "COSMIT MVP Slim"
-        description: "Validate your idea with a one-week web product"
+        description: "Validate your idea in just one week with MVP Slim"
         keywords: "MVP, MVP Slim, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'MVP Slim'
           locale: 'en_US'
           site_name: 'mvp.cosmit.me'
-          description: "Validate your idea with a one-week web product"
+          description: "Validate your idea in just one week with MVP Slim"
         twitter:
           card: 'MVP Slim'
           site: '@COSMITdev'
-          description: "Validate your idea with a one-week web product"
+          description: "Validate your idea in just one week with MVP Slim"
 
       course:
         title: "COSMIT Course"
