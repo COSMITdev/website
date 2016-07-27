@@ -9,6 +9,10 @@ module ApplicationHelper
     end
   end
 
+  def google_tag_manager
+    ENV['GOOGLE_TAG_MANAGER']
+  end
+
   def markdown(html)
     # This HTML class is provided in config/initializers/rouge.rb
     renderer = RecarpetHTML.new({
