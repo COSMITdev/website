@@ -21,7 +21,7 @@ en:
       home:
         title: 'COSMIT - We transform your ideas into successful products'
         description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
-        keywords: 'MVP, MVP Slim, Discovery, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
+        keywords: 'MVP, MVP Slim, minimum viable product, minimal viable product, mvp product, Discovery, Design, Development, Software development, Ideas, Validation, Support, Maintenance, Product Market Fit'
         og:
           title: 'We transform your ideas into successful products'
           locale: 'en_US'
@@ -35,7 +35,7 @@ en:
       works:
         title: "COSMIT Works"
         description: 'We work guided by goals that generate real and trackable results for your business'
-        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, MVP Slim, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
+        keywords: "Experiences, Goals, Startup, Small Business, Business, MVP, MVP Slim, minimum viable product, minimal viable product, mvp product, Continuous Development, Pago Até, Tribo Viva, Enda, Aura, Let's Jam, Educais"
         og:
           title: 'Our experiences'
           locale: 'en_US'
@@ -63,7 +63,7 @@ en:
       mvp:
         title: "COSMIT MVP Slim"
         description: "Validate your idea in just one week with MVP Slim"
-        keywords: "MVP, MVP Slim, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
+        keywords: "MVP, MVP Slim, minimum viable product, minimal viable product, mvp product, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'MVP Slim'
           locale: 'en_US'
