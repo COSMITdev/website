@@ -4,10 +4,7 @@ class StartupsController < ApplicationController
   def index
   end
 
-  def mvpv1
-  end
-
-  def mvpslim
+  def validation
   end
 
   def strategycall
@@ -16,7 +13,7 @@ class StartupsController < ApplicationController
   def mvpconcierge
   end
 
-  def validation
+  def mvpslim
   end
 
   private

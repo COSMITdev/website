@@ -13,11 +13,10 @@ Rails.application.routes.draw do
     get 'mvpslim',                    to: 'mvp#index',             as: :mvp
     get 'services',                   to: 'pages#services',        as: :service
     get 'startups',                   to: 'startups#index',        as: :startups
-    get 'startups/mvp-v1',            to: 'startups#mvpv1',        as: :mvp_v1
-    get 'startups/mvp-slim',          to: 'startups#mvpslim',      as: :mvp_slim
+    get 'startups/validation-course', to: 'startups#validation',   as: :validation
     get 'startups/strategy-call',     to: 'startups#strategycall', as: :strategy_call
     get 'startups/mvp-concierge',     to: 'startups#mvpconcierge', as: :mvp_concierge
-    get 'startups/validation-course', to: 'startups#validation',   as: :validation
+    get 'startups/mvp-slim',          to: 'startups#mvpslim',      as: :mvp_slim
 
     post 'contact',  to: 'pages#contact',  as: :contact
 
