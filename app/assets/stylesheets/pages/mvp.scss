@@ -82,6 +82,14 @@
     font-size: 1.9375rem;
   }
 
+  .btn {
+    float: left;
+  }
+}
+
+.demoIcon-github {
+  display: inline-block;
+
   i {
     font-size: 1.6rem;
     color: $gray-medium;
@@ -91,14 +99,6 @@
       color: $magenta;
       transition: all .3s;
     }
-  }
-
-  .btn {
-    float: left;
-  }
-
-  .demoIcon-github {
-    display: inline-block;
   }
 }
 

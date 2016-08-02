@@ -3,6 +3,6 @@
   = f.input :email, label: "What's your email?", placeholder: 'email@example.com', class: '-block', input_html: { title: "What's your email?" }
   - unless params[:controller] == "mvp"
     = f.input :budget, label: 'Your budget?', required: false, class: '-block', input_html: { title: 'Your budget?', class: 'js-monetary' }
-  = f.input :message, as: :text, label: 'What you want to build?', placeholder: 'Write more about your idea...', class: '-block', input_html: { title: 'What you want to build? Write more about your idea...' }
+  = f.input :message, as: :text, label: 'What you want to build?', placeholder: 'Tell us more about your idea...', class: '-block', input_html: { title: 'What you want to build? Tell us more about your idea...' }
   = f.button :submit, 'Send', title: 'Send', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30',
     data: { disable_with: 'Sending...' }
