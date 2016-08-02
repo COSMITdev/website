@@ -1,0 +1,23 @@
+- cache do
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to 'COSMIT', mvp_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          - if params[:controller] == 'mvp'
+            li
+              = link_to 'Why', mvp_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
+            li
+              = link_to 'Results', mvp_path(anchor: 'result'), title: 'Results', class: 'u-textUp'
+            li
+              = link_to 'How', mvp_path(anchor: 'how'), title: 'How', class: 'u-textUp'
+            li
+              = link_to 'Pricing', mvp_path(anchor: 'pricing'), title: 'Pricing', class: 'u-textUp'
+            li
+              = link_to 'Get started', mvp_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'

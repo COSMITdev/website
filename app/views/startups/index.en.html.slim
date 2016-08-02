@@ -1,3 +1,5 @@
+= render 'partials/headerstartups'
+
 - cache do
   section.pageHero
     .container
@@ -43,7 +45,7 @@
                   h2.u-noMargin.boxTitle.u-textBlue[title="MVP Slim"] MVP Slim
                 p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
 
-  section.course
+  section.course#course
     .container
       .row
         .col-sm-12.col-md-8.u-centered
@@ -59,7 +61,7 @@
               p.subtitle.u-marginTop10.u-marginBot20 We will teach you how to validate your ideas and start your own tech business without knowing how to code, design or spending a lot of money in the process.
               = link_to "Take the  free course now!", validation_path, title: "Take the  free course now!", class: 'btn -md -magenta u-textUp'
 
-  section
+  section#work
     .container
       .row
         .col-sm-12.col-md-10.u-centered
