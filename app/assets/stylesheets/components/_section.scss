@@ -1,0 +1,13 @@
+section {
+  &.-gray {
+    background-color: $gray-light;
+  }
+
+  &.-sm {
+    padding: 50px 0;
+  }
+
+  &.-md {
+    padding: 70px 0;
+  }
+}
