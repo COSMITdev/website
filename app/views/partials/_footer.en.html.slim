@@ -5,7 +5,7 @@
         .col-sm-12.col-md-10.u-centered
           .row
             .col-sm-4.col-md-6
-              - if params[:controller] == 'mvp'
+              - if params[:controller] == 'mvp' || params[:action] == "mvpslim"
                 p.small.u-noMargin.u-textGray-medium.u-marginTop10.u-floatLft 340 King Street East, Toronto, ON - hi@cosmit.me | +1 (437) 345-9791
               - else
                 .socialLinks
