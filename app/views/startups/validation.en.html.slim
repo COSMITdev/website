@@ -1,4 +1,4 @@
-= render 'partials/headerstartups'
+= render 'partials/headervalidation'
 
 - cache do
   section.pageHero
@@ -13,9 +13,9 @@
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="A FREE email course that will teach you how to validate your idea without knowing how to code, design or spend a lot of money." A FREE email course that will teach you how to validate your idea without knowing how to code, design or spend a lot of money.
                   = link_to "Enroll now for FREE!", validation_path(anchor: 'enroll'), title: "Enroll now for FREE!", class: 'btn -md -cyan u-marginTop10 u-marginBot30'
                   .clearfix
-                  = link_to "Why you should take it?", validation_path(anchor: 'lessons'), title: "Why you should take it?", class: 'u-marginTop30 u-linkCyan u-textUp'
+                  = link_to "Why you should take it?", validation_path(anchor: 'why'), title: "Why you should take it?", class: 'u-marginTop30 u-linkCyan u-textUp'
 
-  section.-md.service#lessons
+  section.-md#why
     .container
       .row
         .col-sm-12.col-md-10.u-centered
@@ -33,7 +33,7 @@
               .u-textCenter.u-textGray
                 = link_to "Enroll now for FREE!", validation_path(anchor: 'enroll'), title: "Enroll now for FREE!", class: 'btn -md -cyan u-marginTop20'
 
-  section.-md.-gray.why#why
+  section.-md.-gray#lessons
     .container
       .row
         .col-sm-12.col-md-10.u-centered
@@ -70,7 +70,7 @@
               .u-textCenter.u-textGray
                 = link_to "Enroll now for FREE!", validation_path(anchor: 'enroll'), title: "Enroll now for FREE!", class: 'btn -md -cyan u-marginTop20'
 
-  section.-md.author#author
+  section.-md#teacher
     .container
       .row
         .col-sm-12.col-md-10.u-centered
