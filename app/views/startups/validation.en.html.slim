@@ -13,22 +13,37 @@
                   h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="A FREE email course that will teach you how to validate your idea without coding, designing or spending a lot of money." A FREE email course that will teach you how to validate your idea without coding, designing or spending a lot of money.
                   = link_to "Enroll now for FREE!", validation_path(anchor: 'enroll'), title: "Enroll now for FREE!", class: 'btn -md -cyan u-marginTop10'
 
-  section.service#lessons
+  section.-md.service#lessons
+    .container
+      .row
+        .col-sm-12.col-md-10.u-centered
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Why you should take this course?" Why you should take this course?
+          .row
+            .col-md-8.u-centered
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="A practical course that will teach you to validate your new product idea in just one week"
+                | A practical course that will teach you to validate your new product idea in just one week
+          .row
+            .col-md-8.u-centered
+              p You have this great idea in your mind but you don't know how to transform it into a real product or business. You just fell that it's such good idea that you can't ignore it for too long.
+              p And you can think that all you need is just to do it. That you're prepared for that. You just have to find a designer and a developer. Then everything will be fine. That you will be the next Zuckerberg.
+              p That was what I thought back in 2009. And after founding several startups and fail, I realized that just doing was not enough. The problem was that I was doing it the wrong way. I was not honestly open to LEARN about my clients and market. I was just too passionate about my "amazing" ideas. So, I missed the point. And it was right in front of me all the time.
+              p The good part of having failed so much is that I've learned how to do it. That is how I help all my clients. And that is what I want to share with you.
+  section.-md.-gray.why#why
     .container
       .row
         .col-sm-12.col-md-10.u-centered
           h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="What will you learn?" What will you learn?
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="A practical course that will teach you to validate your new product idea in just one week"
-                | A practical course that will teach you to validate your new product idea in just one week
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="This is a practical course that will teach how you to validate your new product idea in just one week"
+                | This is a practical course that will teach how you to validate your new product idea in just one week
           .row
             .col-sm-8.col-md-8.u-centered
               .checkList
                 ul.u-marginTop20
                   li.u-marginBot20
                     i.fa.fa-check
-                    h3.u-h2.u-textLight A business review document
+                    h3.u-h2.u-textLight Validation process without
                   li.u-marginBot20
                     i.fa.fa-check
                     h3.u-h2.u-textLight A well-designed product
@@ -38,17 +53,9 @@
                   li.u-marginBot20
                     i.fa.fa-check
                     h3.u-h2.u-textLight An online web product ready to be tested
-  section.why#why
-    .container
-      .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Why you should take this course?" Why you should take this course?
-          .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="A practical course that will teach you to validate your new product idea in just one week"
-                | A practical course that will teach you to validate your new product idea in just one week
+        
 
-  section.author#author
+  section.-md.author#author
     .container
       .row
         .col-sm-12.col-md-10.u-centered
@@ -57,4 +64,16 @@
             .col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="A practical course that will teach you to validate your new product idea in just one week"
                 | A practical course that will teach you to validate your new product idea in just one week
+          .row
+            .col-sm-10.col-md-9.u-centered
+              .row
+                .col-sm-3
+                  = image_tag('gabriel-carpenedo.png', class: 'img-circle img-responsive')
+                  br
+                  = link_to '' do
+                    i.fa.fa-linkedin-square
+                  = link_to '' do
+                    i.fa.fa-facebook-square
+                .col-sm-9
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   = render 'partials/newsletter'

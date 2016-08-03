@@ -1,13 +1,4 @@
-.service,
-.work,
-.process,
-.contact {
-  padding: 50px 0;
-}
-
 .work {
-  background-color: $gray-light;
-
   img {
     &.-opacity {
       opacity: 0.5;
@@ -49,20 +40,12 @@
     }
 
     .col-sm-4 {
-      // margin-top: 15px;
       height: 65px;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .service,
-  .work,
-  .process,
-  .contact {
-    padding: 40px 0;
-  }
-
   .service {
     h2.u-marginTop30,
     .u-h2.u-marginTop30 {
@@ -72,13 +55,6 @@
 }
 
 @media (max-width: 450px) {
-  .service,
-  .work,
-  .process,
-  .contact {
-    padding: 30px 0;
-  }
-
   .work {
     .row .u-marginTop40 {
       margin-top: 0px !important;
