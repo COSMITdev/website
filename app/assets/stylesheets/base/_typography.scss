@@ -47,6 +47,12 @@ strong {
   }
 }
 
+.testimonial {
+  font-family: 'Montserrat-Light', Open Sans, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.65em;
+}
+
 // =========== Media Queries
 @media (max-width: 768px) {
   h1, .u-h1 { font-size: 3rem; }
