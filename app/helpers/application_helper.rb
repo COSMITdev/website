@@ -1,9 +1,9 @@
 module ApplicationHelper
-  def google_analytics_tacking_code(action)
-    if action == 'mvp'
+  def google_analytics_tacking_code(controller)
+    if controller == 'mvp'
       ENV['ANALYTICS_MVP']
-    elsif action == 'course'
-      ENV['ANALYTICS_COURSE']
+    elsif controller == 'startups'
+      ENV['ANALYTICS_STARTUPS']
     else
       ENV['ANALYTICS_GENERAL']
     end

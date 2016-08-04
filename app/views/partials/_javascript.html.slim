@@ -5,10 +5,10 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', "#{ENV['ANALYTICS_GENERAL']}", 'auto');
+    ga('create', "#{params[:controller]}", 'auto');
     ga('send', 'pageview');
   
-  - if params[:controller] == 'mvp'
+  - if params[:controller] == 'startups'
     javascript:
       (function() {
         var slk = document.createElement('script');
