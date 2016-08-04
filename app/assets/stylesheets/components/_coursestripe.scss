@@ -1,6 +1,7 @@
 .courseStripe {
   display: table;
   width: 100%;
+  padding: 0 15px;
 
   .courseImg,
   .courseTxt {
@@ -31,6 +32,25 @@
       > h2 {
         color: $cyan;
         transition: all .2s !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 695px) {
+  .courseStripe {
+    display: block;
+
+    .courseImg,
+    .courseTxt {
+      display: block;
+      width: 100%
+    }
+
+    .courseImg {
+      img {
+        max-width: 80px;
+        margin-bottom: 20px;
       }
     }
   }
