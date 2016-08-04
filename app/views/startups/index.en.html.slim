@@ -20,7 +20,7 @@
     .container
       .row
         .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How can we help you?" How can we help you?
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How we can help you" How we can help you
           .row
             .col-md-8.u-centered
               p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We think critically, dream big and work hard to deliver solutions that make people's lives better"
@@ -31,19 +31,19 @@
                 = image_tag ('icon-mentor-cyan.svg'), class: 'serviceIcon', alt: 'Strategy Call'
                 = link_to strategy_call_path do
                   h2.u-noMargin.boxTitle.u-textBlue[title="Strategy Call"] Strategy Call
-                p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
+                p.subtitle.u-marginTop5.u-marginBot10.small You don't know for sure what to do? Where to start? Are you facing problems that you can't solve? An online call where we will help you through your validation process, discuss your business, strategies, your problems, doubts, or give you a better view of what you could do next.
             .col-sm-4
               .serviceBox.-en
                 = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'MVP Concierge'
                 = link_to mvp_concierge_path do
                   h2.u-noMargin.boxTitle.u-textBlue[title="MVP Concierge"] MVP Concierge
-                p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
+                p.subtitle.u-marginTop5.u-marginBot10.small You've validated some business assumptions or you just want to start really small. We will develop a micro web product with your solution core feature. Using a mix of software and manual operations you will be able to sell your solution and generate and deliver value to your customer.
             .col-sm-4
               .serviceBox.-en
                 = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'MVP Slim'
                 = link_to mvp_slim_path do
                   h2.u-noMargin.boxTitle.u-textBlue[title="MVP Slim"] MVP Slim
-                p.subtitle.u-marginTop5.u-marginBot10.small From planning to design and development, we build, launch and validate web and mobile apps for startups and small business.
+                p.subtitle.u-marginTop5.u-marginBot10.small A small web product, more robust, with more features and a beautiful design, destinated to rapidly validate your product idea. Your new solution will have a much better user experience and you will be able to automate more of your business processes in just one week.
 
   section.-md.-gray.course#course
     .container
@@ -108,36 +108,42 @@
                     = link_to mvp_slim_path do
                       h2 title="MVP Slim" MVP Slim
                 = link_to 'Visit website', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
-
-  section.-sm.process#process
+  section.-sm.team#team
     .container
       .row
         .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="How do we work?" How do we work?
+          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Meet the team" Meet the team
           .row
             .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We believe that the best software changes often and you can only learn if you test fast and fail faster."
-                | We believe that the best software changes often and you can only learn if you test fast and fail faster.
-          .row
-            .col-sm-4
-              .processBox
-                .u-h1.u-noMargin.u-marginBot5.u-textCyan 1
-                h4.u-noMargin.boxTitle.u-textBlue title="Discovery" Discovery
-                p.subtitle.u-noMargin.u-marginTop5.small Every project starts with the discovery phase. The idea here is to understand and validate the business behind the product and also give a clear direction in which design and development should follow.
-            .col-sm-4
-              .processBox
-                .u-h1.u-noMargin.u-marginBot5.u-textCyan 2
-                h4.u-noMargin.boxTitle.u-textBlue title="Design" Design
-                p.subtitle.u-noMargin.u-marginTop5.small Products need to be built for people, and with people in mind. We will transform all the ideas into sketches and then create prototypes that will be tested with your real users. This way we can validate your product design before we code a line.
-            .col-sm-4
-              .processBox
-                .u-h1.u-noMargin.u-marginBot5.u-textCyan 3
-                h4.u-noMargin.boxTitle.u-textBlue title="Development" Development
-                p.subtitle.u-noMargin.u-marginTop5.small Validating your business and design before coding will minimize your risks and costs. In this stage, we will focus on delivering first the features that generate more value. The sooner you test it online, the sooner you'll reach your product market fit.
-        .u-textCenter
-          = link_to 'Download our Process PDF', 'https://s3.amazonaws.com/cosmit-documents/COSMIT-process-EN.pdf', class: 'btn -md -cyan u-marginTop30 u-marginBot20 js-download-pdf-services', target: '_blank', download: 'Download our Process PDF'
-          br
-          = link_to "See our MVP Slim Demo project", 'http://demo.cosmit.me', title: "See our Demo project", class: 'u-linkCyan u-textUp', target: '_blank'
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Core professionals involved with new products development"
+                | Core professionals involved with new products development
+      .row
+        .col-sm-9.col-md-7.u-centered
+          .teamBox
+            .row.u-marginBot15.u-marginTop10
+              .col-sm-3
+                = image_tag('gabriel-carpenedo.png', class: 'img-circle img-responsive teamImg u-centered', alt: 'Gabriel Carpenedo')
+                .clearfix
+                .u-textCenter.u-marginTop10.u-marginBot10
+                  = link_to 'https://ca.linkedin.com/in/gabrielcarpenedo', target: '_blank', class: 'socialIcon -light u-marginRgt5', title: 'LinkedIn' do
+                    i.fa.fa-linkedin-square
+                  = link_to 'https://www.facebook.com/gabriel.carpenedo', target: '_blank', class: 'socialIcon -light u-marginRgt5', title: 'Facebook' do
+                    i.fa.fa-facebook-square
+                  = link_to 'https://github.com/cbgabe', target: '_blank', class: 'socialIcon -light', title: 'Github' do
+                    i.fa.fa-github-square
+              .col-sm-9
+                p.textBio.u-textLight Hey, my name is <strong>Gabriel Carpenedo</strong>, but you can just call me Gabe. I'm CEO, UX/UI Designer, and Product/Project manager at COSMIT, my own company. Since 2009 I've been doing business. I'm a huge fan of Star Trek and space travel, a weekend cook and vegan!
+            .row
+              .col-sm-3
+                = image_tag('patrick-muller.jpg', class: 'img-circle img-responsive teamImg u-centered', alt: 'Patrick Müller')
+                .clearfix
+                .u-textCenter.u-marginTop10.u-marginBot10
+                  = link_to 'https://www.linkedin.com/in/patrickemuller', target: '_blank', class: 'socialIcon -light u-marginRgt5', title: 'LinkedIn' do
+                    i.fa.fa-linkedin-square
+                  = link_to 'https://github.com/patrickemuller', target: '_blank', class: 'socialIcon -light', title: 'Github' do
+                    i.fa.fa-github-square
+              .col-sm-9
+                p.textBio.u-textLight My name is <strong>Patrick Müller</strong>. I'm CTO, full-stack developer and co-founder at COSMIT. Since 2011 I've been working with web development. Like most of developers I like games, mangas, animes, nerd and geek culture, especially Naruto! And I really love barbecue...
 
   section.-sm.contact.-blue#contact
     .container
