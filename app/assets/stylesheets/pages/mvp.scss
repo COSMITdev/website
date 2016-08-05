@@ -128,36 +128,6 @@
   }
 }
 
-.pricingBox {
-  background-color: white;
-  text: center;
-  border-radius: $boxRadius;
-
-  .pricingBox-header {
-    padding: 15px;
-    background-color: $blue;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-  }
-
-  .pricingBox-body {
-    padding: 40px 30px;
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    p {
-      padding: 0 20px;
-    }
-  }
-
-  .priceBox-promo {
-     text-decoration: line-through;
-     color: $magenta;
-  }
-}
-
 @media (max-width: 1199px) {
   .mvpProcess {
       .processBox {

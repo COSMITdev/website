@@ -6,17 +6,24 @@
     li {
       display: table;
     }
+  }
 
-    i {
-      color: $cyan;
-      font-size: 1.3125rem;
-      display: table-cell;
-      padding-right: 10px;
-    }
+  i {
+    color: $cyan;
+    font-size: 1.3125rem;
+    display: table-cell;
+    padding-right: 10px;
+  }
 
-    h3 {
+  h3 {
+    display: table-cell;
+    line-height: 2rem;
+  }
+
+  &.-pricing {
+    h4 {
       display: table-cell;
-      line-height: 2rem;
+      font-size: 1.125rem;
     }
   }
 }
