@@ -12,9 +12,11 @@ en:
         og:
           title: 'COSMIT Blog - Ground Control'
           locale: 'en_US'
+          site_name: 'cosmit.me/en'
           description: "A collection of our team's best ideas, stories and experiences"
         twitter:
           card: 'COSMIT Blog - Ground Control'
+          site: '@COSMITdev'
           description: "A collection of our team's best ideas, stories and experiences"
 
     pages:
@@ -68,12 +70,26 @@ en:
         og:
           title: 'We transform your ideas into successful products'
           locale: 'en_US'
-          site_name: 'cosmit.me/en'
+          site_name: 'cosmit.me/startups'
           description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
         twitter:
           card: 'We transform your ideas into sucessful products'
           site: '@COSMITdev'
           description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
+
+      call:
+        title: "COSMIT Strategy Call"
+        description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
+        keywords: "Validate, Validating, Planning, Sharing knowledge, Tailor made, strategy call, strategy MVP, minimum viable product, minimal viable product, mvp product"
+        og:
+          title: 'Strategy Call'
+          locale: 'en_US'
+          site_name: 'cosmit.me/startups'
+          description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
+        twitter:
+          card: 'Strategy Call'
+          site: '@COSMITdev'
+          description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
 
       mvpslim:
         title: "COSMIT MVP Slim"
@@ -82,7 +98,7 @@ en:
         og:
           title: 'MVP Slim'
           locale: 'en_US'
-          site_name: 'mvp.cosmit.me'
+          site_name: 'cosmit.me/startups/mvp-slim'
           description: "Validate your idea in just one week with MVP Slim"
         twitter:
           card: 'MVP Slim'
@@ -96,7 +112,7 @@ en:
         og:
           title: 'Course'
           locale: 'en_US'
-          site_name: 'course.cosmit.me'
+          site_name: 'cosmit.me/startups/validation-course'
           description: "Validate your idea with a one-week web product"
         twitter:
           card: 'Course'
