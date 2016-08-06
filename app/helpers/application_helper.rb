@@ -225,21 +225,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_mvpslim
-    { title: I18n.t('meta_tags.pages.mvp.title'),
-      description: I18n.t('meta_tags.pages.mvp.description'),
-      keywords: I18n.t('meta_tags.pages.mvp.keywords'),
+    { title: I18n.t('meta_tags.startups.mvp.title'),
+      description: I18n.t('meta_tags.startups.mvp.description'),
+      keywords: I18n.t('meta_tags.startups.mvp.keywords'),
       url: request.url,
       image: image_url('cosmit.jpg'),
       og: { url: request.url,
             type: 'website',
-            title: I18n.t('meta_tags.pages.mvp.og.title'),
+            title: I18n.t('meta_tags.startups.mvp.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: I18n.t('meta_tags.pages.mvp.og.locale'),
+            locale: I18n.t('meta_tags.startups.mvp.og.locale'),
             site_name: 'cosmit.me',
-            description: I18n.t('meta_tags.pages.mvp.og.description')
+            description: I18n.t('meta_tags.startups.mvp.og.description')
           },
       twitter: {
-        card: I18n.t('meta_tags.pages.mvp.twitter.card'),
+        card: I18n.t('meta_tags.startups.mvp.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),
