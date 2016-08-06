@@ -152,7 +152,31 @@ module ApplicationHelper
     }
   end
 
-  def meta_tags_for_mvp
+  def meta_tags_for_startups
+    { title: I18n.t('meta_tags.startups.index.title'),
+      description: I18n.t('meta_tags.startups.index.description'),
+      keywords: I18n.t('meta_tags.startups.index.keywords'),
+      url: request.url,
+      image: image_url('cosmit.jpg'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.startups.index.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.startups.index.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.startups.index.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.startups.index.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_mvpslim
     { title: I18n.t('meta_tags.pages.mvp.title'),
       description: I18n.t('meta_tags.pages.mvp.description'),
       keywords: I18n.t('meta_tags.pages.mvp.keywords'),

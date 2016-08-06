@@ -6,16 +6,16 @@ en:
           locale: 'en_US'
 
       index:
-        title: 'COSMIT Blog - Centro de Controle'
-        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
-        keywords: 'Centro de Controle, ideias, histórias, experiências'
+        title: 'COSMIT Blog - Ground Control'
+        description: "A collection of our team's best ideas, stories and experiences"
+        keywords: 'Ground control, ideas, stories, experiences, blog'
         og:
-          title: 'COSMIT Blog - Centro de Controle'
+          title: 'COSMIT Blog - Ground Control'
           locale: 'en_US'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          description: "A collection of our team's best ideas, stories and experiences"
         twitter:
-          card: 'Centro de Controle'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          card: 'COSMIT Blog - Ground Control'
+          description: "A collection of our team's best ideas, stories and experiences"
 
     pages:
       home:
@@ -59,8 +59,23 @@ en:
           card: 'Our Services'
           site: '@COSMITdev'
           description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
+  
+    startups:
+      index:
+        title: 'COSMIT - We transform your ideas into successful products'
+        description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
+        keywords: 'Strategy Call, MVP, MVP Concierge, MVP Slim, minimum viable product, minimal viable product, mvp product, product development, new product development, Software development, Ideas, Validation, Product Market Fit'
+        og:
+          title: 'We transform your ideas into successful products'
+          locale: 'en_US'
+          site_name: 'cosmit.me/en'
+          description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
+        twitter:
+          card: 'We transform your ideas into sucessful products'
+          site: '@COSMITdev'
+          description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
 
-      mvp:
+      mvpslim:
         title: "COSMIT MVP Slim"
         description: "Validate your idea in just one week with MVP Slim"
         keywords: "MVP, MVP Slim, minimum viable product, minimal viable product, mvp product, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
