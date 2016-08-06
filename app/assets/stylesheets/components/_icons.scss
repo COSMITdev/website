@@ -1,0 +1,14 @@
+.socialIcon {
+  display: inline-block;
+
+  i {
+    font-size: 1.6rem;
+    color: $gray-medium;
+
+    &:hover,
+    &:focus {
+      color: $magenta;
+      transition: all .3s;
+    }
+  }
+}

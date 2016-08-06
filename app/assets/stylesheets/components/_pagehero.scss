@@ -24,7 +24,8 @@
 // # Colors
 // # =================================================================
 .home,
-.mvp {
+.mvp,
+.startups {
   .pageHero {
     background-color: $blue;
   }
@@ -36,7 +37,8 @@
   }
 }
 
-.services {
+.services,
+.startups.validation {
   .pageHero {
     background-color: $purple;
   }

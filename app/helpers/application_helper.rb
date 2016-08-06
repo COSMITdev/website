@@ -1,9 +1,9 @@
 module ApplicationHelper
-  def google_analytics_tacking_code(action)
-    if action == 'mvp'
+  def google_analytics_tacking_code(controller)
+    if controller == 'mvp'
       ENV['ANALYTICS_MVP']
-    elsif action == 'course'
-      ENV['ANALYTICS_COURSE']
+    elsif controller == 'startups'
+      ENV['ANALYTICS_STARTUPS']
     else
       ENV['ANALYTICS_GENERAL']
     end
@@ -152,22 +152,94 @@ module ApplicationHelper
     }
   end
 
-  def meta_tags_for_mvp
-    { title: I18n.t('meta_tags.pages.mvp.title'),
-      description: I18n.t('meta_tags.pages.mvp.description'),
-      keywords: I18n.t('meta_tags.pages.mvp.keywords'),
+  def meta_tags_for_startups
+    { title: I18n.t('meta_tags.startups.index.title'),
+      description: I18n.t('meta_tags.startups.index.description'),
+      keywords: I18n.t('meta_tags.startups.index.keywords'),
       url: request.url,
       image: image_url('cosmit.jpg'),
       og: { url: request.url,
             type: 'website',
-            title: I18n.t('meta_tags.pages.mvp.og.title'),
+            title: I18n.t('meta_tags.startups.index.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: I18n.t('meta_tags.pages.mvp.og.locale'),
+            locale: I18n.t('meta_tags.startups.index.og.locale'),
             site_name: 'cosmit.me',
-            description: I18n.t('meta_tags.pages.mvp.og.description')
+            description: I18n.t('meta_tags.startups.index.og.description')
           },
       twitter: {
-        card: I18n.t('meta_tags.pages.mvp.twitter.card'),
+        card: I18n.t('meta_tags.startups.index.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_call
+    { title: I18n.t('meta_tags.startups.call.title'),
+      description: I18n.t('meta_tags.startups.call.description'),
+      keywords: I18n.t('meta_tags.startups.call.keywords'),
+      url: request.url,
+      image: image_url('cosmit.jpg'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.startups.call.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.startups.call.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.startups.call.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.startups.call.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_mvpconcierge
+    { title: I18n.t('meta_tags.startups.concierge.title'),
+      description: I18n.t('meta_tags.startups.concierge.description'),
+      keywords: I18n.t('meta_tags.startups.concierge.keywords'),
+      url: request.url,
+      image: image_url('cosmit.jpg'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.startups.concierge.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.startups.concierge.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.startups.concierge.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.startups.concierge.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
+
+  def meta_tags_for_mvpslim
+    { title: I18n.t('meta_tags.startups.mvp.title'),
+      description: I18n.t('meta_tags.startups.mvp.description'),
+      keywords: I18n.t('meta_tags.startups.mvp.keywords'),
+      url: request.url,
+      image: image_url('cosmit.jpg'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.startups.mvp.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.startups.mvp.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.startups.mvp.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.startups.mvp.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),
@@ -177,21 +249,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_course
-    { title: I18n.t('meta_tags.pages.course.title'),
-      description: I18n.t('meta_tags.pages.course.description'),
-      keywords: I18n.t('meta_tags.pages.course.keywords'),
+    { title: I18n.t('meta_tags.startups.course.title'),
+      description: I18n.t('meta_tags.startups.course.description'),
+      keywords: I18n.t('meta_tags.startups.course.keywords'),
       url: request.url,
       image: image_url('cosmit.jpg'),
       og: { url: request.url,
             type: 'website',
-            title: I18n.t('meta_tags.pages.course.og.title'),
+            title: I18n.t('meta_tags.startups.course.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: I18n.t('meta_tags.pages.course.og.locale'),
+            locale: I18n.t('meta_tags.startups.course.og.locale'),
             site_name: 'cosmit.me',
-            description: I18n.t('meta_tags.pages.course.og.description')
+            description: I18n.t('meta_tags.startups.course.og.description')
           },
       twitter: {
-        card: I18n.t('meta_tags.pages.course.twitter.card'),
+        card: I18n.t('meta_tags.startups.course.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),

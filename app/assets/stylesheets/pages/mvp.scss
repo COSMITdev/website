@@ -34,46 +34,16 @@
 }
 
 .mvpProblem {
-  padding: 70px 0 60px;
-
   i {
     font-size: 5.25rem;
     color: $cyan;
-    paddin-top: 15px;
   }
 }
 
 .mvpWhy {
-  padding: 80px 0;
-  background-color: $gray-light;
-
   i {
     color: $cyan;
     font-size: 6.25rem;
-  }
-}
-
-.mvpResult {
-  padding: 70px 0 60px;
-
-  ul {
-    list-style: none;
-    padding: 0 ;
-
-    li {
-      display: table;
-    }
-
-    i {
-      color: $cyan;
-      font-size: 1.3125rem;
-      display: table-cell;
-      padding-right: 10px;
-    }
-
-    h3 {
-      display: table-cell;
-    }
   }
 }
 
@@ -82,29 +52,12 @@
     font-size: 1.9375rem;
   }
 
-  i {
-    font-size: 1.6rem;
-    color: $gray-medium;
-
-    &:hover,
-    &:focus {
-      color: $magenta;
-      transition: all .3s;
-    }
-  }
-
   .btn {
     float: left;
-  }
-
-  .demoIcon-github {
-    display: inline-block;
   }
 }
 
 .mvpProcess {
-  padding: 70px 0 70px;
-
   .processBox {
     min-height: 320px;
   }
@@ -175,41 +128,6 @@
   }
 }
 
-.mvpPricing {
-  padding: 70px 0 80px;
-  background-color: $gray-light;
-}
-
-.pricingBox {
-  background-color: white;
-  text: center;
-  border-radius: $boxRadius;
-
-  .pricingBox-header {
-    padding: 15px;
-    background-color: $blue;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-  }
-
-  .pricingBox-body {
-    padding: 40px 30px;
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    p {
-      padding: 0 20px;
-    }
-  }
-
-  .priceBox-promo {
-     text-decoration: line-through;
-     color: $magenta;
-  }
-}
-
 @media (max-width: 1199px) {
   .mvpProcess {
       .processBox {
@@ -220,39 +138,20 @@
 
 @media (max-width: 769px) {
   .mvp {
-    .mvpProblem {
-      padding: 50px 0 30px;
-    }
-    .mvpWhy {
-      padding: 50px 0;
-    }
-
-    .mvpResult {
-      padding: 50px 0 40px;
-    }
-
     .mvpWorklist {
       .workItem {
         padding: 40px 0 0 !important;
       }
-    }
-
-    .mvpProcess {
-      padding: 50px 0 40px;
-    }
-
-    .mvpPricing {
-      padding: 50px 0 50px;
     }
   }
 }
 
 @media (max-width: 768px) {
   .mvpProcess {
-      .processBox {
-        min-height: auto;
-      }
+    .processBox {
+      min-height: auto;
     }
+  }
 }
 
 @media (max-width: 600px) {

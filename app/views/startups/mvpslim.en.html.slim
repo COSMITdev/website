@@ -1,5 +1,5 @@
-- set_meta_tags(meta_tags_for_mvp)
-= render 'partials/headermvpslim'
+- set_meta_tags(meta_tags_for_mvpslim)
+= render 'partials/headermvp'
 
 - cache do
   section.pageHero
@@ -30,7 +30,7 @@
                   i.fa.fa-lightbulb-o.u-marginTop20
                 .col-sm-9.col-md-10
                   h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5.u-textSemiBold Executing your idea
-                  p.u-textLight.u-noMargin.u-marginBot30 You have good ideas or have found an opportunity but you don't know where to start. Ideas without execution are worthless. Validating an idea is the first step to success.
+                  p.u-textLight.u-noMargin.u-marginBot30 You have good ideas or have found an opportunity but you don't know where to start. Ideas without execution are worthless. But validating an idea is the first step to success.
               .row
                 .col-sm-2
                   i.fa.fa-cogs.u-marginTop20
@@ -79,16 +79,16 @@
                 ul.u-marginTop20
                   li.u-marginBot20
                     i.fa.fa-check
-                    h3.u-h2.u-textLight A business review document
+                    h3.u-h2.u-textLight An online web product ready to be tested
+                  li.u-marginBot20
+                    i.fa.fa-check
+                    h3.u-h2.u-textLight Your core features into a beautiful product
                   li.u-marginBot20
                     i.fa.fa-check
                     h3.u-h2.u-textLight A well-designed product
                   li.u-marginBot20
                     i.fa.fa-check
-                    h3.u-h2.u-textLight Your core features into a beautiful software
-                  li.u-marginBot20
-                    i.fa.fa-check
-                    h3.u-h2.u-textLight An online web product ready to be tested
+                    h3.u-h2.u-textLight A business review document
   section.workList.mvpWorklist
     .workItem.-gray#demo
       .container
@@ -130,14 +130,14 @@
               .processBox
                 .u-h1.u-noMargin.u-marginBot5.u-textCyan 3
                 h4.u-noMargin.boxTitle.u-textBlue title="Development" Development
-                p.subtitle.u-noMargin.u-marginTop5.small Using Ruby on Rails, Javascript, HTML5 and CSS3 we will follow our development plan focusing on the main core features of your idea. At the end, we will host it on Heroku and configure your DNS.
+                p.subtitle.u-noMargin.u-marginTop5.small Using Ruby on Rails, Javascript, HTML5 and CSS3 we will follow our development plan focusing on the main core features of your idea. In the end, we will host it on Heroku and configure your DNS.
       .row
         .col-sm-12.col-md-10.u-centered
           h2.u-noMargin.u-marginBot10.u-marginTop40.u-textBlue.u-textCenter title="Our week routine" Our week routine
           .row
             .col-sm-10.col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We work from 9am until 6pm and our daily meeting happens at 10am so you can keep updated"
-                | We work from 9am until 6pm and our daily meeting happens at 10am so you can keep updated
+              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="We work from 9am until 6pm EST and our daily meeting happens at 10am so you can keep updated"
+                | We work from 9am until 6pm EST and our daily meeting happens at 10am so you can keep updated
           .row
             .col-sm-12.col-md-10.u-centered
               .table-responsive
@@ -212,6 +212,42 @@
                       td
               p.small.u-textCenter.u-textGray-medium.u-textLight.u-noMargin 
                 | *When we get started, you will need to dedicate all of Monday to work with us hand-in-hand to figure out exactly what to build
+    .team#team
+      .container
+        .row
+          .col-sm-12.col-md-10.u-centered
+            h2.u-noMargin.u-marginBot10.u-marginTop50.u-textBlue.u-textCenter title="Meet the team" Meet the team
+            .row
+              .col-md-8.u-centered
+                p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Core professionals involved with new products development"
+                  | Core professionals involved with new products development
+        .row
+          .col-sm-9.col-md-7.u-centered
+            .teamBox
+              .row.u-marginBot15.u-marginTop10
+                .col-sm-3
+                  = image_tag('gabriel-carpenedo.png', class: 'img-circle img-responsive teamImg u-centered', alt: 'Gabriel Carpenedo')
+                  .clearfix
+                  .u-textCenter.u-marginTop10.u-marginBot10
+                    = link_to 'https://ca.linkedin.com/in/gabrielcarpenedo', target: '_blank', class: 'socialIcon u-marginRgt5', title: 'LinkedIn' do
+                      i.fa.fa-linkedin-square
+                    = link_to 'https://www.facebook.com/gabriel.carpenedo', target: '_blank', class: 'socialIcon u-marginRgt5', title: 'Facebook' do
+                      i.fa.fa-facebook-square
+                    = link_to 'https://github.com/cbgabe', target: '_blank', class: 'socialIcon', title: 'Github' do
+                      i.fa.fa-github-square
+                .col-sm-9
+                  p.textBio.u-textLight Hey, my name is <strong>Gabriel Carpenedo</strong>, but you can just call me Gabe. I'm CEO, UX/UI Designer, and Product/Project manager at COSMIT, my own company. Since 2009 I've been doing business. I'm a huge fan of Star Trek and space travel, a weekend cook and vegan!
+              .row
+                .col-sm-3
+                  = image_tag('patrick-muller.jpg', class: 'img-circle img-responsive teamImg u-centered', alt: 'Patrick Müller')
+                  .clearfix
+                  .u-textCenter.u-marginTop10.u-marginBot10
+                    = link_to 'https://www.linkedin.com/in/patrickemuller', target: '_blank', class: 'socialIcon u-marginRgt5', title: 'LinkedIn' do
+                      i.fa.fa-linkedin-square
+                    = link_to 'https://github.com/patrickemuller', target: '_blank', class: 'socialIcon', title: 'Github' do
+                      i.fa.fa-github-square
+                .col-sm-9
+                  p.textBio.u-textLight My name is <strong>Patrick Müller</strong>. I'm CTO, full-stack developer and co-founder at COSMIT. Since 2011 I've been working with web development. Like most of developers I like games, mangas, animes, nerd and geek culture, especially Naruto! By the way, I really love barbecue!
   section.-md.-gray.mvpPricing#pricing
     .container
       .row
@@ -222,17 +258,31 @@
               p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Our price is simple, flat, and honest"
                 | Our price is simple, flat, and honest
         .col-sm-6.col-md-5.u-centered
-          .pricingBox.u-textCenter
-            .pricingBox-header
+          .pricingBox
+            .pricingBox-header.u-textCenter
               h3.u-textWhite.u-noMargin.u-textNormal MVP Slim
             .pricingBox-body
-              h4.u-noMargin.u-textLight.priceBox-promo $ 5,000.00
-              h2.u-textBlue.u-noMargin $ 3,000.00
-              h4.u-textGray-medium.u-noMargin.u-marginBot10.u-textLight USD*
-              p.u-textGray-dark.u-noMargin.u-marginBot15.u-textLight Validate your idea in just one week with MVP Slim
-              p.small.u-textGray.u-textLight 
-                | *Consult price for other currencies
-              = link_to 'Get Started', mvp_path(anchor: 'contact'), class: 'btn -md -cyan'
+              h4.u-noMargin.u-textCenter.u-textLight.priceBox-promo $ 5,000.00
+              h2.u-textBlue.u-textCenter.u-noMargin $ 3,000.00
+              h4.u-textGray-medium.u-textCenter.u-noMargin.u-marginBot10.u-textLight USD*
+              .checkList.-pricing
+                ul.u-marginTop15
+                  li.u-marginBot10
+                    i.fa.fa-check
+                    h4.u-textGray-dark.u-textLight FREE online set up project call
+                  li.u-marginBot10
+                    i.fa.fa-check
+                    h4.u-textGray-dark.u-textLight FREE DNS and email config
+                  li.u-marginBot10
+                    i.fa.fa-check
+                    h4.u-textGray-dark.u-textLight Your core features into a beautifull well designed small web product online
+                  li.u-marginBot10
+                    i.fa.fa-check
+                    h4.u-textGray-dark.u-textLight A business review document
+              .u-textCenter
+                p.small.u-textGray.u-textLight 
+                  | *Consult price for other currencies
+                = link_to 'Get Started', mvp_path(anchor: 'contact'), class: 'btn -md -cyan'
   section.-sm.-blue.contact#contact
     .container
       .row

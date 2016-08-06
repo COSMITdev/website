@@ -23,7 +23,6 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
   body class="#{params[:controller]} #{params[:action]}" data-unit="#{I18n.t('number.currency.format.unit')}" data-separator="#{I18n.t('number.currency.format.separator')}" data-delimiter="#{I18n.t('number.currency.format.delimiter')}"
     = initjs_tag "Website"
     = render 'layouts/flash'
-    = render 'partials/header'
     = yield
     = render 'partials/footer'
     / initialize JS just after all content

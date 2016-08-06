@@ -1,0 +1,37 @@
+section {
+  &.-gray {
+    background-color: $gray-light;
+  }
+
+  &.-sm {
+    padding: 50px 0;
+  }
+
+  &.-md {
+    padding: 70px 0;
+  }
+
+  &.-lg {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    &.-sm {
+      padding: 40px 0;
+    }
+
+    &.-md {
+      padding: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    &.-sm {
+      padding: 30px 0;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.courseStripe {
+  display: table;
+  width: 100%;
+  padding: 0 15px;
+
+  .courseImg,
+  .courseTxt {
+    display: table-cell;
+    float: left;
+  }
+
+  .courseImg {
+    width: 25%;
+    padding-right: 20px;
+
+    img {
+      max-width: 130px;
+    }
+  }
+
+  h2 {
+    .small {
+      color: $magenta;
+    } 
+  }
+
+  .courseTxt {
+    width: 75%;
+
+    > a:hover,
+    > a:focus {
+      > h2 {
+        color: $cyan;
+        transition: all .2s !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 695px) {
+  .courseStripe {
+    display: block;
+
+    .courseImg,
+    .courseTxt {
+      display: block;
+      width: 100%
+    }
+
+    .courseImg {
+      img {
+        max-width: 80px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

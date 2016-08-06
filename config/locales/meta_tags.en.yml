@@ -6,16 +6,18 @@ en:
           locale: 'en_US'
 
       index:
-        title: 'COSMIT Blog - Centro de Controle'
-        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
-        keywords: 'Centro de Controle, ideias, histórias, experiências'
+        title: 'COSMIT Blog - Ground Control'
+        description: "A collection of our team's best ideas, stories and experiences"
+        keywords: 'Ground control, ideas, stories, experiences, blog'
         og:
-          title: 'COSMIT Blog - Centro de Controle'
+          title: 'COSMIT Blog - Ground Control'
           locale: 'en_US'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          site_name: 'http://cosmit.me/blog'
+          description: "A collection of our team's best ideas, stories and experiences"
         twitter:
-          card: 'Centro de Controle'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          card: 'COSMIT Blog - Ground Control'
+          site: '@COSMITdev'
+          description: "A collection of our team's best ideas, stories and experiences"
 
     pages:
       home:
@@ -25,7 +27,7 @@ en:
         og:
           title: 'We transform your ideas into successful products'
           locale: 'en_US'
-          site_name: 'cosmit.me/en'
+          site_name: 'http://cosmit.me'
           description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
         twitter:
           card: 'We transform your ideas into sucessful products'
@@ -39,7 +41,7 @@ en:
         og:
           title: 'Our experiences'
           locale: 'en_US'
-          site_name: 'cosmit.me/en'
+          site_name: 'http://cosmit.me/works'
           description: 'We work guided by goals that generate real and trackable results for your business'
         twitter:
           card: 'Our experiences'
@@ -53,21 +55,64 @@ en:
         og:
           title: 'Our Services'
           locale: 'en_US'
-          site_name: 'cosmit.me/en'
+          site_name: 'http://cosmit.me/services'
           description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
         twitter:
           card: 'Our Services'
           site: '@COSMITdev'
           description: "We're a team of experts passionate by solving your problems through strategy, design and technology"
+  
+    startups:
+      index:
+        title: 'COSMIT - We transform your ideas into successful products'
+        description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
+        keywords: 'Strategy Call, MVP, MVP Concierge, MVP Slim, minimum viable product, minimal viable product, mvp product, product development, new product development, Software development, Ideas, Validation, Product Market Fit'
+        og:
+          title: 'We transform your ideas into successful products'
+          locale: 'en_US'
+          site_name: 'http://cosmit.me/startups'
+          description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
+        twitter:
+          card: 'We transform your ideas into sucessful products'
+          site: '@COSMITdev'
+          description: "We've helped startups and small business to plan, design, develop, validate and achieve product market fit of web and mobile apps"
 
-      mvp:
+      call:
+        title: "COSMIT Strategy Call"
+        description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
+        keywords: "Validate, Validating, Planning, Sharing knowledge, Tailor made, strategy call, strategy MVP, minimum viable product, minimal viable product, mvp product"
+        og:
+          title: 'Strategy Call'
+          locale: 'en_US'
+          site_name: 'http://cosmit.me/startups/strategy-call'
+          description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
+        twitter:
+          card: 'Strategy Call'
+          site: '@COSMITdev'
+          description: "An online 50 min. call to help you with your problems, talk about business, share my experiences or plan ahead."
+
+      concierge:
+        title: "COSMIT MVP Concierge"
+        description: "Rapidly validate your idea with a micro product"
+        keywords: "MVP, MVP Concierge, minimum viable product, minimal viable product, mvp product, Validate, web product, idea, rapidly validate, software, Discovery, Development"
+        og:
+          title: 'MVP Concierge'
+          locale: 'en_US'
+          site_name: 'http://cosmit.me/startups/mvp-slim'
+          description: "Rapidly validate your idea with a micro product"
+        twitter:
+          card: 'MVP Concierge'
+          site: '@COSMITdev'
+          description: "Rapidly validate your idea with a micro product"
+
+      mvpslim:
         title: "COSMIT MVP Slim"
         description: "Validate your idea in just one week with MVP Slim"
         keywords: "MVP, MVP Slim, minimum viable product, minimal viable product, mvp product, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'MVP Slim'
           locale: 'en_US'
-          site_name: 'mvp.cosmit.me'
+          site_name: 'http://cosmit.me/startups/mvp-slim'
           description: "Validate your idea in just one week with MVP Slim"
         twitter:
           card: 'MVP Slim'
@@ -75,15 +120,15 @@ en:
           description: "Validate your idea in just one week with MVP Slim"
 
       course:
-        title: "COSMIT Course"
-        description: "Validate your idea with a one-week web product"
-        keywords: "Course, Course, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
+        title: "COSMIT Free Validation Course"
+        description: "Learn to validate your idea in just one week"
+        keywords: "Course, Validate, Validation, Free Course, Email Course, Free, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'Course'
           locale: 'en_US'
-          site_name: 'course.cosmit.me'
-          description: "Validate your idea with a one-week web product"
+          site_name: 'http://cosmit.me/startups/validation-course'
+          description: "Learn to validate your idea in just one week"
         twitter:
           card: 'Course'
           site: '@COSMITdev'
-          description: "Validate your idea with a one-week web product"
+          description: "Learn to validate your idea in just one week"

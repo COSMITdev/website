@@ -1,0 +1,45 @@
+- cache do
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to 'COSMIT', startups_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          - if params[:action] == 'mvpslim'
+            li
+              = link_to 'Why', mvp_slim_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
+            li
+              = link_to 'Results', mvp_slim_path(anchor: 'result'), title: 'Results', class: 'u-textUp'
+            li
+              = link_to 'How', mvp_slim_path(anchor: 'how'), title: 'How', class: 'u-textUp'
+            li
+              = link_to 'Pricing', mvp_slim_path(anchor: 'pricing'), title: 'Pricing', class: 'u-textUp'
+            li
+              = link_to 'Get started', mvp_slim_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'
+          - elsif params[:action] == 'mvpconcierge'
+            li
+              = link_to 'Why', mvp_concierge_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
+            li
+              = link_to 'Results', mvp_concierge_path(anchor: 'result'), title: 'Results', class: 'u-textUp'
+            li
+              = link_to 'How', mvp_concierge_path(anchor: 'how'), title: 'How', class: 'u-textUp'
+            li
+              = link_to 'Pricing', mvp_concierge_path(anchor: 'pricing'), title: 'Pricing', class: 'u-textUp'
+            li
+              = link_to 'Get started', mvp_concierge_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'
+          - else
+            li
+              = link_to 'Why', strategy_call_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
+            li
+              = link_to 'Results', strategy_call_path(anchor: 'result'), title: 'Results', class: 'u-textUp'
+            li
+              = link_to 'Mentor', strategy_call_path(anchor: 'teacher'), title: 'The mentor', class: 'u-textUp'
+            li
+              = link_to 'Pricing', strategy_call_path(anchor: 'pricing'), title: 'Pricing', class: 'u-textUp'
+            li
+              = link_to 'Get started', strategy_call_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'

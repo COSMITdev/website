@@ -1,0 +1,22 @@
+- cache do
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to 'COSMIT', startups_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          li
+            = link_to 'Services', startups_path(anchor: 'service'), title: 'Services', class: 'u-textUp'
+          li
+            = link_to 'Works', startups_path(anchor: 'work'), title: 'Works', class: 'u-textUp'
+          li
+            = link_to 'Team', startups_path(anchor: 'team'), title: 'Team', class: 'u-textUp'
+          li
+              = link_to 'Blog', posts_path, title: 'Blog', class: 'u-textUp'
+          li
+            = link_to 'Contact Us', startups_path(anchor: 'contact'), title: "Let's talk", class: 'u-textUp'

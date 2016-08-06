@@ -7,29 +7,13 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        - if params[:controller] == 'mvp'
-          = link_to 'COSMIT', mvp_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
-        - else
-          = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
-      / Collect the nav links, forms, and other content for toggling
+        = link_to 'COSMIT', root_path, class: 'navbar-brand u-imageReplace', title: 'COSMIT'
       .collapse.navbar-collapse#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
-          - if params[:controller] == 'mvp'
-            li
-              = link_to 'Why', mvp_path(anchor: 'why'), title: 'Why', class: 'u-textUp'
-            li
-              = link_to 'Results', mvp_path(anchor: 'result'), title: 'Results', class: 'u-textUp'
-            li
-              = link_to 'How', mvp_path(anchor: 'how'), title: 'How', class: 'u-textUp'
-            li
-              = link_to 'Pricing', mvp_path(anchor: 'pricing'), title: 'Pricing', class: 'u-textUp'
-            li
-              = link_to 'Get started', mvp_path(anchor: 'contact'), title: 'Get started', class: 'u-textUp'
-          - else
             li
               = link_to 'Services', service_path, title: 'Services', class: 'u-textUp'
             li
-              = link_to 'Work', work_path, title: 'Work', class: 'u-textUp'
+              = link_to 'Works', work_path, title: 'Works', class: 'u-textUp'
             li
               = link_to 'Process', root_path(anchor: 'process'), title: 'How we work', class: 'u-textUp'
             li
