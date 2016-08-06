@@ -249,21 +249,21 @@ module ApplicationHelper
   end
 
   def meta_tags_for_course
-    { title: I18n.t('meta_tags.pages.course.title'),
-      description: I18n.t('meta_tags.pages.course.description'),
-      keywords: I18n.t('meta_tags.pages.course.keywords'),
+    { title: I18n.t('meta_tags.startups.course.title'),
+      description: I18n.t('meta_tags.startups.course.description'),
+      keywords: I18n.t('meta_tags.startups.course.keywords'),
       url: request.url,
       image: image_url('cosmit.jpg'),
       og: { url: request.url,
             type: 'website',
-            title: I18n.t('meta_tags.pages.course.og.title'),
+            title: I18n.t('meta_tags.startups.course.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: I18n.t('meta_tags.pages.course.og.locale'),
+            locale: I18n.t('meta_tags.startups.course.og.locale'),
             site_name: 'cosmit.me',
-            description: I18n.t('meta_tags.pages.course.og.description')
+            description: I18n.t('meta_tags.startups.course.og.description')
           },
       twitter: {
-        card: I18n.t('meta_tags.pages.course.twitter.card'),
+        card: I18n.t('meta_tags.startups.course.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),

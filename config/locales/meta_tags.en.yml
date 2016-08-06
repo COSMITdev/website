@@ -120,15 +120,15 @@ en:
           description: "Validate your idea in just one week with MVP Slim"
 
       course:
-        title: "COSMIT Course"
-        description: "Validate your idea with a one-week web product"
-        keywords: "Course, Course, Validate, web product, idea, rapidly validate, software, Discovery, Design, Development"
+        title: "COSMIT Free Validation Course"
+        description: "Learn to validate your idea in just one week"
+        keywords: "Course, Validate, Validation, Free Course, Email Course, Free, web product, idea, rapidly validate, software, Discovery, Design, Development"
         og:
           title: 'Course'
           locale: 'en_US'
           site_name: 'http://cosmit.me/startups/validation-course'
-          description: "Validate your idea with a one-week web product"
+          description: "Learn to validate your idea in just one week"
         twitter:
           card: 'Course'
           site: '@COSMITdev'
-          description: "Validate your idea with a one-week web product"
+          description: "Learn to validate your idea in just one week"
