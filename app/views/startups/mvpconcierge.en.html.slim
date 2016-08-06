@@ -14,6 +14,7 @@
                   = link_to "Get started", mvp_concierge_path(anchor: 'contact'), title: "Get started", class: 'btn -lg -cyan u-marginTop15 u-marginBot30'
                   .clearfix
                   = link_to "Learn more", mvp_concierge_path(anchor: 'problems'), title: "Learn more", class: 'u-marginTop30 u-linkCyan u-textUp'
+
   section.-md.mvpProblem#problems
     .container
       .row
@@ -42,6 +43,7 @@
                 .col-sm-9.col-md-10
                   h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5.u-textSemiBold Finding people
                   p.u-textLight.u-noMargin.u-marginBot30 You might think of hiring your own team or work with freelancers, but it will cost you too much time to find the right people and it will be also super expensive.
+
   section.-lg.-gray.mvpWhy#why
     .container
       .row
@@ -65,6 +67,7 @@
           .row
             .col-sm-10.u-centered.u-textCenter
               = link_to "Get started", mvp_concierge_path(anchor: 'contact'), title: "Get started", class: 'btn -md -cyan u-marginTop15'
+
   section.-md.mvpResult#result
     .container
       .row
@@ -83,21 +86,9 @@
                   li.u-marginBot20
                     i.fa.fa-check
                     h3.u-h2.u-textLight Your value generation & delivery process documented
-  section.-md.-gray.course#course
-    .container
-      .row
-        .col-sm-12.col-md-8.u-centered
-          .courseStripe
-            .courseImg
-              = image_tag ('icon-course-cyan.svg'), class: 'img-responsive push-left', alt: 'MVP Slim'
-            .courseTxt
-              = link_to validation_path do
-                h2.u-noMargin.boxTitle.u-textBlue[title="FREE COURSE - Validate your idea in one week"]
-                  .small.u-marginBot5
-                    | [FREE COURSE]
-                  | Validate your idea in one week
-              p.subtitle.u-marginTop10.u-marginBot20 We will teach you how to validate your ideas and start your own tech business without knowing how to code, design or spending a lot of money in the process.
-              = link_to "Enroll now for FREE!", validation_path, title: "Enroll now for FREE!", class: 'btn -md -magenta u-textUp'
+
+  = render 'partials/coursestripe'
+
   section.-md.mvpProcess#how
     .container
       .row
@@ -164,6 +155,7 @@
                       td
               p.small.u-textCenter.u-textGray-medium.u-textLight.u-noMargin 
                 | *When we get started, you will need to dedicate half of first day to work with us hand-in-hand to figure out exactly what to build
+
     .team#team
       .container
         .row
@@ -200,6 +192,7 @@
                       i.fa.fa-github-square
                 .col-sm-9
                   p.textBio.u-textLight My name is <strong>Patrick Müller</strong>. I'm CTO, full-stack developer and co-founder at COSMIT. Since 2011 I've been working with web development. Like most of developers I like games, mangas, animes, nerd and geek culture, especially Naruto! By the way, I really love barbecue!
+
   section.-md.-gray.mvpPricing#pricing
     .container
       .row
@@ -235,6 +228,7 @@
                 p.small.u-textGray.u-textLight.u-marginTop20
                   | *Consult price for other currencies
                 = link_to 'Get Started', mvp_concierge_path(anchor: 'contact'), class: 'btn -md -cyan'
+
   section.-sm.-blue.contact#contact
     .container
       .row

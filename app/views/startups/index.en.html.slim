@@ -45,21 +45,7 @@
                   h2.u-noMargin.boxTitle.u-textBlue[title="MVP Slim"] MVP Slim
                 p.subtitle.u-marginTop5.u-marginBot10.small A small web product, more robust than the Concierge, with more features and a beautiful design, destinated to rapidly validate your product idea. Your new solution will have a much better user experience and you will be able to automate more of your business processes in just one week.
 
-  section.-md.-gray.course#course
-    .container
-      .row
-        .col-sm-12.col-md-8.u-centered
-          .courseStripe
-            .courseImg
-              = image_tag ('icon-course-cyan.svg'), class: 'img-responsive push-left', alt: 'MVP Slim'
-            .courseTxt
-              = link_to validation_path do
-                h2.u-noMargin.boxTitle.u-textBlue[title="FREE COURSE - Validate your idea in one week"]
-                  .small.u-marginBot5
-                    | [FREE COURSE]
-                  | Validate your idea in one week
-              p.subtitle.u-marginTop10.u-marginBot20 We will teach you how to validate your ideas and start your own tech business without knowing how to code, design or spending a lot of money in the process.
-              = link_to "Enroll now for FREE!", validation_path, title: "Enroll now for FREE!", class: 'btn -md -magenta u-textUp'
+  = render 'partials/coursestripe'
 
   section#work
     .container
@@ -108,6 +94,7 @@
                     = link_to mvp_slim_path do
                       h2 title="MVP Slim" MVP Slim
                 = link_to 'Visit website', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta u-marginBot40', title: 'Visit website'
+
   section.-sm.team#team
     .container
       .row

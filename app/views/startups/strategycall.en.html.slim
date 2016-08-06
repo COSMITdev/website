@@ -14,6 +14,7 @@
                   = link_to "Get started", strategy_call_path(anchor: 'contact'), title: "Get started", class: 'btn -lg -cyan u-marginTop15 u-marginBot30'
                   .clearfix
                   = link_to "Learn more", strategy_call_path(anchor: 'problems'), title: "Learn more", class: 'u-marginTop30 u-linkCyan u-textUp'
+
   section.-md.mvpProblem#problems
     .container
       .row
@@ -42,6 +43,7 @@
                 .col-sm-9.col-md-10
                   h3.u-h2.u-noMargin.u-textBlue.u-marginTop15.u-marginBot5.u-textSemiBold The business behind
                   p.u-textLight.u-noMargin.u-marginBot30 Every new product has a business behind of it. Processes, peoples, infrastructure, strategies... Transforming your validated idea into a business is challenging. That is why you need experts to help you!
+
   section.-lg.-gray.mvpWhy#why
     .container
       .row
@@ -87,21 +89,9 @@
                   li.u-marginBot20
                     i.fa.fa-check
                     h3.u-h2.u-textLight Exclusive action plan to solve your problems
-  section.-md.-gray.course#course
-    .container
-      .row
-        .col-sm-12.col-md-8.u-centered
-          .courseStripe
-            .courseImg
-              = image_tag ('icon-course-cyan.svg'), class: 'img-responsive push-left', alt: 'MVP Slim'
-            .courseTxt
-              = link_to validation_path do
-                h2.u-noMargin.boxTitle.u-textBlue[title="FREE COURSE - Validate your idea in one week"]
-                  .small.u-marginBot5
-                    | [FREE COURSE]
-                  | Validate your idea in one week
-              p.subtitle.u-marginTop10.u-marginBot20 We will teach you how to validate your ideas and start your own tech business without knowing how to code, design or spending a lot of money in the process.
-              = link_to "Enroll now for FREE!", validation_path, title: "Enroll now for FREE!", class: 'btn -md -magenta u-textUp'
+
+  = render 'partials/coursestripe'
+
   section.-md#teacher
     .container
       .row
@@ -129,6 +119,7 @@
                     p Hey, my name is <strong>Gabriel Carpenedo</strong>, but you can just call me Gabe. I'm CEO, UX/UI Designer, and Product/Project manager at COSMIT, my own company. Since 2009 I've been doing business. Following my dream of being a successful entrepreneur. In this journey, I've made a lot of bad decisions and had many failures. Those mistakes have made me learn... Made me stronger.
                     p I'm constantly reading and learning about business, startups, strategies, planning, marketing, sales... Everything related. I just love business! It excites me. So, I'm always talking about it. Always sharing. Especially my wife that has to tolerate me all the time talking about new ideas.
                     p I'm a huge fan of Star Trek and space travel since I was a kid. I've seen Interstellar hundred times. I'm also an enthusiast of tiny houses and sustainability. I'm vegan and I like to cook. Besides my business hustle side, which is more common to people see, I have a really strong spiritual sense and I believe in a better and peaceful future for everyone.
+
   section.-md.-gray.mvpPricing#pricing
     .container
       .row
@@ -158,6 +149,7 @@
                 p.small.u-textGray.u-textLight.u-marginTop20
                   | *Consult price for other currencies
                 = link_to 'Get Started', strategy_call_path(anchor: 'contact'), class: 'btn -md -cyan'
+
   section.-sm.-blue.contact#contact
     .container
       .row
