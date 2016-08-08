@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     get 'startups/mvp-concierge',     to: 'startups#mvpconcierge', as: :mvp_concierge
     get 'startups/mvp-slim',          to: 'startups#mvpslim',      as: :mvp_slim
 
-    post 'contact',  to: 'pages#contact',  as: :contact
+    post 'contact', to: 'contacts#create',  as: :contact
 
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
     resource :contact, only: :create
