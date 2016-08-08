@@ -1,4 +1,5 @@
 = simple_form_for contact, url: contact_path, remote: true do |f|
+  = f.input :origin, as: :hidden, input_html: { value: @origin || "#{params[:controller].upcase} - #{params[:action].upcase}" }
   = f.input :name, label: 'Qual seu nome?', placeholder: 'Seu Nome', class: '-block', input_html: { title: 'Seu Nome' }
   = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Qual seu email?' }
   = f.input :budget, label: 'Seu orçamento, se aplicável?', required: false, class: '-block', input_html: { title: 'Seu orçamento?', class: 'js-monetary' }

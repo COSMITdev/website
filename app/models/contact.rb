@@ -3,7 +3,7 @@ class Contact
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
-  attr_accessor :name, :email, :message, :budget
+  attr_accessor :origin, :name, :email, :message, :budget
 
   validates :name, :email, :message, presence: true
 

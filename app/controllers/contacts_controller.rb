@@ -10,12 +10,14 @@ class ContactsController < ApplicationController
       @message = I18n.t('contact.failure')
     end
 
+    @origin = @contact.origin
+
     render :contact
   end
 
   private
 
   def permitted_params
-    params.require(:contact).permit(:name, :email, :budget, :message)
+    params.require(:contact).permit(:origin, :name, :email, :budget, :message)
   end
 end

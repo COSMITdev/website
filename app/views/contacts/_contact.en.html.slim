@@ -1,4 +1,5 @@
 = simple_form_for contact, url: contact_path, remote: true do |f|
+  = f.input :origin, as: :hidden, input_html: { value: @origin || "#{params[:controller].upcase} - #{params[:action].upcase}" }
   = f.input :name, label: "What's your name?", placeholder: 'Your full name', class: '-block', input_html: { title: 'Your full name' }
   = f.input :email, label: "What's your email?", placeholder: 'email@example.com', class: '-block', input_html: { title: "What's your email?" }
   - unless params[:controller] == "startups"
