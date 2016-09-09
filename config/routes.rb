@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  scope '(:locale)', locale: /pt-BR|en/ do
+  scope '(:locale)', locale: /pt-BR/ do
     root 'pages#home'
   end
 
