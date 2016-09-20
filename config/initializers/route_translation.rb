@@ -1,3 +1,3 @@
 RouteTranslator.config do |config|
-  config.available_locales = %i(pt-BR)
+  config.available_locales = %i(pt-BR en)
 end
