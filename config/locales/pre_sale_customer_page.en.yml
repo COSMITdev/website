@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      pre_sale_customer_page:
+        one: 'Pre Project'
+        other: 'Pre Projects'
+
+    attributes:
+      pre_sale_customer_page:
+        slug: Slug
+        video: Video
+        banner: Banner
+        observations: Observations

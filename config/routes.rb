@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pre_sale_customer_pages/show'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
@@ -23,6 +25,7 @@ Rails.application.routes.draw do
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
     resource :contact, only: :create
     resource :subscription, only: [:create, :destroy]
+    resources :pre_sale_customer_pages, path: 'pre-projects', only: :show
   end
 
   get '*path', to: 'pages#404', via: :all

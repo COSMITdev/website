@@ -1,0 +1,7 @@
+- set_meta_tags(noindex: true, nofollow: true)
+
+section.postHero style="background-image: url('#{@page.banner.url(:hero)}')"
+
+iframe[width="800" height="600" src="#{@page.video}" frameborder="0" allowfullscreen]
+
+p = @page.observations

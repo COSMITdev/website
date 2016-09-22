@@ -11,6 +11,7 @@ en:
     services: 'services'
     contact: 'contact'
     process: 'process'
+    pre-projects: 'pre-projects'
   contact:
     success: 'Thanks! We will get in touch soon.'
     failure: 'Review errors in the form and try again'
