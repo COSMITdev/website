@@ -31,9 +31,6 @@
                 p.subtitle.u-marginTop5.u-marginBot10.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
                 ul.boxList
                   li
-                    = link_to service_path(anchor: 'mvpconcirge') do
-                      h2 title="MVP Concierge" MVP Concierge
-                  li
                     = link_to service_path(anchor: 'mvpv1') do
                       h2 title="MVP V1" MVP V1
                   li
@@ -52,18 +49,12 @@
                   li
                     = link_to service_path(anchor: 'emergency') do
                       h2 title="Emergência" Emergência
-                  li
-                    = link_to service_path(anchor: 'performance') do
-                      h2 title="Desempenho" Desempenho
             .col-sm-6.col-md-4
               .serviceBox
                 = image_tag ('icon-mentor-cyan.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
                 = link_to service_path(anchor: 'mentoring') do
                   h2.u-noMargin.boxTitle.u-textBlue title="Mentoria de Negócios" Mentoria de Negócios
                 p.subtitle.u-noMargin.u-marginTop5.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
-          .row
-            .col-sm-12.col-md-10.u-textCenter.u-centered
-              = render partial: 'partials/download'
 
   section.-sm.-gray.work#work
     .container
@@ -88,7 +79,7 @@
             .col-sm-10.u-centered.u-textCenter
               h4.u-noMargin.u-marginTop10.u-textLight.textSmall.u-textGray-medium E mais de 30 outras empresas e startups
 
-  section.-sm.-gray.process#process
+  section.-sm.process#process
     .container
       .row
         .col-sm-12.col-md-10.u-centered

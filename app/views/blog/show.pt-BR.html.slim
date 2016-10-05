@@ -36,14 +36,12 @@ section.postShow
         .row
           .col-sm-4.text-left
             - if @previous.present?
-              = link_to "Anterior", post_path(@previous), class: 'btn -md -purple -block u-marginTop30', title: 'Anterior',
+              = link_to "Anterior", post_path(@previous), class: 'btn -md -blue -block u-marginTop30', title: 'Anterior',
                 data: { disable_with: 'Carregando...' }
           .col-sm-4.col-sm-offset-4.text-right
             - if @next.present?
-              = link_to "Próximo", post_path(@next), class: 'btn -md -purple -block u-marginTop30', title: 'Próximo',
+              = link_to "Próximo", post_path(@next), class: 'btn -md -blue -block u-marginTop30', title: 'Próximo',
                 data: { disable_with: 'Carregando...' }
       
       .col-sm-10.col-md-7.u-centered.u-marginTop30
         = render partial: 'layouts/comments'
-
-= render 'partials/newsletter'

@@ -114,47 +114,11 @@
   }
 }
 
-// # ===== Blog
-.blog {
-  .navbar-default {
-    background-color: $magenta;
-
-    .navbar-nav > li > a {
-      color: white;
-
-      &:hover,
-      &:focus {
-        color: $purple;
-      }
-    }
-
-    .navbar-collapse {
-      background-color: $magenta;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $purple;
-
-      .icon-bar {
-        background-color: $purple;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $purple;
-
-        .icon-bar {
-          background-color: $magenta;
-        }
-      }
-    }
-  }
-}
-
 // # ===== Home
 .home,
 .mvp,
-.startups {
+.startups,
+.blog {
   .navbar-default {
     background-color: $blue;
 

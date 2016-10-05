@@ -99,47 +99,25 @@ footer {
 
 .home,
 .mvp,
-.startups {
-  footer {
-    .socialLink {
-      color: $blue;
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
-    }
-
-    p a {
-      color: $blue;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        color: $cyan;
-      }
-    }
-  }
-}
-
+.startups,
 .blog {
   footer {
     .socialLink {
-      color: $magenta;
+      color: $blue;
 
       &:hover,
       &:focus {
-        color: $purple;
+        color: $cyan;
       }
     }
 
     p a {
-      color: $magenta;
+      color: $blue;
 
       &:hover,
       &:focus {
         text-decoration: underline;
-        color: $purple;
+        color: $cyan;
       }
     }
   }
