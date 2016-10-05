@@ -15,7 +15,6 @@ class Post < ActiveRecord::Base
 
   scope :published, -> { where(published: true)
                          .where(language: I18n.locale.to_s)
-                         .where('publish_date <= ?', Date.today)
                          .order(publish_date: :desc) }
 
   def previous
