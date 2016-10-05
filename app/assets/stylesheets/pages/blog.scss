@@ -19,7 +19,7 @@
     &:hover,
     &:focus {
       .postTitle {
-        color: $magenta;
+        color: $cyan;
         transition: all .2s;
       }
     }
@@ -74,11 +74,13 @@
   }
 
   a {
-    color: $magenta;
+    color: $blue;
+    text-decoration: underline;
 
     &:hover,
     &:focus {
-      text-decoration: underline;
+      color: $cyan;
+      transition: all .3s;
     }
   }
 
