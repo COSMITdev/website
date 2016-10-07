@@ -15,6 +15,10 @@ en:
     success: 'Thanks! We will get in touch soon.'
     failure: 'Review errors in the form and try again'
     url_message: 'thankyou'
+  subscriber:
+    success: 'Thanks! Now you can download the file'
+    failure: 'Review errors in the form and try again'
+    url_message: 'protocamp'
   subscription:
     success: 'You subscribed with success!'
     failure: 'Review errors in the subscriptions and try again'

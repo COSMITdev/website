@@ -15,6 +15,10 @@ pt-BR:
     success: 'Obrigado(a) pelo contato! Em breve retornaremos.'
     failure: 'Revise os campos com erro!'
     url_message: 'obrigado'
+  subscriber:
+    success: 'Obrigado(a)! Você já pode baixar nosso PDF.'
+    failure: 'Informações incorretas ou seu email já está cadastrado.'
+    url_message: 'protocamp'
   subscription:
     success: 'Você se inscreveu com sucesso!'
     failure: 'Revise os erros na inscrição e tente novamente'
