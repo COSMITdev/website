@@ -5,7 +5,7 @@ section.postHero style="background-image: url('#{@post.hero_image.url(:hero)}')"
 section.postShow
   .container
     .row
-      .col-sm-10.col-md-7.u-centered
+      .col-sm-10.col-md-8.u-centered
         h1.postTitle.u-marginBot15 = @post.title
         ul.postTags
           - @post.tags.each do |tag|
@@ -31,7 +31,7 @@ section.postShow
                 = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
                                                                             description: @post.meta_description }
 
-      .col-sm-10.col-md-7.u-centered
+      .col-sm-10.col-md-8.u-centered
         hr.u-marginTop30.u-marginBot10
         .row
           .col-sm-4.text-left
@@ -43,5 +43,5 @@ section.postShow
               = link_to "Next", post_path(@next), class: 'btn -md -blue -block u-marginTop30', title: 'Next',
                 data: { disable_with: 'Carregando...' }
       
-      .col-sm-10.col-md-7.u-centered.u-marginTop30
+      .col-sm-10.col-md-8.u-centered.u-marginTop30
         = render partial: 'layouts/comments'
