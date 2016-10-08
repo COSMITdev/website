@@ -2,7 +2,7 @@ Website.ModalProtoCamp =
   init: ->
     $("html").bind "mouseleave touchend", ->
       # if false, show the modal and set cookie
-      unless isCookiePresent()
+      unless Cookies.get('closeModal') == 'true'
         $("#modalFade").show()
         setCookie()
 
@@ -15,13 +15,8 @@ Website.ModalProtoCamp =
         $("#modalFade").hide()
         setCookie()
 
-    isCookiePresent = ->
-      if document.cookie.indexOf('modal') >= 0 then true else false
-
     setCookie = ->
-      expiry = new Date
-      expiry.setTime(expiry.getTime() + 60 * 60 * 12 * 1000) # Set to 12 hours
-      # Date()'s toGMTSting() method will format the date correctly for a cookie
-      document.cookie = 'modal=yes; expires=' + expiry.toGMTString()
+      # the integer is in days
+      Cookies.set('closeModal', 'true', { expires: 1 })
 
   modules: -> []
