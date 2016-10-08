@@ -29,7 +29,6 @@ $c-gray-light: #e0e6ed;
   color: $c-blue-gray;
   background: #fff;
   border-radius: 10px;
-  width: 100%;
   max-width: 600px;
   padding: 20px 40px 40px;
   position: relative;
@@ -141,4 +140,10 @@ small {
   font-size: 11px;
   line-height: 0.9rem;
   display: block;
+}
+
+@media (max-width: 600px) {
+  #modalFade > #modalBox {
+    margin: 5% 10px;
+  }
 }
