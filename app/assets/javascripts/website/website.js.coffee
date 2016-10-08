@@ -17,13 +17,12 @@ window.Website =
     # Something here. This is called in every page.
     $('[data-toggle="tooltip"]').tooltip()
 
-  modules: ->
-    [
-      Website.Flash
-      Website.Scroll
-      Website.Maskmoney
-      Website.HideNav
-      Website.DownloadPDFHome
-    ]
-
-    # Some modules that will be used on every page.
+  # Some modules that will be used on every page.
+  modules: -> [
+    Website.Flash
+    Website.Scroll
+    Website.Maskmoney
+    Website.HideNav
+    Website.DownloadPDFHome
+    Website.ModalProtoCamp
+  ]

@@ -54,6 +54,8 @@ gem 'maskmoney-rails'
 gem 'meta-tags'
 # Translate routes for better SEO
 gem 'route_translator'
+# ActiveCampaign API Wrapper
+gem 'active-campaign-rails'
 
 group :development do
   gem 'rack-mini-profiler'
