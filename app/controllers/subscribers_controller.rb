@@ -19,9 +19,13 @@ class SubscribersController < ApplicationController
     email = subscriber.email
 
     if Rails.env.production?
-      query = JSON.parse(Campaign.contact_add(email: email, first_name: name, 'p[2]' => 2, 'status[2]' => 1))
+      query = JSON.parse(Campaign.contact_add(email: email,
+        first_name: name, 'p[2]' => 2, 'status[2]' => 1,
+        tags: 'blog,modal,canvas,sw'))
     else
-      query = JSON.parse(Campaign.contact_add(email: email, first_name: name, 'p[1]' => 1, 'status[1]' => 1))
+      query = JSON.parse(Campaign.contact_add(email: email,
+      first_name: name, 'p[1]' => 1, 'status[1]' => 1,
+      tags: 'blog,modal,canvas,sw'))
     end
 
     query['result_code'] == 1 # return true or false, code 1 is for successful requests
