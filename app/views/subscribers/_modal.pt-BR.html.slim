@@ -1,6 +1,13 @@
 #modalFade
-  #modalDialog.modalProtoCamp
-    a.closeModal title="Close"
-    h2 ProtoCamp
-    .js-subscriber-content
-      = render partial: 'subscribers/subscriber', locals: { subscriber: Subscriber.new }
+  #modalBox.modalProtoCamp
+    a.closeModal title="Fechar"
+    h2 ProtoCamp Canvas
+    p.u-textCenter Planeje a sua nova grande ideia!
+    .row
+      .col-sm-6
+        = image_tag('mockup-protocamp.png', class: 'img-responsive text-center')
+      .col-sm-6
+        .js-subscriber-content
+          = render partial: 'subscribers/subscriber', locals: { subscriber: Subscriber.new }
+      .col-sm-12
+        small.u-textCenter.u-marginTop10 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

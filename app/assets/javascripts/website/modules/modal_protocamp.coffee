@@ -6,7 +6,7 @@ Website.ModalProtoCamp =
         $("#modalFade").show()
         setCookie()
 
-    $(".close").on "click", ->
+    $(".closeModal").on "click", ->
       $("#modalFade").hide()
       setCookie()
 

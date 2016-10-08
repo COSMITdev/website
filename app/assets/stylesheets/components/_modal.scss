@@ -1,54 +1,142 @@
+$bg-blue-dark: rgba(31,45,61,.98);
+$c-black: #3c4858;
+$c-blue: #1fb6ff;
+$c-blue-gray: #8492a6;
+$c-gray: #8492a6;
+$c-gray-light: #e0e6ed;
+
+/* ModalFade - the black background */
 #modalFade {
+  background: $bg-blue-dark;
   display: none;
   position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.8);
   z-index: 99999;
-  opacity:1;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #modalFade:target {
-	opacity:1;
-	pointer-events: auto;
+  opacity:1;
+  pointer-events: auto;
 }
 
-#modalFade > #modalDialog {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+/* Modalbox - the whitebox with content */
+#modalFade > #modalBox {
+  color: $c-blue-gray;
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 40px 40px;
+  position: relative;
+  display: block;
+  margin: 12% auto 0;
+
+  .form-group {
+    margin-bottom: 10px;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
 }
 
+#modalBox h1,
+#modalBox h2,
+#modalBox h3,
+#modalBox h4 {
+  font-weight: 700 !important;
+  color: $c-black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#modalBox label {
+  font-weight: 400 !important;
+  color: $c-black;
+}
+
+#modalBox p {
+  margin: 10px 0 15px;
+}
+
+/* Close button*/
 .closeModal {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  height: 29px;
+  width: 29px;
+  right: 10px;
+  top: 10px;
 }
 
-.closeModal:hover { background: #00d9ff; }
+/* Close button X shape */
+.closeModal::before,
+.closeModal::after {
+  background-color: $c-gray;
+  content: "";
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 14px;
+  right: 6px;
+}
+
+.closeModal::before {
+  transform: rotate(45deg);
+}
+
+.closeModal::after {
+  transform: rotate(-45deg);
+}
+
+.closeModal:hover::after,
+.closeModal:hover::before { 
+  background: $c-blue;
+  transition: all .3s;
+}
+
+.btn-modal {
+  border-radius: 4px;
+  background-color: #F05638;
+  border: 0;
+  color: white;
+  font-family: 'Montserrat-Regular', Open Sans, sans-serif;
+  text-transform: none !important;
+
+  &:hover,
+  &:focus {
+    border: 0;
+    color: white !important;
+    background: #fb6249 !important;
+    box-shadow: inset 0 -2px 0 0 #CC4227 !important;
+  }
+}
+
+/* Input style - Mailchimp */
+#modalBox input:not([type="submit"]) {
+  border: 1px solid $c-gray-light !important;
+  height: 45px;
+  font-size: 14px;
+  padding: 5px 13px;
+  border-radius: 4px !important;
+
+  &:hover,
+  &:focus, {
+    border: 1px solid $blue !important;
+  }
+}
+
+/* General */
+small {
+  font-size: 11px;
+  line-height: 0.9rem;
+  display: block;
+}
