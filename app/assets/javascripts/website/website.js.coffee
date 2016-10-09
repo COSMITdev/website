@@ -24,5 +24,5 @@ window.Website =
     Website.Maskmoney
     Website.HideNav
     Website.DownloadPDFHome
-    Website.ModalProtoCamp
+    Website.ModalProtocamp
   ]

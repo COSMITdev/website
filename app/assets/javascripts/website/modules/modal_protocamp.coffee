@@ -1,4 +1,4 @@
-Website.ModalProtoCamp =
+Website.ModalProtocamp =
   init: ->
     $("html").bind "mouseleave touchend", ->
       # if false, show the modal and set cookie
