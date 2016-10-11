@@ -4,10 +4,14 @@ Website.ModalProtocamp =
 
     # When mobile, show the modal when user Scroll down the page
     if isMobile.matches
-      bottom = $(document).height() - $(window).height()
+      totalHeight = $(document).height() - $(window).height()
 
       $(window).scroll ->
-        if $(window).scrollTop() < bottom then showModal()
+        ninenthPercent = totalHeight*0.95
+        actualPosition = $(window).scrollTop()
+
+        if ninenthPercent < actualPosition
+          showModal()
 
     # When desktop, show the modal when mouse leave the page
     else
@@ -18,7 +22,8 @@ Website.ModalProtocamp =
       hideModal()
 
     $("html").click (e) ->
-      if e.target.id == "modalFade" then hideModal()
+      if e.target.id == "modalFade"
+        hideModal()
 
     setCookie = ->
       Cookies.set('closeModal', 'true', { expires: 1 })
