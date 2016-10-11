@@ -1,22 +1,35 @@
 Website.ModalProtocamp =
   init: ->
-    $("html").bind "mouseleave touchend", ->
-      # if false, show the modal and set cookie
-      unless Cookies.get('closeModal') == 'true'
+    isMobile = window.matchMedia("only screen and (max-width: 760px)")
+
+    # When mobile, show the modal when user Scroll down the page
+    if isMobile.matches
+      bottom = $(document).height() - $(window).height()
+
+      $(window).scroll ->
+        if $(window).scrollTop() < bottom then showModal()
+
+    # When desktop, show the modal when mouse leave the page
+    else
+      $("html").bind "mouseleave touchend", ->
+        showModal()
+
+    $(".closeModal").on "click", ->
+      hideModal()
+
+    $("html").click (e) ->
+      if e.target.id == "modalFade" then hideModal()
+
+    setCookie = ->
+      Cookies.set('closeModal', 'true', { expires: 1 })
+
+    showModal = ->
+      if Cookies.get('closeModal') == undefined
         $("#modalFade").show()
         setCookie()
 
-    $(".closeModal").on "click", ->
+    hideModal = ->
       $("#modalFade").hide()
       setCookie()
-
-    $("html").click (e) ->
-      if e.target.id == "modalFade"
-        $("#modalFade").hide()
-        setCookie()
-
-    setCookie = ->
-      # the integer is in days
-      Cookies.set('closeModal', 'true', { expires: 1 })
 
   modules: -> []
