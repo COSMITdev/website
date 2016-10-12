@@ -90,15 +90,6 @@ ActiveRecord::Schema.define(version: 20161012170302) do
 
   add_index "posts", ["author_id"], name: "index_posts_on_author_id", using: :btree
 
-  create_table "pre_sale_customer_pages", force: :cascade do |t|
-    t.string   "slug",         default: "", null: false
-    t.string   "banner",       default: "", null: false
-    t.string   "video",        default: "", null: false
-    t.text     "observations"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-  end
-
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
