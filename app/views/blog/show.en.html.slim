@@ -26,9 +26,9 @@ section.postShow
             h5.u-marginBot15 Share:
             .shareButtons
               span.buttonFacebook
-                = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
+                = render partial: 'partials/facebook_share_button', locals: { url: post_url(@post) }
               span.buttonTwitter
-                = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
+                = render partial: 'partials/twitter_share_button', locals: { url: post_url(@post),
                                                                             description: @post.meta_description }
 
       .col-sm-10.col-md-8.u-centered
@@ -44,4 +44,4 @@ section.postShow
                 data: { disable_with: 'Carregando...' }
       
       .col-sm-10.col-md-8.u-centered.u-marginTop30
-        = render partial: 'layouts/comments'
+        = render partial: 'partials/comments'
