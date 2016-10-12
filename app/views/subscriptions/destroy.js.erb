@@ -1,9 +1,0 @@
-if (<%= @error %>) {
-  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>');
-  Website.Flash.init();
-} else if (<%= @success %>) {
-  $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
-  Website.Flash.init();
-}
-
-$(".unsubscriptionForm").html($("<%= escape_javascript(render partial: 'subscriptions/destroy') %>"));

@@ -3,6 +3,8 @@
     .container
       .row
         .col-sm-12.col-md-10.u-centered
+          .js-newsletter-content
+            = render partial: 'newsletter/form', locals: { newsletter: @newsletter }
           .row
             .col-sm-6
               .socialLinks

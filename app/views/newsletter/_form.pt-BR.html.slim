@@ -1,0 +1,5 @@
+= simple_form_for newsletter, url: newsletter_path, remote: true do |f|
+  = f.input :name, label: 'Seu nome?', placeholder: 'Nome Completo', class: '-block', input_html: { title: 'Nome Completo' }
+  = f.input :email, label: 'Seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Seu email?' }
+  = f.button :submit, 'Inscrever-se', title: 'Inscrever-se', class: 'btn btn-modal -block u-marginTop15 u-marginBot10',
+    data: { disable_with: 'Inscrevendo-se...' }

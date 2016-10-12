@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_action :set_newsletter
+
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
   rescue_from ActionController::ParameterMissing, with: :render_404
@@ -21,5 +23,9 @@ class ApplicationController < ActionController::Base
   def user_not_authorized
     flash[:alert] = "Você não tem permissão para fazer isso."
     redirect_to(request.referrer || root_path)
+  end
+
+  def set_newsletter
+    @newsletter = Newsletter.new
   end
 end

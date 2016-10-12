@@ -20,10 +20,9 @@ Rails.application.routes.draw do
 
     post 'contact', to: 'contacts#create',  as: :contact
     post 'subscribe', to: 'subscribers#create',  as: :subscribe
+    post 'newsletter', to: 'newsletter#create',  as: :newsletter
 
     resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
-    resource :contact, only: :create
-    resource :subscription, only: [:create, :destroy]
   end
 
   get '*path', to: 'pages#404', via: :all

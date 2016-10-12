@@ -19,16 +19,7 @@ en:
     success: 'Thanks! Now you can download the file'
     failure: 'Review errors in the form and try again'
     url_message: 'protocamp'
-  subscription:
+  newsletter:
     success: 'You subscribed with success!'
-    failure: 'Review errors in the subscriptions and try again'
-    destroy:
-      success: 'Hope to see you soon again =('
-      failure: 'Something went wrong...'
-      empty_email: 'You must provide an email to Unsubscribe'
-      not_found: 'Email not found'
+    failure: 'Review errors and try again'
     url_message: 'subscribed'
-    next_lesson:
-      success: 'Check your email address for the next Lesson sent!'
-      not_found: 'Not found any next lesson for now =('
-      provide_email: 'You must tell us your email!'
