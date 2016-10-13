@@ -1,6 +1,5 @@
 require 'active_record'
 require 'logger'
-require 'pry-rails'
 
 class TelegramBotDatabase
   class << self
