@@ -1,0 +1,9 @@
+section.newsletter
+  .container
+    .row
+      .col-sm-10.col-md-8.u-centered.u-textCenter
+        h3.u-h2.u-textPurple.u-noMargin.u-textCenter title="Aqui é o centro de comando. Qual seu email câmbio?" Aqui é o centro de comando. Qual seu email câmbio?
+        .js-newsletter-content.u-marginTop20
+          = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
+        p.small.u-textGray-medium.u-noMargin.u-marginTop15 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência no espaço sideral.
+

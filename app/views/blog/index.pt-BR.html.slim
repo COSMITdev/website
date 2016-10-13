@@ -26,3 +26,11 @@
                 span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} em "
                 - post.tags.each do |tag|
                   li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
+  section.newsletter
+    .container
+      .row
+        .col-sm-12.u-centered.u-textCenter
+          h3.u-h2.u-textBlue.u-noMargin.u-textCenter title="Aqui é o centro de comando. Qual seu email câmbio?" Aqui é o centro de comando. Qual seu email câmbio?
+          .js-newsletter-content.u-marginTop20
+            = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
+          p.small.u-textGray-medium.u-noMargin.u-marginTop15 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

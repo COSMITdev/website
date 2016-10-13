@@ -1,6 +1,0 @@
-h1 = @newsletter.subject
-
-= @newsletter.body.html_safe
-
-- if @newsletter.next?
-  = link_to 'Send next Lesson Now!', next_newsletter_url(email: @subscriber.email)

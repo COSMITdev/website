@@ -19,7 +19,7 @@ pt-BR:
     success: 'Obrigado(a)! Baixe gratuitamente o Protocamp Canvas!'
     failure: 'Informações incorretas ou seu email já está cadastrado.'
     url_message: 'protocamp'
-  subscription:
+  newsletter:
     success: 'Você se inscreveu com sucesso!'
-    failure: 'Revise os erros na inscrição e tente novamente'
+    failure: 'Revise os erros e tente novamente'
     url_message: 'inscrito'

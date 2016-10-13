@@ -22,7 +22,17 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
 
   body class="#{params[:controller]} #{params[:action]}" data-unit="#{I18n.t('number.currency.format.unit')}" data-separator="#{I18n.t('number.currency.format.separator')}" data-delimiter="#{I18n.t('number.currency.format.delimiter')}"
     = initjs_tag "Website"
-    = render 'layouts/flash'
+    
+    / Load Analytics Tools before everything
+    / This may take down performance, but in this case
+    / it's important
+    - if Rails.env.production?
+      = render 'partials/google_analytics'
+      = render 'partials/hotjar'
+      = render 'partials/facebook_pixel'
+      = render 'partials/activecampaign'
+    
+    = render 'partials/flash'
     = yield
     = render 'partials/footer'
     / initialize JS just after all content
@@ -30,9 +40,3 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
 
     - if params[:controller] == 'blog'
       = render 'partials/google_web_font'
-
-    - if Rails.env.production?
-      = render 'partials/google_analytics'
-      = render 'partials/hotjar'
-      = render 'partials/facebook_pixel'
-      = render 'partials/activecampaign'

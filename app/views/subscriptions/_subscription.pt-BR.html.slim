@@ -1,5 +1,0 @@
-= simple_form_for subscription, url: subscription_path, remote: true do |f|
-  = f.input :name, label: 'Qual seu nome?', placeholder: 'Seu Nome', class: '-block', input_html: { title: 'Seu Nome' }
-  = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Qual seu email?' }
-  = f.button :submit, 'Enviar', title: 'Enviar', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30',
-    data: { disable_with: 'Inscrevendo-se...' }

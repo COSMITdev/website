@@ -27,9 +27,9 @@ section.postShow
             h5.u-marginBot15 Compartilhe:
             .shareButtons
               span.buttonFacebook
-                = render partial: 'layouts/facebook_share_button', locals: { url: post_url(@post) }
+                = render partial: 'partials/facebook_share_button', locals: { url: post_url(@post) }
               span.buttonTwitter
-                = render partial: 'layouts/twitter_share_button', locals: { url: post_url(@post),
+                = render partial: 'partials/twitter_share_button', locals: { url: post_url(@post),
                                                                             description: @post.meta_description }
 
       .col-sm-10.col-md-8.u-centered
@@ -43,6 +43,13 @@ section.postShow
             - if @next.present?
               = link_to "Próximo", post_path(@next), class: 'btn -md -blue -block u-marginTop30', title: 'Próximo',
                 data: { disable_with: 'Carregando...' }
-      
       .col-sm-10.col-md-8.u-centered.u-marginTop30
-        = render partial: 'layouts/comments'
+        = render partial: 'partials/comments'
+section.newsletter
+  .container
+    .row
+      .col-sm-12.u-centered.u-textCenter
+        h3.u-h2.u-textBlue.u-noMargin.u-textCenter title="Aqui é o centro de comando. Qual seu email câmbio?" Aqui é o centro de comando. Qual seu email câmbio?
+        .js-newsletter-content.u-marginTop20
+          = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
+        p.small.u-textGray-medium.u-noMargin.u-marginTop15 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

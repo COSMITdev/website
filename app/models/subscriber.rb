@@ -1,3 +1,5 @@
+# This Class is used to validate data for our
+# ProtoCamp Subscribers on ActiveCampaign
 class Subscriber
   extend ActiveModel::Naming
   include ActiveModel::Validations
