@@ -14,5 +14,4 @@
 .env
 coverage/
 public/uploads/
-config/database.yml
 public/assets
