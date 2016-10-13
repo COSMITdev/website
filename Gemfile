@@ -56,11 +56,12 @@ gem 'meta-tags'
 gem 'route_translator'
 # ActiveCampaign API Wrapper
 gem 'active-campaign-rails'
+# To interact with Telegram API
+gem 'telegram-bot-ruby'
 
 group :development do
   gem 'rack-mini-profiler'
   gem 'letter_opener'
-  gem 'telegram-bot-ruby'
 end
 
 group :development, :test do
