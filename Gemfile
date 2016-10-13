@@ -60,6 +60,7 @@ gem 'active-campaign-rails'
 group :development do
   gem 'rack-mini-profiler'
   gem 'letter_opener'
+  gem 'telegram-bot-ruby'
 end
 
 group :development, :test do

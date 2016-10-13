@@ -1,1 +1,1 @@
-web: bundle exec passenger start -p $PORT --no-friendly-error-pages --max-pool-size 3
+web: rails runner -e production bin/telegram_bot.rb
