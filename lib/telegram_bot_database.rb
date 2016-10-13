@@ -6,9 +6,13 @@ class TelegramBotDatabase
     def establish_connection
       ActiveRecord::Base.logger = Logger.new(active_record_logger_path)
 
-      configuration = YAML::load(IO.read(database_config_path))
-      # ActiveRecord::Base.establish_connection(configuration)
-      ActiveRecord::Base.establish_connection(configuration[Rails.env].merge(adapter: 'postgresql'))
+      if Rails.env.production?
+        configuration = YAML::load(IO.read(database_config_path)).merge(adapter: 'postgresql')
+      else
+        configuration = ENV["DATABASE_URL"]
+      end
+
+      ActiveRecord::Base.establish_connection(configuration)
     end
 
     private
