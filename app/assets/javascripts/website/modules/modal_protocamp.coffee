@@ -26,7 +26,7 @@ Website.ModalProtocamp =
         hideModal()
 
     setCookie = ->
-      Cookies.set('closeModal', 'true', { expires: 1 })
+      Cookies.set('closeModal', 'true', { expires: 0.1 })
 
     showModal = ->
       if Cookies.get('closeModal') == undefined
