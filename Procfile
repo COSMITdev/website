@@ -1,1 +1,1 @@
-web: rails runner -e production bin/telegram_bot.rb
+worker: rails runner -e production bin/telegram_bot.rb
