@@ -19,14 +19,17 @@ URL_PREFIX = if Rails.env.production?
 Telegram::Bot::Client.run(ENV['TELEGRAM_TOKEN']) do |bot|
   bot.listen do |message|
     case message.text
-    when '/start'
+    when '/sobre'
       bot.api.send_message(chat_id: message.chat.id,
                            text: "Bem-vindo a COSMIT http://cosmit.me")
-    when '/article'
+    when '/artigo'
       post = Post.order('RANDOM()').first
       bot.api.send_message(chat_id: message.chat.id,
                            text: post.title+"\n"+URL_PREFIX+post.slug,
-                           disable_web_page_preview: false)
+                           disable_web_page_preview: false)\
+    else
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: "Não entendi o que você disse #{message.from.first_name}!")
     end
   end
 end
