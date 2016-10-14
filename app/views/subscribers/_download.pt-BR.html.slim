@@ -5,3 +5,12 @@ h3 Obrigado(a)!
                              class: 'btn btn-modal -block u-marginTop20 u-marginBot10 js-download-pdf-protocamp',
                              target: '_blank',
                              download: 'Baixe nosso PDF'
+
+.shareButtons
+  span.buttonFacebook
+    = render partial: 'partials/facebook_share', locals: { url: post_url(@post),
+                                                           layout: 'button',
+                                                           size: 'small' }
+  span.buttonTwitter
+    = render partial: 'partials/twitter_share', locals: { url: post_url(@post),
+                                                          description: @post.title }

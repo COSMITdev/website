@@ -10,3 +10,7 @@ ga('send', 'event', 'Download', 'Formulario', 'Protocamp');
 
 // Rende the page with the correct link
 $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'subscribers/download') %>"));
+
+// Reprint the share buttons on modal
+FB.XFBML.parse();
+twttr.widgets.load();

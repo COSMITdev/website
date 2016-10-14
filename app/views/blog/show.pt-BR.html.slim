@@ -27,10 +27,12 @@ section.postShow
             h5.u-marginBot15 Compartilhe:
             .shareButtons
               span.buttonFacebook
-                = render partial: 'partials/facebook_share_button', locals: { url: post_url(@post) }
+                = render partial: 'partials/facebook_share', locals: { url: post_url(@post),
+                                                                       layout: 'button',
+                                                                       size: 'small' }
               span.buttonTwitter
-                = render partial: 'partials/twitter_share_button', locals: { url: post_url(@post),
-                                                                            description: @post.meta_description }
+                = render partial: 'partials/twitter_share', locals: { url: post_url(@post),
+                                                                      description: @post.title }
 
       .col-sm-10.col-md-8.u-centered
         hr.u-marginTop30.u-marginBot10
