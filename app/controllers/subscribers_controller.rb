@@ -1,6 +1,8 @@
 class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(permitted_params)
+    # Used for facebook/twitter share buttons
+    @post = Post.friendly.find request.referer.split('/').last
 
     if @subscriber.valid? && subscribe_to_active_campaign(@subscriber)
       @subscriber = Subscriber.new # empty fields on form

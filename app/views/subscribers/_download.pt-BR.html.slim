@@ -13,4 +13,4 @@ h3 Obrigado(a)!
                                                            size: 'small' }
   span.buttonTwitter
     = render partial: 'partials/twitter_share', locals: { url: post_url(@post),
-                                                          description: @post.meta_description }
+                                                          description: @post.title }

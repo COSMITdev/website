@@ -31,7 +31,7 @@ section.postShow
                                                                        size: 'small' }
               span.buttonTwitter
                 = render partial: 'partials/twitter_share', locals: { url: post_url(@post),
-                                                                      description: @post.meta_description }
+                                                                      description: @post.title }
 
       .col-sm-10.col-md-8.u-centered
         hr.u-marginTop30.u-marginBot10
