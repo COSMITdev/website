@@ -61,11 +61,12 @@ module ApplicationHelper
             description: post.meta_description
           },
       twitter: {
-        card: post.meta_title,
+        url: post_url(post),
+        card: 'summary_large_image',
         site: '@COSMITdev',
-        description: post.meta_description,
+        title: post.meta_title,
         image: post.hero_image.url(:hero),
-        url: post_url(post)
+        description: post.meta_description
       }
     }
   end
