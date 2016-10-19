@@ -17,26 +17,24 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
     = favicon_link_tag 'favicon.png'
+    
+    / Load Analytics Tools before everything
+    / This may take down performance
+    - if Rails.env.production?
+      = render 'partials/facebook_pixel'
+      = render 'partials/google_analytics'
+      = render 'partials/activecampaign'
+      
+    - if params[:controller] == 'blog'
+      = render 'partials/google_web_font'
 
   script#dsq-count-scr async="" src="//cosmit.disqus.com/count.js" 
 
   body class="#{params[:controller]} #{params[:action]}" data-unit="#{I18n.t('number.currency.format.unit')}" data-separator="#{I18n.t('number.currency.format.separator')}" data-delimiter="#{I18n.t('number.currency.format.delimiter')}"
-    = initjs_tag "Website"
-    
-    / Load Analytics Tools before everything
-    / This may take down performance, but in this case
-    / it's important
-    - if Rails.env.production?
-      = render 'partials/google_analytics'
-      = render 'partials/hotjar'
-      = render 'partials/facebook_pixel'
-      = render 'partials/activecampaign'
-    
+    = initjs_tag 'Website'
     = render 'partials/flash'
     = yield
     = render 'partials/footer'
+    
     / initialize JS just after all content
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-
-    - if params[:controller] == 'blog'
-      = render 'partials/google_web_font'
