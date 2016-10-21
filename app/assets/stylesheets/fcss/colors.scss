@@ -1,17 +1,18 @@
 // general colors
-.c-blue { color: var(--blue)}
-.c-blue-light { color: var(--blue-light)}
-.c-yellow { color: var(--yellow)}
+.c-cyan {color: var(--cyan)}
+.c-blue {color: var(--blue)}
+.c-blue-light {color: var(--blue-light)}
+.c-yellow {color: var(--yellow)}
 
 // background colors
-.bg-blue { background: var(--blue)}
-.bg-blue-light { background: var(--blue-light)}
-.bg-cyan { background: var(--cyan)}
+.bg-cyan {background: var(--cyan)}
+.bg-blue {background: var(--blue)}
+.bg-blue-light {background: var(--blue-light)}
 
 // variables
 :root {
   --cyan: #1fb6ff;
-  --blue: #434350;
-  --yellow: #fbc70b;
+  --blue: #273444;
   --blue-light: #81818f;
+  --yellow: #fbc70b;
 }

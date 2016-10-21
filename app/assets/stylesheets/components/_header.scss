@@ -58,6 +58,32 @@
     }
   }
 
+  .navbar-nav > li > a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $cyan;
+    }
+  }
+
+  .navbar-toggle {
+    border: 2px solid $cyan;
+
+    .icon-bar {
+      background-color: $cyan;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $cyan;
+
+      .icon-bar {
+        background-color: $blue;
+      }
+    }
+  }
+
   // # ===== Brand
   .navbar-brand {
     float: left;
@@ -74,157 +100,3 @@
   }
 }
 
-// # Colors
-// # =================================================================
-
-// # ===== pages
-.pages {
-  .navbar-default {
-    background-color: $purple;
-
-    .navbar-nav > li > a {
-      color: white;
-
-      &:hover,
-      &:focus {
-        color: $magenta;
-      }
-    }
-
-    .navbar-collapse {
-      background-color: $purple;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $magenta;
-
-      .icon-bar {
-        background-color: $magenta;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $magenta;
-
-        .icon-bar {
-          background-color: $purple;
-        }
-      }
-    }
-  }
-}
-
-// # ===== Home
-.home,
-.mvp,
-.startups,
-.blog {
-  .navbar-default {
-    background-color: $blue;
-
-    .navbar-nav > li > a {
-      color: white;
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
-    }
-
-    .navbar-collapse {
-      background-color: $blue;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $cyan;
-
-      .icon-bar {
-        background-color: $cyan;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $cyan;
-
-        .icon-bar {
-          background-color: $blue;
-        }
-      }
-    }
-  }
-}
-
-// # ===== Works
-.works {
-  .navbar-default {
-    background-color: $purple-light;
-
-    .navbar-nav > li > a {
-      color: white;
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
-    }
-
-    .navbar-collapse {
-      background-color: $purple-light;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $cyan;
-
-      .icon-bar {
-        background-color: $cyan;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $cyan;
-
-        .icon-bar {
-          background-color: $purple-light;
-        }
-      }
-    }
-  }
-}
-
-// # ===== Services
-.services,
-.startups.validation {
-  .navbar-default {
-    background-color: $purple;
-
-    .navbar-nav > li > a {
-      color: white;
-
-      &:hover,
-      &:focus {
-        color: $magenta;
-      }
-    }
-
-    .navbar-collapse {
-      background-color: $purple;
-    }
-
-    .navbar-toggle {
-      border: 2px solid $magenta;
-
-      .icon-bar {
-        background-color: $magenta;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $magenta;
-
-        .icon-bar {
-          background-color: $purple;
-        }
-      }
-    }
-  }
-}
