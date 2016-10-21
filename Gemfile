@@ -52,8 +52,6 @@ gem 'nprogress-rails', '~> 0.1.6'
 gem 'maskmoney-rails'
 # For dynamic meta tags & og tags
 gem 'meta-tags'
-# Translate routes for better SEO
-gem 'route_translator'
 # ActiveCampaign API Wrapper
 gem 'active-campaign-rails'
 

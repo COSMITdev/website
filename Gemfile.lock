@@ -378,9 +378,6 @@ GEM
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     rouge (1.10.1)
-    route_translator (4.3.0)
-      actionpack (>= 3.2, < 5.0)
-      activesupport (>= 3.2, < 5.0)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -504,7 +501,6 @@ DEPENDENCIES
   rails_12factor (~> 0.0.3)
   redcarpet
   rouge
-  route_translator
   rspec-rails (~> 3.3.3)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
