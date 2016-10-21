@@ -12,17 +12,17 @@
       .collapse.navbar-collapse.bg-blue#bs-example-navbar-collapse-1
         ul.nav.navbar-nav.navbar-right
           li
-            = link_to 'Serviços', service_path, title: 'Serviços', class: 'u-textUp'
+            = link_to 'Serviços', service_path, title: 'Serviços'
           li
-            = link_to 'Trabalhos', work_path, title: 'Trabalhos', class: 'u-textUp'
+            = link_to 'Trabalhos', work_path, title: 'Trabalhos'
           li
-            = link_to 'Processo', root_path(anchor: 'process'), title: 'Como trabalhamos', class: 'u-textUp'
+            = link_to 'Processo', root_path(anchor: 'process'), title: 'Como trabalhamos'
           li
-            = link_to 'Blog', posts_path, title: 'Blog', class: 'u-textUp'
+            = link_to 'Blog', posts_path, title: 'Blog'
           li
             - if current_page? work_path
-              = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'u-textUp'
+              = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!'
             - elsif current_page? service_path
-              = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'u-textUp'
+              = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!'
             - else
-              = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'u-textUp'
+              = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!'
