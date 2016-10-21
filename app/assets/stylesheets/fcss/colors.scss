@@ -1,0 +1,17 @@
+// general colors
+.c-blue { color: var(--blue)}
+.c-blue-light { color: var(--blue-light)}
+.c-yellow { color: var(--yellow)}
+
+// background colors
+.bg-blue { background: var(--blue)}
+.bg-blue-light { background: var(--blue-light)}
+.bg-cyan { background: var(--cyan)}
+
+// variables
+:root {
+  --cyan: #1fb6ff;
+  --blue: #434350;
+  --yellow: #fbc70b;
+  --blue-light: #81818f;
+}
