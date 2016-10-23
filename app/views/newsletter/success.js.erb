@@ -6,7 +6,7 @@ $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %
 Website.Flash.init();
 
 // Send Analytics to Google
-// ga('send', 'event', 'Newsletter', 'Inscrição', 'Inscrição na Newsletter');
+ga('send', 'event', 'Newsletter', 'Inscrição', 'Inscrição na Newsletter');
 
 // Rende the page with the correct link
 $(".js-newsletter-content").html($("<%= escape_javascript(render partial: 'newsletter/thankyou') %>"));
