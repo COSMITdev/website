@@ -13,7 +13,10 @@
 .fz-jumbo { font-size: var(--font-scale-jumbo); }
 
 // font-weight
-.fw-n { font-weight: 400; }
+.fw-n { font-weight: 400 !important; }
+
+// line-height
+.lh-14 { line-height: 1.4em }
 
 // font variables
 :root {

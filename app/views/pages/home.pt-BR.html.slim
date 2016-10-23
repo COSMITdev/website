@@ -5,16 +5,14 @@
   section.pageHero.bg-blue
     .container
       .row
-        .col-sm-12.col-md-9.u-centered.u-textCenter
+        .col-sm-12.col-md-9.fl-n.mX-a.ta-c
           .heroContainer
             .u-verticalAlign
-              h1.c-cyan title="Transformamos suas ideias em novos produtos digitais" Transformamos suas ideias em novos produtos digitais
+              h1.c-cyan[title="Transformamos suas ideias em novos produtos digitais"] Transformamos suas ideias em novos produtos digitais
               .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="90% dos novos produtos falham. Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer. " 
-                    strong 90% dos novos produtos falham! 
-                    | Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer. 
-                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -cyan u-marginTop15'
+                .col-sm-10.fl-n.mX-a
+                  h2.c-white.fw-n.fz-larger.lh-14.mT-5[title="90% dos novos produtos falham. Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer."] 90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer. 
+                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn btn-cyan fz-large whs-nw pX-40 pY-20'
 
   section.-sm.-gray.work#work
     .container

@@ -41,15 +41,6 @@
   // aligment and floating
   .sm-ta-c { text-align: center; }
   .sm-fl-n { float: none; }
-
-  // display
-  .sm-d-b { display: block; }
-
-  :root {
-    // font-size variables
-    --h1: 2.5625rem;
-    --h2: 2rem;
-  }
 }
 
 // extra small screen / phone (max 544px)
@@ -88,15 +79,4 @@
   .xs-mB-25 { margin-bottom: 25px; }
   .xs-mB-30 { margin-bottom: 30px; }
   .xs-mR-10 { margin-right: 10px; }
-
-  // line-height
-  h1 { line-height: 2.125rem; }
-  h3 { line-height: 1.75rem; }
-
-  :root {
-    // font-size variables
-    --h1: 1.875rem;
-    --h2: 1.5rem;
-    --h3: 1.25rem;
-  }
 }

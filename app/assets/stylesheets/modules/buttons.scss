@@ -1,20 +1,19 @@
 // Base button style
 .btn {
-  &:hover,
-  &:focus {
-    transition: all .2s;
-  }
+  line-height: 1;
+  border: 0;
 }
 
 // Buttons types
-.primary {
-  color: var(--black);
-  background-color: var(--green);
+.btn-cyan {
+  color: white;
+  background-color: var(--cyan);
 
   &:hover,
   &:focus {
-    color: var(--green);
-    background-color: var(--black);
+    transition: all .2s;
+    color: white;
+    box-shadow: inset 0 -2px 0 0 #096b9b !important;
   }
 }
 
