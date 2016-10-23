@@ -2,17 +2,17 @@
 = render 'partials/header'
 
 - cache do
-  section.pageHero.bg-black
+  section.pageHero.bg-blue
     .container
       .row
-        .col-sm-12.col-md-8.u-centered.u-textCenter
+        .col-sm-12.col-md-8.fl-n.mX-a.ta-c
           .heroContainer.-internal
             .u-verticalAlign
-              h1.u-textMagenta title="Nossos Serviços" Nossos Serviços
+              h1.c-cyan[title="Nossos Serviços"] Nossos Serviços
               .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Somos um time de profissionais apaixonados por resolver problemas através do design e tecnologia" Somos um time de profissionais apaixonados por resolver problemas através do design e tecnologia
-                  = link_to 'Saiba como vamos te ajudar', service_path(anchor: 'build'), title: 'Saiba como vamos te ajudar', class: 'btn -md -magenta u-marginTop10'
+                .col-sm-10.fl-n.mX-a
+                  h2.c-white.fw-n.fz-larger.lh-14.mT-5[title="Somos um time de experts apaixonados por resolver problemas através da estratégia design e tecnologia"] Somos um time de experts apaixonados por resolver problemas através da estratégia design e tecnologia
+                  = link_to 'Entenda como vamos te ajudar', service_path(anchor: 'build'), title: 'Entenda como vamos te ajudar', class: 'btn btn-cyan fz-large whs-nw pX-40 pY-20'
 
   section.serviceList
     .serviceItem
@@ -20,69 +20,72 @@
         .row
           .col-sm-12.col-md-8.u-centered#build
             = image_tag ('icon-build.svg'), class: 'u-centered', alt: 'Construção / Desenvolvimento'
-            h2.u-marginBot5.u-marginTop10.u-textMagenta title="Construção" Construção
-            p.subtitle.u-marginTop5.u-marginBot10 Da estratégia e planejamento ao design e desenvolvimento, criamos aplicações web para novos negócios, empresas e startups.
+            h2.u-marginBot5.u-marginTop10.c-blue[title="Construção"] Construção
+            p.subtitle.u-marginTop5.u-marginBot10 Do planejamento ao design e desenvolvimento, nós criamos e lançamos novos produtos digitais para novos negócios.
             .row
-              .col-sm-6#mvpv1
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="MVP V1" MVP V1
+              .col-sm-4#protocamp
+                h2.u-h3.subserviceTitle.c-cyan.u-marginBot5[title="Protocamp"] Protocamp
                 p.subtitle.u-noMargin.small Específico para validações e lançamentos rápidos de novos projetos. Em apenas uma semana de imersão vamos passar pelo entendimento da sua ideia, planejamento, design, desenvolvimento back e front-end, testes e métricas. No final você terá as principais hipóteses do seu negócio transformadas em uma aplicação online pronta para ser testada e vai ser capaz de coletar feedback com seus clientes.
-              .col-sm-6#continuous
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
+              .col-sm-4#mvpv1
+                h2.u-h3.subserviceTitle.c-cyan.u-marginBot5[title="MVP V1"] MVP V1
+                p.subtitle.u-noMargin.small Específico para validações e lançamentos rápidos de novos projetos. Em apenas uma semana de imersão vamos passar pelo entendimento da sua ideia, planejamento, design, desenvolvimento back e front-end, testes e métricas. No final você terá as principais hipóteses do seu negócio transformadas em uma aplicação online pronta para ser testada e vai ser capaz de coletar feedback com seus clientes.
+              .col-sm-4#continuous
+                h2.u-h3.subserviceTitle.c-cyan.u-marginBot5[title="Desenvolvimento Contínuo"] Desenvolvimento Contínuo
                 p.subtitle.u-noMargin.small Aplicações robustas necessitam de uma atenção e dedicação mais profundas. Através de ciclos (sprints) de desenvolvimento iremos construír o seu sistema de forma incremental. No final de cada sprint, você terá uma parte do seu software online, pronta para ser testada. Vamos ir progressivamente validando suas métricas e coletando feedback com seu público para assim definir o que precisamos melhorar.
-            .u-textCenter
-              = link_to 'Vamos trabalhar juntos', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos', class: 'btn -md -magenta u-marginTop30'
+            .ta-c
+              = link_to 'Quero saber mais!', service_path(anchor: 'contact'), title: 'Quero saber mais!', class: 'btn btn-cyan fz-base pX-20 pY-10 u-marginTop30'
 
     .serviceItem.-gray
       .container
         .row
           .col-sm-12.col-md-8.u-centered#support
             = image_tag ('icon-support.svg'), class: 'u-centered', alt: 'Suporte & Manutenção'
-            h2.u-marginBot15.u-marginTop10.u-textMagenta title="Suporte & Manutenção" Suporte & Manutenção
+            h2.u-marginBot15.u-marginTop10.c-blue[title="Suporte & Manutenção"] Suporte & Manutenção
             p.subtitle.u-marginTop5.u-marginBot10 Todo sistema web precisa de um trabalho contínuo de aprimoramento, um grande cuidado com desempenho e um bom suporte em casos de emergência.
             .row
               .col-sm-6#supportcontinuous
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Manutenção Contínua" Manutenção Contínua
+                h2.u-h3.subserviceTitle.c-cyan.u-marginBot5 title="Manutenção Contínua" Manutenção Contínua
                 p.subtitle.u-noMargin.small Todo sistema web precisa de um trabalho contínuo de aprimoramento para se manter sem problemas e gerando bons resultados. Neste formato de trabalho vamos constantemente aprimorar a cobertura de testes da sua aplicação, faremos a atualização e o refatoramento (melhoria) do código e trabalharemos para melhorar o desempenho do seu produto.
               .col-sm-6#emergency
-                h2.u-h3.subserviceTitle.u-textPurple.u-marginBot5 title="Emergência" Emergência
+                h2.u-h3.subserviceTitle.c-cyan.u-marginBot5 title="Emergência" Emergência
                 p.subtitle.u-noMargin.small Seu produto fica fora do ar e você não tem ideia do que aconteceu? É ai que você vai precisar de pessoas experientes e capazes de resolver problemas complexos a sua disposição. Nosso time vai ficar de prontidão para assumir e resolver qualquer problema em sua aplicação no momento que surgir. Assim você pode dormir tranquilamente sabendo que tudo estará seguro.
-          .u-textCenter
-            = link_to 'Vamos trabalhar juntos', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos', class: 'btn -md -magenta u-marginTop30'
+            .ta-c
+              = link_to 'Quero saber mais!', service_path(anchor: 'contact'), title: 'Quero saber mais!', class: 'btn btn-cyan fz-base pX-20 pY-10 u-marginTop30'
     .serviceItem
       .container
         .row
           .col-sm-12.col-md-8.u-centered#mentoring
             = image_tag ('icon-mentor.svg'), class: 'u-centered', alt: 'Mentoria de Negócios'
-            h2.u-marginBot15.u-marginTop10.u-textMagenta title="Mentoria de Negócios" Mentoria de Negócios
+            h2.u-marginBot15.u-marginTop10.c-blue[title="Mentoria de Negócios"] Mentoria de Negócios
             p.subtitle.u-marginTop5.u-marginBot10 A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado, novas ideias e visões para o seu negócio ou projeto. Desta forma vamos fazer com que você ande mais rápido, aprenda de forma inteligente e evite armadilhas desnecessárias.
 
-  section.-sm.-purple.contact#contact
+  section.pY-50.xs-pY-40.contact.bg-blue#contact
     .container
       .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textMagenta.u-textCenter title="Vamos trabalhar juntos!" Vamos trabalhar juntos!
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.u-textCyan.ta-c[title="Vamos Conversar!"] Vamos Conversar!
           .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
+            .col-md-8.fl-n.mX-a.ta-c
+              p.subtitle.mT-0.mB-25.u-textWhite.ta-c[title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar"] Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
           .row
             .contactForm.col-sm-7.col-md-6.col-md-offset-1.col-sm-push-5
               = render partial: 'contacts/contact', locals: { contact: @contact }
             .col-sm-5.col-md-5.col-sm-pull-7.col-md-pull-7
-              h4.u-noMargin.u-marginBot5.u-marginTop30.u-textWhite.u-textNormal Brasil
-              p.u-noMargin.u-textWhite.u-textLight
-                i.fa.u-textMagenta.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop30.c-white.fw-n Brasil
+              p.u-noMargin.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | Av. Lucas de Oliveira, 894 - Porto Alegre, RS
                 br
-                i.fa.u-textMagenta.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'contato@cosmit.me', 'contato@cosmit.me', class: 'u-linkWhite'
               hr.u-marginTop30
-              h4.u-noMargin.u-marginBot5.u-marginTop10.u-textWhite.u-textNormal Canadá
-              p.u-noMargin.u-marginBot40.u-textWhite.u-textLight
-                i.fa.u-textMagenta.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop10.c-white.fw-n Canadá
+              p.u-noMargin.u-marginBot40.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | 1139 College West - Toronto, ON
                 br
-                i.fa.u-textMagenta.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'hi@cosmit.me', 'hi@cosmit.me', class: 'u-linkWhite'
                 br
-                i.fa.u-textMagenta.fa-phone.u-marginRgt10
+                i.fa.c-blue-light.fa-phone.u-marginRgt10
                 = link_to '+1 (437) 345-9791', 'tel:+14373459791', class: 'u-linkWhite'
