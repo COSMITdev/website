@@ -25,13 +25,23 @@ footer {
 }
 
 .socialLink {
-  color: $purple;
+  color: $blue;
   font-size: 1.6rem;
   transition: all .2s;
 
   &:hover,
   &:focus {
-    color: $magenta;
+    color: $cyan;
+  }
+
+  p a {
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $cyan;
+    }
   }
 
   .fa-twitter {
@@ -44,82 +54,6 @@ footer {
 
   &:not(:last-of-type) {
     margin-right: 30px;
-  }
-}
-
-// # Colors
-// # =================================================================
-.services,
-.pages,
-.startups.validation {
-  footer {
-    .socialLink {
-      color: $purple;
-
-      &:hover,
-      &:focus {
-        color: $magenta;
-      }
-    }
-
-    p a {
-      color: $purple;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        color: $magenta;
-      }
-    }
-  }
-}
-
-.works {
-  footer {
-    .socialLink {
-      color: $purple-light;
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
-    }
-
-    p a {
-      color: $purple-light;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        color: $cyan;
-      }
-    }
-  }
-}
-
-.home,
-.mvp,
-.startups,
-.blog {
-  footer {
-    .socialLink {
-      color: $blue;
-
-      &:hover,
-      &:focus {
-        color: $cyan;
-      }
-    }
-
-    p a {
-      color: $blue;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        color: $cyan;
-      }
-    }
   }
 }
 
