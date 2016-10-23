@@ -5,14 +5,14 @@
   section.pageHero.bg-blue
     .container
       .row
-        .col-sm-12.col-md-8.u-centered.u-textCenter
+        .col-sm-12.col-md-8.fl-n.mX-a.ta-c
           .heroContainer.-internal
             .u-verticalAlign
-              h1.u-textCyan title="Nossas experiências" Nossas experiências
+              h1.c-cyan[title="Nossas experiências"] Nossas experiências
               .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Trabalhamos orientados a objetivos que geram resultados reais e mensuráveis para o seu negócio" Trabalhamos orientados a objetivos que geram resultados reais e mensuráveis para o seu negócio
-                  = link_to 'Vamos Trabalhar Juntos', work_path(anchor: 'contact'), title: 'Vamos Trabalhar Juntos', class: 'btn -md -cyan u-marginTop10'
+                .col-sm-10.fl-n.mX-a
+                  h2.subtitle.c-white.fw-n.mT-5[title="Trabalhamos orientados a objetivos que geram resultados reais e mensuráveis para o seu negócio"] Trabalhamos orientados a objetivos que geram resultados reais e mensuráveis para o seu negócio
+                  = link_to 'Vamos Trabalhar Juntos', work_path(anchor: 'contact'), title: 'Vamos Trabalhar Juntos', class: 'btn btn-cyan fz-large whs-nw pX-40 pY-20'
 
   section.workList
     .workItem#pago-ate
@@ -37,7 +37,7 @@
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-                = link_to 'Ver site', 'http://www.pagoate.com.br', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.pagoate.com.br', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
     .workItem.-gray#tribo-viva
       .container
         .row
@@ -58,7 +58,7 @@
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-                = link_to 'Ver site', 'http://www.triboviva.com.br', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.triboviva.com.br', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('tribo-viva-work.png', class: 'img img-responsive', alt: "Tribo Viva")
     .workItem#enda
@@ -78,7 +78,7 @@
                   li
                     = link_to service_path(anchor: 'mvpv1') do
                       h2 title="MVP V1" MVP V1
-                = link_to 'Ver site', 'http://www.enda.com.vc/', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.enda.com.vc/', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
     .workItem.-gray#aura
       .container
         .row
@@ -93,7 +93,7 @@
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-                = link_to 'Ver site', 'http://www.aura.art.br', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.aura.art.br', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('aura-work.png', class: 'img img-responsive', alt: "Aura")
     .workItem#lets-jam
@@ -116,7 +116,7 @@
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-                = link_to 'Ver site', 'http://www.letsjam.com', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.letsjam.com', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
     .workItem.-gray#educais
       .container
         .row
@@ -131,37 +131,37 @@
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
-                = link_to 'Ver site', 'http://www.educais.com.br/', target: '_blank', class: 'btn -sm -magenta', title: 'Ver site'
+                = link_to 'Ver site', 'http://www.educais.com.br/', target: '_blank', class: 'btn btn-cyan fz-small pX-10 pY-5', title: 'Ver site'
               .workImage.hidden-xs
                 = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
 
-  section.-sm.-purple-light.contact#contact
+  section.pY-50.xs-pY-40.contact.bg-blue#contact
     .container
       .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Vamos trabalhar juntos!" Vamos trabalhar juntos!
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.u-textCyan.ta-c[title="Vamos Conversar!"] Vamos Conversar!
           .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
+            .col-md-8.fl-n.mX-a.ta-c
+              p.subtitle.mT-0.mB-25.u-textWhite.ta-c[title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar"] Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
           .row
             .contactForm.col-sm-7.col-md-6.col-md-offset-1.col-sm-push-5
               = render partial: 'contacts/contact', locals: { contact: @contact }
             .col-sm-5.col-md-5.col-sm-pull-7.col-md-pull-7
-              h4.u-noMargin.u-marginBot5.u-marginTop30.u-textWhite.u-textNormal Brasil
-              p.u-noMargin.u-textWhite.u-textLight
-                i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop30.c-white.fw-n Brasil
+              p.u-noMargin.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | Av. Lucas de Oliveira, 894 - Porto Alegre, RS
                 br
-                i.fa.u-textCyan.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'contato@cosmit.me', 'contato@cosmit.me', class: 'u-linkWhite'
               hr.u-marginTop30
-              h4.u-noMargin.u-marginBot5.u-marginTop10.u-textWhite.u-textNormal Canadá
-              p.u-noMargin.u-marginBot40.u-textWhite.u-textLight
-                i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop10.c-white.fw-n Canadá
+              p.u-noMargin.u-marginBot40.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | 1139 College West - Toronto, ON
                 br
-                i.fa.u-textCyan.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'hi@cosmit.me', 'hi@cosmit.me', class: 'u-linkWhite'
                 br
-                i.fa.u-textCyan.fa-phone.u-marginRgt10
+                i.fa.c-blue-light.fa-phone.u-marginRgt10
                 = link_to '+1 (437) 345-9791', 'tel:+14373459791', class: 'u-linkWhite'
