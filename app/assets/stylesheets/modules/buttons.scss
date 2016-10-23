@@ -1,0 +1,30 @@
+// Base button style
+.btn {
+  &:hover,
+  &:focus {
+    transition: all .2s;
+  }
+}
+
+// Buttons types
+.primary {
+  color: var(--black);
+  background-color: var(--green);
+
+  &:hover,
+  &:focus {
+    color: var(--green);
+    background-color: var(--black);
+  }
+}
+
+.secondary {
+  color: var(--green);
+  background-color: var(--black);
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+    background-color: var(--green);
+  }
+}
