@@ -6,14 +6,16 @@
 .c-white { color: white }
 
 // background colors
+.bg-gray { background: var(--gray) }
 .bg-cyan { background: var(--cyan) }
 .bg-blue { background: var(--blue) }
 .bg-blue-light { background: var(--blue-light) }
 
 // variables
 :root {
+  --gray: #f8f9fa;
   --cyan: #1fb6ff;
   --blue: #273444;
-  --blue-light: #81818f;
+  --blue-light: #8492a6;
   --yellow: #fbc70b;
 }

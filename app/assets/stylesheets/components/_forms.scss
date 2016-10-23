@@ -36,10 +36,12 @@ button[data-toggle="dropdown"] {
 
 ::placeholder {
   color: #ccc !important;
+  font-weight: 400;
 }
 
 label {
-  color: $cyan;
+  color: var(--blue-light);
+  font-weight: 400;
 }
 
 // # Textarea
