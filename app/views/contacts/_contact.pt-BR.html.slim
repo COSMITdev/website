@@ -4,5 +4,5 @@
   = f.input :email, label: 'Qual seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Qual seu email?' }
   = f.input :budget, label: 'Seu orçamento, se aplicável?', required: false, class: '-block', input_html: { title: 'Seu orçamento?', class: 'js-monetary' }
   = f.input :message, as: :text, label: 'O que podemos ajudar a construir?', placeholder: 'Fale um pouco mais sobre sua ideia', class: '-block', input_html: { title: 'O que podemos ajudar a construir? Fale um pouco mais sobre sua ideia' }
-  = f.button :submit, 'Enviar', title: 'Enviar', class: 'btn -md -magenta -block u-marginTop25 u-marginBot30',
+  = f.button :submit, 'Enviar', title: 'Enviar', class: 'btn btn-cyan pX-40 pY-20 fz-large d-b w-100 u-marginTop25 u-marginBot30',
     data: { disable_with: 'Enviando...' }

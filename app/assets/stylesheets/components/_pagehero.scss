@@ -21,34 +21,6 @@
   }
 }
 
-// # Colors
-// # =================================================================
-.home,
-.mvp,
-.startups,
-.blog {
-  .pageHero {
-    background-color: $blue;
-  }
-}
-
-.services,
-.startups.validation {
-  .pageHero {
-    background-color: $purple;
-  }
-}
-
-.works {
-  .pageHero {
-    background-color: $purple-light;
-  }
-}
-
-.-error {
-  background-color: $purple;
-}
-
 // # Media Queries
 // # =================================================================
 @media (max-width: 768px) {

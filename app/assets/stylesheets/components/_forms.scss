@@ -29,7 +29,6 @@ button[data-toggle="dropdown"] {
 
 .form-control {
   border: 0;
-  font-family: 'Montserrat-Light', sans-serif;
   font-size: 1rem;
   height: 54px;
   padding: 15px 20px;
@@ -37,10 +36,12 @@ button[data-toggle="dropdown"] {
 
 ::placeholder {
   color: #ccc !important;
+  font-weight: 400;
 }
 
 label {
-  color: $cyan;
+  color: var(--blue-light);
+  font-weight: 400;
 }
 
 // # Textarea

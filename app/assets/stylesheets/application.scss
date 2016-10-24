@@ -1,8 +1,9 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
-@import 'sanilize';
+@import 'ress';
 @import 'typ';
+@import 'funkcss.min';
 
 // ==== Variables
 @import 'variables/colors';
@@ -18,7 +19,6 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/flash';
-@import 'components/buttons';
 @import 'components/pagehero';
 @import 'components/section';
 @import 'components/servicebox';
@@ -43,6 +43,15 @@
 @import 'pages/services';
 @import 'pages/mvp';
 @import 'pages/startups';
+
+// fcss
+@import 'fcss/colors';
+@import 'fcss/fonts';
+@import 'fcss/radius';
+@import 'fcss/responsive';
+
+// modules
+@import 'modules/buttons';
 
 // ==== NProgress
 @import 'nprogress';

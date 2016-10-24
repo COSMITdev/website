@@ -2,11 +2,11 @@ h3 Obrigado(a)!
 
 = link_to 'Baixar agora!', 'https://s3.amazonaws.com/cosmit-documents/protocamp-canvas-v1.pdf',
                              title: 'Baixar agora!',
-                             class: 'btn btn-modal -block u-marginTop20 u-marginBot10 js-download-pdf-protocamp',
+                             class: 'btn btn-modal w-100 u-marginTop15 u-marginBot10 js-download-pdf-protocamp',
                              target: '_blank',
-                             download: 'Baixe nosso PDF'
+                             download: 'Baixar agora!'
 
-.shareButtons
+.shareButtons.u-centered
   span.buttonFacebook
     = render partial: 'partials/facebook_share', locals: { url: post_url(@post),
                                                            layout: 'button',

@@ -2,16 +2,16 @@
 = render 'partials/header'
 
 - cache do
-  section.pageHero
+  section.pageHero.bg-blue
     .container
       .row
-        .col-sm-12.col-md-8.u-centered.u-textCenter
+        .col-sm-12.col-md-8.fl-n.mX-a.ta-c
           .heroContainer.-internal
             .u-verticalAlign
-              h1.u-textCyan title="Centro de Controle" Centro de Controle
+              h1.c-cyan[title="Centro de Controle"] Centro de Controle
               .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Uma coleção das melhores ideias, histórias e experiências do nosso time" Uma coleção das melhores ideias, histórias e experiências do nosso time
+                .col-sm-10.fl-n.mX-a
+                  h2.subtitle.c-white.fw-n.mT-5[title="Uma coleção das melhores ideias, histórias e experiências do nosso time"] Uma coleção das melhores ideias, histórias e experiências do nosso time
 
   section.postIndex
     .container
@@ -30,7 +30,7 @@
     .container
       .row
         .col-sm-12.u-centered.u-textCenter
-          h3.u-h2.u-textBlue.u-noMargin.u-textCenter title="Aqui é o centro de comando. Qual seu email câmbio?" Aqui é o centro de comando. Qual seu email câmbio?
+          h3.u-h2.c-cyan.u-noMargin.ta-c[title="Aqui é o centro de comando. Qual seu email câmbio?"] Aqui é o centro de comando. Qual seu email câmbio?
           .js-newsletter-content.u-marginTop20
             = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
-          p.small.u-textGray-medium.u-noMargin.u-marginTop15 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!
+          p.small.u-textGray-medium.u-noMargin.u-marginTop5 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

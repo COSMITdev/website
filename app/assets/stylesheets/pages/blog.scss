@@ -6,7 +6,6 @@
 }
 
 .postAuthor {
-  font-family: 'Montserrat-Light', Open Sans, sans-serif;
   margin-left: 2px;
 }
 
@@ -74,13 +73,13 @@
   }
 
   a {
-    color: $blue;
-    text-decoration: underline;
+    color: $cyan;
 
     &:hover,
     &:focus {
       color: $cyan;
       transition: all .3s;
+      text-decoration: underline;
     }
   }
 
@@ -143,5 +142,18 @@
 
   .buttonTwitter {
     padding-top: 1px;
+  }
+}
+
+
+h3.c-cyan {
+  a {
+    color: var(--cyan);
+
+    &:hover,
+    &:focus {
+      color: var(--cyan);
+      text-decoration: underline;
+    }
   }
 }

@@ -21,11 +21,11 @@
     color: $gray-dark;
 
     a {
-      color: $gray-dark;
+      color: var(--blue);
 
       &:hover,
       &:focus {
-        color: $magenta;
+        color: var(--cyan);
         text-decoration: underline;
         transition: all .2s;
       }
@@ -62,7 +62,7 @@
 
       &:hover,
       &:focus {
-        color: $magenta;
+        color: var(--cyan);
         text-decoration: underline;
         transition: all .2s;
       }

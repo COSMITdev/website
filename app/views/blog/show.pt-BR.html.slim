@@ -37,21 +37,23 @@ section.postShow
       .col-sm-10.col-md-8.u-centered
         hr.u-marginTop30.u-marginBot10
         .row
-          .col-sm-4.text-left
+          .col-sm-6.text-left
             - if @previous.present?
-              = link_to "Anterior", post_path(@previous), class: 'btn -md -blue -block u-marginTop30', title: 'Anterior',
+              h3.lh-14.c-cyan
+                = link_to "#{truncate(@previous.title, length: 50, omission: '...')}", post_path(@previous), title: [@previous.title],
                 data: { disable_with: 'Carregando...' }
-          .col-sm-4.col-sm-offset-4.text-right
+          .col-sm-6.text-right
             - if @next.present?
-              = link_to "Próximo", post_path(@next), class: 'btn -md -blue -block u-marginTop30', title: 'Próximo',
+              h3.lh-14.c-cyan
+                = link_to "#{truncate(@next.title, length: 30, omission: '...')}", post_path(@next), title: [@next.title],
                 data: { disable_with: 'Carregando...' }
       .col-sm-10.col-md-8.u-centered.u-marginTop30
         = render partial: 'partials/comments'
 section.newsletter
   .container
     .row
-      .col-sm-12.u-centered.u-textCenter
-        h3.u-h2.u-textBlue.u-noMargin.u-textCenter title="Aqui é o centro de comando. Qual seu email câmbio?" Aqui é o centro de comando. Qual seu email câmbio?
+      .col-sm-12.u-centered.ta-c
+        h3.u-h2.c-cyan.u-noMargin[title="Aqui é o centro de comando. Qual seu email câmbio?"] Aqui é o centro de comando. Qual seu email câmbio?
         .js-newsletter-content.u-marginTop20
           = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
-        p.small.u-textGray-medium.u-noMargin.u-marginTop15 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!
+        p.small.u-textGray-medium.u-noMargin.u-marginTop5 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

@@ -24,9 +24,8 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
       = render 'partials/facebook_pixel'
       = render 'partials/google_analytics'
       = render 'partials/activecampaign'
-      
-    - if params[:controller] == 'blog'
-      = render 'partials/google_web_font'
+    
+    link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:400,700" rel="stylesheet"
 
   script#dsq-count-scr async="" src="//cosmit.disqus.com/count.js" 
 

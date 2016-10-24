@@ -2,46 +2,50 @@
 = render 'partials/header'
 
 - cache do
-  section.pageHero
+  section.pageHero.bg-blue
     .container
       .row
-        .col-sm-12.col-md-9.u-centered.u-textCenter
+        .col-sm-12.col-md-9.fl-n.mX-a.ta-c
           .heroContainer
             .u-verticalAlign
-              h1.u-textCyan title="Transformamos suas ideias em produtos de sucesso" Transformamos suas ideias em produtos de sucesso
+              h1.c-cyan[title="Transformamos suas ideias em novos produtos digitais"] Transformamos suas ideias em novos produtos digitais
               .row
-                .col-sm-10.u-centered
-                  h2.subtitle.u-textWhite.u-textLight.u-marginTop5 title="Já ajudamos startups e empresas a planejar, desenhar, desenvolver, validar e atingir o product market fit de apps web e mobile" Já ajudamos startups e empresas a planejar, desenhar, desenvolver, validar e atingir o product market fit de apps web e mobile
-                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn -lg -cyan u-marginTop15'
+                .col-sm-10.fl-n.mX-a
+                  h2.c-white.fw-n.fz-larger.lh-14.mT-5[title="90% dos novos produtos falham. Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer."] 90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer. 
+                  = link_to 'Vamos Conversar', root_path(anchor: 'contact'), title: 'Vamos Conversar', class: 'btn btn-cyan fz-large whs-nw pX-40 pY-20'
 
-  section.-sm.service#service
+
+  section.pY-50.xs-pY-40.service#service
     .container
       .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como podemos ajudar?" Como podemos ajudar?
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.c-blue.ta-c[title="Como podemos ajudar?"] Como podemos ajudar?
           .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas" Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas
+            .col-md-8.fl-n.mX-a
+              p.subtitle.mT-0.mB-30.u-textGray-medium.ta-c[title="Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas"] Pensamos de forma crítica, sonhamos alto e trabalhamos duro para entregar soluções que melhoram a vida das pessoas
           .row
             .col-sm-6.col-md-4
               .serviceBox
-                = image_tag ('icon-build-cyan.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
+                = image_tag ('icon-build.svg'), class: 'serviceIcon', alt: 'Construção / Desenvolvimento'
                 = link_to service_path(anchor: 'build') do
-                  h2.u-noMargin.boxTitle.u-textBlue title="Construção" Construção
-                p.subtitle.u-marginTop5.u-marginBot10.small Do planejamento ao design e desenvolvimento, construímos aplicações web para novos negócios, empresas e startups.
+                  h2.u-noMargin.boxTitle.c-blue title="Construção" Construção
+                p.subtitle.mT-5.mB-10.small Do planejamento ao design e desenvolvimento, nós criamos e lançamos novos produtos digitais para startups e empresas.
                 ul.boxList
                   li
+                    = link_to service_path(anchor: 'protocamp') do
+                      h2 title="Protocamp" Protocamp
+                  li
                     = link_to service_path(anchor: 'mvpv1') do
-                      h2 title="MVP V1" MVP V1
+                      h2 title="MVP v1" MVP v1
                   li
                     = link_to service_path(anchor: 'continuous') do
                       h2 title="Desenvolvimento Contínuo" Desenvolvimento Contínuo
             .col-sm-6.col-md-4
               .serviceBox
-                = image_tag ('icon-support-cyan.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
+                = image_tag ('icon-support.svg'), class: 'serviceIcon', alt: 'Suporte & Manutenção'
                 = link_to service_path(anchor: 'support') do
-                  h2.u-noMargin.boxTitle.u-textBlue title="Suporte & Manutenção" Suporte & Manutenção
-                p.subtitle.u-marginTop5.u-marginBot10.small Todo sistema web precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
+                  h2.u-noMargin.boxTitle.c-blue title="Suporte & Manutenção" Suporte & Manutenção
+                p.subtitle.mt-5.mB-10.small Todo sistema precisa de um trabalho contínuo de aprimoramento e um bom suporte em casos de emergência.
                 ul.boxList
                   li
                     = link_to service_path(anchor: 'supportcontinuous') do
@@ -51,17 +55,17 @@
                       h2 title="Emergência" Emergência
             .col-sm-6.col-md-4
               .serviceBox
-                = image_tag ('icon-mentor-cyan.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
+                = image_tag ('icon-mentor.svg'), class: 'serviceIcon', alt: 'Mentoria de Negócios'
                 = link_to service_path(anchor: 'mentoring') do
-                  h2.u-noMargin.boxTitle.u-textBlue title="Mentoria de Negócios" Mentoria de Negócios
-                p.subtitle.u-noMargin.u-marginTop5.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
+                  h2.u-noMargin.boxTitle.c-blue title="Mentoria de Negócios" Mentoria de Negócios
+                p.subtitle.mT-5.mB-10.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
 
-  section.-sm.-gray.work#work
+  section.pY-50.xs-pY-40.-gray.work#work
     .container
       .row
-        .col-sm-12.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Já resolvemos problemas para" Já resolvemos problemas para
-          .row.u-marginTop40.u-marginBot10
+        .col-sm-12.fl-n.mX-a
+          h2.mT-0.mB-10.c-blue.ta-c[title="Já resolvemos problemas para"] Já resolvemos problemas para
+          .row.mT-40.mB-10
             .col-sm-3.col-md-2
               = link_to image_tag('pago-ate.png', class: 'img img-responsive -opacity u-centered', alt: 'Pago Até'), work_path(anchor: 'pago-ate'), title: 'Pago Até'
             .col-sm-3.col-md-2
@@ -75,62 +79,37 @@
             .col-sm-3.col-md-2
               = link_to image_tag('educais.png', class: 'img img-responsive -opacity u-centered', alt: 'Educais'), work_path(anchor: 'educais'), title: 'Educais'
           .clearfix
-          .row.u-marginTop10
-            .col-sm-10.u-centered.u-textCenter
-              h4.u-noMargin.u-marginTop10.u-textLight.textSmall.u-textGray-medium E mais de 30 outras empresas e startups
+          .row.mT-10
+            .col-sm-10.fl-n.mX-a.ta-c
+              h4.mB-0.mT-10.textSmall.u-textGray-medium.fw-n E mais de 30 outras empresas e startups
 
-  section.-sm.process#process
+  section.pY-50.xs-pY-40.contact.bg-blue#contact
     .container
       .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textBlue.u-textCenter title="Como Trabalhamos?" Como Trabalhamos?
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.u-textCyan.ta-c[title="Vamos Conversar!"] Vamos Conversar!
           .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot30.u-textGray-medium.u-textCenter title="Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto" Somos honestos e transparentes em todo o nosso processo. Queremos ser um parceiro, um colaborador para o seu projeto
-          .row
-            .col-sm-6.col-md-4
-              .processBox
-                .u-h1.u-noMargin.u-textCyan 1
-                h4.u-noMargin.boxTitle.u-textBlue title="Descobrimento" Descobrimento
-                p.subtitle.u-noMargin.u-marginTop5.small Todo projeto começa com a fase de descobrimento que é a base do que o produto deve ser. Ele nos ajuda na definição do escopo inicial e da definição do caminho pelo qual o design e o desenvolvimento devem trilhar.
-            .col-sm-6.col-md-4
-              .processBox
-                .u-h1.u-noMargin.u-textCyan 2
-                h4.u-noMargin.boxTitle.u-textBlue title="Design & Desenvolvimento" Design & Desenvolvimento
-                p.subtitle.u-noMargin.u-marginTop5.small Os melhores produtos são construídos para pessoas, e com pessoas em mente. Identificamos os seus principais usuários e criamos interfaces e funcionalidades que se encaixam nas suas reais necessidades.
-            .col-sm-6.col-md-4
-              .processBox
-                .u-h1.u-noMargin.u-textCyan 3
-                h4.u-noMargin.boxTitle.u-textBlue title="Validação" Validação
-                p.subtitle.u-noMargin.u-marginTop5.small Validar é essêncial para sabermos se estamos no caminho certo. É a base de todo o aprendizado. Assim minizamos os riscos de decisões de negócio mal fundamentadas e aumentamos suas chances ser bem sucedido.
-
-  section.-sm.contact.-blue#contact
-    .container
-      .row
-        .col-sm-12.col-md-10.u-centered
-          h2.u-noMargin.u-marginBot10.u-textCyan.u-textCenter title="Vamos Conversar!" Vamos Conversar!
-          .row
-            .col-md-8.u-centered
-              p.subtitle.u-noMargin.u-marginBot25.u-textWhite.u-textCenter title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar" Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
+            .col-md-8.fl-n.mX-a.ta-c
+              p.subtitle.mT-0.mB-25.u-textWhite.ta-c[title="Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar"] Agende uma consultoria online gratuita e converse com nosso time sobre como podemos te ajudar
           .row
             .contactForm.col-sm-7.col-md-6.col-md-offset-1.col-sm-push-5
               = render partial: 'contacts/contact', locals: { contact: @contact }
             .col-sm-5.col-md-5.col-sm-pull-7.col-md-pull-7
-              h4.u-noMargin.u-marginBot5.u-marginTop30.u-textWhite.u-textNormal Brasil
-              p.u-noMargin.u-textWhite.u-textLight
-                i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop30.c-white.fw-n Brasil
+              p.u-noMargin.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | Av. Lucas de Oliveira, 894 - Porto Alegre, RS
                 br
-                i.fa.u-textCyan.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'contato@cosmit.me', 'contato@cosmit.me', class: 'u-linkWhite'
               hr.u-marginTop30
-              h4.u-noMargin.u-marginBot5.u-marginTop10.u-textWhite.u-textNormal Canadá
-              p.u-noMargin.u-marginBot40.u-textWhite.u-textLight
-                i.fa.u-textCyan.fa-map-marker.u-marginRgt15
+              h4.u-noMargin.u-marginBot5.u-marginTop10.c-white.fw-n Canadá
+              p.u-noMargin.u-marginBot40.u-textWhite.fw-n
+                i.fa.c-blue-light.fa-map-marker.u-marginRgt15
                 | 1139 College West - Toronto, ON
                 br
-                i.fa.u-textCyan.fa-envelope.u-marginRgt10
+                i.fa.c-blue-light.fa-envelope.u-marginRgt10
                 = mail_to 'hi@cosmit.me', 'hi@cosmit.me', class: 'u-linkWhite'
                 br
-                i.fa.u-textCyan.fa-phone.u-marginRgt10
+                i.fa.c-blue-light.fa-phone.u-marginRgt10
                 = link_to '+1 (437) 345-9791', 'tel:+14373459791', class: 'u-linkWhite'
