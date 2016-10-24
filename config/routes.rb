@@ -4,8 +4,11 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  get 'trabalhos',                    to: 'pages#works',           as: :work
+  get 'quiz1',                        to: 'quiz#quiz1',            as: :quiz1
+  get 'quiz2',                        to: 'quiz#quiz2',            as: :quiz2
+  get 'quiz3',                        to: 'quiz#quiz3',            as: :quiz3
   get 'servicos',                     to: 'pages#services',        as: :service
+  get 'trabalhos',                    to: 'pages#works',           as: :work
   # get 'course',                     to: 'course#index',          as: :course
   # get 'mvpslim',                    to: 'mvp#index',             as: :mvp
   # get 'startups',                   to: 'startups#index',        as: :startups
