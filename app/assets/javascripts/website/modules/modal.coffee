@@ -1,4 +1,4 @@
-Website.ModalProtocamp =
+Website.Modal =
   init: ->
     isMobile = window.matchMedia("only screen and (max-width: 760px)")
 
@@ -18,7 +18,7 @@ Website.ModalProtocamp =
       $("html").bind "mouseleave touchend", ->
         showModal()
 
-    $(".closeModal").on "click", ->
+    $(".closeModal").on "click", (e) ->
       hideModal()
 
     $("html").click (e) ->
@@ -30,11 +30,11 @@ Website.ModalProtocamp =
 
     showModal = ->
       if Cookies.get('closeModal') == undefined
-        $("#modalFade").show()
+        $(".jsModalOnLeave").show()
         setCookie()
 
-    hideModal = ->
-      $("#modalFade").hide()
+    hideModal = (e) ->
+      $(".jsModalOnLeave").hide()
       setCookie()
 
   modules: -> []
