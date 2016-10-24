@@ -45,7 +45,7 @@ section.postShow
           .col-sm-6.text-right
             - if @next.present?
               h3.lh-14.c-cyan
-                = link_to "#{truncate(@next.title, length: 30, omission: '...')}", post_path(@next), title: [@next.title],
+                = link_to "#{truncate(@next.title, length: 50, omission: '...')}", post_path(@next), title: [@next.title],
                 data: { disable_with: 'Carregando...' }
       .col-sm-10.col-md-8.u-centered.u-marginTop30
         = render partial: 'partials/comments'

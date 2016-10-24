@@ -47,7 +47,8 @@
 // # Post text style
 // # =================================================================
 .postTitle {
-  color: $black;
+  color: $blue;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .postText {
@@ -58,8 +59,9 @@
   line-height: 2rem;
 
   h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.1em !important;
-    color: $black;
+    color: $blue;
     margin-top: 35px;
   }
 
@@ -147,6 +149,8 @@
 
 
 h3.c-cyan {
+  font-family: 'Montserrat', sans-serif;
+
   a {
     color: var(--cyan);
 
