@@ -19,18 +19,18 @@ pt-BR:
 
     pages:
       home:
-        title: 'COSMIT - Transformamos ideias em produtos de sucesso'
-        description: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso'
-        keywords: 'MVP, Concierge, MVP Concierge, MVP V1, Design, Desenvolvimento, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios'
+        title: 'COSMIT - Transformamos suas ideias em novos produtos digitais'
+        description: 'A COSMIT é uma consultoria digital que transforma ideias em produtos de sucesso'
+        keywords: 'Protocamp, Protótipo, MVP, MVP v1, Design, Desenvolvimento, Programação, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios'
         og:
-          title: 'A COSMIT é uma consultoria web que transforma ideias em produtos de sucesso'
+          title: 'A COSMIT é uma consultoria digital que transforma ideias em novos produtos digitais'
           locale: 'pt_BR'
           site_name: 'cosmit.me'
-          description: 'Somos uma equipe de experts apaixonados por resolver problemas através do design e da tecnologia'
+          description: '90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer.'
         twitter:
           card: 'Conheça nossos Cases!'
           site: '@COSMITdev'
-          description: ''
+          description: '90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer.'
 
       works:
         title: "COSMIT Trabalhos - Nossas experiências"
@@ -47,18 +47,18 @@ pt-BR:
           description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
 
       services:
-        title: "COSMIT Serviços - Nossos Serviços"
+        title: "COSMIT Serviços - Nossos serviços"
         description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
-        keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
+        keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP v1, Protocamp, Protótipos, Manutenção Contínua, Emergência"
         og:
-          title: 'Nossos Serviços'
+          title: 'Nossos serviços'
           locale: 'pt_BR'
           site_name: 'cosmit.me'
-          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+          description: 'Somos um time de experts apaixonados por resolver problemas através da estratégia, design e tecnologia'
         twitter:
           card: 'Nossos serviços'
           site: '@COSMITdev'
-          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+          description: 'Somos um time de experts apaixonados por resolver problemas através da estratégia, design e tecnologia'
 
       course:
         title: "COSMIT Cursos"
