@@ -1,14 +1,14 @@
 #modalFade.jsModalOnLeave
-  #modalBox
-    a.closeModal title="Fechar"
-    h2 Outro Modal Canvas
-    p.u-textCenter Baixe gratuitamente e planeje a sua próxima grande ideia!
+  #modalBox.-sm
+    a.closeModal[title="Fechar"]
+    h2 Descubra se sua ideia está em risco
+    p.u-textCenter.mB-0 Saiba se sua ideia corre risco de falhar e quais passos você deve dar para ser bem sucedido.
     .row
-      .col-sm-6
-        = image_tag('mockup-protocamp.png', class: 'img-responsive text-center')
-      .col-sm-6
-        .js-subscriber-content
-          p Apenas um texto simples
-          p = link_to 'Olá Mundo', '#', class: 'btn btn-default'
+      .col-sm-10.u-centered
+        .js-subscriber-content.ta-c
+          = link_to 'Sim! Quero saber!', '#', class: 'btn btn-orange w-100 pX-20 pY-15 mB-10 fz-base'
+          = link_to 'Não, prefiro contar com a sorte!', '#', onclick: "$('#modalFade').hide();", class: 'btn btn-gray w-100 pX-20 pY-15 mB-5 fz-base'
+
+    .row
       .col-sm-12
-        small.u-textCenter.u-marginTop10 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!
+        small.u-textCenter.u-marginTop10 Ao clicar em "Sim" você será redireciona para a página do quiz.
