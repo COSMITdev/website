@@ -7,15 +7,15 @@ pt-BR:
 
       index:
         title: 'COSMIT Blog - Centro de Controle'
-        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
         keywords: 'Centro de Controle, ideias, histórias, experiências'
         og:
           title: 'COSMIT Blog - Centro de Controle'
           locale: 'pt_BR'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
         twitter:
           card: 'Centro de Controle'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
 
     pages:
       home:
