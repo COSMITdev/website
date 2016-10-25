@@ -1,5 +1,6 @@
 // font families
 .ff-montserrat { font-family: var(--font-family-montserrat); }
+.ff-merri { font-family: var(--font-family-merri); }
 
 // font size
 .fz-micro { font-size: var(--font-scale-micro); }
@@ -20,7 +21,8 @@
 
 // font variables
 :root {
-  --font-family-open: 'Open Sans', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-merri: 'Merriweather', serif;
   --font-scale-micro: 8px;
   --font-scale-smallest: 0.7rem;
   --font-scale-smaller: 0.75rem;
