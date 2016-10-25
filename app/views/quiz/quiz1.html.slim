@@ -1,2 +1,15 @@
-h1 Quiz#quiz1
-p Find me in app/views/quiz/quiz1.html.slim
+- set_meta_tags(meta_tags_for_home)
+= render 'partials/header'
+
+section.pageHero.bg-blue
+  .heroContainer
+    .u-verticalAlign
+      .container
+        .row
+          .col-sm-12.col-md-9.fl-n.mX-a.ta-c
+            h1.c-cyan[title="Descubra se sua ideia está em risco!"] Descubra se sua ideia está em risco!
+            .row
+              .col-sm-10.fl-n.mX-a
+                h2.c-white.fw-n.fz-larger.lh-14.mB-20.mT-5[title="90% dos novos produtos falham. Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer."] 90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer. 
+                h2.c-blue-light.fw-n.fz-larger.lh-14.mB-15.mT-5 Quer saber se sua ideia corre o risco de falhar? Faça o teste e descubra!
+                = link_to 'Iniciar o teste free!', quiz1_path, title: 'Iniciar o teste free!', class: 'btn btn-cyan fz-large whs-n pX-40 pY-20'
