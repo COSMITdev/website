@@ -20,8 +20,8 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
     
     / Load Analytics Tools before everything
     / This may take down performance
+    = render 'partials/facebook_pixel'
     - if Rails.env.production?
-      = render 'partials/facebook_pixel'
       = render 'partials/google_analytics'
       = render 'partials/activecampaign'
     
