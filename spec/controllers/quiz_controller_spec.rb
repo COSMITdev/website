@@ -9,18 +9,4 @@ RSpec.describe QuizController, type: :controller do
     end
   end
 
-  describe "GET #quiz2" do
-    it "returns http success" do
-      get :quiz2
-      expect(response).to have_http_status(:success)
-    end
-  end
-
-  describe "GET #quiz3" do
-    it "returns http success" do
-      get :quiz3
-      expect(response).to have_http_status(:success)
-    end
-  end
-
 end
