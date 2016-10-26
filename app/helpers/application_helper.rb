@@ -262,4 +262,28 @@ module ApplicationHelper
       }
     }
   end
+
+  def meta_tags_for_quiz1
+    { title: I18n.t('meta_tags.quizzes.quiz1.title'),
+      description: I18n.t('meta_tags.quizzes.quiz1.description'),
+      keywords: I18n.t('meta_tags.quizzes.quiz1.keywords'),
+      url: request.url,
+      image: image_url('cosmit.jpg'),
+      og: { url: request.url,
+            type: 'website',
+            title: I18n.t('meta_tags.quizzes.quiz1.og.title'),
+            image: image_url('cosmit.jpg'),
+            locale: I18n.t('meta_tags.quizzes.quiz1.og.locale'),
+            site_name: 'cosmit.me',
+            description: I18n.t('meta_tags.quizzes.quiz1.og.description')
+          },
+      twitter: {
+        card: I18n.t('meta_tags.quizzes.quiz1.twitter.card'),
+        site: '@COSMITdev',
+        description: '',
+        image: image_url('cosmit.jpg'),
+        url: request.url
+      }
+    }
+  end
 end
