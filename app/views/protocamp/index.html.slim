@@ -1,1 +1,20 @@
-h1 Protocamp
+- set_meta_tags(meta_tags_for_quiz1)
+
+section.pageHero.bg-blue
+  .heroContainer
+    .u-verticalAlign
+      .container
+        .row
+          .col-sm-10.col-md-8.fl-n.mX-a.ta-c
+            = image_tag('protocamp-quiz.svg', class: 'mB-20')
+            h1.mT-0.mB-10.c-orange[title="Descubra se sua ideia está em risco!"] 
+              span.fw-n
+                | [FREE]
+              |  Descubra se sua ideia está em risco!
+        .row
+          .col-sm-10.col-md-8.fl-n.mX-a.ta-c
+            h2.c-white.fw-n.fz-larger.lh-14.mB-20.xs-mB-10.mT-5[title="Baseado nos principais fatores de fracasso de novos produtos, vamos mostrar qual é o nível de risco da sua ideia. No final, indicamos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido."] Baseado nos principais fatores de fracasso de novos produtos, vamos mostrar qual é o nível de risco da sua ideia. No final, indicamos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.
+            h2.c-blue-light.fw-n.fz-base.lh-14.mB-15.mT-5 
+              span.c-orange BONUS FREE:
+              |  Guia personalizado com os próximos passos a dar
+            = link_to 'Começar o quiz!', '#', title: 'Começar o quiz!', class: 'btn btn-orange fz-large whs-n pX-40 pY-20'
