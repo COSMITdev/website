@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'protocamp',                                  to: 'protocamp#index',       as: :protocamp
   get 'servicos',                                   to: 'pages#services',        as: :service
   get 'trabalhos',                                  to: 'pages#works',           as: :work
+  get 'about',                                      to: 'pages#about',           as: :about
   post 'contato',                                   to: 'contacts#create',       as: :contact
   post 'inscricao',                                 to: 'subscribers#create',    as: :subscribe
   post 'newsletter',                                to: 'newsletter#create',     as: :newsletter
