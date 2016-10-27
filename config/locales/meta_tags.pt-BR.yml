@@ -88,3 +88,18 @@ pt-BR:
           card: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
           site: '@COSMITdev'
           description: 'Baseado nos principais fatores que levam um novo produto a fracassar, descubra qual é o nível de risco de falhar da sua ideia. No final, mostramos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.'
+
+    protocamp:
+      index:
+        title: "Protocamp - FREE Workshop sobre como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!"
+        description: 'Descubra um método comprovado para se lançar e testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de um sistema!'
+        keywords: "Protocamp, Risco, Ideia, Falhar, workshop, grátis, free, gratuito, protótipos, protótipos funcionais, pré-vender, pré-vender sua ideia, atrair usuários, lançar, lançamento, lançar sua ideia, usuários, clientes"
+        og:
+          title: 'Protocamp - FREE Workshop sobre como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Descubra um método comprovado para se lançar e testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de um sistema!'
+        twitter:
+          card: 'Protocamp - FREE Workshop sobre como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!'
+          site: '@COSMITdev'
+          description: 'Descubra um método comprovado para se lançar e testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de um sistema!'
