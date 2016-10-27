@@ -3,13 +3,8 @@
 // # =================================================================
 .pageHero {
   .heroContainer {
-    height: 100vh;
     position: relative;
     background: transparent asset-url('stars-pattern.png') repeat 60px 50px;
-
-    &.-internal {
-      height: 75vh;
-    }
   }
 
   .subtitle {
