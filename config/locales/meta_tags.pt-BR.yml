@@ -73,6 +73,20 @@ pt-BR:
           card: 'Nossos Cursos'
           site: '@COSMITdev'
           description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+      
+      error:
+        title: "Houston, nós temos um problema 404"
+        description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+        keywords: "Cursos, Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
+        og:
+          title: "Houston, nós temos um problema 404"
+          locale: 'pt_BR'
+          site_name: 'course.cosmit.me'
+          description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+        twitter:
+          card: "Houston, nós temos um problema 404"
+          site: '@COSMITdev'
+          description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
 
     quizzes:
       quiz1:
