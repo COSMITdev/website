@@ -5,17 +5,16 @@
         .col-sm-12.col-md-10.fl-n.mX-a.ta-c
           .row.mB-30
             .col-sm-12
-              = link_to 'Home', root_path, title: 'Home', class: 'd-ib c-blue-light fz-base'
-              = link_to 'Serviços', service_path, title: 'Serviços', class: 'd-ib c-blue-light fz-base mL-30'
-              = link_to 'Trabalhos', work_path, title: 'Trabalhos', class: 'd-ib c-blue-light fz-base mL-30'
-              = link_to 'Blog', posts_path, title: 'Blog', class: 'd-ib c-blue-light fz-base mL-30'
-              = link_to 'Sobre', about_path, title: 'Sobre', class: 'd-ib c-blue-light fz-base mL-30'
+              = link_to 'Home', root_path, title: 'Home', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+              = link_to 'Serviços', service_path, title: 'Serviços', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+              = link_to 'Trabalhos', work_path, title: 'Trabalhos', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+              = link_to 'Blog', posts_path, title: 'Blog', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
               - if current_page? work_path
-                = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-30'
+                = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
               - elsif current_page? service_path
-                = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-30'
+                = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
               - else
-                = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'd-ib c-blue-light fz-base mL-30'
+                = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
           .row.mB-20
             .col-sm-12.col-md-10.fl-n.mX-a.ta-c
               .socialLinks
