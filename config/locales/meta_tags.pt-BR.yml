@@ -73,7 +73,7 @@ pt-BR:
           card: 'Nossos Cursos'
           site: '@COSMITdev'
           description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
-      
+
       error:
         title: "Houston, nós temos um problema 404"
         description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
@@ -89,7 +89,7 @@ pt-BR:
           description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
 
     quizzes:
-      quiz1:
+      index:
         title: "Protocamp Quiz - Descubra se sua ideia está em risco!"
         description: 'Baseado nos principais fatores que levam um novo produto a fracassar, descubra qual é o nível de risco de falhar da sua ideia. No final, mostramos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.'
         keywords: "Protocamp, Risco, Ideia, Falhar, quiz, teste, grátis, free, gratuito, descubra se sua ideia está em risco"

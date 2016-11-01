@@ -287,22 +287,22 @@ module ApplicationHelper
     }
   end
 
-  def meta_tags_for_quiz1
-    { title: I18n.t('meta_tags.quizzes.quiz1.title'),
-      description: I18n.t('meta_tags.quizzes.quiz1.description'),
-      keywords: I18n.t('meta_tags.quizzes.quiz1.keywords'),
+  def meta_tags_for_quiz
+    { title: I18n.t('meta_tags.quizzes.index.title'),
+      description: I18n.t('meta_tags.quizzes.index.description'),
+      keywords: I18n.t('meta_tags.quizzes.index.keywords'),
       url: request.url,
       image: image_url('cosmit.jpg'),
       og: { url: request.url,
             type: 'website',
-            title: I18n.t('meta_tags.quizzes.quiz1.og.title'),
+            title: I18n.t('meta_tags.quizzes.index.og.title'),
             image: image_url('cosmit.jpg'),
-            locale: I18n.t('meta_tags.quizzes.quiz1.og.locale'),
+            locale: I18n.t('meta_tags.quizzes.index.og.locale'),
             site_name: 'cosmit.me',
-            description: I18n.t('meta_tags.quizzes.quiz1.og.description')
+            description: I18n.t('meta_tags.quizzes.index.og.description')
           },
       twitter: {
-        card: I18n.t('meta_tags.quizzes.quiz1.twitter.card'),
+        card: I18n.t('meta_tags.quizzes.index.twitter.card'),
         site: '@COSMITdev',
         description: '',
         image: image_url('cosmit.jpg'),

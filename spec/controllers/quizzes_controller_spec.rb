@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe QuizController, type: :controller do
+RSpec.describe QuizzesController, type: :controller do
 
-  describe "GET #quiz1" do
+  describe "GET #quiz" do
     it "returns http success" do
-      get :quiz1
+      get :index
       expect(response).to have_http_status(:success)
     end
   end
