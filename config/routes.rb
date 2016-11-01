@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post 'newsletter',                                to: 'newsletter#create',     as: :newsletter
 
   resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
-  resources :quizzes, path: 'descubra-se-sua-ideia-esta-em-risco', only: [:index, :create]
+  resources :quizzes, path: 'descubra-se-sua-ideia-esta-em-risco', only: [:index, :new, :create]
 
   get '*path', to: 'pages#404', via: :all
 end

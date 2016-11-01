@@ -1,0 +1,15 @@
+pt-BR:
+  activemodel:
+    models:
+      quiz:
+        one: 'Questionário'
+        other: 'Questionários'
+
+    attributes:
+      quiz:
+        q1: 'Pergunta 1'
+        q2: 'Pergunta 2'
+        q3: 'Pergunta 3'
+        q4: 'Pergunta 4'
+        q5: 'Pergunta 5'
+        q6: 'Pergunta 6'

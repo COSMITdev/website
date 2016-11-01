@@ -1,0 +1,15 @@
+= simple_form_for @quiz, url: quizzes_path, remote: true do |f|
+  .form-group
+    = f.input :q1, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  .form-group
+    = f.input :q2, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  .form-group
+    = f.input :q3, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  .form-group
+    = f.input :q4, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  .form-group
+    = f.input :q5, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  .form-group
+    = f.input :q6, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+  
+  = f.button :submit, 'Finalizar', data: { disable_with: 'Enviando...' }
