@@ -55,7 +55,8 @@
       &:hover,
       &:focus {
         color: var(--orange)!important;
-        background-color: var(--gray-light);
+        background-color: var(--blue-lighter);
+        border: 1px solid var(--blue-lighter);
         transition: all .3s;
       }
     }
