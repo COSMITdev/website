@@ -18,6 +18,6 @@ class QuizzesController < ApplicationController
   private
 
   def permitted_params
-    params.require(:quiz).permit(:q1, :q2, :q3, :q4, :q5, :q6, :name, :email)
+    params.require(:quiz).permit(:q1, :q2, :q3, :q4, :q5, :name, :email)
   end
 end

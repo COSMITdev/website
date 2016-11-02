@@ -1,15 +1,19 @@
-= simple_form_for @quiz, url: quizzes_path, remote: true do |f|
-  .form-group
-    = f.input :q1, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  .form-group
-    = f.input :q2, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  .form-group
-    = f.input :q3, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  .form-group
-    = f.input :q4, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  .form-group
-    = f.input :q5, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  .form-group
-    = f.input :q6, as: :select, collection: ['Opção 1', 'Opção 2', 'Opção 3']
-  
-  = f.button :submit, 'Finalizar', data: { disable_with: 'Enviando...' }
+.container
+  .row
+    .col-sm-10.col-md-8.fl-n.mX-a
+      .progress
+        .progress-bar.progress-bar-warning[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%"]
+          span.sr-only 60% Complete (warning)
+      = simple_form_for @quiz, url: quizzes_path, remote: true do |f|
+        .form-group
+          = f.input :q1, label: "Sobre o seu mercado, você já pesquisou se há concorrentes?", as: :radio_buttons, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+        .form-group
+          = f.input :q2, label: "Você já tem um modelo de negócio (como cria e entrega valor) definido e testado?", as: :radio_buttons, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+        .form-group
+          = f.input :q3, label: "Você já testou a sua ideia no mercado com clientes reais?", as: :radio_buttons, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+        .form-group
+          = f.input :q4, label: "Você tem um time capaz de executar tarefas de design, desenvolvimento, business e vendas?", as: :radio_buttons, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+        .form-group
+          = f.input :q5, label: "Quanto dinheiro você tem guardado para investir na sua ideia?", as: :radio_buttons, collection: ['Opção 1', 'Opção 2', 'Opção 3']
+        
+        = f.button :submit, 'Finalizar', data: { disable_with: 'Enviando...' }
