@@ -91,17 +91,17 @@ pt-BR:
     quizzes:
       index:
         title: "Protocamp Quiz - Descubra se sua ideia está em risco!"
-        description: 'Baseado nos principais fatores que levam um novo produto a fracassar, descubra qual é o nível de risco de falhar da sua ideia. No final, mostramos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.'
+        description: 'Baseado nos principais fatores que levam startups nascentes a fracassar, descubra qual é o nível de risco que a sua ideia tem de falhar.'
         keywords: "Protocamp, Risco, Ideia, Falhar, quiz, teste, grátis, free, gratuito, descubra se sua ideia está em risco"
         og:
           title: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
           locale: 'pt_BR'
           site_name: 'cosmit.me'
-          description: 'Baseado nos principais fatores que levam um novo produto a fracassar, descubra qual é o nível de risco de falhar da sua ideia. No final, mostramos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.'
+          description: 'Baseado nos principais fatores que levam startups nascentes a fracassar, descubra qual é o nível de risco que a sua ideia tem de falhar.'
         twitter:
           card: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
           site: '@COSMITdev'
-          description: 'Baseado nos principais fatores que levam um novo produto a fracassar, descubra qual é o nível de risco de falhar da sua ideia. No final, mostramos o que você deve fazer para ter mais segurança e quais os próximos passos deve dar para ser bem sucedido.'
+          description: 'Baseado nos principais fatores que levam startups nascentes a fracassar, descubra qual é o nível de risco que a sua ideia tem de falhar.'
 
     protocamp:
       index:
