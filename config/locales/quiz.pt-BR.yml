@@ -7,9 +7,9 @@ pt-BR:
 
     attributes:
       quiz:
-        q1: 'Pergunta 1'
-        q2: 'Pergunta 2'
-        q3: 'Pergunta 3'
-        q4: 'Pergunta 4'
-        q5: 'Pergunta 5'
+        q1: 'Sobre o seu mercado, você já pesquisou se há concorrentes?'
+        q2: 'Você já tem um modelo de negócio (como cria e entrega valor) definido e testado?'
+        q3: 'Você já testou a sua ideia no mercado com clientes reais?'
+        q4: 'Você tem um time capaz de executar tarefas de design, desenvolvimento, business e vendas?'
+        q5: 'Quanto dinheiro você tem guardado para investir na sua ideia?'
         q6: 'Pergunta 6'
