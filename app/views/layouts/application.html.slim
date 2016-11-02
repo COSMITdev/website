@@ -34,7 +34,8 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
     = render 'partials/flash'
     = render 'partials/modal_quiz' unless params[:controller] == 'quiz'
     = yield
-    = render 'partials/footer'
+    - unless params[:controller] == 'quizzes' && params[:action] == 'new'
+      = render 'partials/footer'
     
     / initialize JS just after all content
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
