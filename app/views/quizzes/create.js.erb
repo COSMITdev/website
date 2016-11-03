@@ -1,1 +1,6 @@
 $(".js-quiz-content").html($("<%= escape_javascript(render partial: 'quizzes/form', locals: { quiz: @quiz }) %>"));
+
+if ("<%= ([:name, :email] & @quiz.errors.keys).count > 0") {
+  $('.js-quiz-step-1').hide()
+  $('.js-quiz-step-6').show()
+}

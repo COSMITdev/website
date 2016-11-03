@@ -8,8 +8,10 @@ class QuizzesController < ApplicationController
 
   def create
     @quiz = Quiz.new(permitted_params)
+
     if @quiz.valid?
       # send to active campaign list
+      render :result
     else
       render :create
     end
