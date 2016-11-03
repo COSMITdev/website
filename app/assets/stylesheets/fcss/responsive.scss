@@ -1,8 +1,9 @@
- // small screen / phone (max 768px)
-@media(max-width: 48em) {
-  // padding
+// small screen / phone (max 768px)
+@media (max-width: 768px) {
+  // padding y
   .sm-pY-20 { padding-top: 40px; padding-bottom: 40px; }
   .sm-pY-40 { padding-top: 40px; padding-bottom: 40px; }
+  // padding-top
   .sm-pT-0 { padding-top: 0; }
   .sm-pT-5 { padding-top: 5px; }
   .sm-pT-10 { padding-top: 10px; }
@@ -11,6 +12,7 @@
   .sm-pT-25 { padding-top: 25px; }
   .sm-pT-30 { padding-top: 30px; }
   .sm-pT-40 { padding-top: 40px; }
+  // padding-bottom
   .sm-pB-0 { padding-bottom: 0; }
   .sm-pB-5 { padding-bottom: 5px; }
   .sm-pB-10 { padding-bottom: 10px; }
@@ -20,7 +22,7 @@
   .sm-pB-30 { padding-bottom: 30px; }
   .sm-pB-40 { padding-bottom: 40px; }
 
-  // margin
+  // margin-top
   .sm-mT-0 { margin-top: 0; }
   .sm-mT-5 { margin-top: 5px; }
   .sm-mT-10 { margin-top: 10px; }
@@ -28,6 +30,7 @@
   .sm-mT-20 { margin-top: 20px; }
   .sm-mT-25 { margin-top: 25px; }
   .sm-mT-30 { margin-top: 30px; }
+  // margin-bttom
   .sm-mB-0 { margin-bottom: 0; }
   .sm-mB-5 { margin-bottom: 5px; }
   .sm-mB-10 { margin-bottom: 10px; }
@@ -35,7 +38,9 @@
   .sm-mB-20 { margin-bottom: 20px; }
   .sm-mB-25 { margin-bottom: 25px; }
   .sm-mB-30 { margin-bottom: 30px; }
+  // margin-right
   .sm-mR-0 { margin-right: 0; }
+  // margin-left
   .sm-mL-15 { margin-left: 15px; }
 
   // aligment and floating
@@ -44,14 +49,14 @@
 }
 
 // extra small screen / phone (max 544px)
-@media(max-width: 34em) {
+@media (max-width: 544px) {
   // padding y
   .xs-pY-15 { padding-top: 15px; padding-bottom: 15px; }
   .xs-pY-30 { padding-top: 30px; padding-bottom: 30px; }
   // padding x
   .xs-pY-40 { padding-top: 40px; padding-bottom: 40px; }
   .xs-pX-30 { padding-left: 30px; padding-right: 30px; }
-  // padding top
+  // padding-top
   .xs-pT-0 { padding-top: 0; }
   .xs-pT-5 { padding-top: 5px; }
   .xs-pT-10 { padding-top: 10px; }
@@ -59,7 +64,7 @@
   .xs-pT-20 { padding-top: 20px; }
   .xs-pT-25 { padding-top: 25px; }
   .xs-pT-30 { padding-top: 30px; }
-  // padding bottom
+  // padding-bottom
   .xs-pB-0 { padding-bottom: 0; }
   .xs-pB-5 { padding-bottom: 5px; }
   .xs-pB-10 { padding-bottom: 10px; }
@@ -68,7 +73,7 @@
   .xs-pB-25 { padding-bottom: 25px; }
   .xs-pB-30 { padding-bottom: 30px; }
 
-  // margin top
+  // margin-top
   .xs-mT-0 { margin-top: 0; }
   .xs-mT-5 { margin-top: 5px; }
   .xs-mT-10 { margin-top: 10px; }
@@ -77,7 +82,7 @@
   .xs-mT-25 { margin-top: 25px; }
   .xs-mT-20 { margin-top: 20px; }
   .xs-mT-50 { margin-top: 50px; }
-  // margin bottom
+  // margin-bottom
   .xs-mB-30 { margin-bottom: 30px; }
   .xs-mB-5 { margin-bottom: 5px; }
   .xs-mB-10 { margin-bottom: 10px; }
@@ -87,5 +92,6 @@
   .xs-mB-30 { margin-bottom: 30px; }
   .xs-mR-10 { margin-right: 10px; }
 
+  // font-size
   .fz-larger { font-size: var(--font-scale-base); }
 }
