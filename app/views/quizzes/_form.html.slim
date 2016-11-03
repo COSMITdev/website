@@ -1,14 +1,37 @@
 = simple_form_for quiz, url: quizzes_path, remote: true do |f|
   .form-group
-    = f.input :q1, as: :radio_buttons, collection: ['Não, ainda não pesquisei nada sobre meu mercado', 'Não pesquisei concorrentes, somente dados sobre o mercado', 'Sim, há muitos concorrentes fortes', 'Sim, tenho poucos concorrentes', 'Sim, é um mercado sem concorrentes totalmente novo!']
+    = f.input :q1, as: :radio_buttons, 
+      collection: [['Não, ainda não pesquisei nada sobre meu mercado', '19'],
+                   ['Não pesquisei concorrentes, somente dados sobre o mercado', '15'],
+                   ['Sim, há muitos concorrentes fortes', '10'],
+                   ['Sim, tenho poucos concorrentes', '5'],
+                   ['Sim, é um mercado sem concorrentes totalmente novo!', '2']]
   .form-group
-    = f.input :q2, as: :radio_buttons, collection: ['Não, nem sei ao certo como vai funcionar', ' Não, mas já tenho uma ideia do modelo', 'Sim, estou copiando um modelo existente', 'Sim, já tenho um modelo funcionando']
+    = f.input :q2, as: :radio_buttons, 
+      collection: [['Não, nem sei ao certo como vai funcionar', '20'],
+                   [' Não, mas já tenho uma ideia do modelo', '20'],
+                   ['Sim, estou copiando um modelo existente', '10'],
+                   ['Sim, já tenho um modelo funcionando', '5']]
   .form-group
-    = f.input :q3, as: :radio_buttons, collection: ['Não, ainda estou planejando', 'Não, mas já conversei com potenciais clientes', 'Sim, mas tive poucos interessados', 'Sim, já fiz alguns testes com bons resultados']
+    = f.input :q3, as: :radio_buttons, 
+      collection: [['Não, ainda estou planejando', '19'],
+                   ['Não, mas já conversei com potenciais clientes', '15'],
+                   ['Sim, mas tive poucos interessados', '10'],
+                   ['Sim, já fiz alguns testes com bons resultados', '5']]
   .form-group
-    = f.input :q4, as: :radio_buttons, collection: ['Não, somente eu', 'Não, mas eu sou capaz de executar todas estas tarefas', 'Em parte (pelo menos duas áreas)', 'Sim, tenho um time campeão!']
+    = f.input :q4, as: :radio_buttons, 
+      collection: [['Não, somente eu', '19'],
+                   ['Não, mas eu sou capaz de executar todas estas tarefas', '15'],
+                   ['Em parte (pelo menos duas áreas)', '10'],
+                   ['Sim, tenho um time campeão!', '1']]
   .form-group
-    = f.input :q5, as: :radio_buttons, collection: ['Nada', 'até 2 mil reais', 'de 3 a 5 mil reais', 'de 6 a 15 mil reais', 'de 16 a 30 mil reais', 'mais que 30 mil reais']
+    = f.input :q5, as: :radio_buttons, 
+      collection: [['Nada', '18'],
+                   ['até 2 mil reais', '18'],
+                   ['de 3 a 5 mil reais', '15'],
+                   ['de 6 a 15 mil reais', '10'],
+                   ['de 16 a 30 mil reais', '5'],
+                   ['mais que 30 mil reais', '1']]
   
   / Sign-up step
   .quiz-signup
