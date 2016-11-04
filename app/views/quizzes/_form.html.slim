@@ -4,45 +4,46 @@
       = f.input :q1, as: :radio_buttons, 
         collection: [['Não, ainda não pesquisei nada sobre meu mercado', '19'],
                      ['Não pesquisei concorrentes, somente dados sobre o mercado', '15'],
-                     ['Sim, há muitos concorrentes fortes', '10'],
+                     ['Sim, e há muitos concorrentes fortes', '10'],
                      ['Sim, tenho poucos concorrentes', '5'],
-                     ['Sim, é um mercado sem concorrentes totalmente novo!', '2']]
+                     ['Sim, é um mercado sem concorrentes e totalmente novo!', '2']]
 
-  .js-quiz-step-2 style="display:none;"
+  .js-quiz-step-2[style="display:none;"]
     .form-group
       = f.input :q2, as: :radio_buttons, 
-        collection: [['Não, nem sei ao certo como vai funcionar', '20'],
-                     [' Não, mas já tenho uma ideia do modelo', '20'],
-                     ['Sim, estou copiando um modelo existente', '10'],
+        collection: [['Não, nem sei ao certo como vai funcionar', '19'],
+                     ['Não, mas já tenho uma ideia vaga de como vai funcionar', '20'],
+                     ['Sim, estou copiando um modelo já existente', '10'],
                      ['Sim, já tenho um modelo funcionando', '5']]
 
-  .js-quiz-step-3 style="display:none;"
+  .js-quiz-step-3[style="display:none;"]
     .form-group
       = f.input :q3, as: :radio_buttons, 
-        collection: [['Não, ainda estou planejando', '19'],
+        collection: [['Não, ainda estou planejando', '20'],
                      ['Não, mas já conversei com potenciais clientes', '15'],
                      ['Sim, mas tive poucos interessados', '10'],
-                     ['Sim, já fiz alguns testes com bons resultados', '5']]
+                     ['Sim, já fiz alguns testes e atrai alguns usuários', '5'],
+                     ['Sim, e já conseguir pré-vender minha solução', '1']]
 
-  .js-quiz-step-4 style="display:none;"
+  .js-quiz-step-4[style="display:none;"]
     .form-group
       = f.input :q4, as: :radio_buttons, 
-        collection: [['Não, somente eu', '19'],
+        collection: [['Não, sou somente eu', '19'],
                      ['Não, mas eu sou capaz de executar todas estas tarefas', '15'],
-                     ['Em parte (pelo menos duas áreas)', '10'],
+                     ['Em parte (pelo menos duas destas áreas)', '10'],
                      ['Sim, tenho um time campeão!', '1']]
 
-  .js-quiz-step-5 style="display:none;"
+  .js-quiz-step-5[style="display:none;"]
     .form-group
       = f.input :q5, as: :radio_buttons, 
-        collection: [['Nada', '18'],
+        collection: [['Nada', '19'],
                      ['até 2 mil reais', '18'],
                      ['de 3 a 5 mil reais', '15'],
                      ['de 6 a 15 mil reais', '10'],
                      ['de 16 a 30 mil reais', '5'],
                      ['mais que 30 mil reais', '1']]
   
-  .js-quiz-step-6 style="display:none;"
+  .js-quiz-step-6[style="display:none;"]
     .quiz-signup
       label.mB-30.xs-mY-10 Para ver o resultado, preencha o formulário!
       .form-group.form
