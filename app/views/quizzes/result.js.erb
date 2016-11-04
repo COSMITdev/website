@@ -2,4 +2,9 @@ $(".js-quiz-content").html($("<%= escape_javascript(render partial: 'quizzes/res
 
 if ("<%= Rails.env.production? %>") {
   ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
+
+  fbq('trackCustom', 'Conclusão Quiz', {
+    name: "<%= @quiz.name %>",
+    email: "<%= @quiz.email %>"
+  });
 }
