@@ -27,4 +27,8 @@ class Quiz
   def percentage
     q1.to_i+q2.to_i+q3.to_i+q4.to_i+q5.to_i
   end
+
+  def download_link
+    "https://s3.amazonaws.com/cosmit-documents/protocamp-quiz-risk.pdf"
+  end
 end
