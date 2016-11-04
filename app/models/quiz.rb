@@ -7,8 +7,8 @@ class Quiz
 
   validates :q1, :q2, :q3, :q4, :q5, :name, :email, presence: true
 
-  # validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/,
-  #                     message: I18n.t('errors.messages.invalid')
+  validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/,
+                      message: I18n.t('errors.messages.invalid')
 
   def initialize(attributes={})
     attributes && attributes.each do |name, value|
