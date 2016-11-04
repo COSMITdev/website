@@ -1,7 +1,7 @@
 - cache do
   footer.bg-blue.pB-50.pT-40
     .container
-      .row.mB-30
+      .row.mB-30.xs-mB-20
         .col-sm-12.col-md-10.fl-n.mX-a.ta-c
           = link_to 'Home', root_path, title: 'Home', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
           = link_to 'Serviços', service_path, title: 'Serviços', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
@@ -13,7 +13,7 @@
             = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
           - else
             = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-      .row.mB-20
+      .row.mB-20.xs-mB-10
         .col-sm-12.col-md-10.fl-n.mX-a.ta-c
           .socialLinks
             = link_to 'https://www.facebook.com/Cosmit-170783249948401/', title: 'Curta nossa página no Facebook', target: '_blank', class: 'socialLink c-blue-light' do
