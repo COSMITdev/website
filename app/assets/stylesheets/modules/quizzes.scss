@@ -35,14 +35,6 @@
     position: absolute;
   }
 
-  label {
-    font-size: 26px;
-    line-height: 1.2em;
-    color: var(--black);
-    font-weight: 700;
-    margin: 15px 0 20px;
-  }
-
   .radio {
     position: relative;
     margin: 10px 0 10px 0;
@@ -71,9 +63,17 @@
     }
   }
 
-  .quiz-signup > label {
-    margin-bottom: 30px;
+  label {
+    font-size: 26px;
+    line-height: 1.2em;
+    color: var(--black);
+    font-weight: 700;
+    margin: 15px 0 20px;
   }
+
+  // .quiz-signup > label {
+  //   margin-bottom: 30px;
+  // }
 
   .quiz_name,
   .quiz_email {
@@ -89,5 +89,13 @@
 
   .quiz-result h1 {
     font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .js-quiz-content {
+    label {
+      margin: 10px 0;
+    }
   }
 }
