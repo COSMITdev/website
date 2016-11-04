@@ -19,6 +19,15 @@
     }
   }
 
+  // error
+  .has-error {
+    input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+      border: 1px solid var(--orange)!important;
+    }
+  }
+
   input[type="radio"] {
     width: 100%;
     appearance: none;

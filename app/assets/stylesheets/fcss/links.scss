@@ -1,0 +1,8 @@
+a.l-blue-light {
+  color: var(--blue-light);
+
+  &:hover, 
+  &:focus {
+    color: var(--orange);
+  }
+}
