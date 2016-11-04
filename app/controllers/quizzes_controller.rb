@@ -38,13 +38,13 @@ class QuizzesController < ApplicationController
 
   def define_budget_tag(budget_code)
     case budget_code
-    when '18'
+    when '19'
       '0k'
-    when '15'
+    when '18'
       '2k'
-    when '10'
+    when '15'
       '3-5k'
-    when '5'
+    when '10'
       '6-15k'
     when '5'
       '16-30k'
