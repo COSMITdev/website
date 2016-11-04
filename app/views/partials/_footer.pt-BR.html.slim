@@ -1,33 +1,31 @@
 - cache do
   footer.bg-blue.pB-50.pT-40
     .container
+      .row.mB-30
+        .col-sm-12.col-md-10.fl-n.mX-a.ta-c
+          = link_to 'Home', root_path, title: 'Home', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          = link_to 'Serviços', service_path, title: 'Serviços', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          = link_to 'Trabalhos', work_path, title: 'Trabalhos', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          = link_to 'Blog', posts_path, title: 'Blog', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          - if current_page? work_path
+            = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          - elsif current_page? service_path
+            = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+          - else
+            = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
+      .row.mB-20
+        .col-sm-12.col-md-10.fl-n.mX-a.ta-c
+          .socialLinks
+            = link_to 'https://www.facebook.com/Cosmit-170783249948401/', title: 'Curta nossa página no Facebook', target: '_blank', class: 'socialLink c-blue-light' do
+              i.fa.fa-facebook
+            = link_to 'https://twitter.com/cosmitdev', title: 'Siga-nos no Twitter', target: '_blank', class: 'socialLink c-blue-light' do
+              i.fa.fa-twitter
+            = link_to 'https://www.linkedin.com/company/cosmit', title: 'Siga-nos no Linkedin', target: '_blank', class: 'socialLink c-blue-light' do
+              i.fa.fa-linkedin
+            = link_to 'https://github.com/cosmitdev', title: 'Github', target: '_blank', class: 'socialLink c-blue-light' do
+              i.fa.fa-github
       .row
         .col-sm-12.col-md-10.fl-n.mX-a.ta-c
-          .row.mB-30
-            .col-sm-12
-              = link_to 'Home', root_path, title: 'Home', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              = link_to 'Serviços', service_path, title: 'Serviços', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              = link_to 'Trabalhos', work_path, title: 'Trabalhos', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              = link_to 'Blog', posts_path, title: 'Blog', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              - if current_page? work_path
-                = link_to 'Contato', work_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              - elsif current_page? service_path
-                = link_to 'Contato', service_path(anchor: 'contact'), title: 'Vamos trabalhar juntos!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-              - else
-                = link_to 'Contato', root_path(anchor: 'contact'), title: 'Vamos conversar!', class: 'd-ib c-blue-light fz-base mL-15 mR-15'
-          .row.mB-20
-            .col-sm-12.col-md-10.fl-n.mX-a.ta-c
-              .socialLinks
-                = link_to 'https://www.facebook.com/Cosmit-170783249948401/', title: 'Curta nossa página no Facebook', target: '_blank', class: 'socialLink c-blue-light' do
-                  i.fa.fa-facebook
-                = link_to 'https://twitter.com/cosmitdev', title: 'Siga-nos no Twitter', target: '_blank', class: 'socialLink c-blue-light' do
-                  i.fa.fa-twitter
-                = link_to 'https://www.linkedin.com/company/cosmit', title: 'Siga-nos no Linkedin', target: '_blank', class: 'socialLink c-blue-light' do
-                  i.fa.fa-linkedin
-                = link_to 'https://github.com/cosmitdev', title: 'Github', target: '_blank', class: 'socialLink c-blue-light' do
-                  i.fa.fa-github
-          .row
-            .col-sm-12.col-md-10.fl-n.mX-a.ta-c
-              p.fz-smaller.mB-0.mT-10.c-blue-light
-                span COSMIT © Copyright 2016. Todos os direitos reservados.
-                span.love  Feito com <i class="fa fa-heart"></i> por <span>COSMIT</span>
+          p.fz-smaller.mB-0.mT-10.c-blue-light
+            span COSMIT © Copyright 2016. Todos os direitos reservados.
+            span.love  Feito com <i class="fa fa-heart"></i> por <span>COSMIT</span>
