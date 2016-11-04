@@ -1,4 +1,5 @@
 $(".js-quiz-content").html($("<%= escape_javascript(render partial: 'quizzes/result', locals: { quiz: @quiz }) %>"));
+$('.progress').hide()
 
 if ("<%= Rails.env.production? %>") {
   ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
