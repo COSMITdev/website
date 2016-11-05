@@ -6,24 +6,29 @@
   .row
     .col-sm-10.col-md-9.fl-n.mX-a
       label.ta-c = "#{@quiz.name}, sua ideia tem #{@quiz.percentage}% de chance de falhar!"
-      h2.c-blue-light.fw-n.fz-larger.lh-14.mB-15.xs-mB-10.xs-mT-0[title="Baixe gratuitamente nosso guia com 16 dicas infalíveis para reduzir os riscos da sua ideia fracassar!"]
+      h2.c-blue-light.fw-n.fz-larger.lh-14.mB-15.xs-mB-10.mT-0[title="Baixe gratuitamente nosso guia com 16 dicas infalíveis para reduzir os riscos da sua ideia fracassar!"]
         | Baixe gratuitamente nosso guia com 16 dicas infalíveis para reduzir os riscos da sua ideia fracassar!
       = link_to 'Baixar o guia agora!', @quiz.download_link,
         target: '_blank',
         download: '16 dicas infalíveis para reduzir os riscos da sua ideia falhar',
         title: 'Baixar o guia agora!',
         class: 'btn btn-orange fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15'
+  
+  .clearfix
   .row
-    .shareButtons style="margin: 0 auto; margin-top:10px;"
-      = render partial: 'partials/facebook_share', locals: { url: quizzes_url,
-                                                             layout: 'button',
-                                                             size: 'small' }
-      span.buttonTwitter style="margin-right: 15px; padding-top: 0;"
-        = render partial: 'partials/twitter_share', locals: { url: quizzes_url,
-                                                              description: "Descubra se sua ideia está em risco!" }
+    .col-sm-12
+      .shareButtons.mX-a.mT-20.xs-mT-15
+        span.buttonFacebook
+          = render partial: 'partials/facebook_share', locals: { url: quizzes_url,
+                                                               layout: 'button',
+                                                               size: 'small' }
+        span.buttonTwitter
+          = render partial: 'partials/twitter_share', locals: { url: quizzes_url,
+                                                                description: "Descubra se sua ideia está em risco!" }
+      p.small.mB-0.mT-5.c-blue-light Seu resultado permanecerá anônimo!
   .row
-    .col-sm-12.mT-15
-      = link_to 'Fazer o quiz novamente', new_quiz_path, title: 'Fazer o quiz novamente', class: 'l-blue-light'
+    .col-sm-12.mT-25.xs-mT-20
+      = link_to 'Fazer o quiz novamente', new_quiz_path, title: 'Fazer o quiz novamente', class: 'l-orange'
 
 footer.pT-80.sm-pT-50.pB-0
   .row.mB-30
