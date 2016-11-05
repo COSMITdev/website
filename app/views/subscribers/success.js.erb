@@ -5,8 +5,9 @@ window.location.hash = "<%= t('subscriber.url_message') %>";
 $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
 Website.Flash.init();
 
-if ("<%= Rails.env.production? %>") {
+if (<%= Rails.env.production? %>) {
   // Send Analytics to Google
+  console.log('chamou o GA');
   ga('send', 'event', 'Download', 'Formulario', 'Protocamp');
 }
 
