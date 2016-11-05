@@ -14,6 +14,14 @@
         title: 'Baixar o guia agora!',
         class: 'btn btn-orange fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15'
   .row
+    .shareButtons style="margin: 0 auto; margin-top:10px;"
+      = render partial: 'partials/facebook_share', locals: { url: quizzes_url,
+                                                             layout: 'button',
+                                                             size: 'small' }
+      span.buttonTwitter style="margin-right: 15px; padding-top: 0;"
+        = render partial: 'partials/twitter_share', locals: { url: quizzes_url,
+                                                              description: "Descubra se sua ideia está em risco!" }
+  .row
     .col-sm-12.mT-15
       = link_to 'Fazer o quiz novamente', new_quiz_path, title: 'Fazer o quiz novamente', class: 'l-blue-light'
 

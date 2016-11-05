@@ -9,3 +9,7 @@ if ("<%= Rails.env.production? %>") {
     email: "<%= @quiz.email %>"
   });
 }
+
+// Reprint the share buttons on modal
+FB.XFBML.parse();
+twttr.widgets.load();
