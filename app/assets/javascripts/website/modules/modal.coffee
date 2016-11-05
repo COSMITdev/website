@@ -19,22 +19,21 @@ Website.Modal =
         showModal()
 
     $(".closeModal").on "click", (e) ->
-      hideModal()
+      hideModal($(e.currentTarget).parent().parent())
 
     $("html").click (e) ->
-      if e.target.id == "modalFade"
-        hideModal()
+      hideModal(e.target) if e.target.id == "modalFade"
 
     setCookie = ->
       Cookies.set('closeModal', 'true', { expires: 0.1 })
 
     showModal = ->
       if Cookies.get('closeModal') == undefined
-        $(".jsModalOnLeave").show()
+        $("#modalFade").show()
         setCookie()
 
     hideModal = (e) ->
-      $(".jsModalOnLeave").hide()
+      $(e).hide()
       setCookie()
 
   modules: -> []
