@@ -36,10 +36,10 @@
     },
     "SENDGRID_USERNAME": {
       "required": true
-    }
+    },
     "AC_KEY": {
       "required": true
-    }
+    },
     "AC_ENDPOINT": {
       "required": true
     }
