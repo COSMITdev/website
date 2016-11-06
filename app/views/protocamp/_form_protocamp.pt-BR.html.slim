@@ -1,5 +1,5 @@
 = simple_form_for protocamp, url: protocamp_path, remote: true do |f|
-  = f.input :name, label: 'Seu nome?', placeholder: 'Nome Completo', class: '-block', input_html: { title: 'Nome Completo' }
-  = f.input :email, label: 'Seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Seu email?' }
-  = f.button :submit, 'Entrar na lista de espera', title: 'Entrar na lista de espera', class: 'btn btn-modal w-100 u-marginTop5 u-marginBot10',
+  = f.input :name, label: 'Seu nome?', placeholder: 'Nome Completo', class: 'w-100', input_html: { title: 'Nome Completo' }
+  = f.input :email, label: 'Seu email?', placeholder: 'email@exemplo.com', class: 'w-100', input_html: { title: 'Seu email?' }
+  = f.button :submit, 'Entrar na lista de espera', title: 'Entrar na lista de espera', class: 'btn btn-modal w-100 mT-5 mB-10',
     data: { disable_with: '...' }
