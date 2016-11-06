@@ -1,0 +1,30 @@
+// Change the URL to add Analytics identifier
+if (<%= @canvas.errors.any? %>) {
+  // Show flash message if error
+  $('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>');
+  Website.Flash.init();
+
+  // Render Form again
+  // Maybe this isn't necessary, need to test
+  $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'protocamp/form_canvas', locals: { protocamp: @canvas }) %>"));
+
+} else {
+  window.location.hash = "<%= t('subscriber.url_message') %>";
+
+  // Show flash message
+  $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
+  Website.Flash.init();
+
+  if (<%= Rails.env.production? %>) {
+    // Send Analytics to Google
+    console.log('chamou o GA');
+    ga('send', 'event', 'Download', 'Formulario', 'Protocamp');
+  }
+
+  // Rende the page with the correct link
+  $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'protocamp/canvas') %>"));
+
+  // Reprint the share buttons on modal
+  FB.XFBML.parse();
+  twttr.widgets.load();
+}

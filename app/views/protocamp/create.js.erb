@@ -1,0 +1,7 @@
+// Render Form again
+// Maybe this isn't necessary, need to test
+if (<%= @protocamp.errors.any? %>) {
+  $(".js-protocamp-content").html($("<%= escape_javascript(render partial: 'protocamp/form_protocamp', locals: { protocamp: @protocamp }) %>"));
+} else {
+  $(".js-protocamp-content").html($("<%= escape_javascript(render partial: 'protocamp/protocamp') %>"));
+}
