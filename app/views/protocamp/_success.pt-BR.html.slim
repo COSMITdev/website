@@ -1,0 +1,22 @@
+h3 Obrigado(a)!
+
+p 
+  | A partir de agora você está na lista de espera do ProtoCamp.
+  | Iremos manter contato e lhe informar dos próximos passo, bem como novidades e dicas sobre o processo.
+  
+p Caso ainda não tenha feito o download do nosso canvas, clique no link abaixo e comece a prototipar seu negócio agora!
+
+= link_to 'Baixar ProtoCamp Canvas', 'https://s3.amazonaws.com/cosmit-documents/protocamp-canvas-v1.pdf',
+                                     title: 'Baixar agora!',
+                                     class: 'btn btn-modal w-100 u-marginTop15 u-marginBot10 js-download-pdf-protocamp',
+                                     target: '_blank',
+                                     download: 'Baixar agora!'
+
+.shareButtons.u-centered
+  span.buttonFacebook
+    = render partial: 'partials/facebook_share', locals: { url: protocamp_url,
+                                                           layout: 'button',
+                                                           size: 'small' }
+  span.buttonTwitter
+    = render partial: 'partials/twitter_share', locals: { url: protocamp_url,
+                                                          description: 'Inscreva-se no ProtoCamp!' }
