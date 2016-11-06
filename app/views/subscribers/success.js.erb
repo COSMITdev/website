@@ -5,8 +5,11 @@ window.location.hash = "<%= t('subscriber.url_message') %>";
 $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
 Website.Flash.init();
 
-// Send Analytics to Google
-ga('send', 'event', 'Download', 'Formulario', 'Protocamp');
+if (<%= Rails.env.production? %>) {
+  // Send Analytics to Google
+  console.log('chamou o GA');
+  ga('send', 'event', 'Download', 'Formulario', 'Protocamp');
+}
 
 // Rende the page with the correct link
 $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'subscribers/download') %>"));

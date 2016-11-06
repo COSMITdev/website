@@ -11,7 +11,7 @@
 
 body {
   font-size: 1em;
-  line-height: 1.5rem; }
+  line-height: 1.45rem; }
 
 h1, h2, h3, h4, h5, h6,
 .u-h1, .u-h2, .u-h3, .u-h4, .u-h5, .u-h6 {
@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5, h6,
 
 h1,
 .u-h1 {
-  font-size: 3.625rem;
+  font-size: 3.5rem;
   margin-top: 1em;
-  line-height: 1.1em; }
+  line-height: 1em; }
 
 h2,
 .u-h2 {

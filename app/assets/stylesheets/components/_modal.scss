@@ -42,6 +42,10 @@ $c-gray-light: #e0e6ed;
       margin-bottom: 0;
     }
   }
+
+  &.-sm {
+    max-width: 500px;
+  }
 }
 
 #modalBox h1,
@@ -49,7 +53,6 @@ $c-gray-light: #e0e6ed;
 #modalBox h3,
 #modalBox h4 {
   font-weight: 700 !important;
-  color: $c-black;
   margin-bottom: 0;
   text-align: center;
 }
@@ -77,7 +80,7 @@ $c-gray-light: #e0e6ed;
 /* Close button X shape */
 .closeModal::before,
 .closeModal::after {
-  background-color: $c-gray;
+  background-color: var(--gray-light);
   content: "";
   width: 16px;
   height: 2px;
@@ -98,7 +101,7 @@ $c-gray-light: #e0e6ed;
 
 .closeModal:hover::after,
 .closeModal:hover::before { 
-  background: $c-blue;
+  background: var(--gray-medium);
   transition: all .3s;
 }
 

@@ -7,6 +7,8 @@ class PagesController < ApplicationController
 
   def services;end
 
+  def about;end
+
   private
 
   def set_contact

@@ -1,0 +1,9 @@
+.progress {
+  height: 8px;
+  box-shadow: none;
+  background-color: var(--gray);
+}
+
+.progress-bar-warning {
+  background-color: var(--orange);
+}

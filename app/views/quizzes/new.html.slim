@@ -1,0 +1,21 @@
+- set_meta_tags(meta_tags_for_quiz)
+
+section.pY-70.sm-pY-50.xs-pY-40
+  .container
+    .row
+      .col-sm-10.col-md-8.fl-n.mX-a.ta-c
+        = image_tag('protocamp-quiz.svg', class: 'mB-15 xs-mB-10', alt: 'Protocamp Quiz')
+        h3.mT-0.mB-0.c-orange[title="Descubra se sua ideia está em risco!"] 
+          span.fw-n
+            | [FREE]
+          |  Descubra se sua ideia está em risco!
+
+      .col-sm-10.col-md-8.fl-n.mX-a
+        .progress.brds-3.mB-30.sm-mB-15.mT-60.sm-mT-40.xs-mT-30
+          .progress-bar.progress-bar-warning.js-progress-quiz[role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%"]
+            span.sr-only.js-warning-counter 60% Complete (warning)
+
+    .row
+      .col-sm-10.col-md-8.fl-n.mX-a
+        .js-quiz-content
+          = render partial: 'quizzes/form', locals: { quiz: @quiz }
