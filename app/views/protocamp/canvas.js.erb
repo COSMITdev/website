@@ -6,10 +6,10 @@ if (<%= @canvas.errors.any? %>) {
 
   // Render Form again
   // Maybe this isn't necessary, need to test
-  $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'protocamp/form_canvas', locals: { protocamp: @canvas }) %>"));
+  $(".js-canvas.content").html($("<%= escape_javascript(render partial: 'protocamp/form_canvas', locals: { canvas: @canvas }) %>"));
 
 } else {
-  window.location.hash = "<%= t('subscriber.url_message') %>";
+  window.location.hash = "<%= t('canvas.url_message') %>";
 
   // Show flash message
   $('.flash').html('<div class="notice wrapper"><div class="notice"><%= @message %></div></div>');
@@ -22,7 +22,7 @@ if (<%= @canvas.errors.any? %>) {
   }
 
   // Rende the page with the correct link
-  $(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'protocamp/canvas') %>"));
+  $(".js-canvas.content").html($("<%= escape_javascript(render partial: 'protocamp/canvas') %>"));
 
   // Reprint the share buttons on modal
   FB.XFBML.parse();

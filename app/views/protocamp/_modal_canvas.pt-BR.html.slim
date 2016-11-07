@@ -1,4 +1,4 @@
-#modalFade.modalProtocamp
+#modalFade.modalCanvasProtocamp
   #modalBox
     a.closeModal[title="Fechar"]
     h2.c-blue[title="Protocamp Canvas"] Protocamp Canvas
@@ -7,7 +7,7 @@
       .col-sm-6
         = image_tag('mockup-protocamp.png', class: 'img-responsive text-center')
       .col-sm-6
-        .js-subscriber-content
-          = render partial: 'protocamp/form_canvas', locals: { protocamp: Protocamp.new }
+        .js-canvas.content
+          = render partial: 'protocamp/form_canvas', locals: { canvas: Protocamp.new }
       .col-sm-12
         small.u-textCenter.u-marginTop10 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!
