@@ -11,6 +11,6 @@ h3.c-blue Obrigado!
     = render partial: 'partials/facebook_share', locals: { url: post_url(@post),
                                                            layout: 'button',
                                                            size: 'small' }
-  span.buttonTwitter
+  span.buttonTwitter.pL-5
     = render partial: 'partials/twitter_share', locals: { url: post_url(@post),
                                                           description: @post.title }
