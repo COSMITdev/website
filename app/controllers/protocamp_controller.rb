@@ -6,9 +6,7 @@ class ProtocampController < ApplicationController
   def create
     @protocamp = Protocamp.new(permitted_params)
 
-    if @protocamp.valid?
-      subscribe_to_active_campaign(@protocamp, 'protocamp,sl')
-    end
+    subscribe_to_active_campaign(@protocamp, 'protocamp,sl') if @protocamp.valid?
 
     render :create
   end

@@ -4,4 +4,18 @@ if (<%= @protocamp.errors.any? %>) {
   $(".js-protocamp-content").html($("<%= escape_javascript(render partial: 'protocamp/form_protocamp', locals: { protocamp: @protocamp }) %>"));
 } else {
   $(".js-protocamp-content").html($("<%= escape_javascript(render partial: 'protocamp/protocamp') %>"));
+
+  if (<%= Rails.env.production? %>) {
+    // window.location.hash = "inscrito";
+    // ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
+
+    fbq('trackCustom', 'Incrição ProtoCamp', {
+      name: "<%= @protocamp.name %>",
+      email: "<%= @protocamp.email %>"
+    });
+  }
+
+  // Reprint the share buttons on modal
+  FB.XFBML.parse();
+  twttr.widgets.load();
 }
