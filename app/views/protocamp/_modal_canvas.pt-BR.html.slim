@@ -8,6 +8,6 @@
         = image_tag('mockup-protocamp.png', class: 'img-responsive text-center')
       .col-sm-6
         .js-subscriber-content
-          = render partial: 'subscribers/subscriber', locals: { subscriber: Subscriber.new }
+          = render partial: 'protocamp/form_canvas', locals: { protocamp: Protocamp.new }
       .col-sm-12
         small.u-textCenter.u-marginTop10 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!

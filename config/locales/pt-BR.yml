@@ -15,7 +15,7 @@ pt-BR:
     success: 'Obrigado(a) pelo contato! Em breve retornaremos.'
     failure: 'Revise os campos com erro!'
     url_message: 'obrigado'
-  subscriber:
+  canvas:
     success: 'Obrigado(a)! Baixe gratuitamente o Protocamp Canvas!'
     failure: 'Informações incorretas ou seu email já está cadastrado.'
     url_message: 'protocamp'
