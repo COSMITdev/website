@@ -5,10 +5,10 @@ if (<%= @protocamp.errors.any? %>) {
 } else {
   $(".js-protocamp-content").html($("<%= escape_javascript(render partial: 'protocamp/protocamp') %>"));
 
-  if (<%= Rails.env.production? %>) {
-    // window.location.hash = "inscrito";
-    // ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
+  window.location.hash = "inscrito";
 
+  if (<%= Rails.env.production? %>) {
+    // ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
     fbq('trackCustom', 'Incrição ProtoCamp', {
       name: "<%= @protocamp.name %>",
       email: "<%= @protocamp.email %>"
