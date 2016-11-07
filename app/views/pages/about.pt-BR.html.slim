@@ -1,0 +1,76 @@
+- set_meta_tags(meta_tags_for_works)
+= render 'partials/header'
+
+- cache do
+  section.pageHero.bg-blue
+    .heroContainer.-internal
+      .u-verticalAlign
+        .container
+          .row
+            .col-sm-12.col-md-9.fl-n.mX-a.ta-c
+              h1.mT-0.mB-10.sm-mT-15.xs-mT-50.c-cyan[title="Um pouco mais sobre nós..."] Um pouco mais sobre nós...
+              .row
+                .col-sm-10.fl-n.mX-a
+                  h2.subtitle.c-white.fw-n.mT-5[title="Nossa visão, o que acreditamos e o que orienta nosso trabalho"] Nossa visão, o que acreditamos e o que orienta nosso trabalho
+
+  section.pY-50.xs-pY-40
+    .container
+      .row
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-30.xs-mB-15.c-blue.ta-c[title="O futuro que queremos"] O futuro que queremos
+          .row
+            .col-md-8.fl-n.mX-a
+              p.fz-larger.ff-merri.lh-14.mB-30.xs-mB-20.c-gray-medium.ta-c Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis part. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+
+  section.pB-30.xs-pB-20
+    .container
+      .row
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-30.c-blue.ta-c[title="O que acreditamos"] O que acreditamos
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Pessoas em primeiro lugar sempre!
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Dar o melhor de si
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Trabalhar com propósito
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Minimizar a hierarquia
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Transparencia
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Responsabilidade e Confiança
+              p.mT-0.mB-20.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          .row
+            .col-md-8.fl-n.mX-a
+              h2.fz-larger.mB-10.xs-mB-5.c-cyan Melhoria contínua
+              p.mT-0.mB-0.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+  section.pY-50.xs-pY-40
+    .container
+      .row
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-30.c-blue.ta-c[title="Quem lidera a COSMIT"] Quem lidera a COSMIT
+          .row
+            .col-md-8.fl-n.mX-a
+              = image_tag('gabriel-carpenedo.png', class: 'img img-responsive img-circle mX-a')
+              h2.c-cyan.fz-larger.mB-5.ta-c Gabriel Carpenedo
+              p.ta-c.c-gray-medium.mB-10 CEO & Product/Project Manager
+              - 3.times do
+                p.mT-0.mB-30.xs-mB-15.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis part. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+
+              = image_tag('patrick-muller.jpg', class: 'img img-responsive img-circle mX-a')
+              h2.c-cyan.fz-larger.mB-5.ta-c Patrick Müller
+              p.ta-c.c-gray-medium.mB-10 CTO & Automation Leader
+              - 3.times do
+                p.mT-0.mB-20.xs-mB-15.c-gray-medium Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis part. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus

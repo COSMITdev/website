@@ -1,7 +1,0 @@
-// Show flash message if error
-$('.flash').html('<div class="alerts-error wrapper"><div class="alerts-error"><%= @message %></div></div>');
-Website.Flash.init();
-
-// Render Form again
-// Maybe this isn't necessary, need to test
-$(".js-subscriber-content").html($("<%= escape_javascript(render partial: 'subscribers/subscriber', locals: { subscriber: @subscriber }) %>"));

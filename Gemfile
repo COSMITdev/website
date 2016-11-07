@@ -68,6 +68,7 @@ group :development, :test do
   gem 'dotenv-rails', '~> 2.0.2'
   gem 'pry-rails'
   gem 'quiet_assets'
+  gem 'spring'
 end
 
 group :test do

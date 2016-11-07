@@ -23,7 +23,6 @@
 @import 'components/section';
 @import 'components/servicebox';
 @import 'components/processbox';
-@import 'components/forms';
 @import 'components/icons';
 @import 'components/posttags';
 @import 'components/coursestripe';
@@ -48,10 +47,15 @@
 @import 'fcss/colors';
 @import 'fcss/fonts';
 @import 'fcss/radius';
+@import 'fcss/measures';
+@import 'fcss/links';
 @import 'fcss/responsive';
 
 // modules
 @import 'modules/buttons';
+@import 'modules/forms';
+@import 'modules/quizzes';
+@import 'modules/progress_bar';
 
 // ==== NProgress
 @import 'nprogress';

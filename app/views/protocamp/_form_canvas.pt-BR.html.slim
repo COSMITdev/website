@@ -1,4 +1,4 @@
-= simple_form_for subscriber, url: subscribe_path, remote: true do |f|
+= simple_form_for protocamp, url: canvas_path, remote: true do |f|
   = f.input :name, label: 'Seu nome?', placeholder: 'Nome Completo', class: '-block', input_html: { title: 'Nome Completo' }
   = f.input :email, label: 'Seu email?', placeholder: 'email@exemplo.com', class: '-block', input_html: { title: 'Seu email?' }
   = f.button :submit, 'Continuar gratuitamente', title: 'Continuar gratuitamente', class: 'btn btn-modal w-100 u-marginTop5 u-marginBot10',

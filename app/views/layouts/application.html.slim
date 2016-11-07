@@ -32,8 +32,10 @@ html lang="#{I18n.locale.to_s}" prefix="og: http://ogp.me/ns#"
   body class="#{params[:controller]} #{params[:action]}" data-unit="#{I18n.t('number.currency.format.unit')}" data-separator="#{I18n.t('number.currency.format.separator')}" data-delimiter="#{I18n.t('number.currency.format.delimiter')}"
     = initjs_tag 'Website'
     = render 'partials/flash'
+    = render 'partials/modal_quiz' unless ['quizzes', 'protocamp'].include? params[:controller]
     = yield
-    = render 'partials/footer'
+    - unless params[:controller] == 'quizzes' && params[:action] == 'new'
+      = render 'partials/footer'
     
     / initialize JS just after all content
     = javascript_include_tag 'application', 'data-turbolinks-track' => true

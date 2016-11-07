@@ -1,9 +1,4 @@
-// # =================================================================
-// # Form
-// # =================================================================
-
-// # General
-// # =================================================================
+// general
 input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
 select,
 textarea,
@@ -13,7 +8,7 @@ button[data-toggle="dropdown"] {
   border: 2px solid transparent !important;
   border-radius: $inputRadius !important;
   box-shadow: none !important;
-  height: 54px;
+  height: 48px;
   box-sizing: border-box;
   outline: 0;
 
@@ -44,16 +39,14 @@ label {
   font-weight: 400;
 }
 
-// # Textarea
-// # =================================================================
+// textarea
 textarea {
   background-color: white !important;
   height: auto !important;
   min-height: 80px;
 }
 
-// # Help block, hint
-// # =================================================================
+// help-block, hint
 .help-block,
 .hint {
   color: #999;
@@ -61,8 +54,7 @@ textarea {
   margin-bottom: 0;
 }
 
-// # Erros
-// # =================================================================
+// errors
 .has-error {
   input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
   select,

@@ -7,15 +7,15 @@ pt-BR:
 
       index:
         title: 'COSMIT Blog - Centro de Controle'
-        description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+        description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
         keywords: 'Centro de Controle, ideias, histórias, experiências'
         og:
           title: 'COSMIT Blog - Centro de Controle'
           locale: 'pt_BR'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
         twitter:
           card: 'Centro de Controle'
-          description: 'Uma coleção das melhores ideias, histórias e experiências do nosso time'
+          description: 'Uma coleção das nossas melhores ideias, histórias e experiências'
 
     pages:
       home:
@@ -47,8 +47,8 @@ pt-BR:
           description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
 
       services:
-        title: "COSMIT Serviços - Nossos serviços"
-        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+        title: "COSMIT Serviços - Protocamp Quiz - Descubra se sua ideia está em risco!"
+        description: 'Somos um time de experts apaixonados por resolver problemas através da estratégia, design e tecnologia'
         keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP v1, Protocamp, Protótipos, Manutenção Contínua, Emergência"
         og:
           title: 'Nossos serviços'
@@ -73,3 +73,47 @@ pt-BR:
           card: 'Nossos Cursos'
           site: '@COSMITdev'
           description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
+
+      error:
+        title: "Houston, nós temos um problema 404"
+        description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+        keywords: "Cursos, Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
+        og:
+          title: "Houston, nós temos um problema 404"
+          locale: 'pt_BR'
+          site_name: 'course.cosmit.me'
+          description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+        twitter:
+          card: "Houston, nós temos um problema 404"
+          site: '@COSMITdev'
+          description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+
+    quizzes:
+      index:
+        title: "Protocamp Quiz - Descubra se sua ideia está em risco!"
+        description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
+        keywords: "Protocamp, Risco, Ideia, Falhar, quiz, teste, grátis, free, gratuito, descubra se sua ideia está em risco"
+        og:
+          title: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
+        twitter:
+          card: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
+          site: '@COSMITdev'
+          description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
+
+    protocamp:
+      index:
+        title: "Protocamp - Como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!"
+        description: 'Descubra um método comprovado para se lançar, testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de uma solução!'
+        keywords: "Protocamp, Risco, Ideia, Falhar, workshop, grátis, free, gratuito, protótipos, protótipos funcionais, pré-vender, pré-vender sua ideia, atrair usuários, lançar, lançamento, lançar sua ideia, usuários, clientes"
+        og:
+          title: 'Protocamp - Como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!'
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: 'Descubra um método comprovado para se lançar, testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de uma solução!'
+        twitter:
+          card: 'Protocamp - Como pré-vender ou atrair usuários para sua nova ideia com protótipos funcionais!'
+          site: '@COSMITdev'
+          description: 'Descubra um método comprovado para se lançar, testar novas ideias e gerar vendas ou atraiar clientes sem precisar sequer de uma solução!'

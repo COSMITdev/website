@@ -3,34 +3,30 @@
 
 - cache do
   section.pageHero.bg-blue
-    .heroContainer.-internal
+    .heroContainer.h-75vh
       .u-verticalAlign
         .container
           .row
             .col-sm-12.col-md-8.fl-n.mX-a.ta-c
-              h1.c-cyan[title="Centro de Controle"] Centro de Controle
+              h1.mT-0.mB-10.sm-mT-15.xs-mT-50.c-cyan[title="Centro de Controle"] Centro de Controle
               .row
                 .col-sm-10.fl-n.mX-a
-                  h2.subtitle.c-white.fw-n.mT-5[title="Uma coleção das melhores ideias, histórias e experiências do nosso time"] Uma coleção das melhores ideias, histórias e experiências do nosso time
+                  h2.c-white.fw-n.fz-larger.lh-14.mB-20.xs-mB-10.mT-5[title="Uma coleção das nossas melhores ideias, histórias e experiências"] Uma coleção das nossas melhores ideias, histórias e experiências
+                  h2.c-blue-light.fw-n.fz-larger.lh-14.mB-15.xs-mB-10.mT-5[title="Descubra se sua ideia está em risco!"] Descubra se sua ideia está em risco!
+                  = link_to 'Sim, quero saber!', quizzes_path, title: 'Sim, quero saber!', class: 'btn btn-cyan fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15'
 
   section.postIndex
     .container
       .row
-        .col-sm-10.col-md-8.u-centered
+        .col-sm-10.col-md-8.fl-n.mX-a
           - @posts.each do |post|
-            .postItem.u-paddingBot15.u-marginBot50
+            .postItem.pB-15.sm-pB-10.mB-50.sm-mB-40.xs-mB-30
               = link_to post do
                 h2.postTitle.u-noMargin.u-marginBot15 title="#{post.title}" = post.title
                 p.postText.u-marginBot15 title="Ler mais" = truncate(post.body, length: 140, omission: ' »')
               ul.postTags
-                span.postAuthor.u-textGray-medium.u-marginTop15 = "#{post.author.name} em "
+                span.postAuthor.u-textGray-medium.mT-15 = "#{post.author.name} em "
                 - post.tags.each do |tag|
-                  li.tagItem.small.u-textGray-medium.u-marginBot5 title="#{tag.name}" = tag.name
-  section.newsletter
-    .container
-      .row
-        .col-sm-12.u-centered.u-textCenter
-          h3.u-h2.c-cyan.u-noMargin.ta-c[title="Aqui é o centro de comando. Qual seu email câmbio?"] Aqui é o centro de comando. Qual seu email câmbio?
-          .js-newsletter-content.u-marginTop20
-            = render partial: 'newsletter/form', locals: { newsletter: Newsletter.new }
-          p.small.u-textGray-medium.u-noMargin.u-marginTop5 Não se preocupe, iremos apenas mandar mensagens relevantes para sua sobrevivência!
+                  li.tagItem.small.u-textGray-medium.mB-5 title="#{tag.name}" = tag.name
+
+  = render partial: 'quizzes/call'

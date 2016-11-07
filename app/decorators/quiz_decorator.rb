@@ -1,4 +1,4 @@
-class CourseDecorator < Draper::Decorator
+class QuizDecorator < Draper::Decorator
   delegate_all
 
   # Define presentation-specific methods here. Helpers are accessed through

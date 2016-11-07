@@ -1,21 +1,29 @@
-// general colors
+// text colors
 .c-cyan { color: var(--cyan) }
 .c-blue { color: var(--blue) }
 .c-blue-light { color: var(--blue-light) }
 .c-yellow { color: var(--yellow) }
 .c-white { color: white }
+.c-orange { color: var(--orange) }
+.c-gray-medium { color: var(--gray-medium) }
+.c-gray-light { color: var(--gray-light) }
 
 // background colors
 .bg-gray { background: var(--gray) }
 .bg-cyan { background: var(--cyan) }
 .bg-blue { background: var(--blue) }
 .bg-blue-light { background: var(--blue-light) }
+.bg-white { background: white }
 
 // variables
 :root {
-  --gray: #f8f9fa;
+  --gray: #f4f6f7;
+  --gray-light: #d8d8d8;
+  --gray-medium: #999a9c;
   --cyan: #1fb6ff;
   --blue: #273444;
   --blue-light: #8492a6;
+  --blue-lighter: #d7dde0;
   --yellow: #fbc70b;
+  --orange: #f05638;
 }

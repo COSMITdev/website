@@ -1,0 +1,16 @@
+h2.c-orange.ta-c.mT-30.xs-mT-20.mB-20.xs-mB-10[title="Junte-se a nossa comunidade!"] Junte-se a nossa comunidade!
+
+p.c-white.ta-c Iremos te avisar assim que abrirmos mas enquanto isso faça parte da nossa comunidade de empreendedores! Nos vemos lá dentro!!
+
+.ta-c
+  = link_to "Participar da Comunidade!", "https://www.facebook.com/groups/707096836109463/", title: 'Participar da Comunidade!', class: 'btn btn-orange mT-5 mB-10 fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15'
+
+p.c-blue-light.fw-n.fz-smaller.mB-10.mT-10.ta-c Compartilhe com seus amigos:
+.shareButtons.fl-n.mX-a
+  span.buttonFacebook
+    = render partial: 'partials/facebook_share', locals: { url: protocamp_url,
+                                                           layout: 'button',
+                                                           size: 'small' }
+  span.buttonTwitter.pL-5
+    = render partial: 'partials/twitter_share', locals: { url: protocamp_url,
+                                                          description: 'Participar do ProtoCamp workshop online!' }

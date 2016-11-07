@@ -1,0 +1,15 @@
+$(".js-quiz-content").html($("<%= escape_javascript(render partial: 'quizzes/result', locals: { quiz: @quiz }) %>"));
+$('.progress').hide()
+
+if (<%= Rails.env.production? %>) {
+  ga('send', 'event', 'Quiz', 'Conclusão Quiz', 'Descubra se sua ideia está em risco!')
+
+  fbq('trackCustom', 'Conclusão Quiz', {
+    name: "<%= @quiz.name %>",
+    email: "<%= @quiz.email %>"
+  });
+}
+
+// Reprint the share buttons on modal
+FB.XFBML.parse();
+twttr.widgets.load();

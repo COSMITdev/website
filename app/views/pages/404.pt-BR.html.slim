@@ -1,12 +1,14 @@
-section.pageHero.-error
-  .container
-    .row
-      .col-sm-10.col-md-8.u-centered.u-textCenter
-        .heroContainer
-          .u-verticalAlign
-            h1.u-textMagenta Houston, nós temos um problema 404!
+- set_meta_tags(meta_tags_for_error)
+
+section.pageHero.bg-blue
+  .heroContainer.h-100vh
+    .u-verticalAlign
+      .container
+        .row
+          .col-sm-10.col-md-8.fl-n.mX-a.ta-c
+            h1.mT-0.mB-10.sm-mT-15.xs-mT-50.c-cyan[title="Houston, nós temos um problema 404!"] Houston, nós temos um problema 404!
             .row
               .col-sm-10.u-centered
-                h2.subtitle.u-textWhite.u-textLight.u-marginTop5 Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada.
-                = link_to 'início', root_path, title: 'Voltar para o Início', class: 'btn -lg -magenta u-marginTop20'
-                = link_to 'blog', posts_path, title: 'Centro de controle', class: 'btn -lg -magenta u-marginTop20 u-marginLft10'
+                h2.c-white.fw-n.fz-larger.lh-14.mB-20.xs-mB-10.mT-5 Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada.
+                = link_to 'Home', root_path, title: 'Voltar para a home', class: 'btn btn-cyan fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15 mR-15 mL-15'
+                = link_to 'Blog', posts_path, title: 'Centro de controle', class: 'btn btn-cyan fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15 mR-15 mL-15'

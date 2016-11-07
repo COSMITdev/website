@@ -4,20 +4,17 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  get 'trabalhos',                    to: 'pages#works',           as: :work
-  get 'servicos',                     to: 'pages#services',        as: :service
-  # get 'course',                     to: 'course#index',          as: :course
-  # get 'mvpslim',                    to: 'mvp#index',             as: :mvp
-  # get 'startups',                   to: 'startups#index',        as: :startups
-  # get 'startups/validation-course', to: 'startups#validation',   as: :validation
-  # get 'startups/strategy-call',     to: 'startups#strategycall', as: :strategy_call
-  # get 'startups/mvp-concierge',     to: 'startups#mvpconcierge', as: :mvp_concierge
-  # get 'startups/mvp-slim',          to: 'startups#mvpslim',      as: :mvp_slim
-  post 'contato',                     to: 'contacts#create',       as: :contact
-  post 'inscricao',                   to: 'subscribers#create',    as: :subscribe
-  post 'newsletter',                  to: 'newsletter#create',     as: :newsletter
+  get 'servicos',    to: 'pages#services',    as: :service
+  get 'trabalhos',   to: 'pages#works',       as: :work
+  get 'protocamp',   to: 'protocamp#index',   as: :protocamp
+  post 'contato',    to: 'contacts#create',   as: :contact
+  post 'newsletter', to: 'newsletter#create', as: :newsletter
+  post 'protocamp',  to: 'protocamp#create'
+  post 'inscricao',  to: 'protocamp#canvas',  as: :canvas
 
   resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
+  resources :quizzes, path: 'descubra-se-sua-ideia-esta-em-risco', only: [:index, :create]
 
+  get 'descubra-se-sua-ideia-esta-em-risco/quiz', to: 'quizzes#new', as: :new_quiz
   get '*path', to: 'pages#404', via: :all
 end

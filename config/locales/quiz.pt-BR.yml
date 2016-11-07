@@ -1,0 +1,15 @@
+pt-BR:
+  activemodel:
+    models:
+      quiz:
+        one: 'Questionário'
+        other: 'Questionários'
+
+    attributes:
+      quiz:
+        q1: 'Você já pesquisou se há concorrentes no seu mercado?'
+        q2: 'Você já tem um modelo de negócio (como cria e entrega valor) definido e testado?'
+        q3: 'Você já testou a sua ideia no mercado com clientes reais?'
+        q4: 'Você tem um time capaz de executar tarefas de design, desenvolvimento, business e vendas?'
+        q5: 'Quanto dinheiro você tem guardado para investir na sua ideia?'
+        q6: 'Pergunta 6'
