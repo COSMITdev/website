@@ -29,6 +29,6 @@ class Quiz
   end
 
   def download_link
-    "https://s3.amazonaws.com/cosmit-documents/protocamp-quiz-risk.pdf"
+    "https://s3.amazonaws.com/cosmit-documents/protocamp-quiz-dicas.pdf"
   end
 end
