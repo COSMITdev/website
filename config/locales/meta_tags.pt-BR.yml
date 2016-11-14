@@ -47,7 +47,7 @@ pt-BR:
           description: 'Trabalhamos orientados a objetivos que geram resultados para o seu negócio'
 
       services:
-        title: "COSMIT Serviços - Protocamp Quiz - Descubra se sua ideia está em risco!"
+        title: "COSMIT Serviços"
         description: 'Somos um time de experts apaixonados por resolver problemas através da estratégia, design e tecnologia'
         keywords: "Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP v1, Protocamp, Protótipos, Manutenção Contínua, Emergência"
         og:
@@ -90,18 +90,18 @@ pt-BR:
 
     quizzes:
       index:
-        title: "Protocamp Quiz - Descubra se sua ideia está em risco!"
-        description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
-        keywords: "Protocamp, Risco, Ideia, Falhar, quiz, teste, grátis, free, gratuito, descubra se sua ideia está em risco"
+        title: "Protocamp Quiz - Descubra se sua ideia vai dar certo!"
+        description: 'Baseado em um estudo dos principais fatores que levam novas ideias a fracassar, saiba quais são as chances da sua idea ser bem sucedida.'
+        keywords: "Protocamp, Risco, Ideia, quiz, teste, grátis, free, gratuito, descubra se sua ideia vai dar certo"
         og:
-          title: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
+          title: 'Protocamp Quiz - Descubra se sua ideia vai dar certo!'
           locale: 'pt_BR'
           site_name: 'cosmit.me'
-          description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
+          description: 'Baseado em um estudo dos principais fatores que levam novas ideias a fracassar, saiba quais são as chances da sua idea ser bem sucedida.'
         twitter:
-          card: 'Protocamp Quiz - Descubra se sua ideia está em risco!'
+          card: 'Protocamp Quiz - Descubra se sua ideia vai dar certo!'
           site: '@COSMITdev'
-          description: 'Baseado nos principais fatores que levam novas ideias a fracassar, siba qual é o nível de risco que a sua ideia tem de falhar.'
+          description: 'Baseado em um estudo dos principais fatores que levam novas ideias a fracassar, saiba quais são as chances da sua idea ser bem sucedida.'
 
     protocamp:
       index:
