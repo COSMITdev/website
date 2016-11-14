@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   post 'inscricao',  to: 'protocamp#canvas',  as: :canvas
 
   resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
-  resources :quizzes, path: 'descubra-se-sua-ideia-esta-em-risco', only: [:index, :create]
+  resources :quizzes, path: 'descubra-se-sua-ideia-vai-dar-certo', only: [:index, :create]
 
-  get 'descubra-se-sua-ideia-esta-em-risco/quiz', to: 'quizzes#new', as: :new_quiz
+  get 'descubra-se-sua-ideia-vai-dar-certo/quiz', to: 'quizzes#new', as: :new_quiz
   get '*path', to: 'pages#404', via: :all
 end

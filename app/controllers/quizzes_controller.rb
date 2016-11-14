@@ -26,11 +26,11 @@ class QuizzesController < ApplicationController
     if Rails.env.production?
       query = JSON.parse(Campaign.contact_sync(email: email,
         first_name: name, 'p[2]' => 2, 'status[2]' => 1,
-        tags: "quiz,sw#{','+define_budget_tag(quiz.q5)}"))
+        tags: "quiz,sw#{','+define_budget_tag(quiz.q7)}"))
     else
       query = JSON.parse(Campaign.contact_sync(email: email,
         first_name: name, 'p[1]' => 1, 'status[1]' => 1,
-        tags: "quiz,sw#{','+define_budget_tag(quiz.q5)}"))
+        tags: "quiz,sw#{','+define_budget_tag(quiz.q7)}"))
     end
 
     query['result_code'] == 1 # return true or false, code 1 is for successful requests
@@ -54,6 +54,6 @@ class QuizzesController < ApplicationController
   end
 
   def permitted_params
-    params.require(:quiz).permit(:q1, :q2, :q3, :q4, :q5, :name, :email)
+    params.require(:quiz).permit(:q1, :q2, :q3, :q4, :q5, :q6, :q7, :name, :email)
   end
 end
