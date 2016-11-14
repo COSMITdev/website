@@ -44,11 +44,11 @@ class QuizzesController < ApplicationController
       '2k'
     when '15'
       '3-5k'
-    when '10'
+    when '12'
       '6-15k'
-    when '5'
+    when '7'
       '16-30k'
-    when '1'
+    when '3'
       '30+k'
     end
   end
