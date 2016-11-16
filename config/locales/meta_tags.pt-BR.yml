@@ -60,20 +60,6 @@ pt-BR:
           site: '@COSMITdev'
           description: 'Somos um time de experts apaixonados por resolver problemas através da estratégia, design e tecnologia'
 
-      course:
-        title: "COSMIT Cursos"
-        description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
-        keywords: "Cursos, Serviços, Construção, Suporte & Manutenção, Suporte, Manutenção, Mentoria, Mentoria de Negócios, Desenvolvimento Contínuo, MVP, MVP V1, MVP Concierge, Manutenção Contínua, Emergência, Desempenho"
-        og:
-          title: 'Nossos Cursos'
-          locale: 'pt_BR'
-          site_name: 'course.cosmit.me'
-          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
-        twitter:
-          card: 'Nossos Cursos'
-          site: '@COSMITdev'
-          description: 'Somos um time de profissionais capazes de criar, lançar e impulsionar produtos digitais'
-
       error:
         title: "Houston, nós temos um problema 404"
         description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
@@ -81,12 +67,26 @@ pt-BR:
         og:
           title: "Houston, nós temos um problema 404"
           locale: 'pt_BR'
-          site_name: 'course.cosmit.me'
+          site_name: 'cosmit.me'
           description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
         twitter:
           card: "Houston, nós temos um problema 404"
           site: '@COSMITdev'
           description: "Parece que você se perdeu no espaço e a página que você está procurando não foi encontrada."
+
+      about:
+        title: "COSMIT Sobre"
+        description: "Nossa visão, o que acreditamos e o que orienta nosso trabalho"
+        keywords: "missão, visão, patrick müller, gabriel carpenedo, melhoria contínua, pessoas em primeiro lugar, minimizar hierarquia, transparência, dar o melhor de si, responsabilidade e confiança"
+        og:
+          title: "Sobre nós"
+          locale: 'pt_BR'
+          site_name: 'cosmit.me'
+          description: "Nossa visão, o que acreditamos e o que orienta nosso trabalho"
+        twitter:
+          card: "Sobre nós"
+          site: '@COSMITdev'
+          description: "Nossa visão, o que acreditamos e o que orienta nosso trabalho"
 
     quizzes:
       index:
