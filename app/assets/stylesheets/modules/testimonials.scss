@@ -1,9 +1,13 @@
 .carousel-indicators li { 
   border: 0; 
   background-color: var(--gray-light);
+  margin-right: 3px !important;
+  margin-left: 3px !important;
 }
 
-.carousel-indicators .active { background-color: var(--blue-light); }
+.carousel-indicators .active { 
+  background-color: var(--blue-light);
+}
 
 .testimonials {
   img { max-height: 160px; }
