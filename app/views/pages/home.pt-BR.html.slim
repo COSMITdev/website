@@ -15,7 +15,7 @@
                   h2.c-blue-light.fw-n.fz-larger.lh-14.mB-15.xs-mB-10.mT-5[title="Descubra se sua ideia vai dar certo!"] Descubra se sua ideia vai dar certo!
                   = link_to 'Sim, quero saber!', quizzes_path, title: 'Sim, quero saber!', class: 'btn btn-cyan fz-large whs-n pX-40 xs-pX-30 pY-20 xs-pY-15'
 
-  section.pY-50.xs-pY-40.service#service
+  section.pY-50.xs-pY-40.service
     .container
       .row
         .col-sm-12.col-md-10.fl-n.mX-a
@@ -60,7 +60,7 @@
                   h2.u-noMargin.boxTitle.c-blue title="Mentoria de Negócios" Mentoria de Negócios
                 p.subtitle.mT-5.mB-10.small A ideia de iniciar um novo negócio ou projeto pode ser uma experiência assustadora e desafiadora, cheia de incertezas. Vamos compartilhar com você nosso aprendizado acumulado fazendo com que ande mais rápido e evite armadilhas.
 
-  section.pY-50.xs-pY-40.-gray.work#work
+  section.pY-50.xs-pY-40.-gray.work
     .container
       .row
         .col-sm-12.fl-n.mX-a
@@ -82,6 +82,15 @@
           .row.mT-10
             .col-sm-10.fl-n.mX-a.ta-c
               h4.mB-0.mT-0.textSmall.u-textGray-medium.fw-n E mais de 30 outras empresas e startups
+
+  section.pY-50.xs-pY-40.testimonials
+    .container
+      .row
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.c-blue.ta-c[title="O que falam de nós"] O que falam de nós
+      .row
+        .col-sm-9.col-md-7.fl-n.mX-a
+          = render 'partials/testimonials'
 
   section.pY-50.xs-pY-40.contact.bg-blue#contact
     .container

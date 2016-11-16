@@ -1,0 +1,10 @@
+.carousel-indicators li { 
+  border: 0; 
+  background-color: var(--gray-light);
+}
+
+.carousel-indicators .active { background-color: var(--blue-light); }
+
+.testimonials {
+  img { max-height: 160px; }
+}
