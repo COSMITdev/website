@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
+  get 'sobre',       to: 'pages#about',       as: :about
   get 'servicos',    to: 'pages#services',    as: :service
   get 'trabalhos',   to: 'pages#works',       as: :work
   get 'protocamp',   to: 'protocamp#index',   as: :protocamp

@@ -7,10 +7,9 @@ pt-BR:
 
     attributes:
       quiz:
-        q1: 'Sua ideia é...'
-        q2: 'Há quanto tempo está trabalhando nesta ideia?'
+        q1: 'Há quanto tempo está trabalhando nesta ideia?'
+        q2: 'Sua ideia é...'
         q3: 'Você já pesquisou se há concorrentes no seu mercado?'
-        q4: 'Você já tem um modelo de negócio (como cria e entrega valor) definido e testado?'
-        q5: 'Você já testou a sua ideia no mercado com clientes reais?'
-        q6: 'Você tem um time capaz de executar tarefas de design, desenvolvimento, business e vendas?'
-        q7: 'Quanto dinheiro você tem guardado para investir na sua ideia?'
+        q4: 'Você já testou a sua ideia no mercado com clientes ou usuários reais?'
+        q5: 'Você tem um time capaz de executar tarefas de design, desenvolvimento, business e vendas?'
+        q6: 'Quanto dinheiro você tem guardado para investir na sua ideia?'

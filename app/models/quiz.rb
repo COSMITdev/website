@@ -3,9 +3,9 @@ class Quiz
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
-  attr_accessor :q1, :q2, :q3, :q4, :q5, :q6, :q7, :name, :email
+  attr_accessor :q1, :q2, :q3, :q4, :q5, :q6, :name, :email
 
-  validates :q1, :q2, :q3, :q4, :q5, :q6, :q7, :name, :email, presence: true
+  validates :q1, :q2, :q3, :q4, :q5, :q6, :name, :email, presence: true
 
   validates_format_of :email, with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/,
                       message: I18n.t('errors.messages.invalid')
@@ -25,7 +25,7 @@ class Quiz
   end
 
   def percentage
-    100-(q1.to_i+q2.to_i+q3.to_i+q4.to_i+q5.to_i+q6.to_i+q7.to_i)
+    100-(q1.to_i+q2.to_i+q3.to_i+q4.to_i+q5.to_i+q6.to_i)
   end
 
   def download_link

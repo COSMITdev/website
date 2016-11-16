@@ -135,6 +135,15 @@
               .workImage.hidden-xs
                 = image_tag('educais-work.png', class: 'img img-responsive', alt: "Educais")
 
+  section.pY-50.xs-pY-40.testimonials
+    .container
+      .row
+        .col-sm-12.col-md-10.fl-n.mX-a
+          h2.mT-0.mB-10.c-blue.ta-c[title="O que falam de nós"] O que falam de nós
+      .row
+        .col-sm-9.col-md-7.fl-n.mX-a
+          = render 'partials/testimonials'
+
   section.pY-50.xs-pY-40.contact.bg-blue#contact
     .container
       .row

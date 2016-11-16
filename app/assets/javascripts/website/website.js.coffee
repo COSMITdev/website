@@ -16,6 +16,7 @@ window.Website =
   init: ->
     # Something here. This is called in every page.
     $('[data-toggle="tooltip"]').tooltip()
+    $('.carousel').carousel interval: 16000
 
   # Some modules that will be used on every page.
   modules: -> [
