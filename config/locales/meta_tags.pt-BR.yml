@@ -23,12 +23,12 @@ pt-BR:
         description: 'A COSMIT é uma consultoria digital que transforma ideias em produtos de sucesso'
         keywords: 'Protocamp, Protótipo, MVP, MVP v1, Design, Desenvolvimento, Programação, Ideias, Validação, Suporte, Manutenção, Mentoria de Negócios'
         og:
-          title: 'A COSMIT é uma consultoria digital que transforma ideias em novos produtos digitais'
+          title: 'COSMIT - Transformamos suas ideias em novos produtos digitais'
           locale: 'pt_BR'
           site_name: 'cosmit.me'
           description: '90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer.'
         twitter:
-          card: 'Conheça nossos Cases!'
+          card: 'Transformamos suas ideias em novos produtos digitais'
           site: '@COSMITdev'
           description: '90% dos novos produtos falham! Isso acontece porque começam com um plano focado em gastar todo dinheiro em caixa ou ainda pior, com funcionalidades que ninguém quer.'
 
