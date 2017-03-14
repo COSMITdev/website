@@ -52,8 +52,6 @@ gem 'nprogress-rails', '~> 0.1.6'
 gem 'maskmoney-rails'
 # For dynamic meta tags & og tags
 gem 'meta-tags'
-# ActiveCampaign API Wrapper
-gem 'active-campaign-rails'
 
 group :development do
   gem 'rack-mini-profiler'
