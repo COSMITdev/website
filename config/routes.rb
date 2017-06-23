@@ -7,15 +7,11 @@ Rails.application.routes.draw do
   get 'sobre',       to: 'pages#about',       as: :about
   get 'servicos',    to: 'pages#services',    as: :service
   get 'trabalhos',   to: 'pages#works',       as: :work
-  get 'protocamp',   to: 'protocamp#index',   as: :protocamp
   post 'contato',    to: 'contacts#create',   as: :contact
   post 'newsletter', to: 'newsletter#create', as: :newsletter
   post 'protocamp',  to: 'protocamp#create'
-  post 'inscricao',  to: 'protocamp#canvas',  as: :canvas
 
   resources :posts, controller: 'blog', path: 'blog', only: [:index, :show]
-  resources :quizzes, path: 'descubra-se-sua-ideia-vai-dar-certo', only: [:index, :create]
 
-  get 'descubra-se-sua-ideia-vai-dar-certo/quiz', to: 'quizzes#new', as: :new_quiz
   get '*path', to: 'pages#404', via: :all
 end
